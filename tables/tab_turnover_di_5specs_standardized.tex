@@ -1,0 +1,56 @@
+\begin{table}[!t]\centering
+    \caption{Turnover Regressions with Standardized Disagreement}
+    \label{tab:turnover_di_5specs_standardized}
+    
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lccccc}
+    \hline\hline
+     & Baseline & Rec $\times$ DI & Rec $\times$ DI 
+     & Early Rec. & Early Rec. \\
+     & (1) & (2) & (3) & (4) & (5) \\
+    \hline
+    Disagreement (z-score) 
+        & 0.075 & 0.054 & 0.054 & 0.069 & 0.069 \\
+        & (0.047) & (0.039) & (0.039) & (0.047) & (0.047) \\
+    
+    Recession 
+        &  & 0.051 &  &  &  \\
+        &  & (0.048) &  &  &  \\
+    
+    Disagreement $\times$ Recession 
+        &  & 0.176*** & 0.188*** &  &  \\
+        &  & (0.058) & (0.061) &  &  \\
+    
+    Early Rec. (first 2 qtrs) 
+        &  &  &  & 0.014 &  \\
+        &  &  &  & (0.035) &  \\
+    
+    Disagreement $\times$ Early Rec. 
+        &  &  &  & 0.095* & 0.098* \\
+        &  &  &  & (0.051) & (0.051) \\
+    
+    \hline
+    Marginal effect of DI in recession 
+        &  & 0.230 & 0.242 & 0.164 & 0.167 \\
+    
+    Constant 
+        & 0.311*** & 0.301*** & 0.305*** & 0.309*** & 0.309*** \\
+        & (0.023) & (0.022) & (0.020) & (0.023) & (0.022) \\
+    
+    \hline
+    Observations & 158 & 158 & 158 & 158 & 158 \\
+    $R^2$ & 0.212 & 0.352 & 0.344 & 0.235 & 0.235 \\
+    \hline\hline
+    \end{tabular}%
+    }
+    
+    \vspace{0.2em}
+    {\begin{flushleft}
+        \footnotesize
+        Sample period: 1982Q2--2021Q3. Disagreement is standardized within sample.
+        Newey--West (lag 4) standard errors in parentheses.
+        * $p<0.10$, ** $p<0.05$, *** $p<0.01$.
+        \end{flushleft}}
+    
+    
+    \end{table}

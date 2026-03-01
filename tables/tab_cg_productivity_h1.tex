@@ -1,0 +1,38 @@
+\begin{table}[!t]
+    \centering
+    \caption{Coibion--Gorodnichenko Regressions for Productivity Measures}
+    \label{tab:cg_productivity_h1}
+    \begin{threeparttable}
+    \begin{tabular}{lcc}
+    \toprule
+     & Labor Productivity & TFP Proxy \\
+    \midrule
+    Forecast revision coefficient $\beta_{CG}$ 
+    & -0.63$^{***}$ 
+    & -0.50$^{**}$ \\
+    & (0.030) & (0.198) \\
+    Constant 
+    & -0.15 
+    & -0.25 \\
+    & (0.289) & (0.259) \\
+    \midrule
+    Observations 
+    & 86 & 86 \\
+    $R^2$ 
+    & 0.3697 & 0.0579 \\
+    Adj. $R^2$ 
+    & 0.3622 & 0.0467 \\
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]
+    \footnotesize
+    \item Notes: Each column reports OLS estimates of
+    $\text{FE}_t = c + \beta \,\text{Revision}_t + u_t$, where $h=1$ quarter.
+    Reported standard errors (in parentheses) are Newey--West HAC with lag 4.
+    Labor productivity uses $\Delta y - \Delta n$.
+    TFP proxy uses $\Delta y - \alpha \Delta n$ with $\alpha=2/3$.
+    Sample: 2004Q1--2025Q2.
+    Significance: $^{*} p<0.10$, $^{**} p<0.05$, $^{***} p<0.01$ (based on HAC $p$-values).
+    \end{tablenotes}
+    \end{threeparttable}
+    \end{table}

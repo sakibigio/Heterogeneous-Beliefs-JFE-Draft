@@ -1,0 +1,108 @@
+\section{Model}\label{sec:environment.sec}
+
+ We consider a two-state complete-markets economy with time indexed by $t\in\{0,1,...,\}$. The economy is populated by heterogeneous households that differ in their beliefs regarding TFP growth. Households hold (or issue) risk-free bonds and hold (or short-sell) shares of a single representative firm. Differences in beliefs induce a desire to lever up. 
+The firm hires labor one period in advance before TFP is realized. Hiring in advance links labor demand with asset pricing.
+
+\paragraph{The exogenous state.}
+Total factor productivity $A_{t}$ grows according to a two-state Markov process:
+\begin{equation}
+    \frac{A_{t+1}}{A_t} = x_{t+1},
+\end{equation}
+where $x_{t+1} \in \{x_L, x_H\}$, $0<x_L <x_H $. Transition probabilities from state $s$ to $s'$ are denoted by $\{p_{ss'}\}$. 
+
+\paragraph{The firm.}
+The representative firm produces a final good according to $A_{t+1} h_{t+1}^\alpha$, where labor $h_{t+1}$ is hired in period $t$, prior to the realization of $x_{t+1}$. While firms hire and contract the wage $W_{t+1}$ one period ahead, the wage bill is paid when production is finished.
+
+The firm takes hours at the initial date $h_0$ as given and hires labor in subsequent periods to maximize its value using a stochastic discount factor (SDF), $\Lambda_{t,t+1}$: 
+\begin{equation} \label{eq: firm_value}
+    Q_t =\max_{h_{t+1}}  \mathbb{E}_t\left[ \Lambda_{t,t+1} \left(\pi_{t+1} + Q_{t+1} \right)\right].
+\end{equation}
+$Q_t$ denotes the firm value and $\pi_{t+1} \equiv A_{t+1} h_{t+1}^\alpha -W_{t+1} h_{t+1}$ denotes the profit (dividend). 
+Expectations are taken with respect to the transition probabilities $\{p_{ss'}\}$. 
+Because markets are complete, there is a unique SDF for any fixed set of beliefs. 
+Hence, there is unanimity regarding the firm's objective among shareholders, as discussed in  Section \ref{subsec:investors_problem}. 
+Beliefs affect employment decisions through their impact on the SDF.
+
+\paragraph{Households.}
+There is a finite number of infinite-lived households, indexed by $i \in \mathcal{I}= \{1, \ldots, I\}$ with masses $\{\mu_i\}$, $\sum_i \mu_i = 1$. Household $i$ derives utility from consumption $C_{i,t}$ and disutility from working $h_{i,t}$. They have Epstein-Zin preferences over a GHH consumption-labor composite:
+\begin{equation}\label{eq: preferences}
+    V_{i,t} = (1-\beta) U\left(C_{i,t} - \xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu}\right) + \beta U\left( \mathcal{V}_{i,t} \right),
+\end{equation}
+where $V_{i,t}$ denotes the utility level, $\beta$ the discount factor, and $\xi_t$ controls the labor disutility. $\mathcal{V}_{i,t}$ is the certainty-equivalent of future utility, $\mathcal{V}_{i,t} = \Psi^ {-1}\left( \mathbb{E}_{i,t}\left[ \Psi\left( U^ {-1}(V_{i,t+1}\right)\right] \right)$.
+
+The labor disutility coefficient is indexed by \textit{lagged} productivity, $\xi_{t} = \xi A_{t-1}$ and acts as a long-run wealth effect---as in \citet{JR09}, this ensures that hours are stationary. 
+We adopt the functional forms: $U(C) = \frac{C^{1-1/\psi}-1}{1-1/\psi}$ and $\Psi(Z) = \frac{Z^{1-\gamma} -1}{1-\gamma}$, where $\gamma$ controls risk aversion and $\psi$ the elasticity of intertemporal substitution $(EIS)$.\footnote{CRRA preferences correspond to $\psi = \gamma^{-1}$.
+Given the endogenous labor supply, $\gamma$ controls but does not coincide with the risk aversion for lotteries on financial wealth (see, e.g., \citealt{swanson2018risk}).
+} As $U(\cdot)$ is defined over positive values, \textit{net consumption}, $C_{i,t} - \xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu}$, must be positive.
+
+Household $i$ has beliefs $\{p^i_{ss'}\}$ regarding TFP growth $x_{t+1}$ from state $s$ to $s'$ and forms an expectation $\mathbb{E}_{i,t}$ accordingly. Households are dogmatic, as in \citet{chen2012rare} and \citet{simsek2013speculation}: they \textit{agree to disagree} and do not learn from the views of others. 
+Beliefs about productivity translate into beliefs about earnings and asset prices.
+
+Household $i$ chooses consumption $C_{i,t}$, hours $h_{i,t}$, firm shares $S_{i,t}$, and risk-free bonds $B_{i,t}$ to maximize \eqref{eq: preferences} subject to a flow budget constraint
+\begin{equation}\label{eq: flow_bc}
+    C_{i,t} + Q_t S_{i,t} + B_{i,t} = R_{r,t} Q_{t-1} S_{i,t-1} + R_{f,t} B_{i,t-1} + W_t h_{i,t}.
+\end{equation}
+We denote human wealth by:
+\begin{equation}\label{eq: human_wealth}
+   \mathcal{H}_{i,t} = \mathbb{E}_t\left[ \sum_{k=1}^\infty \Lambda_{t,t+k} \left( W_{t+k} h_{i,t+k}- \xi_{t+k} \frac{h_{i,t+k}^{1+\nu}}{1+\nu}  \right) \right].
+\end{equation}
+Human wealth is the present discounted value of future \textit{net labor income}. 
+Net labor income equals the labor earnings minus labor disutility. The present value is discounted using the SDF $\Lambda_{t,t+k} = \prod_{j=1}^k \Lambda_{t+j-1,t+j}$. 
+The SDF is the same as the one used to value firms. 
+
+Households face a natural borrowing limit: $R_{r,t}Q_{t-1} S_{i,t-1} + R_{f,t} B_{i,t-1} + W_t h_{i,t}- \xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu} \geq -\mathcal{H}_{i,t}$, given $S_{i,-1}$ and $B_{i,-1}$, where $R_{f,t}$ denotes the return on the risk-free bond and $R_{r,t} = \frac{Q_t + \pi_t}{Q_{t-1}}$ the return on stocks, the risky asset in this economy.\footnote{This borrowing limit corresponds to the maximum households can borrow without violating the non-negativity of net consumption and is therefore never binding in equilibrium.}
+
+\paragraph{Example I: Diagnostic expectations.} 
+We do not impose restrictions on beliefs. 
+In particular, our formulation is flexible enough to capture different belief dynamics, including extrapolation or underreaction. 
+For example, consider the case of \textit{heterogeneous diagnostic expectations}. 
+\q{DE_definition}{Diagnostic expectations correspond to the following belief structure:\footnote{
+    Diagnostic expectations are defined using distorted probabilities of the form
+$\Pr^i(T=t\mid G)\propto \Pr(T=t\mid G)\left(\frac{\Pr(T=t\mid G)}{\Pr(T=t\mid -G)}\right)^{\theta_i}$
+(see, e.g., \citealt{bordalo2018diagnostic}).
+In our setting, the trait $T$ is next period's state $s'$, the group $G$ is the current
+state $s$, and the reference group $-G$ is the alternative state $-s$.
+}
+\begin{equation}
+    p_{sH}^i = \underbrace{p_{sH}}_{\text{rational beliefs}} \times \underbrace{\left( \frac{p_{sH}}{p_{-sH}} \right)^{\theta_i}}_{\text{belief distortion}} \times C,\nonumber
+\end{equation}}
+where $C$ is a normalizing constant, $p_{sH}$ and $p_{-sH}$ denote the probability of being in the high state next period if the current state is $s$ and not $s$, respectively, and $\theta_i$ is a parameter controlling diagnosticity.
+If productivity growth is persistent under rational beliefs, i.e., $p_{HH} > p_{LH}$, then under diagnostic expectations, households overreact to news: households believe it is more likely they would remain in the high (low) state after switching to the high (low) state.
+If $p_{ss} = \frac{1+\rho}{2}$, as in \citet{MP85}, then $p_{ss}^i = \frac{1+\rho_i}{2}$,  where $\rho_i > \rho$, and the (endogenous) subjective persistence parameter $\rho_i$ is a function of $\theta_i$.
+
+\paragraph{Example II: Optimism and pessimism.}  Diagnostic expectations capture a form of extrapolation: households are optimistic in the boom and pessimistic in the bust. 
+Alternatively, we could have a persistent degree of optimism/pessimism: $ p_{sH}^i = p_{sH} + \Delta_i$
+where households with $\Delta_i > 0$ would be optimistic at all states.
+
+Both the diagnostic expectations and persistent optimism formulations are one-parameter belief specifications. 
+In general, beliefs can depend on two parameters, capturing a combination of these two cases: $ p_{HH}^i = (1+\rho_i)/2+\Delta_i$ and $p_{LL}^i = (1+\rho_i)/2 -\Delta_i.$\footnote{Notice that diagnostic beliefs coincide with rational beliefs in the case productivity growth is iid, $p_{sH} = p_{-sH}$. 
+Our formulation allows for an arbitrary persistence under subjective beliefs, even in this case.
+}
+
+\paragraph{SDF and equilibrium.}
+
+\q{SDF_inference}{
+The SDF can be inferred from the process of asset returns through no-arbitrage conditions:
+\begin{equation}\label{eq: no_arbitrage}
+    1 = \mathbb{E}_t\left[ \Lambda_{t,t+1} \frac{\pi_{t+1}+Q_{t+1}}{Q_t}  \right], \qquad \qquad 
+    1 = \mathbb{E}_t\left[ \Lambda_{t,t+1} R_{b,t+1}  \right].
+\end{equation}}
+A competitive equilibrium is defined next.
+
+
+\begin{definition}[Competitive equilibrium]
+Given initial bond holdings and shares  $\{B_{i,-1}, S_{i,-1}\}_{i=1}^I$ and hours $h_0$, a \textit{competitive equilibrium} is a set of stochastic process for quantities $\{\{C_{i,t}, h_{i,t}, B_{i,t}, S_{i,t}\}_{i=1}^I, h_t\}$ and prices $\{W_t, R_{f,t}, Q_t\}$ such that 
+\begin{enumerate}[(i)]
+    \item $\{h_{t+1}\}$ maximizes \eqref{eq: firm_value} given wages $W_t$ and the SDF $\Lambda_{t,t+1}$.
+    \item $\{C_{i,t}, h_{i,t}, B_{i,t}, S_{i,t}\}$ maximizes \eqref{eq: preferences} subject to \eqref{eq: flow_bc}  given prices, for $i \in \mathcal{I}$. 
+    \item Markets for goods, labor, bonds, and shares clear
+    \begin{equation*}
+        \sum_{i=1}^I \mu_i C_{i,t} = A_t h_t^\alpha, \qquad 
+        \sum_{i=1}^I \mu_i h_{i,t} = h_t, \qquad 
+        \sum_{i=1}^I \mu_i B_{i,t} = 0, \qquad 
+        \sum_{i=1}^I \mu_i S_{i,t} = 1.
+    \end{equation*}
+\end{enumerate}
+\end{definition}
+We proceed to a characterization.
+

@@ -1,0 +1,96 @@
+\section{Trading volume}\label{app:volume}
+
+\subsection{Belief Taxanomy and Trading Volume}
+
+We consider next the implications of heterogeneous beliefs regarding stock turnover, a measure of trading volume. To compute the stock turnover, we first map the portfolio holdings of the surplus claim, $\omega_i$, into the effective number of shares on firm equity in the primitive economy. This mapping is straightforward in the case of linear labor disutility, $\nu = 0$ because human wealth is zero in this case.\footnote{The share of wealth invested in stocks is $\omega_i$, given that human wealth is equal to zero, $\mathcal{H}_i = 0$, and $R_{e}(X,s,s') = R_{r}(X,s,s')$ under this assumption.} To simplify the exhibition, we adopt this assumption for the rest of the section. The traded volume in this case is:
+% \footnote{The portfolio share is given by $\omega_{i,t} \equiv \frac{Q_t S_{i,t}}{N_{i,t}(1-c_{i,t})} $, so $S_{i,t} = \frac{\omega_{i,t} N_{i,t} (1-c_{i,t})}{Q_t}$. Given $1-c_{i,t} = \beta$ and $Q_t = \beta P_t$, assuming $\nu = 0$, we obtain $\mu_{i,t} S_{i,t} = \frac{\omega_{i,t} \mu_i N_{i,t}}{P_t} = \omega_{i,t} \eta_{i,t} $. Shares traded by type-$i$ investors are $\mu_{i,t} |S_{i,t}- S_{i,t-1}| = |\omega_{i,t}\eta_{i,t} - \omega_{i,t-1} \eta_{i,t-1}|$.}
+\begin{equation}
+    \tau_t = \frac{1}{2} \sum_{i=1}^I |\omega_{i,t} \eta_{i,t} - \omega_{i,t-1} \eta_{i,t-1} |.\nonumber
+\end{equation} 
+% Trading volume, or equivalently turnover as the number of shares is normalized to one, depends on the degree of belief heterogeneity. 
+This formula shows that the volume traded depends on the level of disagreement. 
+
+We consider a small deviation from homogeneous beliefs to study the effect of belief dispersion on volume. We express investor $i$'s beliefs as follows
+\begin{equation}
+    p_{ss'}^i = p_{ss'}^* + \delta_{ss'}^i \epsilon,\nonumber
+\end{equation}
+where $\delta_{sH}^i + \delta_{sL}^i = 0$ and $\epsilon$ captures belief heterogeneity as discussed earlier. Also, for parsimony, set $p_{ss'}^* = \frac{1}{2}$, such that, in the absence of heterogeneity, beliefs are iid and symmetric---the proofs hold for general common belief case.
+%let's assume beliefs are iid for $\epsilon = 0$, $p_{sH}^* = p_{sL}^*$.\todo{this is not i.i.d. I.i.d is the opposite no?}
+
+% Notice that average beliefs in the state $(X,s)$ is the same for both economies, as $\sum_{i=1}^I \eta_i p_{ss'}^i = p_{ss'}^*$, so moving from $\epsilon = 0$ to $\epsilon > 0$ increases the dispersion in beliefs, keeping the average probability of a given state constant.
+The portfolio share of investor $i$ is:
+\begin{equation}
+    \omega_{i}(X,s; \epsilon) = 1 +\kappa_\omega \left[p_{sH}^i - \overline{p}^m_{sH}(X)\right] + \mathcal{O}(\epsilon^2),\nonumber
+\end{equation}
+where $\kappa_\omega$ is a positive constant. 
+This expression showcases how optimistic investors, for whom $p_{sH}^i > \overline{p}^m_{sH}(X)$, are levered up in stocks. 
+
+The following lemma characterizes the trading behavior of a given investor.
+\begin{lemma}\label{lem: trading}
+    Consider current and future states $s$ and $s'$. The effect of a perturbation in $\epsilon$ on the trades of investor $i$ is:
+    \begin{equation}
+        \Delta S_i(X,s,s';\epsilon) =
+        \underbrace{\Delta \eta_i(X,s,s')}_{\text{rebalancing effect}}+\underbrace{\Delta \omega_i(X,s,s') \eta_i}_{\text{change-in-beliefs effect}} + \mathcal{O}(\epsilon^2),
+    \end{equation}
+    as the economy switches from state $(X,s)$ to $(X',s')$, where\small
+    %$\tilde{\delta}_{ss'}^i \equiv \delta_{ss'}^i - \delta_{ss'}(X)$ and 
+    \begin{align}
+        \Delta \eta_i(X,s,s') \equiv \eta_i \frac{p_{ss'}^i - \overline{p}_{ss'}^m(X)}{p_{ss'}^*} , \qquad
+        \Delta \omega_i(X,s,s') &\equiv \kappa_\omega\left[p_{s'H}^i - \overline{p}_{s'H}^m(X) - (p_{sH}^i - \overline{p}^m_{sH}(X)) \right] .\nonumber
+    \end{align}\normalsize
+\end{lemma}
+
+
+Expression \eqref{eq: trading} reveals two effects. 
+The \textit{rebalancing effect} captures the extent to which investors trade after a change in the state to keep portfolio shares constant: investors who put more likelihood on the realized state relative to the market belief, increased (decreased) their wealth share. Thus, they must buy (sell) the risky asset when that state is realized, to keep the portfolio share constant. Of course, as the economy evolves from $s$ to $s'$, portfolio shares themselves change as beliefs are modified. The \textit{change-in-beliefs effect} captures the trade that follows the change in portfolio shares as the state changes. The change-in-beliefs effect equals zero if $s = s'$, as individual beliefs are constant.  
+
+In tandem, the effects of rebalancing and change-in-beliefs determine equilibrium turnover. 
+\begin{proposition}[Turnover]
+% Let $\eta_o = \sum_{i=1}^I \eta_i \textbf{1}_{\delta_{sH}^i >0}$  denote the share of wealth of optimists and $\eta_p = \sum_{i=1}^I \eta_i \textbf{1}_{\delta_{sH}^i \leq 0}$ the share of wealth of pessimists. Similarly, define $\delta_{sH}^o = \frac{1}{\eta_o} \sum_{i=1}^I \eta_i \delta_{s H}^i \textbf{1}_{\delta_{s H}^i  >0 }$  and $\delta_{sH}^p = \frac{1}{\eta_p} \sum_{i=1}^I \eta_i \delta_{s H}^i \textbf{1}_{\delta_{s H}^i \leq 0}$. 
+The economy's turnover, as it switches from state $(X,s)$ to state $(X',s')$, is given by\small
+\begin{equation}\label{eq: turnover}
+    \tau(X,s,s';\epsilon) = \frac{1}{2} \sum_{i=1}^I \eta_i\left\lvert  \frac{p_{ss'}^i - \overline{p}_{ss'}^m(X)}{p_{ss'}^*} +\kappa_\omega\left[p_{s'H}^i - \overline{p}_{s'H}^m(X) - (p_{sH}^i - \overline{p}^m_{sH}(X)) \right] \right\rvert  + \mathcal{O}(\epsilon^2).
+\end{equation}\normalsize
+\end{proposition}
+% \begin{proof}
+% See Appendix \ref{app: proof_cor_het_dynamics}.
+% \end{proof}
+
+Proposition \ref{prop: turnover} provides a characterization of turnover. When $s = s'$, the change-in-beliefs effect vanishes; turnover is driven solely by the rebalancing effect:
+\begin{equation}
+    \tau(X,s,s';\epsilon) = \frac{1}{2} \sum_{i=1}^I \eta_i \frac{|p_{ss'}^i - \overline{p}_{ss'}^m(X)|}{p_{ss'}^*} + \mathcal{O}(\epsilon^2).\nonumber
+\end{equation}
+Thus, when there is no change in the state of the economy,  turnover is proportional to the average absolute deviation of beliefs. The formula is consistent with the evidence in Section~\ref{app_disagreement_evidence}, which shows that dispersion on subjective beliefs about cash flows is correlated with stock market turnover.  
+% This expression is the analogous in our two-state setting of the empirical specification adopted in Section \ref{sec:facts.sec}.
+
+The change-in-beliefs effect emerges when the economy switches states, that is, when $s \neq s'$. This effect may either amplify or dampen the rebalancing effect, depending on the type of belief and the direction of change in the economy. For instance, suppose that $s = H$ and $s' = L$ and beliefs are rank-alternating. Optimistic investors lose wealth as the economy switches to a bad state. The rebalancing effect implies that they must sell some risky assets to maintain their portfolio shares once stocks lose value. These investors also become pessimists in downturns, leading them to sell even more stocks. Thus, the two effects go in the same direction, amplifying the impact on the turnover when the economy switches from high to low states. The two effects are opposite when $s = L$ and $s' = H$. Pessimists become optimistic as the economy switches to the high state, which induces them to increase their stock portfolio share. At the same time, the rebalancing effect dictates that they sell stocks once stocks appreciate to keep the portfolio balanced.
+
+\paragraph{Connecting with the Turnover Evidence.}
+It is convenient to express heterogeneity in beliefs, $p_{ss}^i$, in terms of heterogeneity in the perceived \textit{persistence} of fundamentals. Assuming investors agree on the unconditional mean of $x_t$, $\overline{x}$, we can write $\mathbb{E}_{i,t}[x_{t+1}] - \overline{x} = \theta_i (x_t - \overline{x})$, where $\theta_i$ is a function of $p_{ss'}^i$.
+% We can recast beliefs about $p_{ss}^i$ into beliefs about mean reversion rates in earning growth, $\theta^i$---as estimated in Section \ref{sec:quantitative}. 
+The following corollary shows heterogeneous beliefs lead to larger turnover rates as the economy switches from booms to recessions.
+\begin{corollary}\label{cor: turnover} Suppose investors agree on the unconditional mean of $x_t$, i.e. $p_{LH}^i / p_{HL}^i = \overline{p}_H / \overline{p}_L$ and that the following condition is satisfied: $p_{ss'}^* = \overline{p}_H = \frac{1}{2}$. Turnover as the economy switches from $s$ to $s'$ is given by
+\begin{equation}
+    \tau(X,H,L;\epsilon) = \frac{\zeta(s,s')}{2}\sum_{i=1}^I \eta_i |\theta_i - \theta(X)| + \mathcal{O}(\epsilon^2),
+\end{equation}
+where
+\begin{equation*}
+    \zeta(s,s') \equiv \left\{ 
+    \begin{matrix}
+    \kappa_\omega + 1, \qquad & \text{if } $s = H$ \text{ and } $s' = L$\\
+    |\kappa_\omega - 1|, \qquad & \text{if } $s = L$ \text{ and } $s'  = H$\\
+    1, \qquad & \text{if } $s = s'$
+    \end{matrix}
+    \right. 
+\end{equation*}
+\end{corollary}
+% The assumption $p_{ss'}^* = \overline{p}_H = \frac{1}{2}$ is made only to simplify the presentation. The general case is considered in the appendix.
+ The key message from Corollary \ref{cor: turnover} is that turnover increases in belief dispersion and, furthermore, that the effect is more pronounced during busts. 
+Both predictions are in line with the evidence discussed in Section \ref{app_disagreement_evidence}. The assumption of rank-alternating beliefs is important to obtain this asymmetric effect. 
+If investors have rank-preserving beliefs, where they are equally optimistic or pessimistic in both states, so $\tilde{\delta}_{s'H}^i = \tilde{\delta}_{sH}^i $ even for $s'\neq s$, then the change-in-beliefs effect will be equal to zero and we would not obtain a stronger response of turnover to disagreement during bad times. Therefore, rank-alternating beliefs are key to capturing the dynamics of stock market turnover. 
+
+% Moreover, differences in $\delta_{ss'}^i$ can be recast into differences in the persistence of cash-flows, as in our empirical specification.
+
+
+
+

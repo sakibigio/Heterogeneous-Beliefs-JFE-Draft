@@ -1,0 +1,20 @@
+% Wrapper to show numerical_solution.tex as the Supplementary Appendix.
+% Keeps supplementary_appendix.tex untouched for future use.
+\clearpage
+\numberwithin{equation}{section}
+\setcounter{table}{0}
+\renewcommand{\thetable}{O.\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{O.\arabic{figure}}
+\setcounter{footnote}{0}
+\setcounter{proposition}{0}
+\renewcommand{\theproposition}{O.\arabic{proposition}}
+\appendix
+\onehalfspacing
+\part*{Supplementary Appendix}\label{OA_appendix}
+
+\setcounter{page}{1}
+\renewcommand{\thesection}{O\arabic{section}}
+\setcounter{section}{0}
+\input{sections/appendix.data}
+\input{sections/numerical_solution}

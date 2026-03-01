@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: BSZ.aux
+The style file: aer.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../utils/references/references.bib
+Database file #2: ../utils/references/references_empirical.bib
+Warning--can't use both volume and number fields in fisher1933debt
+Warning--empty journal in gennaioli2018crisis
+Warning--empty journal in shiller1981stock
+You've used 106 entries,
+            2984 wiz_defined-function locations,
+            1258 strings with 18500 characters,
+and the built_in function-call counts, 91795 in all, are:
+= -- 14626
+> -- 5082
+< -- 1445
++ -- 1600
+- -- 896
+* -- 5887
+:= -- 20545
+add.period$ -- 117
+call.type$ -- 106
+change.case$ -- 742
+chr.to.int$ -- 102
+cite$ -- 109
+duplicate$ -- 1214
+empty$ -- 2867
+format.name$ -- 2584
+if$ -- 22796
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 99
+newline$ -- 335
+num.names$ -- 1278
+pop$ -- 1556
+preamble$ -- 1
+purify$ -- 848
+quote$ -- 0
+skip$ -- 0
+stack$ -- 0
+substring$ -- 3160
+swap$ -- 431
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 408
+warning$ -- 3
+while$ -- 1204
+width$ -- 0
+write$ -- 1744
+(There were 3 warnings)

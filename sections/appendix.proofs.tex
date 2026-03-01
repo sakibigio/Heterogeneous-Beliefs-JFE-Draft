@@ -1,0 +1,872 @@
+\section{Proofs}\label{app: proofs}
+
+\subsection{Derivation of the investor's modified problem}\label{app: proof_investor_problem}
+
+We start by providing a derivation of the investor's modified problem. 
+\begin{proof}
+    First, we adopt a change of variables and write the investor's problem as follows
+    \begin{equation}\label{eq: app_investor_problem}
+        V_{i,t} = \max_{\{\tilde{C}_{i,t}, h_{i,t}, B_{i,t}, S_{i,t}\}} (1-\beta) U\left(\tilde{C}_{i,t} \right) + \beta U\left( \Psi^ {-1}\left( \mathbb{E}_{i,t}\left[ \Psi\left( U^ {-1}(V_{i,t+1}\right)\right] \right)  \right),
+    \end{equation}
+    subject to 
+    \begin{equation}\label{eq: app_flow}
+            \tilde{C}_{i,t} + Q_t S_{i,t} + B_{i,t} = R_{e,t} Q_{t-1} S_{i,t-1} + R_{b,t} B_{i,t-1} + W_t h_{i,t} -\xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu},
+    \end{equation}
+    and the natural borrowing
+    \begin{equation}\label{eq: app_natural_limit}
+        (Q_t+\pi_t) S_{i,t-1} + R_{b,t} B_{i,t-1} + W_t h_{i,t} -\xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu} \geq -\mathcal{H}_{i,t}
+    \end{equation}
+    It is immediate that the optimal value of $h_{i,t}$ satisfies
+    \begin{equation}\label{eq: app_optimal_h}
+        W_t = \xi_t h_{i,t}^\nu.
+    \end{equation}
+    
+    We show next that, given $h_{i,t}$ satisfying \eqref{eq: app_optimal_h}, if the sequence $(\tilde{C}_{i,t},B_{i,t}, S_{i,t})$ satisfies \eqref{eq: app_flow} and \eqref{eq: app_natural_limit}, then     there exists $(N_{i,t}, \omega_{i,t})$ such that $(\tilde{C}_{i,t}, N_{i,t}, \omega_{i,t}) $ satisfies \eqref{eq:lom_N} and $N_{i,t} \geq 0$. 
+    Conversely, if $(\tilde{C}_{i,t}, N_{i,t}, \omega_{i,t}) $ satisfies \eqref{eq:lom_N} and $N_{i,t} \geq 0$, there exists $(B_{i,t}, S_{i,t})$ such that  $(\tilde{C}_{i,t},B_{i,t}, S_{i,t})$         satisfies \eqref{eq: app_flow} and \eqref{eq: app_natural_limit}.
+    
+    From the definition of the return on human wealth, we have that $W_t h_{i,t} -\xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu} = R_{h,t-1} \mathcal{H}_{i,t-1} - \mathcal{H}_{i,t}$, which allow us to write \eqref{eq: app_flow} and \eqref{eq: app_natural_limit} as follows:
+    \begin{equation}\label{eq: app_flow_N}
+        \tilde{C}_{i,t} + Q_t S_{i,t} + B_{i,t} + \mathcal{H}_{i,t} = N_{i,t}, \qquad \qquad N_{i,t} \geq 0.
+    \end{equation}
+    
+    % As hours are equalized across investors, then the return on human wealth is same for all investors, allowing us to write $R_{h_i,t} = R_{h,t}$.
+    We consider next the law of motion of total wealth:\small
+    \begin{align}
+        N_{i,t+1} =\left[ R_{e,t+1} \frac{Q_{t} S_{i,t}}{Q_{t} S_{i,t}+B_{i,t}+\mathcal{H}_{i,t}} + R_{b,t+1} \frac{B_{i,t}}{Q_{t} S_{i,t}+B_{i,t}+\mathcal{H}_{i,t}}+ R_{h_i,t+1} \frac{\mathcal{H}_{i,t}}{Q_{t} S_{i,t}+B_{i,t}+\mathcal{H}_{i,t}}\right] \left( N_{i,t} -\tilde{C}_{i,t}\right).
+    \end{align}\normalsize
+    
+    As markets are dynamically complete, there exists replicating portfolios $(\omega_{h_i,t}, \omega_{e,t})$ such that 
+    \begin{equation}
+        R_{k,t+1} = \omega_{k,t} R_{r,t+1} + (1-\omega_{k,t}) R_{b,t+1},
+    \end{equation}
+    for $k\in\{h_i,e\}$.
+    
+    Combining the previous two conditions, we obtain\small
+    \begin{align}
+        N_{i,t+1} =\left[ R_{r,t+1} \frac{\omega_{e,t} Q_{t} S_{i,t}+\omega_{h_i,t} \mathcal{H}_{i,t}}{N_{i,t}-\tilde{C}_{i,t}} + R_{b,t+1} \frac{B_{i,t}+(1-\omega_{e,t}) Q_t S_{i,t}+(1-\omega_{h_i,t}) \mathcal{H}_{i,t}}{N_{i,t}-\tilde{C}_{i,t}}\right] \left( N_{i,t} -\tilde{C}_{i,t}\right).
+    \end{align}\normalsize
+    
+    Using the first condition in \eqref{eq: app_flow_N} to solve for $B_{i,t}$, we obtain
+    \begin{equation}
+        N_{i,t+1} =\left[ \left(R_{r,t+1} - R_{b,t+1}\right) \omega_{i,t} + R_{b,t+1} \right] \left( N_{i,t} -\tilde{C}_{i,t}\right),
+    \end{equation}
+    where $\omega_{i,t} \equiv \frac{\omega_{e,t} Q_{t} S_{i,t}+\omega_{h_i,t} \mathcal{H}_{i,t}}{N_{i,t}-\tilde{C}_{i,t}}$.
+    
+    
+    
+    \end{proof}
+
+\subsection{Proof of Lemma~\ref{lemma: policy_functions}} \label{app: proof_policy_functions}
+
+The next lemma characterizes the value function, the consumption function, and the Euler equations of each investor.
+
+\begin{lemma}[Consumption and Euler equations]\label{lemma: policy_functions}
+The household's value function takes the form: 
+$V_{i}(N,X,s)=U\left(v_{i}(X,s)N\right),$
+where $v_{i}(X,s)$ denotes the \textit{wealth multiplier}. The consumption-wealth
+ratio $c_{i}(X,s)=\frac{\tilde{C}_{i}(N,X,s)}{N}$ and Euler equations
+for investor $i\in\mathcal{I}$ are given by
+\begin{enumerate}[(i)]
+\item Consumption-wealth ratio:
+\begin{equation}
+c_{i}(X,s)=\frac{(\beta^{-1}-1)^{\psi}\mathcal{R}_{i}(X,s)^{1-\psi}}{1+(\beta^{-1}-1)^{\psi}\mathcal{R}_{i}(X,s)^{1-\psi}},\label{eq: c_n}
+\end{equation}
+where $\mathcal{R}_{i}(X,s)\equiv\Psi^{-1}\left(\mathbb{E}_{i}\left[\Psi\left(v(X',s')R_{i}(X,s,s')\right)|X\right]\right)$.
+\item Euler equation for an asset $j\in\{r,b\}$: 
+\begin{equation}
+1=\mathbb{E}_{i}\left[\left.\Lambda_{i}(X,s,s')R_{j}(X,s,s')\right.\right],\label{eq: eulers_app}
+\end{equation}
+where, for $\theta\equiv\frac{1-\gamma}{1-\psi^{-1}}$, the investor's SDF is given by 
+\begin{equation}
+\Lambda_{i}(X,s,s')=\beta^{\theta}\left(\frac{c_{i}(\chi(X,s,s'),s')N'}{c_{i}(X,s)N}\right)^{-\frac{\theta}{\psi}}R_{i}(X,s,s')^{-(1-\theta)}.
+\end{equation}
+\item The wealth multipliers satisfy:
+\begin{equation}
+v_{i}(X,s)=U^{-1}\left[U\left(c_{i}(X,s)\right)+\beta U\left(\mathcal{R}_{i}(X,s)\left(1-c_{i}(X,s)\right)\right)\right].\label{eq:value.recursion}
+\end{equation}
+\end{enumerate}
+\end{lemma}
+% The value function here equals the static utility evaluated at $v_{i}(X,s)N$.\footnote{
+%     The wealth multiplier $v_{i}(X,s)$ is a measure of welfare: $v_{i}(X,s)N$ corresponds to the constant consumption level that achieves the investor's expected utility. 
+%     This term is analogous to \cite{lucas1987models} measure of the welfare cost of business cycles.}
+%     % ---the constant level of consumption that achieves the same utility as in the original stochastic economy.} 
+% The consumption-wealth ratio in (\ref{eq: c_n})
+% coincides with the consumption-wealth ratio of a deterministic problem
+% with return $\mathcal{R}_{i}(X,s)$. In turn, $\mathcal{R}_{i}(X,s)$
+% is a risk-adjusted portfolio return with states weighted by a multiplier,
+% $v(X',s')$, that solves the recursion in Equation (\ref{eq:value.recursion}). The effect of $\mathcal{R}_{i}$ on consumption depends
+% only on the EIS coefficient, $\psi$, that captures substitution and
+% income effects. When $\psi=1$, income and substitution effects cancel
+% out; the consumption-wealth ratio is $c_{i}(X,s)=1-\beta$. The following
+% section derives several results under this parameterization.
+
+
+\begin{proof}
+First, we verify that the value function takes the form \eqref{eq: value_function}. Given the conjecture about the value function, the Bellman equation for investor $i$ can be written as
+\begin{equation}
+    \frac{(v_i(X,s) N)^{1-\psi^{-1}}-1}{1-\psi^{-1}} = \max_{\tilde{c}_{i},\omega_{i}}  (1-\beta) \frac{(\tilde{c}_i N)^{1-\psi^{-1}}-1}{1-\psi^{-1}} + \beta \frac{\mathbb{E}_i\left[ (v_i(X',s')N')^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}}-1}{1-\psi^{-1}},
+\end{equation}
+subject to $N' = R_{i}(X,s,s') (1-\tilde{c}_i) N$ and $N'\geq 0$.
+
+The first-order conditions for the consumption-wealth ratio and the portfolio share are given by 
+\begin{align}
+    (1-\beta) \tilde{c}_i^{-\psi^{-1}} &= \beta \mathcal{R}_i(X,s)^{1-\psi^{-1}} (1-\tilde{c}_i)^{-\psi^{-1}}\\
+    0& = \mathbb{E}_i\left[ (v_i(X',s') R_{i,n}(X,s,s'))^{-\gamma} v_i(X') (R_{r}(X,s,s') - R_b(X,s))  \right]
+\end{align}
+where $\mathcal{R}_i(X,s) = \mathbb{E}_i\left[ (v_i(X',s') R_{i}(X,s,s'))^{1-\gamma} |X,s\right]^{\frac{1}{1-\gamma}}$.
+
+Given $\mathcal{R}_i(X,s)$, we can solve for the consumption-wealth ratio:
+\begin{equation}
+    \tilde{c}_i(X,s) = \frac{ (\beta^{-1}-1)^{\psi} \mathcal{R}_i(X,s)^{1-\psi}}{1+ (\beta^{-1}-1)^{\psi} \mathcal{R}_i(X,s)^{1-\psi}}.
+\end{equation}
+
+The envelope condition with respect to $N$ is given by
+\begin{equation}\label{eq: app_envelope}
+    v_i(X)^{1-1/\psi} = \beta \mathcal{R}_i(X) ^{1-1/\psi}  (1-\tilde{c}_i(X))^{-1/\psi} \Rightarrow 
+    \tilde{c}_i(X) = (1-\beta)^{\psi} v_i(X)^{1-\psi}.
+\end{equation}
+
+From the optimality condition for the risky asset, we obtain 
+\begin{equation}\label{eq: app_optimality_omega}
+    \mathbb{E}_i\left[  (v_i(X',s') R_{i}(X,s,s'))^{1-\gamma}  \right] = \mathbb{E}_i\left[  v_i(X',s')^{1-\gamma} R_{i}(X,s,s')^{-\gamma} R_j(X,s,s') \right],
+\end{equation}
+for $j \in \{r,b\}$.
+
+Raising the envelope condition \eqref{eq: app_envelope} to the power $\theta \equiv \frac{1-\gamma}{1-\psi^{-1}}$, using the definition of $\mathcal{R}_i(X)$ and condition \eqref{eq: app_optimality_omega}, we obtain
+\begin{equation}
+    1 = \mathbb{E}_i\left[ \beta^\theta \left(\frac{v_i(X',s')}{v_i(X,s')}\right)^{1-\gamma} R_{i}(X,s,s')^{-\gamma} R_j(X,s,s') (1-\tilde{c}_i(X,s))^{-\theta/\psi } \right].
+\end{equation}
+
+Using the condition $v_i(X) = (1-\beta)^{\frac{1}{1-\psi^{-1}}} \tilde{c}_i(X)^{-\frac{\psi^{-1}}{1-\psi^{-1}}}$, we obtain the Euler equations
+\begin{equation}
+    1 = \mathbb{E}_i\left[ \beta^\theta \left(\frac{\tilde{c}_i(X',s') N'}{\tilde{c}_i(X,s) N}\right)^{-\frac{\theta}{\psi}} R_{i}(X,s,s')^{-(1-\theta)} R_j(X,s,s') \right].
+\end{equation}
+
+This concludes the derivation of the consumption-wealth ratio and the Euler equations for the two assets. It remains to check that the value function takes the form \eqref{eq: value_function}, which amounts to show that $v_i(X)$ indeed does not depend on $N$. Notice that $\tilde{c}_i(X,s)$ and $\omega_i(X,s)$ do not depend on $N$. We can then write the Bellman equation as follows:
+\begin{equation}
+    v_i(X,s)^{1-\psi^{-1}} =  (1-\beta) \tilde{c}_i(X,s)^{1-\psi^{-1}} + \beta \mathbb{E}_i\left[ (v_i(X',s')R_{i}(X,s,s')(1-\tilde{c}_i(X)))^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}},
+\end{equation}
+for $\psi \neq 1$ and
+\begin{equation}
+    \log v_i(X,s) = (1-\beta) \log \tilde{c}_i(X,s) + \beta \log \mathbb{E}_i\left[ (v_i(X',s')R_{i}(X,s,s')(1-\tilde{c}_i(X,s)))^{1-\gamma}\right]^{\frac{1}{1-\gamma}}.
+\end{equation}
+which is independent of $N$, which confirms our conjecture for the value function \eqref{eq: value_function}.
+
+
+\end{proof}
+
+
+\subsection{Proof of Lemma \ref{lemma: portfolio_share}}\label{app: proof_portfolio_share}
+    
+The following lemma characterizes households' portfolio
+weight in terms of the economy-wide SDF, the market
+prices, and their beliefs.
+
+\begin{lemma}[Portfolio share]\label{lemma: portfolio_share} The
+shares of total wealth invested in the risky asset are 
+\begin{equation}
+\omega_{i}(X,s)=\frac{1}{\Delta R_{r}(X,s)}\left[\frac{\tilde{p}_{i}(X,s,H)}{p_{s,H}\Lambda(X,s,H)}-\frac{\tilde{p}_{i}(X,s,L)}{p_{s,L}\Lambda(X,s,L)}\right],\label{eq: portfolio_share}
+\end{equation}
+where $\tilde{p}_{i}(X,s,s')$ is 
+\[
+\tilde{p}_{i}(X,s,s')=\frac{(p_{ss'}^{i})^{\frac{1}{\gamma}}\left[v_{i}(\chi(X,s,s'),s')|R_{r}^{e}(X,s,s')|\right]^{\frac{1}{\gamma}-1}}{\sum_{\tilde{s}'\in\{L,H\}}(p_{s\tilde{s}'}^{i})^{\frac{1}{\gamma}}\left[v_{i}(\chi(X,s,\tilde{s}'),\tilde{s}')|R_{r}^{e}(X,s,\tilde{s}')|\right]^{\frac{1}{\gamma}-1}}.
+\]
+\end{lemma}
+Lemma \ref{lemma: portfolio_share}, describes how portfolio shares
+depend on distorted probabilities, $\tilde{p}_{i}(X,s,s')$, and
+$p_{ss'}\times\Lambda(X,s,s')$. 
+The portfolio share $\omega_{i}(X,s)$ in (\ref{eq: portfolio_share}) is increasing in $p_{sH}^{i}$. 
+This means that relatively optimistic investors hold more of the risky asset. 
+
+\begin{proof}
+Let $X' =\chi(X,s,s')$. 
+The optimal portfolio share satisfies the condition
+\begin{equation}
+    \frac{p_{sL}^i}{p_{sH}^i} \frac{v_i(\chi(X,s,L), L)^{1-\gamma} }{v_i(\chi(X,s,H), H)^{1-\gamma} }\left( \frac{\omega_i(X,s) R_r^e(X,s,L) + 1  }{\omega_i(X,s) R_r^e(X,s,H) + 1  }\right)^{-\gamma}\frac{|R_r^e(X,s,L)|}{R_r^e(X,s,H)} = 1
+\end{equation}
+
+Raising both sides to $-\frac{1}{\gamma}$, we obtain
+\begin{equation}
+    \left(\frac{p_{sL}^i}{p_{sH}^i}\right)^{-\frac{1}{\gamma}} \frac{v_i(\chi(X,s,L), L)^{1-\frac{1}{\gamma}} }{v_i(\chi(X,s,H), H)^{1-\frac{1}{\gamma}} } \frac{\omega_i(X,s) R_r^e(X,s,L) + 1  }{\omega_i(X,s) R_r^e(X,s,H) + 1 }\frac{|R_r^e(X,s,L)|^{-\frac{1}{\gamma}}}{R_r^e(X,s,H)^{-\frac{1}{\gamma}}} = 1
+\end{equation}
+
+Rearranging the expression above, we obtain
+\begin{equation}\label{app:omega_returns}
+\omega_{i}(X,s) =  \frac{\tilde{p}_i(X,s,H)}{|R_r^e(X,s,L)|} -  \frac{\tilde{p}_i(X,s,L)}{R_r^e(X,s,H)}, 
+\end{equation}
+where
+\begin{equation}
+    \tilde{p}_{i}(X,s,s') = \frac{(p_{ss'}^i)^{\frac{1}{\gamma}} \left[ v_{i}(\chi(X,s,s'),s') |R_r^e(X,s,s')| \right]^{\frac{1}{\gamma}-1}}{\sum_{s'\in \{L,H\} } (p_{ss'}^i)^{\frac{1}{\gamma}} \left[ v_{i}(\chi(X,s,s'),s') |R_r^e(X,s,s')| \right]^{\frac{1}{\gamma}-1} }.
+\end{equation}
+
+The SDF in this economy is given by
+\begin{align}
+    \Lambda(X,s,s') &= \frac{1}{p_{ss'}} \frac{1}{R_f(X,s)} \frac{|R_r(X,s,-s')-R_f(X,s)|}{\Delta R_{r}(X,s)},
+\end{align}
+where $\Delta R_r(X,s) = R_r(X,s,H) - R_r(X,s,L)$.
+
+We can then write $\omega_{i}(X,s)$  as follows
+\begin{equation}
+    \omega_i(X,s) = \frac{1}{\Delta R_r(X,s)} \left[\frac{\tilde{p}_i(X,s,H)}{p_{s,H} \Lambda(X,s,H)}  -\frac{\tilde{p}_i(X,s,L)}{p_{s,L}\Lambda(X,s,L)} \right].
+\end{equation}
+
+\paragraph{Log utility.} The formula above simplifies under the case of log utility. 
+First, we obtain $\tilde{p}_i(X,s,s') = p_{ss'}^i$. This allows us to write the portfolio share as follows:
+\begin{equation}
+    \omega_i(X,s) = \frac{p_{s,H}^i}{|R_r^e(X,s,L)|}  -\frac{p_{s,L}^i}{R_r^e(X,s,H)},
+\end{equation}
+using the expression for $\Lambda(X,s,s')$ and the fact that $R_r^e(X,s,L) < 0 < R_r^e(X,s,H)$ under log utility.
+
+We can rewrite the expression above as follows:
+\begin{equation}
+    \omega_i(X,s) = \frac{p_{s,H}^i R_r^e(X,s,H) + p_{s,L}^i R_r^e(X,s,L)}{|R_r^e(X,s,L)|R_r^e(X,s,H)} = \frac{\mathbb{E}_{i,s}[R_r^e(X,s,s')]}{|R_r^e(X,s,L)|R_r^e(X,s,H)}.
+\end{equation}
+
+The denominator in the expression above can be written as follows:
+\begin{align}
+    |R_r^e(X,s,L)|R_r^e(X,s,H) = \frac{\mathcal{L}'(X,s) - x_L}{(1-\alpha)\mathcal{L}'(X,s) } \frac{x_H - \mathcal{L}'(X,s)}{(1-\alpha)\mathcal{L}'(X,s) }.
+\end{align}
+
+The risk-neutral expectation of productivity growth can be written as follows:
+\begin{equation}
+    \mathcal{L}'(X,s) = p_{sH}^{RN}(X,s) x_H + p_{sL}^{RN}(X,s) x_L.
+\end{equation}
+where $p_{ss'}^{RN}(X,s)$ is the risk-neutral probability of state $s'$ given state $s$.
+
+Combining the previous two expressions we obtain:
+\begin{equation}
+    |R_r^e(X,s,L)|R_r^e(X,s,H)= p_{sH}^{RN}(X,s) p_{sL}^{RN}(X,s) \Delta R_r^e(X,s)^2,
+\end{equation}
+where $\Delta R_r^e(X,s) = R_r^e(X,s,H) - R_r^e(X,s,L) = \frac{\Delta x}{(1-\alpha) \mathcal{L}'(X,s)} $. 
+The expression above is the variance of the excess return on the risky asset under risk-neutral probabilities.
+
+The risk-neutral probability of state $s'$ given state $s$ is given by
+\begin{equation}
+    p_{ss'}^{RN}(X,s) =\frac{p_{ss'} \Lambda(X,s,s')}{\mathbb{E}_s[\Lambda(X,s,s')]} = \frac{R_r^e(X,s,-s')}{\Delta R_r^e(X,s)}.
+\end{equation}
+
+We can then write the risk-neutral probabilities as follows:
+\begin{equation}
+    p_{sL}^{RN}(X,s) = \frac{R_r^e(X,s,H)}{\Delta R_r^e(X,s)} = \frac{x_H - \mathcal{L}'(X,s)}{\Delta x }, \qquad 
+    p_{sH}^{RN}(X,s) = \frac{R_r^e(X,s,L)}{\Delta R_r^e(X,s)} = \frac{\mathcal{L}'(X,s)-x_L}{\Delta x }.
+\end{equation}
+
+\paragraph{Diffusion-like approximation.} To better interpret the expression for the portfolio share, it is useful to consider an approximation analogous to the continuous-time limit for diffusion processes. Given $R_{r}(X,s,s')$,  probabilities $p_{ss'}^i$ for household $i$, and a small parameter $\epsilon >0$, we can find $\mu_{i,r}(X,s)$ and $\sigma_{i,r}(X,s)$ that satisfies the conditions\small
+\begin{equation}
+    R_{r}^e(X,s,H) = \mu_{i,r}(X,s) \epsilon + \sqrt{\frac{p_{sL}}{p_{sH}}} \sigma_{i,r}(X,s) \sqrt{\epsilon}, \qquad 
+    R_{r}^e(X,s,L) = \mu_{i,r}(X,s) \epsilon - \sqrt{\frac{p_{sH}}{p_{sL}}} \sigma_{i,r}(X,s) \sqrt{\epsilon}, 
+\end{equation}\normalsize
+which gives us the expected value and variance for household $i$:
+\begin{equation}
+    \mathbb{E}_i[R_r^e(X,s,s')|X,s] = \mu_{i,r}(X,s) \epsilon, \qquad \qquad 
+    Var_i[R_r^e(X,s,s')|X,s] = \sigma^2_{i,r}(X,s) \epsilon.
+\end{equation}
+Similarly, we can write $R_b(X,s) = 1 + r_b(X,s) \epsilon$. 
+
+From Equation \eqref{app:omega_returns}, and assuming $\gamma = 1$, we obtain
+\begin{align}
+    \omega_{i}(X,s) &= R_b(X,s) \frac{p_{s,H}^i R_r^e(X,s,H) + p_{s,L}^i R_r^e(X,s,L)}{|R_r^e(X,s,L)|R_r^e(X,s,H)}\nonumber\\
+    &=(1+r_b(X,s) \epsilon) \frac{\mu_{i,r}(X,s) \epsilon}{\left(\sqrt{\frac{p_{sH}}{p_{sL}}} \sigma_{i,r}(X,s) \sqrt{\epsilon}- \mu_{i,r}(X,s) \epsilon\right)\left(\mu_{i,r}(X,s) \epsilon + \sqrt{\frac{p_{sL}}{p_{sH}}} \sigma_{i,r}(X,s) \sqrt{\epsilon} \right)},
+\end{align}
+where we used the fact that $R_r^e(X,s,L) < 0$ by no-arbitrage. 
+
+In general, $(\mu_{i,r}(X,s),\sigma_{i,r}(X,s))$ and $p_{ss'}^i$ are functions of $\epsilon$. 
+Assuming that $\mu_{i,r}(X,s) = \mathcal{O}(1)$, $\sigma_{i,r}(X,s)) = \mathcal{O}(1)$, and $p_{ss'}^i = \mathcal{O}(1)$, we can write the expression $\omega_{i}(X,s)$ as follows:\footnote{These assumptions are analogous to the ones used by e.g. \citet{merton1992continuous} to derive the continuous-time limit with diffusion processes. Allowing for rare events, $p_{ss'}^i = \mathcal{O}(\epsilon)$ for some $s'$, would lead to a jump-diffusion process.  }
+\begin{equation}
+    \omega_{i}(X,s) =  \frac{\mu_{i,r}(X,s)}{\sigma_{i,r}^2(X,s)} + \mathcal{O}(\epsilon).
+\end{equation}
+
+\end{proof}
+
+
+\subsection{Proof of Proposition \ref{prop:E_sharpe}}\label{app: proof_E_sharpe}
+\begin{proof}
+
+First, we compute the Sharpe ratio on the risky asset. 
+We will compute expectations using the objective measure, but a similar calculation gives the Sharpe ratio using the investors' subjective beliefs.
+The expected excess return is given by
+\begin{equation}
+    \mathbb{E}\left[ R^e_r(X,s,s') \right] = p_{sL} R^e_r(X,s,L) + p_{sH} R^e_r(X,s,H).
+\end{equation}
+
+The variance of excess returns is given by
+\begin{equation}
+    Var[R^e_r(X,s,s')] = p_{sL} p_{sH} \Delta R^e_r(X,s)^2.
+\end{equation}
+
+The Sharpe ratio in the risky asset is then given by
+\begin{equation}
+    \frac{\mathbb{E}[R^e_r(X,s,s')]}{\sqrt{Var[R^e_r(X,s,s')]}} = \sqrt{\frac{p_{sL}}{p_{sH}}} \frac{R_r^e(X,s,L)}{\Delta R_r^e(X,s)} + \sqrt{\frac{p_{sH}}{p_{sL}}} \frac{R_r^e(X,s,H)}{\Delta R_r^e(X,s)}.
+\end{equation}
+
+We can write the expression above in terms of the economy's SDF.
+The SDF under the objective measure can be written as
+\begin{align}
+    \Lambda(X,s,L) &= \frac{\mathbb{E}[\Lambda(X,s,s')]}{p_{sL}}  \frac{R_r^e(X,s,H)}{\Delta R_{r}^e(X,s)}, \qquad 
+    \Lambda(X,s,H)  = -\frac{\mathbb{E}[\Lambda(X,s,s')]}{p_{sH}} \frac{R_r^e(X,s,L)}{\Delta R_{r}^e(X,s)}.
+\end{align}
+
+Combining the expressions above, we obtain
+\begin{equation}
+    \frac{\mathbb{E}[R^e_r(X,s,s')]}{\sqrt{Var[R^e_r(X,s,s')]}} = \sqrt{p_{sL} p_{sH}} \frac{\Lambda(X,s,L) - \Lambda(X,s,H)}{\mathbb{E}[\Lambda(X,s,s')]}.
+\end{equation}
+
+We consider next how the Sharpe ratio affects the risk-neutral expectation of future productivity growth.
+The risk-neutral expectation of productivity is given by
+\begin{equation}
+    \mathbb{E}^Q\left[ x_{t+1} \right] = p_{sL} \frac{\Lambda(X,s,L)}{\mathbb{E}[\Lambda(X,s,s')]} x_L + p_{sH} \frac{\Lambda(X,s,H)}{\mathbb{E}[\Lambda(X,s,s')]} x_H.
+\end{equation}
+
+The difference between the expected value of productivity under the physical measure and the risk-neutral measure is given by
+\begin{equation}
+    \mathbb{E}[x_{t+1}] - \mathbb{E}^Q[ x_{t+1} ] =  p_{sL} \frac{\mathbb{E}[\Lambda(X,s,s')]-\Lambda(X,s,L)}{\mathbb{E}[\Lambda(X,s,s')]} x_L + p_{sH} \frac{\mathbb{E}[\Lambda(X,s,s')]-\Lambda(X,s,H)}{\mathbb{E}[\Lambda(X,s,s')]} x_H.
+\end{equation}
+
+Rearranging the expression above, we obtain
+\begin{equation}
+    \mathbb{E}[x_{t+1}] - \mathbb{E}^Q[ x_{t+1} ] = p_{sL}p_{sH} \frac{\Lambda(X,s,L)-\Lambda(X,s,H)}{\mathbb{E}[\Lambda(X,s,s')]} \Delta x,
+\end{equation}
+where $\Delta x = x_H-x_L$.
+
+Using the expression for the Sharpe ratio, we obtain
+\begin{equation}
+    \mathbb{E}^Q[x_{t+1}] = \mathbb{E}[x_{t+1}] - \sqrt{p_{sL}p_{sH}}     \frac{\mathbb{E}[R^e_r(X,s,s')]}{\sqrt{Var[R^e_r(X,s,s')]}} \Delta x.
+\end{equation}
+Using the fact that $\mathcal{L}'(X_t, s_t) = \mathbb{E}^Q_t[x_{t+1}]$ and $\sigma_s[x_{t+1}] = \sqrt{p_{sL}p_{sH}} \Delta x$, we obtain the result of Proposition \ref{prop:E_sharpe}.
+\end{proof}
+
+\subsection{Proof of Proposition \ref{prop:asset_prices}}\label{app: proof_asset_prices}
+
+\begin{proof} We start by deriving the process for returns.  From the market clearing condition for goods, we obtain
+\begin{equation}
+    \frac{x_s h(\mathcal{L})^\alpha - \xi \frac{h(\mathcal{L})^{1+\nu}}{1+\nu} }{P(X,s)} = 1-\beta
+\end{equation}
+
+The return on the surplus claim is given by
+\begin{equation}
+    R_{p}(X,s,s') = \frac{x_s P(\chi(X,s,s'),s')}{P(X,s) - \left( x_s h(\mathcal{L})^\alpha - \xi \frac{h(\mathcal{L})^{1+\nu}}{1+\nu}\right)} =
+    \frac{x_s}{\beta} \frac{x_{s'} h(\mathcal{L}'(X,s))^\alpha - \xi \frac{h(\mathcal{L}'(X,s))^{1+\nu}}{1+\nu} }{x_{s} h(\mathcal{L})^\alpha - \xi \frac{h(\mathcal{L})^{1+\nu}}{1+\nu}}.
+\end{equation}
+
+Using the conditions in \eqref{eq: hours_wages}, we can rewrite the expression as follows
+\begin{equation}
+    R_{p}(X,s,s') = \frac{x_s}{\beta} \frac{x_{s'} \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} \mathcal{L}^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}^{\frac{1+\nu}{1+\nu-\alpha}} }.
+\end{equation}
+
+Note that the denominator in the expression above is positive if and only if $\mathcal{L} < \frac{1+\nu}{\alpha} x_s$. 
+A sufficient condition is given by $\alpha x_H < x_L$, as shown below
+\begin{equation}
+    \mathcal{L} \leq x_H < \frac{x_L}{\alpha} < \frac{1+\nu}{\alpha} x_s,
+\end{equation}
+and, similarly, this condition guarantees that the numerator is also positive.
+
+\paragraph{Interest rate.} The interest rate satisfies the condition $R_b(X,s) = \mathbb{E}\left[ \frac{\Lambda(X,s,s')}{\mathbb{E}[\Lambda(X,s,s')]} R_p(X,s,s') \right]$, so $R_b(X,s)$ is given by 
+\begin{equation}
+    R_{b}(X,s) = \left(1 - \frac{\alpha}{1+\nu}\right)\frac{x_s}{\beta} \frac{ \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} \mathcal{L}^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}^{\frac{1+\nu}{1+\nu-\alpha}} },
+\end{equation}
+using the fact that $\mathbb{E}\left[ \frac{\Lambda(X,s,s')}{\mathbb{E}[\Lambda(X,s,s')]} x_{s'} \right] = \mathcal{L}'(X,s)$.
+
+The expression above is increasing in $\mathcal{L}'(X,s)$, decreasing in $x_s$, and it is increasing in $\mathcal{L}$ for $s = L$.
+
+\paragraph{Risk premium.} The risk asset's excess return is given by
+\begin{equation}
+    \frac{R_p(X,s,s')}{R_b(X,s)} = \frac{1}{1-\frac{\alpha}{1+\nu}} \frac{x_{s'} - \frac{\alpha}{1+\nu} \mathcal{L}'(X,s)}{\mathcal{L}'(X,s)}.
+\end{equation}
+
+The conditional risk premium is then given by
+\begin{equation}
+    \mathbb{E}_s[R_{p}^e(X,s,s')] = 
+     \frac{1}{1-\frac{\alpha}{1+\nu}} \frac{\mathbb{E}_s[x_{s'}] -\mathcal{L}'(X,s)}{\mathcal{L}'(X,s)},
+\end{equation}
+given the definition $R_p^e(X,s,s') \equiv \frac{R_p(X,s,s') - R_b(X,s)}{R_b(X,s)}$.
+
+\end{proof}
+
+\subsection{Proof of Proposition \ref{prop: risk} and Corollary \ref{cor: Eprime}}\label{app: proof_risk}
+
+\begin{proof} 
+    We start by deriving the expression for the SDF. From the no-arbitrage conditions, we obtain
+\begin{equation}
+    \Lambda(X,s,s') = \frac{1}{p_{ss'}} \frac{|R_r^e(X,s,-s')|}{\Delta R_r(X,s)}.
+\end{equation}
+
+The excess return on the risky asset and the return difference are given by
+\begin{equation}
+    R_r^e(X,s,s') = \frac{x_{s'} -\mathcal{L}'(X,s)}{(1-\alpha)\mathcal{L}'(X,s)}, \qquad \qquad
+    \Delta R_r(X,s)  = \frac{R_f(X,s) \Delta x}{(1-\alpha) \mathcal{L}'(X,s)}.
+\end{equation}
+
+Combining the previous two expressions, we obtain
+\begin{equation}
+    \Lambda(X,s,s') = \frac{1}{p_{ss'}} \frac{|x_{-s'} - \mathcal{L}'(X,s)|}{R_f(X,s) \Delta x}.
+\end{equation}
+
+\paragraph{Portfolio share.} Under log utility, the SDF for investor $i$ is given by
+\begin{equation}
+    \Lambda_i(X,s,s') = \beta \left( R_{i}(X,s,s') (1- (1-\beta)) \right)^{-1} = R_i(X,s,s')^{-1},
+\end{equation}
+using the fact that consumption growth equals the growth rate of the household's net worth. 
+
+Using the fact that $R_i(X,s,s') = R_f(X,s) \left[1 + \omega_i(X,s) R_r^e(X,s,s') \right]$, and the expression linking the individual and economy-wide SDFs, we obtain
+\begin{equation}
+    \frac{1}{R_f(X,s)} \frac{1}{1+\omega_i(X,s) R_r^e(X,s,s')} = \frac{1}{p_{ss'}^i} \frac{|x_{-s'} - \mathcal{L}'(X,s)|}{R_f(X,s) \Delta x}.
+\end{equation}
+
+Taking the ratio for $s' = H$ and $s' = L$, we obtain
+\begin{equation}
+    \frac{1+\omega_i(X,s) R_r^e(X,s,L)}{1+\omega_i(X,s) R_r^e(X,s,H)} = \frac{p_{sL}^i}{p_{sH}^i} \frac{\mathcal{L}'(X,s) - x_L}{x_H-\mathcal{L}'(X,s)}.
+\end{equation}
+
+Rearranging the expression above, we obtain
+\begin{equation}
+    p_{sH}^i(x_H-\mathcal{L}'(X,s))\left[1+\omega_i(X,s) R_r^e(X,s,L)\right] = \left[ 1+\omega_i(X,s) R_r^e(X,s,H)\right]p_{sL}^i(\mathcal{L}'(X,s) - x_L).
+\end{equation}
+Solving for $\omega_i(X,s)$, we obtain
+\begin{equation}
+    \omega_i(X,s) = \frac{p_{sH}^i(x_H-\mathcal{L}'(X,s)) +p_{sL}^i(x_L - \mathcal{L}'(X,s))}{        p_{sH}^i(\mathcal{L}'(X,s) - x_H) R_r^e(X,s,L) + 
+    p_{sL}^i(\mathcal{L}'(X,s) - x_L) R_r^e(X,s,H)} 
+\end{equation}
+
+Using the expression for $R_r^e(X,s,s')$, we obtain
+\begin{equation}
+    \omega_i(X,s) = \frac{p_{sH}^i \frac{x_H-\mathcal{L}'(X,s)}{(1-\alpha) \mathcal{L}'(X,s)} +p_{sL}^i \frac{x_L - \mathcal{L}'(X,s)}{(1-\alpha) \mathcal{L}'(X,s)} }{
+        \frac{x_H-\mathcal{L}'(X,s)}{(1-\alpha) \mathcal{L}'(X,s)} \frac{\mathcal{L}'(X,s)-x_L}{(1-\alpha) \mathcal{L}'(X,s)} 
+} = \frac{\mathbb{E}_{i,s}[R_r^e(X,s,s')]}{Var_{RN,s}[R_r^e(X,s,s')]}.
+\end{equation}
+
+We can write the portfolio share as follows:
+\begin{equation}
+    \omega_i(X,s) = (1-\alpha) \mathcal{L}'(X,s) \frac{p_{sH}^i(x_H-\mathcal{L}'(X,s)) +p_{sL}^i(x_L - \mathcal{L}'(X,s))}{(x_H - \mathcal{L'}(X,s)) (\mathcal{L}'(X,s) - x_L)}
+\end{equation}
+
+
+
+
+\paragraph{Demand for risk.} The demand for risk in this economy is given by
+\begin{equation}
+    \sum_{i=1}^I \eta_i \sigma_s[R_{i,n}(X,s,s')] =     \sqrt{p_{sL} p_{sH}} \left[\frac{p_{sH}(X,s)}{p_{sH}\Lambda(X,s,H)}  -\frac{p_{sL}(X,s)}{p_{sL}\Lambda(X,s,L)} \right],
+\end{equation}
+where $p_{ss'}(X,s) = \sum_{i=1}^I \eta_{i,t} p_{ss'}^i$, using the fact that $\sigma_s[R_r(X,s,s')] = \sqrt{p_{sH} p_{sL}} \Delta R_r(X,s)$ and the results in Lemma~\ref{lemma: portfolio_share}.
+
+Using the expression for the SDF, the demand for risk can be written as\small
+\begin{equation}
+\sum_{i=1}^I \eta_i \sigma_s[R_{i,n}(X,s,s')] = \sigma_s[x_{s'}]\frac{\frac{1+\nu-\alpha}{1+\nu}\frac{x_s}{\beta} }{x_{s} \mathcal{L}^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}^{\frac{1+\nu}{1+\nu-\alpha}} } \left[\frac{p_{sH}(X,s) \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{\mathcal{L}'(X,s) - x_L}  -\frac{p_{sL}(X,s)\mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_H-\mathcal{L}'(X,s)} \right],    
+\end{equation}\normalsize
+given $\sigma_s[x_{s'}] = \sqrt{p_{sL} p_{sH}} \Delta x$.
+
+The first term inside brackets in the expression above is decreasing in $\mathcal{L}'(X,s)$ if and only if the following condition holds
+\begin{equation}
+    \frac{1+\nu}{1+\nu-\alpha} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}-1} (\mathcal{L}'(X,s)-x_L) - \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}} < 0 \iff \mathcal{L}'(X,s) < \frac{x_L}{\alpha},
+\end{equation}
+which holds, given that $\mathcal{L}'(X,s) \leq x_H < \frac{x_L}{\alpha}$.
+
+Therefore, the demand for risk is decreasing in $\mathcal{L}'(X,s)$. 
+As $\mathcal{L}'(X,s)$ is decreasing in the Sharpe ratio of the risky asset, then the demand for risk is increasing in the Sharpe ratio.
+
+\paragraph{Supply of risk.} The volatility of returns is given by
+\begin{equation}
+    \sigma_s[R_p(X,s,s')] = \frac{x_s}{\beta} \frac{\sigma_s[x_{s'}] \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha}}{x_{s} \mathcal{L}^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}^{\frac{1+\nu}{1+\nu-\alpha}} },
+\end{equation}
+which is increasing in $\mathcal{L}'(X,s)$ and decreasing in $x_s$. 
+
+% Note that we can write the coefficient of variation of returns as follows:
+% \begin{equation}
+%     \frac{\sigma_s[R_p(X,s,s')]}{\mathbb{E}_s[R_p(X,s,s')]} = \frac{\sigma_s[x']}{\mathbb{E}_s[x_{s'}]} \frac{\mathbb{E}_s[x_{s'}] \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} }{\mathbb{E}_s[x_{s'}] \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}} },
+% \end{equation}
+% so the presence of labor amplifies the volatility of returns. 
+
+\paragraph{Equilibrium.} Combining supply and demand for risk, we obtain\small
+\begin{equation}
+ \frac{x_s}{\beta} \frac{\sigma_s[x_{s'}] \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha}}{x_{s} \mathcal{L}^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}^{\frac{1+\nu}{1+\nu-\alpha}} } =  
+ \frac{1+\nu-\alpha}{1+\nu}\frac{x_s}{\beta} \frac{\sigma_s[x_{s'}]\mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} \mathcal{L}^\frac{\alpha}{1+\nu-\alpha} - \frac{\alpha}{1+\nu} \mathcal{L}^{\frac{1+\nu}{1+\nu-\alpha}} } \left[\frac{p_{sH}(X,s) }{\mathcal{L}'(X,s) - x_L}  -\frac{p_{sL}(X,s)}{x_H-\mathcal{L}'(X,s)} \right].
+\end{equation}\normalsize
+
+The left-hand side is strictly increasing in $\mathcal{L}'(X,s)$, while the right-hand side is strictly decreasing in $\mathcal{L}'(X,s)$ in the interval $x_L < \mathcal{L}'(X,s) < x_H$. 
+The right-hand side converges to $+\infty$ as $\mathcal{L}'(X',s)$ approaches $x_L$ from above, and it converges to $-\infty$ as $\mathcal{L}'(X,s)$ approaches $x_H$ from below. 
+Therefore, there exists a unique value of $\mathcal{L}'(X,s)$ solving the equation above in this interval. 
+Note that the two curves intersect again for $\mathcal{L}'(X,s) > x_H$, which can be seen by noticing that the right-hand is decreasing in $\mathcal{L}'(X,s)$ for $\mathcal{L}'(X,s) > x_H$ and converges to $+\infty$ as $\mathcal{L}'(X,s)$ approaches $x_H$ from above.
+Therefore, the economically relevant solution corresponds to the smallest of the two points of intersection.
+
+
+Rearranging the expression above, we obtain
+\begin{equation}
+    1 = \frac{1+\nu-\alpha}{1+\nu} \mathcal{L}'(X,s) \frac{p_{sH}(X,s) (x_H-\mathcal{L}'(X,s))- p_{sL}(X,s)(\mathcal{L}'(X,s) - x_L) }{(\mathcal{L}'(X,s) - x_L) (x_H-\mathcal{L}'(X,s))}.
+\end{equation}
+
+We then obtain a quadratic equation for $\mathcal{L}'(X,s)$:\small
+\begin{equation}
+    \frac{\alpha}{1+\nu} \mathcal{L}'(X,s)^2  - \left[ \left( 1 - \frac{1+\nu-\alpha}{1+v} p_{sH}(X,s) \right) x_H + \left( 1 - \frac{1+\nu-\alpha}{1+v} p_{sL}(X,s) \right) x_L  \right] \mathcal{L}'(X,s) + x_L x_H = 0
+\end{equation}\normalsize
+
+The equilibrium value is given by the smallest root of the equation above. 
+
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{prop:real_effects_beliefs}}
+
+\begin{proof}
+Consider the case where labor can be chosen conditional on the current productivity level.
+In this case, hours and detrended profits are given by
+\begin{equation}
+    h(X,s) = \left( \frac{\alpha x_s}{\xi} \right)^{\frac{1}{1-\alpha}},\qquad
+    \pi(X,s) = (1-\alpha) \left( \frac{\alpha}{\xi} \right)^{\frac{\alpha}{1-\alpha}} x_s^{\frac{1}{1-\alpha}}.
+\end{equation}
+Notice that hours and profits are independent of beliefs. 
+
+Under log utility, returns for the risky asset and the risk-free asset are given by
+\begin{equation}
+    R_r(X,s,s') = \frac{x_s}{\beta} \frac{\tilde{x}_{s'}}{\tilde{x}_s}, \qquad \qquad 
+    R_f(X,s) =\frac{x_s}{\beta}\frac{\tilde{\mathcal{L}}'(X,s)}{\tilde{x}_{s}},
+\end{equation}
+where $\tilde{\mathcal{L}}'(X,s) \equiv \mathbb{E}\left[ \tilde{x}_{s'} \right]$ and $\tilde{x}_{s} = x_{s'}^{\frac{1}{1-\alpha}}$.
+
+The excess return on the risky asset is then given by
+\begin{equation}
+    R_r^e(X,s,s') = \frac{\tilde{x}_{s'} - \tilde{\mathcal{L}}(X,s)}{\tilde{\mathcal{L}}(X,s)}.
+\end{equation}
+
+The portfolio share is given by
+\begin{equation}
+    \omega_i(X,s) = p_{sH}^i\frac{\tilde{\mathcal{L}}'(X,s)}{\tilde{\mathcal{L}}'(X,s) - \tilde{x}_L}  -p_{sL}^i\frac{\tilde{\mathcal{L}}'(X,s)}{x_H-\tilde{\mathcal{L}}'(X,s)}.
+\end{equation}
+
+The market clearing for the risky asset implies
+\begin{equation}
+    \overline{p}_{sH}^m \frac{\tilde{\mathcal{L}}'(X,s)}{\tilde{\mathcal{L}}'(X,s) - \tilde{x}_L} = 1 + \overline{p}_{sL}^m\frac{\tilde{\mathcal{L}}'(X,s)}{x_H-\tilde{\mathcal{L}}'(X,s)}.
+\end{equation}
+The left-hand side is strictly decreasing in $\tilde{\mathcal{L}}'(X,s)$, it approaches $+\infty$ as $\tilde{\mathcal{L}}'(X,s)$ approaches $x_L$ from above, and it approaches $\frac{\overline{p}_{sH}^m x_H}{x_H - x_L}$ as $\tilde{\mathcal{L}}'(X,s)$ approaches $x_H$ from below.
+The right-hand side is strictly increasing in $\tilde{\mathcal{L}}'(X,s)$, it approaches $+\infty$ as $\tilde{\mathcal{L}}'(X,s)$ approaches $x_H$ from below, and it approaches $\frac{\overline{p}_{sL}^m x_L}{x_H - x_L}$ as $\tilde{\mathcal{L}}'(X,s)$ approaches $x_L$ from above.
+Hence, there exists a unique value of $\tilde{\mathcal{L}}'(X,s)$ solving the equation above.
+
+Therefore, as market beliefs become more optimistic, the interest rate increases and the risk premium decreases.
+However, there is no effect on labor demand or return volatility. 
+\end{proof}
+
+\subsection{Proof of Proposition \ref{prop: dynamics_beliefs}}\label{app: proof_dynamics_beliefs}
+
+\begin{proof} The portfolio share of investor $i$ is given by
+    \begin{equation}
+        \omega_i(X,s) = \frac{p_{s,H}^i}{|R_r^e(X,s,L)|}  -\frac{p_{s,L}^i}{R_r^e(X,s,H)},
+    \end{equation}
+    The return on the investor's portfolio is given by
+    \begin{align}
+        R_{i}(X,s,s') &= R_f(X,s) \left[ 1 + \omega_i(X,s) R_r^e(X,s,s') \right] \\
+        &= R_f(X,s) \left[1 + (x_{s'} - \mathcal{L}'(X,s)) \left( \frac{p_{sH}^i}{\mathcal{L}'(X,s)-x_L}  -\frac{p_{sL}^i}{x_H-\mathcal{L}'(X,s)} \right) \right].
+    \end{align}
+    
+We can write the expression above as follows 
+\begin{equation}
+    R_i(X,s,L) = \frac{\Delta x R_f(X,s)}{x_H - \mathcal{L}'(X,s)} p_{sL}^i, \qquad  \qquad 
+    R_i(X,s,h) = \frac{\Delta x R_f(X,s)}{\mathcal{L}'(X,s) - x_L} p_{sH}^i.
+\end{equation}
+
+\paragraph{Wealth share dynamics.} The share of wealth of investor $i$ is given by
+\begin{equation}
+    \eta_i'(X,s,s') = \frac{\eta_i R_{i,n}(X,s,s')}{\sum_{j=1}^I\eta_j R_{j,n}(X,s,s')} = \frac{\eta_i p_{ss'}^i}{\sum_{j=1}^I \eta_j p_{ss'}^j} = \eta_i \frac{p^i_{ss'}}{p_{ss'}(X)}.
+\end{equation}
+
+\paragraph{The case of arbitrary risk aversion.} Consider the case of unit-EIS, so the consumption-wealth ratio is still given by $c_i(X,s) = 1-\beta$, but arbitrary risk aversion $\gamma > 0$. 
+In this case, Propostion~\ref{prop: risk} still holds. 
+Moreover, $\tilde{\eta}_i(X,s) = \eta_i$. 
+
+As shown in Appendix~\ref{app: proof_portfolio_share}, the portfolio share of investor $i$ is given by
+\begin{equation}
+    \omega_{i}(X,s) =  \frac{\tilde{p}_i(X,s,H)}{|R_r^e(X,s,L)|} -  \frac{\tilde{p}_i(X,s,L)}{R_r^e(X,s,H)}, 
+    \end{equation}
+    where
+    \begin{equation}
+        \tilde{p}_{i}(X,s,s') = \frac{(p_{ss'}^i)^{\frac{1}{\gamma}} \left[ v_{i}(\chi(X,s,s'),s') |R_r^e(X,s,s')| \right]^{\frac{1}{\gamma}-1}}{\sum_{s'\in \{L,H\} } (p_{ss'}^i)^{\frac{1}{\gamma}} \left[ v_{i}(\chi(X,s,s'),s') |R_r^e(X,s,s')| \right]^{\frac{1}{\gamma}-1} }.
+    \end{equation}    
+
+A derivation similar to the one above shows that the wealth share of investor $i$ evolves according to
+\begin{equation}
+    \eta_i'(X,s,s') = \eta_i \frac{\tilde{p}^i_{ss'}}{\tilde{p}^m_{ss'}(X,s)},
+\end{equation}
+where $\tilde{p}^m_{ss'}(X,s) \equiv \sum_{j=1}^I \eta_j \tilde{p}^j_{ss'}(X,s)$.
+Hence, $\frac{\partial \eta_i'(X,s,s')}{\partial \eta_i}  > 0$.
+
+% \paragraph{Long-run wealth dynamics.} Note that the wealth share is a (bounded) martingale under market beliefs:
+% \begin{equation}
+%     p_{sH}(X) \eta_{i}'(X,s,H) + p_{sL}(X) \eta_{i}'(X,s,L) = \eta_i (p_{sH}^i + p_{sL}^i) = \eta_i.
+% \end{equation}
+
+% Therefore, from the martingale convergence theorem, the wealth share of investor $i$ converges.
+% This implies that, for every $\epsilon$, there exits $T$ such that 
+% \begin{equation}
+%     |\eta_{i,T+1} - \eta_{i,T}| < \epsilon \iff \eta_{i} \left| \frac{p_{ss'}^i - p_{ss'}(X)  }{p_{ss'}(X)} \right| < \epsilon,
+% \end{equation}
+% almost surely, where the economy is at the state $(X,s)$ at period $T$.
+
+% This implies that either $\eta_i$ converges to zero or $p_{ss'}^i$ converges to $p_{ss}(X)$.
+% If $p_{ss'}^i \neq p_{ss'}^j$ for any $i,j\in \mathcal{I}$, $i\neq j$, then the wealth share of a single investor converges to one.  
+
+
+
+% By definition, $p_{sH}^i > p_{sH}(X)$ for an optimistic investor in state $(X,s)$, then the wealth share of optimists increase in the good state and decline in the bad state. 
+% This implies that market beliefs evolve according to
+% \begin{equation}
+%     p_{s'H}(X') =\sum_{i=1}^I \eta_i' p_{s'H}^i = \sum_{i=1}^I \eta_i \frac{p^i_{ss'}}{p_{ss'}(X)} p_{s'H}^i,
+% \end{equation}
+% where
+% \begin{equation}
+%     p_{HH}(X') =\sum_{i=1}^I \eta_i \frac{p_{sH}^i}{p_{sH}(X)} p_{HH}^i \geq p_{sH}(X), \qquad
+%     p_{LH}(X') =\sum_{i=1}^I \eta_i \frac{p_{sL}^i}{p_{sL}(X)} p_{LH}^i \leq p_{sH}(X).
+% \end{equation}
+
+% This implies that the relative wealth share for investors $i$ and $j$ is given by
+% \begin{equation}
+%     \frac{\eta_i'(X,s,s')}{\eta_j'(X,s,s')} = \frac{\eta_i}{\eta_j} \frac{p_{ss'}^i}{p_{ss'}^j}.
+% \end{equation}
+
+% Suppose investor $j$ beliefs coincides with the objective measure. Then, the ratio above is a martingale:
+% \begin{equation}
+%     \mathbb{E}_s\left[ \frac{\eta_i'}{\eta_j'} \right] = p_{sL} \frac{\eta_i}{\eta_j} \frac{p_{sL}^i}{p_{sL}} + p_{sH} \frac{\eta_i}{\eta_j} \frac{p_{sH}^i}{p_{sH}} = \frac{\eta_i}{\eta_j}.
+% \end{equation}
+
+% If the wealth of investor $j$ is bounded away from zero, then the above martingale is bounded and, from the martingale convergence theorem, it converges almost surely. 
+\end{proof}
+
+\subsection{Proof of Corollary \ref{cor:het_dynamics}}\label{app: proof_cor_het_dynamics}
+\begin{proof}
+Consider an economy that starts at $s = H$ with wealth distribution $\{\eta_i\}_{i=1}^I$ which switches to the low state after either one period (early transition) or two periods (late transition). 
+To simplify notation, we write $p_{ss'}(X)$ to denote $\overline{p}^m_{ss'}(X,s)$.
+
+Market beliefs on the low state in the case of an early transition are given by
+\begin{equation}
+    p_{LH}(X') = \sum_{i=1}^I \eta_i' p_{LH}^i = \sum_{i=1}^I \eta_i \frac{p_{HL}^i}{p_{HL}(X)} p_{LH}^i,
+\end{equation}
+and market beliefs on the low state in the case of a late transition are given by
+\begin{equation}
+    p_{LH}(X'') = \sum_{i=1}^I \eta_i'' p_{LH}^i = \sum_{i=1}^I \eta_i' \frac{p_{HL}^i}{p_{HL}(X')} p_{LH}^i,
+\end{equation}
+where $\eta_i' = \eta_i \frac{p_{HH}^i}{p_{HH}(X)}$. 
+
+
+Note that if investor $i$ is optimistic,  $p_{HH}^i > p_{HH}(X)$, then $\eta_i' > \eta_i$ and $p_{HL}^{-i}(X') \leq p_{HL}^{-i}(X) $, where $p_{HL}^{-i}(X) \equiv \frac{1}{1-\eta_i}\sum_{j\neq i} \eta_j p_{HL}^j$. 
+Hence, the following inequality holds:
+\begin{equation}
+  \eta_i' \frac{p_{HL}^i}{p_{HL}(X')} =  \frac{\eta_i' p_{HL}^i}{\eta_i' p_{HL}^i + (1-\eta_i') p_{HL}^{-i}(X') } > 
+  \frac{\eta_i p_{HL}^i}{\eta_i p_{HL}^i + (1-\eta_i) p_{HL}^{-i}(X) } =  \eta_i \frac{p_{HL}^i}{p_{HL}(X)}. 
+\end{equation}
+
+Therefore, there is more weight on the beliefs of investors who were optimistic in the original state in the case of a late transition. In the case of rank-preserving beliefs, these agents are also optimistic in the low state, so the market is more optimistic under a late transition:
+\begin{equation}
+    p_{LH}(X'') > p_{LH}(X'). 
+\end{equation}
+
+Alternatively, the market is now more pessimistic after a late transition in the case of rank-alternating beliefs:
+\begin{equation}
+    p_{LH}(X'') < p_{LH}(X'). 
+\end{equation}
+
+A similar argument shows that, under rank-preserving beliefs, the market is more pessimistic after a late transition when the economy starts at state $s = L$:
+\begin{equation}
+    p_{HH}(X'') = \sum_{i=1}^I \eta_i' \frac{p_{LH}^i}{p_{LH}(X')} p_{HH}^i < \sum_{i=1}^I \eta_i \frac{p_{LH}^i}{p_{LH}(X)} p_{HH}^i= p_{HH}(X),
+\end{equation}
+where $\eta_i' = \eta_i \frac{p_{LL}^i}{p_{LL}(X)}$. Alternatively, the market is more optimistic under a late transition in the case of rank-alternating beliefs.
+
+\end{proof}
+
+
+\subsection{Proof of Lemma~\ref{lem:trading}}\label{app: proof_lemma_trading}
+\begin{proof}    
+    Turnover is given by
+    \begin{equation}
+        \tau(X,s, s') = \frac{1}{2} \sum_{i=1}^I | \omega_i(X', s') \eta_i'(X,s,s')  - \omega_i(X,s) \eta_i |,
+    \end{equation}
+    where $X' = \chi(X,s,s')$ and $\eta'_i(X,s,s') = \eta_i \frac{p_{ss'}^i}{\overline{p}_{ss'}^m(X,s)} $.
+    
+    \paragraph{Solving for the portfolio share.} Using the expression for the economy-wide SDF and Equation \eqref{eq: portfolio_share}, we can write the portfolio share as follows
+    \begin{equation}\label{app:omega_returns}
+    \omega_{i}(X,s) =  \frac{p^i_{sH}}{|R_r^e(X,s,L)|} -  \frac{p^i_{sL}}{R_r^e(X,s,H)}. 
+    \end{equation}
+
+    The excess return on the risky asset can be written as follows:\small
+    \begin{equation}
+        R_{r}^e(X,s,s') =  \frac{x_{s'} -\mathcal{L}'(X,s)}{(1 - \alpha) \mathcal{L}'(X,s) }.
+    \end{equation}\normalsize
+
+    Combining the previous expressions, we obtain
+    \begin{equation}
+    \omega_{i}(X,s) = (1-\alpha) \left[p_{sH}^i \frac{ \mathcal{L}'(X,s)}{\mathcal{L}'(X,s) - x_L}- p_{sL}^i \frac{\mathcal{L}'(X,s)}{x_H - \mathcal{L}'(X,s)} \right],
+    \end{equation}
+    which is strictly decreasing in $\mathcal{L}'(X,s)$ and $\omega_{i}(X,s)  > 1$ if and only if $p_{sH}^i > \overline{p}^m_{sH}(X,s)$. 
+
+
+    Turnover is then given by
+    \begin{equation}\footnotesize
+        \tau(X,s,s') = (1-\alpha) \sum_{i=1}^I \eta_i \left\lvert \left(  \frac{ p_{s'H}^i \mathcal{L}'(X',s')}{\mathcal{L}'(X',s') - x_L}-  \frac{p_{s'L}^i\mathcal{L}'(X',s')}{x_H - \mathcal{L}'(X',s')}\right) \frac{p_{ss'}^i}{\overline{p}_{ss'}^m(X,s)}   - \left(  \frac{p_{sH}^i \mathcal{L}'(X,s)}{\mathcal{L}'(X,s) - x_L}-  \frac{p_{sL}^i\mathcal{L}'(X,s)}{x_H - \mathcal{L}'(X,s)}\right)  \right\rvert 
+    \end{equation}\normalsize    
+
+    \paragraph{Perturbation.} It is useful to parameterize the dispersion in beliefs as follows:
+\begin{equation}
+    p_{ss'}^i = p_{ss'}^* + \epsilon \delta_{ss'}^i,
+\end{equation}
+where $\delta_{sH}^i + \delta_{sL}^i = 0$. 
+
+Notice that all equilibrium variables now depend on $\epsilon$. For instance, the average probability of the high state can be written as
+\begin{equation}
+    \overline{p}_{sH}^m(X;\epsilon) = p_{sH}^* + \delta_{sH}(X,s) \epsilon  + \mathcal{O}(\epsilon^2),
+\end{equation}
+where $\delta_{sH}(X,s) \equiv \sum_{i=1} ^I\eta_i \delta_{sH}^i$. 
+
+The risk-neutral expectation of productivity growth is a function of market beliefs, $\mathcal{L}'(X,s; \epsilon) = f(\overline{p}^m_{sH}(X))$, where $f(p)$ satisfies the condition\small
+\begin{equation}
+    1 = (1-\alpha) \left[ p \frac{f(p)}{f(p)-x_L} - (1-p) \frac{f(p)}{x_H - f(p)}  \right] \Rightarrow 
+    f'(p) = \frac{\frac{f(p)}{f(p)-x_L} + \frac{f(p)}{x_H - f(p)}}{p \frac{x_L}{(f(p) - x_L)^2} + (1-p) \frac{x_H}{(x_H-f(p))^2}}.
+\end{equation}\normalsize
+
+Let $\mathcal{L}^*(X,s) \equiv \mathcal{L}'(X,s;0)$ denote the value of $\mathcal{L}'(X,s)$ when $\epsilon = 0$. In this case, we can drop the dependence on $X$ and simply write $\mathcal{L}^*(s)$, as $\mathcal{L}'(X,s)$ would only depend on the state $s$. We can then expand $\mathcal{L}'(X,s;\epsilon)$ in $\epsilon$ to obtain:
+\begin{equation}
+    \mathcal{L}'(X,s;\epsilon) = \mathcal{L}^*(s) + \tilde{\mathcal{L}}(X,s) \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+where $\tilde{\mathcal{L}}(X,s) = f'(p_{sH}^*) \sum_{i=1}^I \eta_i \delta_{sH}^i$, where $f'(\cdot) > 0$. 
+
+We can then write the portfolio share of investor $i$ as follows
+\begin{equation}
+    \omega_{i}(X,s; \epsilon) = 1 +\left[ \theta_{\omega,1}(s) \delta_{sH}^i - \theta_{\omega,2}(s) \delta_{sH}(X) \right] \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+where $\theta_{\omega,1}(s) > 0$ and $\theta_{\omega,2}(s) > 0$
+\begin{align}
+    \theta_{\omega,1}(s) &\equiv (1-\alpha)\left(  \frac{\mathcal{L}^*(s)}{\mathcal{L}^*(s) - x_L} + \frac{\mathcal{L}^*(s)}{x_H-\mathcal{L}^*(s)} \right)\\
+    \theta_{\omega,2}(s) &\equiv (1-\alpha) \left[\frac{ p_{sH}^* x_L}{(\mathcal{L}^*(s) - x_L)^2}+  \frac{p_{sL}^*x_H}{(x_H - \mathcal{L}^*(s))^2} \right] f'(p_{sH}^*).
+\end{align}
+
+Using the expression for $f'(\cdot)$, we obtain that $\theta_{\omega,1} = \theta_{\omega,2}$. We can then write $\omega_{i}(X,s;\epsilon)$ as follows:
+\begin{equation}
+    \omega_{i}(X,s; \epsilon) = 1 +\theta_{\omega,1}(s) \left[ \delta_{sH}^i - \delta_{sH}(X) \right] \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+
+The evolution of wealth is given by 
+\begin{equation}
+    \eta_i'(X,s,s';\epsilon) = \eta_i + \eta_i \frac{\delta_{s s'}^i - \delta_{ss'}(X)}{p_{ss'}^*} \epsilon + \mathcal{O}(\epsilon^2)
+\end{equation}
+
+Let $p_H(X,s,s';\epsilon) = \sum_{i=1}^I \eta_i'(X,s,s';\epsilon) p_{s'H}^i$ denote the market-implied probability of the high state after a transition from state $s$ to state $s'$, then
+\begin{equation}
+    p_H(X,s,s';\epsilon) = p_{s'H}^* + \delta_{s'H}(X)\epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+using the fact that $\sum_{i=1}^I \eta_i \frac{\delta_{ss'}^i - \delta_{ss'}(X)}{p^*_{ss'}} p_{s'H}^* +  \sum_{i=1}^I \eta_i \delta_{s'H}^i =  \sum_{i=1}^I \eta_i \delta_{s'H}^i  \equiv \delta_{s'H}(X)$.
+
+The portfolio share next period is given by
+\begin{equation}
+    \omega_i'(X,s,s'; \epsilon) = 1 + \theta_{\omega,1}(s') \left[ \delta_{s'H}^i - \delta_{s'H}(X) \right] \epsilon + \mathcal{O}(\epsilon^2).
+\end{equation}
+
+Investor $i$'s net purchases of shares is given by
+\begin{align}\small
+    \Delta S_i(X,s,s'; \epsilon) &= \eta_i\left[\frac{\delta_{s s'}^i - \delta_{ss'}(X)}{p_{ss'}^*}+\theta_{\omega,1}(s')\left( \delta_{s'H}^i - \delta_{s'H}(X) \right) \right]\epsilon\nonumber\\
+    &- \theta_{\omega,1}(s) \eta_i\left[ \delta_{sH}^i - \delta_{sH}(X) \right] \epsilon + \mathcal{O}(\epsilon^2)
+\end{align}
+
+For simplicity, suppose that investors believe productivity growth to be iid in the reference economy, that is, $p_{Ls'}^* = p_{Hs'}^* $. We can then write the  
+\begin{equation}
+    \mu_i \Delta S_i(X,s,s';\epsilon) =\left[\underbrace{\Delta \tilde{\omega}_i(X,s,s') \eta_i}_{\text{change-in-beliefs effect}}+
+    \underbrace{\Delta \tilde{\eta}_i(X,s,s')}_{\text{rebalancing effect}}\right] \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+where, given $\theta_{\omega,1}(L) = \theta_{\omega,1}(H) \equiv \kappa_\omega$,
+\begin{align}
+    \Delta \omega_i(X,s,s') &\equiv \kappa_\omega\left[\left( \delta_{s'H}^i - \delta_{s'H}(X,s) \right) - \left( \delta_{sH}^i - \delta_{sH}(X) \right) \right]\\
+    \Delta \eta_i(X,s,s') &\equiv \eta_i \frac{\delta_{s s'}^i - \delta_{ss'}(X)}{p_{ss'}^*}.
+\end{align}
+
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{prop:turnover}}\label{app: proof_prop_turnover}
+
+\begin{proof}
+    Turnover is given by
+\begin{equation}
+    \tau(X,s,s';\epsilon) = \frac{1}{2} \sum_{i=1}^I \eta_i\left\lvert  \frac{\tilde{\delta}_{s s'}^i}{p_{ss'}^*} +\kappa_\omega\left(\tilde{\delta}_{s'H}^i - \tilde{\delta}_{sH}^i  \right)\right\rvert \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+where $\tilde{\delta}_{ss'}^i = \delta_{ss'}^i - \delta_{ss'}(X)$.
+
+Suppose $s = s'$, then
+\begin{align}
+    \tau(X,s,s';\epsilon) &= \frac{1}{2} \sum_{i=1}^I \eta_i  \frac{\left\lvert \tilde{\delta}_{s s'}^i(X)\right\rvert}{p_{ss'}^*} \epsilon + \mathcal{O}(\epsilon^2)\\
+    &= \frac{1}{2} \left[\sum_{i=1}^I \eta_i \frac{\tilde{\delta}_{ss'}^i(X)}{p_{ss'}^*}\textbf{1}_{\tilde{\delta}_{ss'}^i(X)\geq 0} -  \sum_{i=1}^I \eta_i \frac{ \tilde{\delta}_{ss'}^i(X)}{p_{ss'}^*}\textbf{1}_{\tilde{\delta}_{ss'}^i < 0} \right] \epsilon + \mathcal{O}(\epsilon^2)\\
+    &= \frac{1}{2} \left[\eta_B \frac{\tilde{\delta}_{ss'}^B(X)}{p_{ss'}^*} +  \eta_S \frac{ |\tilde{\delta}_{ss'}^S(X)|}{p_{ss'}^*} \right] \epsilon + \mathcal{O}(\epsilon^2).
+\end{align}
+where 
+\begin{align}
+    \eta_B &\equiv \sum_{i=1}^I \eta_i \textbf{1}_{\tilde{\delta}_{ss'}^i(X) \geq 0}, \qquad \qquad  \tilde{\delta}_{ss'}^B(X) \equiv \frac{1}{\eta_B} \sum_{i=1}^I \eta_i \tilde{\delta}_{ss'}^i(X) \textbf{1}_{\tilde{\delta}_{ss'}^i(X) \geq 0}, \\
+    \eta_S &\equiv \sum_{i=1}^I \eta_i \textbf{1}_{\tilde{\delta}_{ss'}^i(X) < 0}, \qquad \qquad  \tilde{\delta}_{ss'}^S(X) \equiv \frac{1}{\eta_S} \sum_{i=1}^I \eta_i \tilde{\delta}_{ss'}^i(X) \textbf{1}_{\tilde{\delta}_{ss'}^i(X) < 0}.
+\end{align}
+
+We can write turnover in this case as follows 
+\begin{equation}
+    \tau(X,s,s';\epsilon) = \eta_B \eta_S \frac{\delta_{ss'}^B(X) -\delta_{ss'}^S(X)}{p^*_{ss'}}\epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+using the fact that $\eta_B \tilde{\delta}_{ss'}^B(X) + \eta_S \tilde{\delta}_{ss'}^S(X) = 0$ and $\tilde{\delta}_{ss'}^B(X) = \eta_S (\delta_{ss'}^B(X) - \delta_{ss'}^S(X))$.    
+% $\delta_{ss'}(X) = \eta_B \delta_{ss'}^B(X) + \eta_S \delta_{ss'}^S(X)$.    
+
+\paragraph{Heterogeneous persistence.} We consider next the special case where investors agree about the unconditional mean of $x$, but they disagree about the persistence of the aggregate productivity growth. 
+
+The stationary distribution of beliefs for investor $i$ is given by
+\begin{equation}
+    \overline{p}_L^i = \frac{p_{HL}^i}{p_{LH}^i+ p_{HL}^i}.
+\end{equation}
+
+We assume that $\overline{p}_L^i$ is equalized across investors, so all investors agree about the unconditional mean of $x_{t}$. Note this implies that the likelihood ratio $p_{LH}^i / p_{HL}^i$ is equalized across investors. The unconditional mean is given by
+\begin{equation}
+    \overline{x} = \frac{p_{HL}^i}{p_{LH}^i+p_{HL}^i} x_L + \frac{p_{LH}^i}{p_{LH}^i+p_{HL}^i} x_H.
+\end{equation}
+
+The expected value of $x_{t+1}$ relative to the mean $\overline{x}$ conditional on $x_t = x_L $ is given by
+\begin{align}
+    \mathbb{E}_i[x_{t+1} - \overline{x}|x_t = x_L] &= p_{LL}^i (x_L - \overline{x})+ p_{LH}^i (x_H - \overline{x})\\
+    &= \left[1 +  p_{LH}^i \frac{x_H - x_L}{x_L - \overline{x}} \right](x_L - \overline{x})\\
+    &= \left[1 - (p_{LH}^i +p_{HL}^i) \right](x_L - \overline{x}),
+\end{align}
+using the fact that $\overline{x} - x_L = \frac{p_{LH}^i}{p_{LH}^i+p_{HL}^i}(x_H-x_L)$
+
+We obtain a similar expression conditioning on $x_t = x_H$ instead:
+\begin{align}
+    \mathbb{E}_i[x_{t+1} - \overline{x}|x_t = x_H] &= p_{HL}^i (x_L - \overline{x})+ p_{HH}^i (x_H - \overline{x})\\
+    &= \left[1 -  p_{HL}^i \frac{x_H - x_L}{x_H - \overline{x}} \right](x_H - \overline{x})\\
+    &= \left[1 - (p_{LH}^i +p_{HL}^i) \right](x_H - \overline{x}),
+\end{align}
+using the fact that $x_H - \overline{x} = \frac{p_{HL}^i}{p_{LH}^i+p_{HL}^i}(x_H-x_L)$.
+
+Let $\hat{x}_{t} = x_t - \overline{x}$, we can then write
+\begin{equation}
+    \mathbb{E}_i[\hat{x}_{t+1}|\hat{x}_t] = \theta_i \hat{x}_t,
+\end{equation}
+where $\theta_i \equiv 1-  (p_{LH}^i +p_{HL}^i) = p_{HH}^i - p_{LH}^i$.
+
+Given that investors agree about the unconditional mean of $x$, we are able to pin down beliefs as a function of $\theta_i$:
+\begin{equation}
+    p_{LH}^i = \overline{p}_H (1- \theta_i), \qquad \qquad 
+    p_{HH}^i = \overline{p}_H+\overline{p}_L \theta_i.
+\end{equation}
+
+\paragraph{Corollary.} Under the assumption investors agree about the unconditional mean of $x_t$, we have that
+\begin{equation}
+    p_{LH}^i - p_{LH}(X) = - \overline{p}_H (\theta_i - \theta(X)), \qquad
+    p_{HH}^i - p_{HH}(X) = \overline{p}_L (\theta_i - \theta(X)),
+\end{equation}
+where $\overline{\theta}(X) \equiv \sum_{i=1}^I \eta_i \theta_i$.
+
+Notice that we have that  $\tilde{\delta}_{ss'}^i(X) \epsilon = p_{ss'}^i - p_{ss'}(X)$, which gives us
+\begin{equation}
+    \tilde{\delta}_{LH}^i(X) \epsilon = - p^*_H (\theta_i - \theta(X)), \qquad \qquad
+    \tilde{\delta}_{HH}^i(X) \epsilon = (1-p^*_H) (\theta_i - \theta(X)).
+\end{equation}
+
+We can then write turnover in the case $s = L$ and $s' = H$ as follows:
+\begin{equation}
+    \tau(X,L,H;\epsilon) = \frac{1}{2}\left\lvert  \kappa_\omega-1\right\rvert \sum_{i=1}^I \eta_i |\theta_i - \theta(X)| + \mathcal{O}(\epsilon^2).
+\end{equation}
+
+Consider now the case $s = H$ and $s' = L$:
+\begin{equation}
+    \tau(X,H,L;\epsilon) = \frac{1}{2}\left\lvert \kappa_\omega+ 1 \right\rvert \sum_{i=1}^I \eta_i |\theta_i - \theta(X)| + \mathcal{O}(\epsilon^2),
+\end{equation}
+
+Suppose now that $s = s' $, then
+\begin{align}
+    \tau(X,H,H;\epsilon) &= \frac{1}{2}\left\lvert  \frac{p^*_L}{p_{H}^*} \right\rvert \sum_{i=1}^I \eta_i |\theta_i - \theta(X)| \epsilon + \mathcal{O}(\epsilon^2) \\
+    \tau(X,L,L;\epsilon) &= \frac{1}{2}\left\lvert  \frac{p^*_H}{p_{L}^*} \right\rvert \sum_{i=1}^I \eta_i |\theta_i - \theta(X)| \epsilon + \mathcal{O}(\epsilon^2).
+\end{align}
+
+\end{proof}

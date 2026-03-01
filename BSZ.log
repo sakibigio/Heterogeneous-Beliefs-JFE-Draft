@@ -1,0 +1,3194 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.6)  26 FEB 2026 12:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**BSZ.tex
+(./BSZ.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/latin9.def
+File: latin9.def 2021/02/14 v1.3d Input encoding file
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/srcltx/srcltx.sty
+Package: srcltx 2006/11/12 v1.6 Source specials for inverse search in DVI files
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\src@lastline=\count196
+\src@new@everypar=\toks19
+\src@new@output=\toks20
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks27
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen141
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count197
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count198
+\leftroot@=\count199
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count266
+\DOTSCASE@=\count267
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count268
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count269
+\dotsspace@=\muskip16
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks29
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks30
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks31
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks33
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+Package srcltx Info: Expanded filename `pdftex.def' to `pdftex.def.tex' on inpu
+t line 108.
+
+:<+ pdftex.def.tex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+:<-
+)
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
+Package: todonotes 2024/01/05
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count275
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks36
+\pgfutil@tempdima=\dimen152
+\pgfutil@tempdimb=\dimen153
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box53
+)
+Package srcltx Info: Expanded filename `pgfrcs.code.tex' to `pgfrcs.code.tex' o
+n input line 13.
+
+:<+ pgfrcs.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)
+:<-
+)
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+Package srcltx Info: Expanded filename `pgfsys.code.tex' to `pgfsys.code.tex' o
+n input line 16.
+
+:<+ pgfsys.code.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks39
+))
+\pgf@x=\dimen154
+\pgf@y=\dimen155
+\pgf@xa=\dimen156
+\pgf@ya=\dimen157
+\pgf@xb=\dimen158
+\pgf@yb=\dimen159
+\pgf@xc=\dimen160
+\pgf@yc=\dimen161
+\pgf@xd=\dimen162
+\pgf@yd=\dimen163
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count276
+\c@pgf@countb=\count277
+\c@pgf@countc=\count278
+\c@pgf@countd=\count279
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
+\pgf@sys@id@count=\count280
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+:<-
+Package srcltx Info: Expanded filename `pgfsyssoftpath.code.tex' to `pgfsyssoft
+path.code.tex' on input line 17.
+:<+ pgfsyssoftpath.code.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count281
+\pgfsyssoftpath@bigbuffer@items=\count282
+)
+:<-
+Package srcltx Info: Expanded filename `pgfsysprotocol.code.tex' to `pgfsysprot
+ocol.code.tex' on input line 18.
+:<+ pgfsysprotocol.code.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+:<-
+)
+Package srcltx Info: Expanded filename `pgfcore.code.tex' to `pgfcore.code.tex'
+ on input line 15.
+
+:<+ pgfcore.code.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen164
+\pgfmath@count=\count283
+\pgfmath@box=\box54
+\pgfmath@toks=\toks43
+\pgfmath@stack@operand=\toks44
+\pgfmath@stack@operation=\toks45
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count284
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen165
+\pgf@picmaxx=\dimen166
+\pgf@picminy=\dimen167
+\pgf@picmaxy=\dimen168
+\pgf@pathminx=\dimen169
+\pgf@pathmaxx=\dimen170
+\pgf@pathminy=\dimen171
+\pgf@pathmaxy=\dimen172
+\pgf@xx=\dimen173
+\pgf@xy=\dimen174
+\pgf@yx=\dimen175
+\pgf@yy=\dimen176
+\pgf@zx=\dimen177
+\pgf@zy=\dimen178
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen179
+\pgf@path@lasty=\dimen180
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen181
+\pgf@shorten@start@additional=\dimen182
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count285
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen183
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen184
+\pgf@pt@y=\dimen185
+\pgf@pt@temp=\dimen186
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen187
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen188
+\pgf@sys@shading@range@num=\count286
+\pgf@shadingcount=\count287
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box58
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+:<-
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box59
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen189
+\pgf@nodesepend=\dimen190
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+Package srcltx Info: Expanded filename `pgfkeys.code.tex' to `pgfkeys.code.tex'
+ on input line 10.
+
+:<+ pgfkeys.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+:<-
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+Package srcltx Info: Expanded filename `pgfmath.code.tex' to `pgfmath.code.tex'
+ on input line 11.
+
+:<+ pgfmath.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+:<-
+)
+Package srcltx Info: Expanded filename `pgffor.code.tex' to `pgffor.code.tex' o
+n input line 14.
+
+:<+ pgffor.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen191
+\pgffor@skip=\dimen192
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
+)
+:<-
+)
+Package srcltx Info: Expanded filename `tikz.code.tex' to `tikz.code.tex' on in
+put line 13.
+
+:<+ tikz.code.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count288
+\pgfplotmarksize=\dimen193
+)
+\tikz@lastx=\dimen194
+\tikz@lasty=\dimen195
+\tikz@lastxsaved=\dimen196
+\tikz@lastysaved=\dimen197
+\tikz@lastmovetox=\dimen198
+\tikz@lastmovetoy=\dimen199
+\tikzleveldistance=\dimen256
+\tikzsiblingdistance=\dimen257
+\tikz@figbox=\box60
+\tikz@figbox@bg=\box61
+\tikz@tempbox=\box62
+\tikz@tempbox@bg=\box63
+\tikztreelevel=\count289
+\tikznumberofchildren=\count290
+\tikznumberofcurrentchild=\count291
+\tikz@fig@count=\count292
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count293
+\pgfmatrixcurrentcolumn=\count294
+\pgf@matrix@numberofcolumns=\count295
+)
+\tikz@expandcount=\count296
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+:<-
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count297
+\calc@Bcount=\count298
+\calc@Adimen=\dimen258
+\calc@Bdimen=\dimen259
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count299
+\calc@Cskip=\skip58
+)
+\c@@todonotes@numberoftodonotes=\count300
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip59
+\bibsep=\skip60
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count301
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count302
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count303
+\output=\toks48
+\linenoprevgraf=\count304
+\linenumbersep=\dimen260
+\linenumberwidth=\dimen261
+\c@linenumber=\count305
+\c@pagewiselinenumber=\count306
+\c@LN@truepage=\count307
+\c@internallinenumber=\count308
+\c@internallinenumbers=\count309
+\quotelinenumbersep=\dimen262
+\bframerule=\dimen263
+\bframesep=\dimen264
+\bframebox=\box64
+\linenoamsmath@ams@eqpen=\count310
+LaTeX Info: Redefining \\ on input line 3180.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
+(/usr/local/texlive/2024/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks49
+\SOUL@lasttoken=\toks50
+\SOUL@syllable=\toks51
+\SOUL@cmds=\toks52
+\SOUL@buffer=\toks53
+\SOUL@token=\toks54
+\SOUL@syllgoal=\dimen265
+\SOUL@syllwidth=\dimen266
+\SOUL@charkern=\dimen267
+\SOUL@hyphkern=\dimen268
+\SOUL@dimen=\dimen269
+\SOUL@dimeni=\dimen270
+\SOUL@minus=\count311
+\SOUL@comma=\count312
+\SOUL@apo=\count313
+\SOUL@grave=\count314
+\SOUL@spaceskip=\skip61
+\SOUL@ttwidth=\dimen271
+\SOUL@uldp=\dimen272
+\SOUL@ulht=\dimen273
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)))
+(../utils/styles/qting.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 2023-07-04 v5.06 eXternal References (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen274
+\lightrulewidth=\dimen275
+\cmidrulewidth=\dimen276
+\belowrulesep=\dimen277
+\belowbottomsep=\dimen278
+\aboverulesep=\dimen279
+\abovetopsep=\dimen280
+\cmidrulesep=\dimen281
+\cmidrulekern=\dimen282
+\defaultaddspace=\dimen283
+\@cmidla=\count315
+\@cmidlb=\count316
+\@aboverulesep=\dimen284
+\@belowrulesep=\dimen285
+\@thisruleclass=\count317
+\@lastruleclass=\count318
+\@thisrulewidth=\dimen286
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box65
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count319
+\l__siunitx_number_exponent_fixed_int=\count320
+\l__siunitx_number_min_decimal_int=\count321
+\l__siunitx_number_min_integer_int=\count322
+\l__siunitx_number_round_precision_int=\count323
+\l__siunitx_number_lower_threshold_int=\count324
+\l__siunitx_number_upper_threshold_int=\count325
+\l__siunitx_number_group_first_int=\count326
+\l__siunitx_number_group_size_int=\count327
+\l__siunitx_number_group_minimum_int=\count328
+\l__siunitx_angle_tmp_dim=\dimen287
+\l__siunitx_angle_marker_box=\box66
+\l__siunitx_angle_unit_box=\box67
+\l__siunitx_compound_count_int=\count329
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_table_tmp_box=\box68
+\l__siunitx_table_tmp_dim=\dimen288
+\l__siunitx_table_column_width_dim=\dimen289
+\l__siunitx_table_integer_box=\box69
+\l__siunitx_table_decimal_box=\box70
+\l__siunitx_table_uncert_box=\box71
+\l__siunitx_table_before_box=\box72
+\l__siunitx_table_after_box=\box73
+\l__siunitx_table_before_dim=\dimen290
+\l__siunitx_table_carry_dim=\dimen291
+\l__siunitx_unit_tmp_int=\count330
+\l__siunitx_unit_position_int=\count331
+\l__siunitx_unit_total_int=\count332
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen292
+\ar@mcellbox=\box74
+\extrarowheight=\dimen293
+\NC@list=\toks55
+\extratabsurround=\skip62
+\backup@length=\skip63
+\ar@cellbox=\box75
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box76
+)
+\tc@llx=\dimen294
+\tc@lly=\dimen295
+\tc@urx=\dimen296
+\tc@ury=\dimen297
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen298
+\adjbox@Height=\dimen299
+\adjbox@Depth=\dimen300
+\adjbox@Totalheight=\dimen301
+\adjbox@pwidth=\dimen302
+\adjbox@pheight=\dimen303
+\adjbox@pdepth=\dimen304
+\adjbox@ptotalheight=\dimen305
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count333
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box77
+\sift@deathcycles=\count334
+\@vwid@loff=\dimen306
+\@vwid@roff=\dimen307
+))
+
+Package siunitx Info: Option "detect-weight" has been deprecated in this
+(siunitx)             release.
+(siunitx)             
+(siunitx)             Use "reset-text-series = false, text-series-to-math =
+(siunitx)             true" as a replacement.
+
+
+Package siunitx Info: Option "detect-family" has been deprecated in this
+(siunitx)             release.
+(siunitx)             
+(siunitx)             Use "reset-text-family = false, text-family-to-math =
+(siunitx)             true" as a replacement.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count335
+\c@@ppsavesec=\count336
+\c@@ppsaveapp=\count337
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen308
+\captionmargin=\dimen309
+\caption@leftmargin=\dimen310
+\caption@rightmargin=\dimen311
+\caption@width=\dimen312
+\caption@indent=\dimen313
+\caption@parindent=\dimen314
+\caption@hangindent=\dimen315
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count338
+\c@continuedfloat=\count339
+Package caption Info: threeparttable package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count340
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count341
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count342
+\rotFPtop=\skip64
+\rotFPbot=\skip65
+\rot@float@box=\box78
+\rot@mess@toks=\toks56
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+\c@defn=\count343
+\c@prop=\count344
+\c@cor=\count345
+\c@lem=\count346
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip66
+\multirow@cntb=\count347
+\multirow@dima=\skip67
+\bigstrutjot=\dimen316
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count348
+\Gm@cntv=\count349
+\c@Gm@tempcnt=\count350
+\Gm@bindingoffset=\dimen317
+\Gm@wd@mp=\dimen318
+\Gm@odd@mp=\dimen319
+\Gm@even@mp=\dimen320
+\Gm@layoutwidth=\dimen321
+\Gm@layoutheight=\dimen322
+\Gm@layouthoffset=\dimen323
+\Gm@layoutvoffset=\dimen324
+\Gm@dimlist=\toks57
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/datetime2/datetime2.sty
+Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
+Package srcltx Info: Expanded filename `tracklang' to `tracklang.tex' on input 
+line 46.
+
+:<+ tracklang.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/tracklang/tracklang.tex)
+:<-
+)
+Package srcltx Info: Expanded filename `datetime2-english.ldf' to `datetime2-en
+glish.ldf.tex' on input line 1913.
+
+:<+ datetime2-english.ldf.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/datetime2-english/datetime2-engli
+sh.ldf
+File: datetime2-english.ldf 2019/10/21 v1.05 (NLCT)
+Package srcltx Info: Expanded filename `datetime2-english-base.ldf' to `datetim
+e2-english-base.ldf.tex' on input line 48.
+
+:<+ datetime2-english-base.ldf.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/datetime2-english/datetime2-engli
+sh-base.ldf
+File: datetime2-english-base.ldf 2019/10/21 v1.05 (NLCT)
+)
+:<-
+)
+:<-
+Package srcltx Info: Expanded filename `datetime2-en-US.ldf' to `datetime2-en-U
+S.ldf.tex' on input line 1913.
+:<+ datetime2-en-US.ldf.tex
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/datetime2-english/datetime2-en-US
+.ldf
+File: datetime2-en-US.ldf 2019/10/21 v1.05 (NLCT)
+)
+:<-
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count351
+\l_MT_multwidth_dim=\dimen325
+\origjot=\skip68
+\l_MT_shortvdotswithinadjustabove_dim=\dimen326
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen327
+\l_MT_above_intertext_sep=\dimen328
+\l_MT_below_intertext_sep=\dimen329
+\l_MT_above_shortintertext_sep=\dimen330
+\l_MT_below_shortintertext_sep=\dimen331
+\xmathstrut@box=\box79
+\xmathstrut@dim=\dimen332
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/easy/easytable.sty
+Document Style `easytable' v1.0 <2001/06/13>.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/easy/easy.sty
+Document Style `easy' v1.1 <2001/05/31>.
+Package: easy 2001/05/31 v1.1
+\@easy@level=\count352
+\@easy@ncol=\count353
+\@easy@nrow=\count354
+\@easy@cnt=\count355
+\@easy@boxviii=\box80
+\@easy@minxviii=\dimen333
+\@easy@minyviii=\dimen334
+\@easy@maxxviii=\dimen335
+\@easy@maxyviii=\dimen336
+\@easy@boxvii=\box81
+\@easy@minxvii=\dimen337
+\@easy@minyvii=\dimen338
+\@easy@maxxvii=\dimen339
+\@easy@maxyvii=\dimen340
+\@easy@boxvi=\box82
+\@easy@minxvi=\dimen341
+\@easy@minyvi=\dimen342
+\@easy@maxxvi=\dimen343
+\@easy@maxyvi=\dimen344
+\@easy@boxv=\box83
+\@easy@minxv=\dimen345
+\@easy@minyv=\dimen346
+\@easy@maxxv=\dimen347
+\@easy@maxyv=\dimen348
+\@easy@boxiv=\box84
+\@easy@minxiv=\dimen349
+\@easy@minyiv=\dimen350
+\@easy@maxxiv=\dimen351
+\@easy@maxyiv=\dimen352
+\@easy@boxiii=\box85
+\@easy@minxiii=\dimen353
+\@easy@minyiii=\dimen354
+\@easy@maxxiii=\dimen355
+\@easy@maxyiii=\dimen356
+\@easy@boxii=\box86
+\@easy@minxii=\dimen357
+\@easy@minyii=\dimen358
+\@easy@maxxii=\dimen359
+\@easy@maxyii=\dimen360
+\@easy@boxi=\box87
+\@easy@minxi=\dimen361
+\@easy@minyi=\dimen362
+\@easy@maxxi=\dimen363
+\@easy@maxyi=\dimen364
+\@easy@hsizexxx=\dimen365
+\@easy@vsizexxx=\dimen366
+\@easy@hsizexxix=\dimen367
+\@easy@vsizexxix=\dimen368
+\@easy@hsizexxviii=\dimen369
+\@easy@vsizexxviii=\dimen370
+\@easy@hsizexxvii=\dimen371
+\@easy@vsizexxvii=\dimen372
+\@easy@hsizexxvi=\dimen373
+\@easy@vsizexxvi=\dimen374
+\@easy@hsizexxv=\dimen375
+\@easy@vsizexxv=\dimen376
+\@easy@hsizexxiv=\dimen377
+\@easy@vsizexxiv=\dimen378
+\@easy@hsizexxiii=\dimen379
+\@easy@vsizexxiii=\dimen380
+\@easy@hsizexxii=\dimen381
+\@easy@vsizexxii=\dimen382
+\@easy@hsizexxi=\dimen383
+\@easy@vsizexxi=\dimen384
+\@easy@hsizexx=\dimen385
+\@easy@vsizexx=\dimen386
+\@easy@hsizexix=\dimen387
+\@easy@vsizexix=\dimen388
+\@easy@hsizexviii=\dimen389
+\@easy@vsizexviii=\dimen390
+\@easy@hsizexvii=\dimen391
+\@easy@vsizexvii=\dimen392
+\@easy@hsizexvi=\dimen393
+\@easy@vsizexvi=\dimen394
+\@easy@hsizexv=\dimen395
+\@easy@vsizexv=\dimen396
+\@easy@hsizexiv=\dimen397
+\@easy@vsizexiv=\dimen398
+\@easy@hsizexiii=\dimen399
+\@easy@vsizexiii=\dimen400
+\@easy@hsizexii=\dimen401
+\@easy@vsizexii=\dimen402
+\@easy@hsizexi=\dimen403
+\@easy@vsizexi=\dimen404
+\@easy@hsizex=\dimen405
+\@easy@vsizex=\dimen406
+\@easy@hsizeix=\dimen407
+\@easy@vsizeix=\dimen408
+\@easy@hsizeviii=\dimen409
+\@easy@vsizeviii=\dimen410
+\@easy@hsizevii=\dimen411
+\@easy@vsizevii=\dimen412
+\@easy@hsizevi=\dimen413
+\@easy@vsizevi=\dimen414
+\@easy@hsizev=\dimen415
+\@easy@vsizev=\dimen416
+\@easy@hsizeiv=\dimen417
+\@easy@vsizeiv=\dimen418
+\@easy@hsizeiii=\dimen419
+\@easy@vsizeiii=\dimen420
+\@easy@hsizeii=\dimen421
+\@easy@vsizeii=\dimen422
+\@easy@hsizei=\dimen423
+\@easy@vsizei=\dimen424
+\@easy@dash@len=\dimen425
+\@easy@dash@sep=\dimen426
+)
+Package: easytable 2001/05/31v1.1
+\@tab@size@rule=\dimen427
+\@tab@size@dash=\dimen428
+)
+\c@lemma=\count356
+\c@proposition=\count357
+\c@theorem=\count358
+\c@corollary=\count359
+\c@definition=\count360
+\c@example=\count361
+\c@assumption=\count362
+\c@remark=\count363
+\c@problem=\count364
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks58
+\footnotemargin=\dimen429
+\@outputbox@depth=\dimen430
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup7
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count365
+)
+\@linkdim=\dimen431
+\Hy@linkcounter=\count366
+\Hy@pagecounter=\count367
+Package srcltx Info: Expanded filename `pd1enc.def' to `pd1enc.def.tex' on inpu
+t line 736.
+
+:<+ pd1enc.def.tex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+:<-
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count368
+Package srcltx Info: Expanded filename `puenc.def' to `puenc.def.tex' on input 
+line 2463.
+
+:<+ puenc.def.tex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+:<-
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count369
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen432
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count370
+\Field@Width=\dimen433
+\Fld@charsize=\dimen434
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count371
+\c@Item=\count372
+\c@Hfootnote=\count373
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+Package srcltx Info: Expanded filename `hpdftex.def' to `hpdftex.def.tex' on in
+put line 141.
+
+:<+ hpdftex.def.tex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count374
+\c@bookmark@seq@number=\count375
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip69
+)
+:<-
+Package hyperref Info: Option `breaklinks' set `true' on input line 145.
+Package hyperref Info: Option `colorlinks' set `true' on input line 145.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/oberdiek/hypcap.sty
+Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
+Package: boxedminipage 2020/04/19 v1.1 Boxed LaTeX2e minipages
+\bmp@box=\box88
+\bmp@width=\skip70
+\bmp@height=\skip71
+)
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 200.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 20
+0.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count376
+\l__pdf_internal_box=\box89
+)
+(./BSZ.aux
+
+LaTeX Warning: Label `app:omega_returns' multiply defined.
+
+)
+\openout1 = `BSZ.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count377
+\scratchdimen=\dimen435
+\scratchbox=\box90
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen436
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks60
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 200.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 200.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: hypcap package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 200.
+(./BSZ.out) (./BSZ.out)
+\@outlinefile=\write5
+\openout5 = `BSZ.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
+03.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+203.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+203.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+203.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 203.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 203.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 203.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 2
+03.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+203.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
+03.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 203.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 203.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 203.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 203.
+ [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+Package srcltx Info: Expanded filename `sections/intro' to `sections/intro.tex'
+ on input line 232.
+
+:<+ sections/intro.tex
+(./sections/intro.tex
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 16.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 16.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 16.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 16.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 
+      [1] [2] [3] [4])
+:<-
+Package srcltx Info: Expanded filename `sections/facts' to `sections/facts.tex'
+ on input line 234.
+:<+ sections/facts.tex
+(./sections/facts.tex [5]
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
+9.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+) [6]
+Package srcltx Info: Expanded filename `tables/tab_nx_regression' to `tables/ta
+b_nx_regression.tex' on input line 36.
+
+:<+ tables/tab_nx_regression.tex
+(./tables/tab_nx_regression.tex)
+:<-
+Package srcltx Info: Expanded filename `tables/tab_payroll' to `tables/tab_payr
+oll.tex' on input line 44.
+:<+ tables/tab_payroll.tex
+(./tables/tab_payroll.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+:<-
+[7])
+:<-
+Package srcltx Info: Expanded filename `sections/model' to `sections/model.tex'
+ on input line 236.
+:<+ sections/model.tex
+(./sections/model.tex [8] [9] [10]
+Underfull \hbox (badness 8189) in paragraph at lines 94--95
+[][]\T1/ppl/b/n/12 Definition 1 \T1/ppl/m/n/12 (Com-pet-i-tive equi-lib-rium)\T
+1/ppl/b/n/12 . [][]\T1/ppl/m/it/12 Given ini-tial bond hold-ings and shares
+ []
+
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.98     \item M
+                arkets for goods, labor, bonds, and shares clear])
+:<-
+Package srcltx Info: Expanded filename `sections/characterization' to `sections
+/characterization.tex' on input line 238.
+:<+ sections/characterization.tex
+(./sections/characterization.tex [12] [13] [14] [15] [16] [17] [18] [19])
+:<-
+Package srcltx Info: Expanded filename `sections/analytic' to `sections/analyti
+c.tex' on input line 240.
+:<+ sections/analytic.tex
+(./sections/analytic.tex [20
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.71 T
+      he risk-free rate satisfies]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \begin{equation}
+                      [21]
+<figures/risk_equilibrium_inv.pdf, id=660, 492.03925pt x 275.06966pt>
+File: figures/risk_equilibrium_inv.pdf Graphic file (type pdf)
+<use figures/risk_equilibrium_inv.pdf>
+Package pdftex.def Info: figures/risk_equilibrium_inv.pdf  used on input line 1
+52.
+(pdftex.def)             Requested size: 232.53001pt x 129.99208pt.
+<figures/obj_subj_risk_premia.pdf, id=661, 487.81848pt x 272.18488pt>
+File: figures/obj_subj_risk_premia.pdf Graphic file (type pdf)
+<use figures/obj_subj_risk_premia.pdf>
+Package pdftex.def Info: figures/obj_subj_risk_premia.pdf  used on input line 1
+58.
+(pdftex.def)             Requested size: 232.53001pt x 129.74185pt.
+
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 150--161
+[][][]  [] 
+ []
+
+[22 <./figures/risk_equilibrium_inv.pdf> <./figures/obj_subj_risk_premia.pdf>]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 205.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 205.
+
+[23
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.32
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.237 
+      ] [24] [25]
+<figures/simul_hom_beliefs.pdf, id=807, 854.25748pt x 567.6156pt>
+File: figures/simul_hom_beliefs.pdf Graphic file (type pdf)
+<use figures/simul_hom_beliefs.pdf>
+Package pdftex.def Info: figures/simul_hom_beliefs.pdf  used on input line 372.
+
+(pdftex.def)             Requested size: 422.77664pt x 280.91429pt.
+ [26 <./figures/simul_hom_beliefs.pdf>]
+<figures/simul_het_beliefs1.pdf, id=839, 694.4324pt x 659.42662pt>
+File: figures/simul_het_beliefs1.pdf Graphic file (type pdf)
+<use figures/simul_het_beliefs1.pdf>
+Package pdftex.def Info: figures/simul_het_beliefs1.pdf  used on input line 420
+.
+(pdftex.def)             Requested size: 352.31625pt x 334.5624pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 423.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 423.
+<figures/simul_het_beliefs2.pdf, id=842, 694.4324pt x 659.4156pt>
+File: figures/simul_het_beliefs2.pdf Graphic file (type pdf)
+<use figures/simul_het_beliefs2.pdf>
+Package pdftex.def Info: figures/simul_het_beliefs2.pdf  used on input line 451
+.
+(pdftex.def)             Requested size: 352.31625pt x 334.55681pt.
+ [27] [28 <./figures/simul_het_beliefs1.pdf>] [29 <./figures/simul_het_beliefs2
+.pdf>]
+Underfull \hbox (badness 1178) in paragraph at lines 539--543
+ []\T1/ppl/b/n/12 Discussion: be-lief het-ero-gene-ity vs. risk aver-sion.[] []
+\T1/ppl/m/n/12 As dis-cussed above, rank-
+ []
+
+[30]
+Overfull \hbox (0.74109pt too wide) detected at line 610
+[]
+ []
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.37
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.610 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.37
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.610 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.37
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.610 \end{align}
+                 \normalsize] [32
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.661 
+      ]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.674 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.674 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.674 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.674 \begin{equation}
+                       [33]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.722 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.722 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.722 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.722 \begin{equation}
+                      
+<figures/turnover_vs_disagreement_index.pdf, id=990, 824.19969pt x 416.93811pt>
+
+File: figures/turnover_vs_disagreement_index.pdf Graphic file (type pdf)
+<use figures/turnover_vs_disagreement_index.pdf>
+Package pdftex.def Info: figures/turnover_vs_disagreement_index.pdf  used on in
+put line 777.
+(pdftex.def)             Requested size: 422.77664pt x 213.86984pt.
+Package srcltx Info: Expanded filename `tables/tab_turnover_di_5specs_standardi
+zed' to `tables/tab_turnover_di_5specs_standardized.tex' on input line 781.
+
+:<+ tables/tab_turnover_di_5specs_standardized.tex
+(./tables/tab_turnover_di_5specs_standardized.tex)
+:<-
+
+Underfull \hbox (badness 1406) in paragraph at lines 790--800
+[][]\T1/ppl/m/n/12 Column (1) shows a pos-i-tive but sta-tis-ti-cally in-signif
+-i-cant as-so-ci-a-tion be-tween
+ []
+
+[34]
+
+LaTeX Warning: Text page 35 contains only floats.
+
+[35 <./figures/turnover_vs_disagreement_index.pdf>])
+:<-
+Package srcltx Info: Expanded filename `sections/quantitative' to `sections/qua
+ntitative.tex' on input line 242.
+:<+ sections/quantitative.tex
+(./sections/quantitative.tex [36] [37] [38] [39]
+Package srcltx Info: Expanded filename `tables/tab_cg_productivity_h1' to `tabl
+es/tab_cg_productivity_h1.tex' on input line 141.
+
+:<+ tables/tab_cg_productivity_h1.tex
+(./tables/tab_cg_productivity_h1.tex)
+:<-
+Package srcltx Info: Expanded filename `tables/tab_uncond_moments' to `tables/t
+ab_uncond_moments.tex' on input line 161.
+:<+ tables/tab_uncond_moments.tex
+(./tables/tab_uncond_moments.tex)
+:<-
+[40] [41]
+<figures/scatter_belief_comparison.pdf, id=1102, 1204.5pt x 451.6875pt>
+File: figures/scatter_belief_comparison.pdf Graphic file (type pdf)
+<use figures/scatter_belief_comparison.pdf>
+Package pdftex.def Info: figures/scatter_belief_comparison.pdf  used on input l
+ine 287.
+(pdftex.def)             Requested size: 465.06004pt x 174.3999pt.
+ [42 <./figures/scatter_belief_comparison.pdf>]
+Package srcltx Info: Expanded filename `tables/table_pred_regression' to `table
+s/table_pred_regression.tex' on input line 323.
+
+:<+ tables/table_pred_regression.tex
+(./tables/table_pred_regression.tex
+<figures/pd_forecast.pdf, id=1120, 501.875pt x 276.03125pt>
+File: figures/pd_forecast.pdf Graphic file (type pdf)
+<use figures/pd_forecast.pdf>
+Package pdftex.def Info: figures/pd_forecast.pdf  used on input line 5.
+(pdftex.def)             Requested size: 232.53001pt x 127.8941pt.
+
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 3--33
+[][][]  [] 
+ []
+
+)
+:<-
+[43 <./figures/pd_forecast.pdf>] Excluding 'comment' comment.)
+:<-
+Package srcltx Info: Expanded filename `sections/conclusion' to `sections/concl
+usion.tex' on input line 244.
+:<+ sections/conclusion.tex
+(./sections/conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+[][][]\T1/ppl/m/n/10 Interview with Thomas Sar-gent, \T1/ppl/m/it/10 The Re-gio
+n\T1/ppl/m/n/10 , Au-gust 26, 2010. Avail-able at
+ []
+
+[44])
+:<-
+:<+ BSZ.bbl
+(./BSZ.bbl [45] [46] [47] [48] [49] [50]
+Underfull \hbox (badness 7451) in paragraph at lines 438--442
+[][]\T1/ppl/b/n/12 O, Ri-cardo De La and Sean My-ers\T1/ppl/m/n/12 , ``Sub-jec-
+tive Cash Flow and Dis-count
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 438--442
+\T1/ppl/m/n/12 Rate Ex-pec-ta-tions,'' \T1/ppl/m/it/12 The Jour-nal of Fi-nance
+\T1/ppl/m/n/12 , 2021, \T1/ppl/m/it/12 76 \T1/ppl/m/n/12 (3), 1339--1387.  _epr
+int:
+ []
+
+[51])
+:<-
+[52]
+Package srcltx Info: Expanded filename `sections/appendix.proofs' to `sections/
+appendix.proofs.tex' on input line 256.
+
+:<+ sections/appendix.proofs.tex
+(./sections/appendix.proofs.tex
+Overfull \hbox (22.26244pt too wide) detected at line 36
+[]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39     \begin{equation}
+                          [1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \end{equation}
+                    [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.143 \end{equation}
+                     [3]
+Underfull \hbox (badness 1824) in paragraph at lines 161--164
+[]\T1/ppl/m/n/12 The fol-low-ing lemma char-ac-ter-izes house-holds' port-fo-li
+o weight in terms of the
+ []
+
+
+Underfull \hbox (badness 3019) in paragraph at lines 175--180
+[][]\T1/ppl/m/n/12 Lemma [][]3[][], de-scribes how port-fo-lio shares de-pend o
+n dis-torted prob-a-bil-i-ties,
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186 \end{equation}
+                     [4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.223 \end{equation}
+                     [5]
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.263 \end{equation}
+                     [6]
+Overfull \hbox (18.10257pt too wide) detected at line 270
+[]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.300 \end{equation}
+                     [7]
+Overfull \hbox (3.92926pt too wide) detected at line 323
+[][][]\U/fplmbb/m/n/12 E\OT1/zplm/m/n/12 [\OML/zplm/m/it/12 x[]\OT1/zplm/m/n/12
+ ] \OMS/zplm/m/n/12 ^^@ \U/fplmbb/m/n/12 E[]\OT1/zplm/m/n/12 [\OML/zplm/m/it/12
+ x[]\OT1/zplm/m/n/12 ] = \OML/zplm/m/it/12 p[][]x[] \OT1/zplm/m/n/12 + \OML/zpl
+m/m/it/12 p[][]x[]\OT1/ppl/m/n/12 .
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.343 \end{equation}
+                     [8]
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
+ []\T1/ppl/b/n/12 Interest rate.[] []\T1/ppl/m/n/12 The in-ter-est rate sat-is-
+fies the con-di-tion $\OML/zplm/m/it/12 R[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 
+X\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 s\OT1/zplm/m/n/12 ) =
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.380 \end{equation}
+                     [9]
+Overfull \hbox (1.23271pt too wide) detected at line 423
+[][][]\OML/zplm/m/it/12 p[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 x[] \OMS/zplm/m/
+n/12 ^^@ L[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 X\OT1/ppl/m/n/12 , \OML/zplm/m/
+it/12 s\OT1/zplm/m/n/12 )) [] = [] \OML/zplm/m/it/12 p[]\OT1/zplm/m/n/12 (\OMS/
+zplm/m/n/12 L[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 X\OT1/ppl/m/n/12 , \OML/zplm
+/m/it/12 s\OT1/zplm/m/n/12 ) \OMS/zplm/m/n/12 ^^@ \OML/zplm/m/it/12 x[]\OT1/zpl
+m/m/n/12 )\OT1/ppl/m/n/12 .
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.423 \end{equation}
+                     [10]
+Overfull \hbox (19.73766pt too wide) detected at line 454
+[][][][] \OML/zplm/m/it/10.95 ^^Q[]^^[[]\OT1/zplm/m/n/10.95 [\OML/zplm/m/it/10.
+95 R[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/ppl/m/n/10.95 , \OML/zplm
+/m/it/10.95 s\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 s[]\OT1/zplm/m/n/10.95 )
+] = \OML/zplm/m/it/10.95 ^^[[]\OT1/zplm/m/n/10.95 [\OML/zplm/m/it/10.95 x[]\OT1
+/zplm/m/n/10.95 ][] [] \OT1/ppl/m/n/10.95 ,
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 
+       [11]
+Overfull \hbox (13.97992pt too wide) detected at line 499
+[][][][]\OMS/zplm/m/n/10.95 L[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/
+ppl/m/n/10.95 , \OML/zplm/m/it/10.95 s\OT1/zplm/m/n/10.95 )[] \OMS/zplm/m/n/10.
+95 ^^@ [] L[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/ppl/m/n/10.95 , \O
+ML/zplm/m/it/10.95 s\OT1/zplm/m/n/10.95 ) + \OML/zplm/m/it/10.95 x[]x[] \OT1/zp
+lm/m/n/10.95 = \OT1/ppl/m/n/10.95 0
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.513 \end{equation}
+                     [12]
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.550     \end{equation}
+                         [13]
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.627 \end{proof}
+                  [14]
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.667 
+       [15]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 69
+7.
+
+
+Overfull \hbox (18.2279pt too wide) detected at line 699
+[][][]\OML/zplm/m/it/10 ^^\\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 X\OT1/ppl/m/n/10
+ , \OML/zplm/m/it/10 s\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 s[]\OT1/zplm/m/n/10 )
+ = (\OT1/ppl/m/n/10 1 \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 \OT1/zplm/m/n/10 
+) [] \OML/zplm/m/it/10 ^^Q[] []
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 699.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 1.042pt on input line 699.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 0.79192pt on input line 699.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 0.6252pt on input line 699.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 1.042pt on input line 699.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 0.79192pt on input line 699.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 0.6252pt on input line 699.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.708 \begin{equation}
+                       [16]
+pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.748 \end{equation}
+                     [17]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 760.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 760.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.789 \end{align}
+                  [18]
+pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.820 \end{align}
+                  [19]
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.859 \end{equation}
+                     [20])
+:<-
+Package srcltx Info: Expanded filename `sections/appendix.data' to `sections/ap
+pendix.data.tex' on input line 257.
+:<+ sections/appendix.data.tex
+(./sections/appendix.data.tex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+1.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 \item C
+            ompute monthly equal-weighted and value-weighted turnover across...
+[21{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \item \(
+             R_t\): recession dummy; [22]
+Package srcltx Info: Expanded filename `tables/tab_turnover_di_robustness' to `
+tables/tab_turnover_di_robustness.tex' on input line 70.
+
+:<+ tables/tab_turnover_di_robustness.tex
+(./tables/tab_turnover_di_robustness.tex)
+:<-
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.23}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \]
+        [23]
+pdfTeX warning (ext4): destination with the same identifier (name{page.24}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 \]
+         [24])
+:<-
+Package srcltx Info: Expanded filename `sections/appendix.workers' to `sections
+/appendix.workers.tex' on input line 258.
+:<+ sections/appendix.workers.tex
+(./sections/appendix.workers.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.25}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 \]
+        [25]
+pdfTeX warning (ext4): destination with the same identifier (name{page.26}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.85 
+      [26])
+:<-
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.27}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.261 \newpage
+               [27]
+Package srcltx Info: Expanded filename `sections/supplementary_appendix_numeric
+al' to `sections/supplementary_appendix_numerical.tex' on input line 263.
+
+:<+ sections/supplementary_appendix_numerical.tex
+(./sections/supplementary_appendix_numerical.tex
+Package srcltx Info: Expanded filename `sections/numerical_solution' to `sectio
+ns/numerical_solution.tex' on input line 18.
+
+:<+ sections/numerical_solution.tex
+(./sections/numerical_solution.tex
+pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 ...merical solution of the quantitative model}
+                                                  \label{app:numerical_solut...
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \subsection{Equilibrium conditions}
+                                        
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 \end{equation}
+                    [1
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.54 \end{equation}
+                    [2]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     \label{eq:optimal_rs}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     \label{eq:optimal_rs}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     \label{eq:optimal_rs}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     \label{eq:optimal_rs}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                     \label{eq:optimal_rs2}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                     \label{eq:optimal_rs2}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                     \label{eq:optimal_rs2}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                     \label{eq:optimal_rs2}
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \begin{equation}
+                      [3]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.14
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.14
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.14
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.14
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.15
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.15
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.15
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.15
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.16
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.100 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.16
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.100 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.16
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.100 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.16
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.100 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.17
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.17
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.17
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.17
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.18
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.18
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.18
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.18
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.19
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.19
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.19
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.19
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.20
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.20
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.20
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.20
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \end{equation}
+                     [4]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.21
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.21
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.21
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.21
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.22
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.22
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.22
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.22
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.23
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.23
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.23
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.23
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.24
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.24
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.24
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.24
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.148 \subsection{CRRA preferences}
+                                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.25
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.26
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.27
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.27
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.27
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.27
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.28
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 \end{equation}
+                     [5]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.29
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.29
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.29
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.29
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.30
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.30
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.30
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.30
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.31
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.31
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.31
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.31
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.32
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.32
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.32
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.32
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.33
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.33
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.33
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.33
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.186 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.34
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.34
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.34
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.34
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.35
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.195 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.35
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.195 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.35
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.195 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.35
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.195 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.200 \newpage
+               [6]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.
+3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201 ...ection{Summary of equilibrium conditions}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.36
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.37
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.38
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.39
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.40
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.41
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.42
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.43
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.44
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.45
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.46
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.47
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.48
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \end{align}
+                 \normalsize
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.49
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.234 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.49
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.234 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.49
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.234 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.49
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.234 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.237 \end{equation}
+                    \normalsize [7]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240 \subsection{Log utility}
+                              
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.50
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.243 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.50
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.243 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.50
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.243 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.50
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.243 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.51
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.51
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.51
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.51
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.52
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.252 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.52
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.252 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.52
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.252 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.52
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.252 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.53
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.53
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.53
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.A.53
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.264 \newpage
+               [8]
+pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.265 \section{Calibration}
+                           
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.296 \newpage
+               [9]
+pdfTeX warning (ext4): destination with the same identifier (name{appendix.C}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.298 ...ubjective Campbell-Shiller decomposition}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 \newpage
+               [10])
+:<-
+)
+:<-
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.265 \end{document}
+                     [11] (./BSZ.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `BSZ.out' has not changed.
+(rerunfilecheck)             Checksum: DAC3958B22DD3E73D55ED242AFB67308;7275.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 255 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 34686 strings out of 474116
+ 699768 string characters out of 5743683
+ 1948187 words of memory out of 5000000
+ 55774 multiletter control sequences out of 15000+600000
+ 653618 words of font info for 281 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 100i,14n,131p,1247b,1257s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2024
+/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on BSZ.pdf (91 pages, 744925 bytes).
+PDF statistics:
+ 1770 PDF objects out of 2073 (max. 8388607)
+ 1597 compressed objects within 16 object streams
+ 558 named destinations out of 1000 (max. 500000)
+ 357 words of extra memory for PDF output out of 10000 (max. 10000000)
+

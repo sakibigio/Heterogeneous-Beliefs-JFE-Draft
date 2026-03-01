@@ -1,0 +1,1839 @@
+
+\clearpage
+\numberwithin{equation}{section}
+\setcounter{table}{0}
+\renewcommand{\thetable}{O.\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{O.\arabic{figure}}
+\setcounter{footnote}{0} 
+\setcounter{proposition}{0}
+\renewcommand{\theproposition}{O.\arabic{proposition}}
+\appendix
+\onehalfspacing
+% \singlespacing
+% \newgeometry{left=1in,bottom=1in, top=1in, right=1in}
+\part*{Supplementary Appendix}\label{OA_appendix}
+
+\setcounter{page}{1}
+\renewcommand{\thesection}{O\arabic{section}}
+\section{The case with an arbitrary number of states}\label{app:Nstates}
+
+\subsection{Environment}
+
+We consider an extension of the model in Section \ref{sec:environment.sec} where aggregate productivity growth $x_{t}$ takes $N$ possible values, i.e. $x_t \in \{x^1, x^2, \ldots, x^N\} \equiv \mathcal{X}$, where $x^1 < x^2 < \ldots < x^N$.
+The objective probability of switching from state $s \in\{1,2,\ldots, N\}\equiv \mathcal{S}$ to state $s'\in \mathcal{S}$ is denoted by $p_{ss'}$ and the corresponding subjective probability for household $i\in \mathcal{I}$ is denoted by $p_{ss'}^i$. 
+Households can trade Arrow securities that pay off conditional on every possible state. 
+We also assume that households die with probability $\kappa$ and leave their financial wealth to their child, which will have type $j$ with probability $\mu_j$. 
+This assumption ensures that a non-degenerate stationary distribution of wealth exists.
+The next proposition provides a characterization of the equilibrium in this $N$-state economy. The main conclusion is that the results of Section \ref{sec:environment.sec} are essentially unchanged in this more general setting.
+
+\begin{proposition}[N-state economy]\label{prop: oa_Nstate} Suppose that $x_t \in \mathcal{X}$, where $x_t$ takes $N$ possible values.
+
+\begin{enumerate}
+    \item The (scaled) household's problem can be written as follows
+    \begin{equation}
+    \frac{v_i(X,s)^{1-\psi^{-1}}-1}{1-\psi^{-1}} = \max_{c_{i},R_{i,n}'}  (1-\beta) \frac{c_i^{1-\psi^{-1}}-1}{1-\psi^{-1}} + \beta \frac{\mathbb{E}_i\left[ (v_i(X',s')n')^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}}-1}{1-\psi^{-1}},
+\end{equation}
+subject to the flow budget constraint $n' = R_{i,n}' (1 - c_i) $, the natural borrowing limit $n' \geq 0$, and the portfolio-return constraint
+\begin{equation}
+    \mathbb{E}_s[\Lambda' R_{i,n}'] = 1.
+\end{equation}
+
+\item Consumption-wealth ratio and the investor's SDF are given by 
+\begin{align}
+    c_i(X,s) &= \frac{ (\beta^{-1}-1)^{\psi} \mathcal{R}_i(X,s)^{1-\psi}}{1+ (\beta^{-1}-1)^{\psi} \mathcal{R}_i(X,s)^{1-\psi}},\\
+    \Lambda_i(X,s,s') &=   \beta^\theta \left(\frac{c_i(\chi(X,s,s'),s') N'}{c_i(X,s) N}\right)^{-\frac{\theta}{\psi}} R_{i,n}(X,s,s')^{-(1-\theta)},
+\end{align}
+and the change-of-measure condition is given by
+\begin{equation}
+    \Lambda_i(X,s,s') = \frac{p_{ss'}}{p_{ss'}^i} \Lambda(X,s,s').
+\end{equation}
+
+\item Wages, hours, and profits are given by
+\begin{equation}
+    h(E) = \left( \frac{\alpha E}{\xi} \right)^{\frac{1}{1+\nu -\alpha}}, \qquad  
+    w(E) = \xi \left( \frac{\alpha E}{\xi} \right)^{\frac{\nu}{1+\nu -\alpha}}, \qquad  
+    \pi(E,s) = \left( \frac{\alpha}{\xi} \right)^{\frac{\alpha}{1+\nu-\alpha}} \left[ x_{s} E^{\frac{\alpha}{1+\nu-\alpha}}  - \alpha E^{\frac{1+\nu}{1+\nu-\alpha}}  \right].
+\end{equation}
+\item The law of motion of the endogenous aggregate state variables is given by
+\begin{align}
+    \mathcal{L}'(X,s) &= \sum_{s'\in \mathcal{S}} \frac{p_{ss'} \Lambda(X,s,s')}{\sum_{\tilde{s} \in \mathcal{S}} p_{s\tilde{s}} \Lambda(X,s,\tilde{s})} x_{s'}, \\
+        \eta_i'(X,s,s') &= \frac{(1-\kappa) \eta_i R_{i,n}(X,s,s') (1-c_i(X,s))}{\sum_{j=1}^I\eta_j R_{j,n}(X,s,s') (1-c_j(X,s)) } + \kappa \mu_i.
+\end{align}
+
+\item The market clearing conditions for consumption and the Arrow security for state $s\in \mathcal{S}$ are given by
+\begin{equation}
+\sum_{i=1}^I \eta_i c_i(X,s) = \frac{ x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}}{P(X,s)}, \qquad \qquad   \sum_{i=1}^I \tilde{\eta}_i R_{n,i}(X,s,s') = R_p(X,s,s'),
+\end{equation}
+where $\tilde{\eta}_i \equiv \frac{\eta_i (1-c_i(X,s)}{\sum_{j=1}^I \eta_j (1-c_j(X,s)}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+See Online Appendix \ref{proof: oa_Nstate}.
+\end{proof}
+
+An implication of the result above is that the LDF corresponds to the risk-neutral expectation of productivity growth. 
+The following corollary shows that $\mathcal{L}'(X,s)$ can be expressed as the expected productivity growth (under the objective probability measure) discounted by a risk premium.
+
+\begin{corollary} Let $R_g(X,s,s')$ denote the return on a claim on productivity growth, then
+\begin{equation}
+    \log \mathcal{L}'(X,s) = \log \mathbb{E}_s[x_{s'}] - \log \overline{R}^e_{g}(X,s),
+\end{equation}
+where $\overline{R}^e_{g}(X,s) \equiv \sum_{s'\in \mathcal{S}} p_{ss'} \frac{R_{g}(X,s,s')}{ R_b(X,s)} $ is the risk premium on a claim on productivity growth.
+\begin{proof} The price of a claim on productivity growth is given by
+\begin{equation}
+    P_g(X,s) = \mathbb{E}_s[ \Lambda(X,s,s') x_{s'} ],
+\end{equation}
+and the return on this claim is given by $R_g(X,s,s') = \frac{x_{s'}}{P_g(X,s)}$.
+
+Expressing the pricing condition above in terms of covariances, we obtain
+\begin{equation}
+    \mathbb{E}_s[R_g(X,s,s')] - R_b(X,s) = - Cov_s\left( \frac{\Lambda(X,s,s')}{\mathbb{E}_s[\Lambda(X,s,s')]} ,  \frac{x_{s'}}{P_g(X,s)} \right).
+\end{equation}
+
+Similarly, we can write $\mathcal{L}'(X,s)$ in terms of covariances:
+\begin{equation}
+    \mathcal{L}'(X,s) = \mathbb{E}_s[x_{s'}] + Cov_s\left( \frac{\Lambda(X,s,s')}{\mathbb{E}_s[\Lambda(X,s,s')]} ,  x_{s'}\right).
+\end{equation}
+
+Using the fact that $P_g(X,s) = \mathcal{L}'(X,s) / R_b(X,s)$, we can combine the expressions above to obtain
+\begin{equation}
+    \mathcal{L}'(X,s) = \mathbb{E}_s[x_{s'}] -\left(\frac{\mathbb{E}_s[R_g(X,s,s')]}{R_b(X,s)} - 1\right)\mathcal{L}'(X,s) \Rightarrow \mathcal{L}'(X,s) = \frac{\mathbb{E}_s[x_{s'}]}{\overline{R}_g^e(X,s)}.
+\end{equation}
+    
+\end{proof}
+    
+\end{corollary}
+
+\subsection{Special Case I: Log utility}
+
+We consider next the special case where $\psi = \gamma = 1$ for the economy with an arbitrary number of states. 
+Proposition \ref{oa_log_utility} below shows that the main implications from Section \ref{sec:log_utility.sec} extends to this more general economy. 
+
+\begin{proposition}[Log-utility]\label{oa_log_utility} Suppose $\psi = \gamma = 1$ and that the following condition is satisfied $x^N < \frac{x^1}{\alpha}$.
+
+\begin{enumerate}
+    \item Consumption and portfolio decisions are given by
+    \begin{equation}
+        c_i(X,s) = 1-\beta, \qquad \qquad R_{i,n}(X,s,s') = \frac{p_{ss'}^i}{p_{ss'}(X)} R_p(X,s,s').
+    \end{equation}
+    \item The economy's SDF is given by
+    \begin{equation}
+        \Lambda(X,s,s') = \frac{p_{ss'(X)}}{p_{ss'}} R_p'(X,s,s')^{-1}.
+    \end{equation}
+    \item The price and return on the surplus claim are given by
+    \begin{align}
+        P(X,s) &= \frac{x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}}{1-\beta}, \\
+        R_p(X,s,s') &= \frac{x_s}{\beta} \frac{x_{s'} \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}}.
+    \end{align}
+    \item The risk premium on the surplus claim and the interest rate are given by
+    \begin{align}
+        R_b(X,s) &= \left(1 - \frac{\alpha}{1+\nu} \right) \frac{x_s}{\beta} \frac{  \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}},\\
+        \mathbb{E}_s[R_p^e(X,s,s')] &= \frac{x_s}{\beta} \frac{[\mathbb{E}_s[x_{s'}]-\mathcal{L}'(X,s)] \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} }{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}}.
+    \end{align}
+    
+\item The law of motion of the aggregate state variables are given by
+\begin{align}
+    \mathcal{L}'(X,s) &= \sum_{s'\in \mathcal{S}} x_{s'} \frac{p_{ss'}(X) \left[x_{s'} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) \right]^{-1}}{\sum_{\tilde{s}\in \mathcal{S}} p_{s\tilde{s}}(X)\left[x_{\tilde{s}} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) \right]^{-1}}\\
+    \eta_i'(X,s,s') &= (1-\kappa) \eta_i \frac{p_{ss'}}{p_{ss'}(X)} + \kappa \mu_i,
+\end{align}
+and there exists a unique value of $\mathcal{L}'(X,s) \in (x_1,x_N)$ satisfying the law of motion of $\mathcal{L}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+See Online Appendix \ref{proof:oa_log_utility}.
+\end{proof}
+
+\subsection{Special Case II: Representative Agent with IID Returns}
+
+We consider next a different special case which is also particularly tractable: investors have common iid beliefs, $p_{ss'}^i = p_{s'}^*$, and the supply and demand of labor converge to zero. Formally, we assume $\alpha = \hat{\alpha} \epsilon$ and $\xi = \hat{\xi} \epsilon$ and take the limit as $\epsilon$ goes to zero. 
+For simplicity, we focus on the case $\kappa = 0$. 
+Because labor is chosen in advance, returns on financial assets would not be iid even if the process for aggregate productivity is iid. 
+By taking the limit as supply and demand goes to zero, we ensure that all equilibrium objects are well-defined in the limit and the economy behaves essentially as an endowment economy, analogous to an iid version of the \citet{MP85} economy.
+
+Proposition \ref{oa_iid} provides a characterization of this limit economy. To highlight these results apply to this particular limit, we denote the equilibrium objects in the limiting economy with an $*$, e.g. $v^*(X,s)$ and $c^*(X,s)$.
+
+
+\begin{proposition}[IID Returns]\label{oa_iid} Suppose $p_{ss'}^i = p_{s'}^*$, $\alpha = \hat{\alpha} \epsilon$, and $ \xi = \hat{\xi} \epsilon$. Suppose also the following condition  is satisfied: $\beta^* \equiv \beta \mathbb{E}^*[x_{s'}^{1-\gamma}]^{\frac{1-\psi^{-1}}{1-\gamma}} < 1$. Then, the economy in the limit as $\epsilon \rightarrow 0$ satisfies the following conditions:
+\begin{enumerate}
+    \item Consumption and portfolio decisions:
+    \begin{equation}
+        c_i^*(X,s) = 1-\beta^*, \qquad \qquad R_{i,n}^*(X,s,s') = R^*_p(X,s,s').
+    \end{equation}
+    
+    
+    \item The net-worth multiplier $v_i^*(X,s)$ is given 
+    \begin{equation}
+        v_i^*(X,s) = (1-\beta)^{\frac{1}{1-\psi^{-1}}} (1-\beta^*)^{-\frac{\psi^{-1}}{1-\psi^{-1}}}.
+    \end{equation}
+    
+    \item Wages, hours, and profits are given by
+\begin{equation}
+    h^*(E) = \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{1}{1+\nu}}, \qquad  
+    w^*(E) = 0, \qquad  
+    \pi^*(E,s) = x_s.
+\end{equation}
+    
+    \item The economy's SDF is given by
+    \begin{equation}
+        \Lambda^*(X,s,s') = \beta \mathbb{E}^*[x_{s'}^{1-\gamma}]^{\frac{\gamma-\psi^{-1}}{1-\gamma}} x_{s'}^{-\gamma}.
+    \end{equation}
+    
+    \item The price and return on the surplus claim are given by
+    \begin{equation}
+        P^*(X,s) = \frac{x_s}{1-\beta^*}, \qquad \qquad 
+        R^*_p(X,s,s') = \frac{x_s'}{\beta^*}.
+    \end{equation}
+    
+    \item The risk-free rate and the expected return on the surplus claim are given by
+    \begin{align}
+        R_b^*(X,s) &= \frac{1}{\beta^*} \frac{\mathbb{E}^*[ x_{s'}^{1-\gamma} ]}{\mathbb{E}^*[x_{s'}^{-\gamma}]} ,  \\
+        \mathbb{E}^*[R_p(X,s,s')] &= 
+         R_b(X,s) \frac{\mathbb{E}^*[x_{s'}] \mathbb{E}^*[x_{s'}^{-\gamma}]}{\mathbb{E}^*[x_{s'}^{1-\gamma}] }.
+    \end{align}
+    
+    \item The law of motion of the state variables are given by
+    \begin{equation}
+        \mathcal{L}'(X,s) = E^*, \qquad \qquad \eta_i'(X,s,s') = \eta_i.
+    \end{equation}
+    where $E^* \equiv \frac{\mathbb{E}^*[x_{s'}^{1-\gamma}]}{\mathbb{E}^*[x_{s'}^{-\gamma}]}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+See Online Appendix \ref{proof: oa_iid}.
+\end{proof}
+
+
+
+The following corollary shows that we recover the standard asset pricing formulae for iid economies in continuous time if we assume that $x_s$ is approximately log-normal.
+
+\begin{corollary} Suppose $\log x_s$ can be approximated by a normal distribution with mean $\mu$ and variance $\sigma^2$. Then, under the assumption of Proposition \ref{oa_iid}, we obtain
+\begin{enumerate}
+    \item Interest rate:
+\begin{equation}
+    \log R_b^*(X,s) \approx \rho + \psi^{-1} \left( \mu + \frac{\sigma^2}{2} \right) - \frac{\gamma(1+\psi^{-1})}{2}  \sigma^2,
+\end{equation}
+where $\rho \equiv - \log \beta$. 
+
+\item Risk-premium:
+\begin{equation}
+\log \mathbb{E}\left[\frac{R^*_p(X,s,s')}{R_b^*(X,s)} \right]  \approx \gamma \sigma^2.
+\end{equation}
+
+\item Risk-neutral expectation of productivity growth:
+\begin{equation}
+    \log \frac{\mathcal{L}'(X,s)}{\mathbb{E}[x_{s'}]} \approx -\gamma \sigma^2.
+\end{equation}
+\end{enumerate}
+
+\end{corollary}
+
+The corollary above shows how $\mathcal{L}'(X,s)$ depends on $x_{s'}$ and the equity risk premium. 
+
+\section{Approximate Solution of the General Economy}
+
+In the previous section, we derived exact analytical solutions for two special cases: i) log-utility; ii) homogeneous beliefs and iid returns. 
+In this section, we derive asymptotic closed-form solutions for a general economy with an arbitrary number of states, an arbitrary number of households with heterogeneous beliefs, and Epstein-Zin preferences with unrestricted EIS and risk aversion.
+The derivations for the benchmark case with homogeneous beliefs and iid returns will be useful in deriving the approximate solution.
+
+\subsection{Perturbation}
+
+Consider a family of economies indexed by $\epsilon$. 
+The parameter $\epsilon$ controls three dimensions through which these economies differ from each other. First, it determines the degree of belief heterogeneity:
+\begin{equation}
+    p_{ss'}^i = p_{s'}^* + \delta_{ss'}^i \epsilon,
+\end{equation}
+where $\sum_{s' \in \mathcal{S}}\delta_{ss'}^i = 0$. 
+We also assume that the objective measure coincides with beliefs in the reference economy, i.e. $p_{ss'} = p_{s'}^*$. Second, $\epsilon$ scales both supply and demand for labor:
+\begin{equation}
+    \xi = \hat{\xi} \epsilon, \qquad \qquad  \alpha = \hat{\alpha} \epsilon.
+\end{equation}
+The economy satisfying $\epsilon = 0$ is essentially an endowment economy with iid common beliefs, a special case of the \citet{MP85} economy, as described above.
+Third, we assume that $\kappa = \hat{\kappa} \epsilon$, such that there is no mortality risk in the benchmark economy.
+
+All equilibrium objects are now indexed by $\epsilon$. For instance, the net worth multiplier is now given by $v_i(X,s; \epsilon)$. We are interested in the expansion of $v_i(X,s; \epsilon)$ on $\epsilon$, for $\epsilon$ small:
+\begin{equation}
+    v_i(X,s;\epsilon) = v_i^*(X,s) + \hat{v}_i(X,s) \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+where $v_i^*(X,s) \equiv v_i(X,s; 0)$ and $\hat{v}_i(X,s)$ represents the first-order correction of $v_i(X,s;\epsilon)$ in $\epsilon$.
+
+Similarly, we can write the consumption-wealth ratio  $c_i(X,s;\epsilon)$ as follows:
+\begin{equation}
+    c_i(X,s;\epsilon) = c_i^*(X,s) + \hat{c}_i(X,s) \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+and analogously for the remaining equilibrium variables. 
+
+The functions $v^*_i(X,s)$ and $c^*_i(X,s)$ are already known, as they correspond to the solution of the case with homogeneous beliefs and iid returns, which we characterized above. It remains to solve for $\hat{v}_i(X,s)$,  $\hat{c}_i(X,s)$, and the first-order correction for the other variables. 
+
+We start by providing a characterization of the households' problem in this general economy. 
+\begin{proposition}\label{oa_investor_perturbation} Suppose that $p_{ss'}^i = p_{s'}^* + \delta_{ss'}^i \epsilon$, $\alpha = \hat{\alpha} \epsilon$, and $\xi = \hat{\xi} \epsilon$. Suppose also that $\beta^* < 1$. Then,
+\begin{enumerate}
+    \item Net-worth multiplier:
+\begin{equation}
+    \frac{\hat{v}_i(X,s)}{v_i^*(X,s)}  =  \beta^*  \sum_{s'\in \mathcal{S}} \omega^*_{s'}\left[\frac{1}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} -\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} \right] +\beta^* \overline{v},
+\end{equation}
+where $\omega_{s'}^* \equiv\frac{p_{s'}^* x_{s'}^{1-\gamma}}{\sum_{\tilde{s} \in \mathcal{S}} p_{\tilde{s}}^* x_{\tilde{s}}^{1-\gamma}}$,$X^* = (E^*, \{\eta_i\}_{i=1}^I)$, and
+\begin{equation}
+    \overline{v} \equiv \frac{ \beta^* }{1-\beta^*}\sum_{\tilde{s}\in \mathcal{S}}  \omega^*_{\tilde{s}}  \sum_{\tilde{s}'\in \mathcal{S}} \omega^*_{\tilde{s}'}\left[\frac{ 1}{1-\gamma} \frac{\delta_{\tilde{s}\tilde{s}'}^i}{p_{\tilde{s}'}^*} -\frac{\hat{\Lambda}(X^*,\tilde{s},\tilde{s}')}{\Lambda^*(X^*,\tilde{s},\tilde{s}')}  \right].
+\end{equation}
+    
+    \item Consumption-wealth ratio:
+    \begin{equation}
+    \frac{\hat{c}_i(X,s)}{c^*(X,s)} =  (1-\psi) \frac{\hat{v}_i(X,s)}{\hat{v}^*(X,s)}.
+\end{equation}
+
+    \item Portfolio return:
+\begin{equation}
+    \frac{\hat{R}_{n,i}(X,s,s')}{R^*_p(X,s,s')} = \frac{1}{\gamma}  \text{myopic}  + \frac{1-\gamma}{\gamma} \text{hedging},
+\end{equation}
+where 
+\begin{align}
+    \text{myopic} &= \left[\frac{\delta_{ss'}^i}{p_{s'}^*} - \sum_{\tilde{s}'\in\mathcal{S}} \omega^*_{\tilde{s}'} \frac{\delta_{s\tilde{s}'}^i}{p_{\tilde{s}'}^*}\right] - \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}  \\
+    \text{hedging} &= \left[\frac{\hat{v}_i(X^*,s')}{v^*(X,s)}-\sum_{\tilde{s} \in \mathcal{S}}\omega^*_{\tilde{s}} 
+    \frac{\hat{v}_i(X^*,\tilde{s})}{v^*(X,s)}\right]+
+     \sum_{\tilde{s} \in \mathcal{S}}\omega^*_{\tilde{s}} \frac{\hat{\Lambda}(X,s,\tilde{s})}{\Lambda^*(X,s,\tilde{s})}.
+\end{align}
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+See Online Appendix \ref{proof: oa_investor_perturbation}.
+\end{proof}
+
+Proposition \ref{oa_investor_perturbation} provides asymptotic closed-form solutions to the value function and policy functions. 
+The net-worth multiplier $\hat{v}_i(X,s)$ is high when investor $i$ is relatively optimistic and state-prices are relatively low. 
+The effect of beliefs can be seen by writing the term involving $\delta_{ss'}^i$ as follows:
+\begin{equation}
+    \sum_{s'\in \mathcal{S}} \omega^*_{s'} \frac{1}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} = \sum_{s'\in \mathcal{S}} p_{s'}^* \frac{1}{1-\gamma} \frac{x_{s'}^{1-\gamma}}{\mathbb{E}^*[x_{s'}^{1-\gamma}]} \frac{\delta_{ss'}^i}{p_{s'}^*}  =  Cov^*\left(\frac{1}{1-\gamma} \frac{x_{s'}^{1-\gamma}}{\mathbb{E}^*[x_{s'}^{1-\gamma}]},\frac{\delta_{ss'}^i}{p_{s'}^*} \right),
+\end{equation}
+using the fact that $\sum_{s'\in \mathcal{S}} p_{s'}^* \frac{\delta_{ss'}^i}{p_{s'}^*} = 0$. 
+The covariance above will be positive when $\delta_{ss'}^i$ is on average positive when $x_{s'}$ is high, i.e. the covariance is increasing in how optimistic investor $i$ is. 
+
+The term involving $\hat{\Lambda}(X,s,s')$ captures the effect of changes in the SDF on the portfolio return that can be achieved by the household:\small
+\begin{equation}
+    1 = \mathbb{E}_s\left[ \Lambda(X,s,s';\epsilon) R_{i,n}(X,s,s';\epsilon) \right] \Rightarrow
+    \sum_{s'\in\mathcal{S}} \omega_{s'}^* \frac{\hat{R}_{i,n}(X,s,s')}{R^*_{i,n}(X,s,s')} = - \sum_{s'\in\mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}.
+\end{equation}
+
+Hence, if $\sum_{s'\in\mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}$ is negative, then the household is able to achieve higher weighted portfolio returns in the $\epsilon > 0$ economy.
+
+Given $\hat{v}_i(X,s)$, we can characterize the policy functions. The consumption-wealth ratio $\hat{c}_i(X,s)$ is proportional to $\hat{v}_i(X,s)$. If $\psi > 1$, such that the substitution effect on savings dominates,  households save a larger fraction of their wealth when average portfolio returns are high. 
+
+As in the continuous-time model of \citet{merton1992continuous}, portfolio returns have two components: the \textit{myopic demand} and the \textit{hedging demand}. 
+The myopic demand depends on current market conditions, while the hedging demand depends on future expected returns as captured by $\hat{v}_i(X^*,s')$.
+
+We consider next the labor market outcomes and firms'  profits. 
+\begin{proposition}[Hours, wages, and profits]\label{oa_labor_mkt} Suppose that $p_{ss'}^i = p_{s'}^* + \delta_{ss'}^i \epsilon$, $\alpha = \hat{\alpha} \epsilon$, and $\xi = \hat{\xi} \epsilon$. Suppose also that $\beta^* < 1$. Then,
+\begin{enumerate}
+    \item Wages:
+\begin{equation}
+    \hat{w}(E) = \hat{\xi}\left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{\nu}{1+\nu}}.
+\end{equation}
+
+\item Hours:
+\begin{equation}
+    \hat{h}(E) = \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{1}{1+\nu}} \frac{\log \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)}{(1+\nu)^2} \hat{\alpha}.
+\end{equation}
+
+\item Profits:
+\begin{equation}
+    \hat{\pi}(X,s) = \left[ x_s \frac{\log \left( \hat{\alpha} E/   \hat{\xi} \right)}{1+\nu} -E \right] \hat{\alpha}.
+\end{equation}
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+See Online Appendix \ref{proof: oa_labor_mkt}
+\end{proof}
+
+We consider next the behavior of the price of the surplus claim and the riskless asset.
+\begin{proposition}[Asset Prices]\label{oa_asset_prices} Suppose that $p_{ss'}^i = p_{s'}^* + \delta_{ss'}^i \epsilon$, $\alpha = \hat{\alpha} \epsilon$, and $\xi = \hat{\xi} \epsilon$. Suppose also that $\beta^* < 1$. Then,
+\begin{enumerate}
+    \item Price of surplus claim:
+    \begin{equation}
+        \frac{\hat{P}(X,s)}{P^*(X,s)}  = \left[\log (\hat{\alpha} E / \hat{\xi}) -  \frac{E}{x_s}\right] \frac{\hat{\alpha}}{1+\nu} + (\psi-1) \sum_{i=1}^I \eta_i \frac{\hat{v}_i(X,s)}{v^*(X,s)}.
+    \end{equation}
+    \item Return on the surplus claim:
+    \begin{equation}
+    \frac{\hat{R}_{p}(X,s,s')}{R_p^*(X,s,s')} = 
+    \left[ \log \frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu} + (\psi-1) \sum_{i=1}^I \eta_i \left[ \frac{\hat{v}_i(X^*,s')}{v^*(X^*,s')}- \frac{1}{\beta^*} \frac{\hat{v}_i(X,s)}{v^*(X,s)}\right].
+\end{equation}
+\item Risk-free rate:
+    \begin{equation}
+        \frac{\hat{R}_b(X,s)}{R_b^*(X,s)} = - \sum_{s'\in\mathcal{S}} \frac{p_{s'} x_{s'}^{-\gamma}}{\mathbb{E}^*[x_{s'}^{-\gamma}]} \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}.
+    \end{equation}
+\item Conditional risk premium:
+\begin{equation}
+    \frac{\widehat{\overline{R}}_E(X,s)}{\overline{R}_E^*(X,s)} = \sum_{s'\in \mathcal{S}} \frac{p_{s'}^* x_{s'}}{\mathbb{E}^*[x_{s'}]} \frac{\hat{R}_E(X,s,s')}{R_E^*(X,s,s')} -\frac{\hat{R}_b(X,s)}{R^*_b(X,s)},
+\end{equation}
+where $\overline{R}_E(X,s;\epsilon) = \mathbb{E}^*\left[ \frac{R_E(X,s,s';\epsilon)}{R_b(X,s;\epsilon)}\right] $.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+See Online Appendix \ref{proof: oa_asset_prices}
+\end{proof}
+
+The next proposition provides the law of motion of the aggregate state variables.
+\begin{proposition}[Aggregate state variables.]\label{oa_aggregate_state} Suppose that $p_{ss'}^i = p_{s'}^* + \delta_{ss'}^i \epsilon$, $\alpha = \hat{\alpha} \epsilon$, and $\xi = \hat{\xi} \epsilon$. Suppose also that $\beta^* < 1$. Then,
+\begin{enumerate}
+    \item Wealth distribution:
+    \begin{equation}
+            \frac{\hat{\eta}_i'(X,s,s')}{\eta_i} =   \frac{\hat{R}_{i,n}(X,s,s')}{R^*_{i,n}(X,s,s')}-\sum_{j=1}^I \eta_i \frac{\hat{R}_{j,n}(X,s,s')}{R^*_{j,n}(X,s,s')} - ((\beta^*)^{-1}-1)\left(\frac{\hat{c}_i(X,s)}{c_i^*(X,s)}  - \sum_{j=1}^I \eta_j \frac{\hat{c}_j(X,s)}{c_j^*(X,s)} \right) + \kappa \frac{\mu_i - \eta_i}{\eta_i}.
+    \end{equation}
+    \item Risk-neutral expectation of productivity growth:
+    \begin{equation}
+    \frac{\hat{E}'(X,s)}{E^*} = \frac{\hat{R}_b(X,s)}{R_b^*(X,s)}  + \sum_{s'\in \mathcal{S}} \omega_{s'}^*\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} .
+\end{equation}
+\end{enumerate}
+
+\begin{proof}
+See Online Appendix \ref{proof: oa_aggregate_state}.
+\end{proof}
+\end{proposition}
+
+Propositions \ref{oa_investor_perturbation} to \ref{oa_aggregate_state} characterize the behavior of all equilibrium objects given the economy's SDF $\hat{\Lambda}(X,s,s')$. 
+The next proposition provides an expression for $\Lambda(X,s,s')$ in terms of the primitives of the economy.
+
+\begin{proposition}[The economy's SDF]\label{oa_SDF} Suppose that $p_{ss'}^i = p_{s'}^* + \delta_{ss'}^i \epsilon$, $\alpha = \hat{\alpha} \epsilon$, and $\xi = \hat{\xi} \epsilon$. Suppose also that $\beta^* < 1$. Then, the economy's SDF is given by\small
+\begin{equation}
+    \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} = \gamma b^{\Lambda}(X,s,s') -(\gamma - \psi^{-1}) \left[  \omega^* b^{\Lambda}(X,s) -  \beta^* \omega^* \cdot b^\Lambda(X^*,s') + \beta^* \sum_{\tilde{s}\in \mathcal{S}} \omega_{\tilde{s}} ( \omega^* \cdot b^{\Lambda}(X^*,\tilde{s}) )
+    \right],
+\end{equation}\normalsize
+where \footnotesize
+\begin{equation}
+    b^\Lambda(X,s,s')  = \frac{1}{\gamma}\frac{\delta_{ss'}(X)}{p_{s'}^*}- \frac{\psi - \gamma^{-1}}{\gamma-1} \left[\omega^* \cdot \delta_s(X) - \beta^* \omega^* \cdot \delta_{s'}(X)+\beta^* \sum_{\tilde{s}} \omega_{\tilde{s}}^* (\omega^* \cdot \delta_{\tilde{s}}(X) ) \right]
+- \left[ \log\frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu}.
+\end{equation}\normalsize
+\end{proposition}
+\begin{proof}
+See Online Appendix \ref{proof: oa_SDF}.
+\end{proof}
+
+A particularly simple special case is given by the case of CRRA preferences, i.e. $\gamma = \psi^{-1}$.
+\begin{corollary} Suppose $\gamma = \psi^{-1}.$ Then,
+\begin{enumerate}
+    \item SDF:
+    \begin{equation}
+    \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} = \frac{\delta_{ss'}(X)}{p_{s'}^*} - \gamma  \left[ \log\frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu}.
+\end{equation}
+%     \item Net-worth multiplier:
+%     \begin{equation}
+%     \frac{\hat{v}_i(X,s)}{v_i^*(X,s)}  =  \beta^*  \sum_{s'\in \mathcal{S}} \omega^*_{s'}\left[\frac{1}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} -\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} \right] +\beta^* \overline{v},
+% \end{equation}
+% where $\omega_{s'}^* \equiv\frac{p_{s'}^* x_{s'}^{1-\gamma}}{\sum_{\tilde{s} \in \mathcal{S}} p_{\tilde{s}}^* x_{\tilde{s}}^{1-\gamma}}$,$X^* = (E^*, \{\eta_i\}_{i=1}^I)$, and
+% \begin{equation}
+%     \overline{v} \equiv \frac{ \beta^* }{1-\beta^*}\sum_{\tilde{s}\in \mathcal{S}}  \omega^*_{\tilde{s}}  \sum_{s'\in \mathcal{S}} \omega^*_{s'}\left[\frac{ 1}{1-\gamma} \frac{\delta_{\tilde{s}s'}^i}{p_{s'}^*} -\frac{\hat{\Lambda}(X^*,\tilde{s},s')}{\Lambda^*(X^*,\tilde{s},s')}  \right].
+% \end{equation}
+\end{enumerate}
+\end{corollary}
+
+
+\subsection{Special cases}
+
+Consider the special case where $\delta_{ss'}^i = 0$ for all $i \in \mathcal{I}$ and $s, s' \in \mathcal{S}$. In this case, investors still have common iid beliefs, but returns will not be iid due to the fact that labor is chosen one period in advance. 
+
+In this case, the economy's is given by
+\begin{equation}
+    \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} =\psi^{-1} \left[ \log \frac{E}{E^*} +\frac{E^*}{x_{s'}}  - \frac{E}{x_s}\right]  \frac{\hat{\alpha}}{1+\nu} - (\gamma - \psi^{-1}) (1-\beta^*) \sum_{\tilde{s}'}\omega^*_{\tilde{s}'} \left(  \frac{E^*}{x_{\tilde{s}'}} - \frac{E^*}{x_{s'}} \right) \frac{\hat{\alpha}}{1+\nu}.
+\end{equation}
+
+The interest rate is given by
+\begin{equation}
+        \frac{\hat{R}_b(X,s)}{R_b^*(X,s)} = - \sum_{s'\in\mathcal{S}} \frac{p_{s'} x_{s'}^{-\gamma}}{\mathbb{E}^*[x_{s'}^{-\gamma}]} \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}.
+    \end{equation}
+
+\subsection{Conditional moments}
+
+
+Consider the conditional risk premium
+\begin{equation}
+    R^e_p(X,s;\epsilon) \equiv \sum_{s'\in\mathcal{S}} p_{s'}^* \frac{R_p(X,s,s';\epsilon)}{R_b(X,s;\epsilon)}.
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{equation}
+    \frac{\hat{R}_p^e(X,s)}{R_p^{e,*}} = \sum_{s'\in\mathcal{S}} \frac{p_{s'}^* R_p^*(X,s,s')}{\sum_{\tilde{s}'\in \mathcal{S}} p_{\tilde{s}'}^* R_p^*(X,s,\tilde{s}')} \left[ \frac{\hat{R}_p(X,s,s')}{R_p^*(X,s,s')} - \frac{\hat{R}_b(X,s)}{R_b^*(X,s)}\right] = 
+    \sum_{s'\in \mathcal{S}} \frac{p_{s'}x_{s'}}{\mathbb{E}^*[x_{s'}]} \frac{\hat{R}_p(X,s,s')}{R_p^*(X,s)} - \frac{\hat{R}_b(X,s,s')}{R_b^*(X,s)}.
+\end{equation}
+
+The conditional volatility of excess returns is given by
+\begin{equation}
+    \sigma_{p}(X,s;\epsilon) \equiv \left[ \sum_{s'\in\mathcal{S}} p_{s'} \left( R_p^e(X,s,s';\epsilon)- R_p^e(X,s;\epsilon)\right)^2 \right]^{\frac{1}{2}}.
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{equation}
+    \frac{\hat{\sigma}_{p}(X,s)}{\sigma^*_p(X,s)} = \frac{1}{\sigma_p^*(X,s)^2}  \sum_{s'\in\mathcal{S}} p_{s'} \left( R_p^{e,*}(X,s,s') - R_p^{e,*}(X,s)\right)  \left( \hat{R}_p^{e}(X,s,s') - \hat{R}_p^{e}(X,s)\right),
+\end{equation}
+where $\hat{R}_p^{e}(X,s,s') = \hat{R}_p^{e,*}(X,s,s') \left( \frac{\hat{R}_p(X,s,s')}{R^*_p(X,s,s')} - \frac{\hat{R}_b(X,s)}{R_b^*(X,s)} \right) $.
+
+
+\subsection{Stock prices in the log economy}
+
+Suppose $\psi = \gamma = 1$ and that investors have homogeneous iid beliefs, $\delta_{ss'}^i = 0$. The stock price satisfies the following recursion:
+\begin{equation}
+    Q(X,s) = \sum_{s'\in \mathcal{S}} p_{s s'} \Lambda(X,s, s') \left[ \pi(\mathcal{L}'(X,s), s') + x_{s'} Q(X', s') \right],
+\end{equation}
+where $\pi(E, s) =  \left( \frac{\alpha E}{\xi} \right)^{\frac{\alpha}{1+\nu - \alpha}} x_s \left[ 1- \frac{\alpha}{x_s} E \right] $ and $p_{ss'} \Lambda (X,s,s') = p_{ss'}(X) \frac{\beta}{x_{s'}} \left( \frac{E}{\mathcal{L}'(X,s)}  \right)^{\frac{\alpha}{1+\nu - \alpha}} \frac{1+\nu - \alpha \frac{E}{x_s}}{1+\nu - \alpha \frac{\mathcal{L}'(X,s)}{x_{s'}}}$.
+
+Define the price-dividend ratio $q(X,s) = x_s \frac{Q(X,s)}{\pi(X,s)}$. The price-dividend ratio satisfies the recursion:
+\begin{equation}
+    q(X,s) = \sum_{s'\in \mathcal{S}} p_{s s'} \Lambda(X,s, s') \left[ \pi(\mathcal{L}'(X,s), s') + x_{s'} Q(X', s') \right],
+\end{equation}
+
+We can then write the expression above as follows:
+\begin{equation}
+    q(X,s) =  \beta \sum_{s'\in \mathcal{S}} p_{s s'}(X)  \frac{1+\nu - \alpha \frac{E}{x_s}}{1+\nu - \alpha \frac{\mathcal{L}'(X,s)}{x_{s'}}} \frac{1 - \alpha \frac{\mathcal{L}'(X,s)}{x_{s'}}}{1 - \alpha \frac{E}{x_s}}\left[ 1+ q(X', s') \right].
+\end{equation}
+
+Let's assume that $\nu = \overline{\nu} \epsilon$. We can then write $q(X,s; \epsilon)$ as follows
+\begin{equation}
+    q(X,s;\epsilon) = \sum_{k=0}^\infty q_k(X,s) \epsilon^k. 
+\end{equation}
+
+Define $g(X,s,s';\epsilon) \equiv \frac{1+\nu - \alpha \frac{E}{x_s}}{1+\nu - \alpha \frac{\mathcal{L}'(X,s)}{x_{s'}}} \frac{1 - \alpha \frac{\mathcal{L}'(X,s)}{x_{s'}}}{1 - \alpha \frac{E}{x_s}}$. We can expand $g(X,s,s')$ as follows
+\begin{equation}
+    g(X,s,s';\epsilon) = \sum_{k=0}^\infty g_{k}(X,s,s') \epsilon^k, 
+\end{equation}
+where  $g_0(X,s,s') =1 $ and, for $k > 0$, we obtain
+\begin{equation}
+    g_k(X,s,s') =  \frac{\alpha\overline{\nu}^k \left(\frac{\mathcal{L}'(X,s)}{x_{s'}}- \frac{E}{x_s}\right) }{\left(1 - \alpha\frac{E}{x_s}\right) \left( \alpha\frac{\mathcal{L}'(X,s')}{x_{s'}}-1\right)^k } 
+\end{equation}
+
+This gives the following recursion for $q_{k}(X,s)$:
+\begin{equation}
+    q_k(X,s) = \beta \sum_{s'\in \mathcal{S}} p_{s s'}(X)  \left[ g_k(X,s)+ \sum_{j=0}^k g_j(X,s) q_{k-j}(X', s') \right].
+\end{equation}
+
+Under our assumptions, the risk-neutral expectation of productivity growth is constant $\mathcal{L}'(X,s) = \overline{E}$.  In this case, we can write the recursion
+\begin{equation*}
+    Q(\overline{X}, s) = \beta \left( 1 - \frac{\alpha}{1+\nu} \frac{\overline{E} }{x_s}\right) \sum_{s' \in \mathcal{S}} \frac{p^*_{s'} x_{s'}}{x_{s'} - \frac{\alpha}{1+\nu} \overline{E}} \left[ Q(\overline{X}, s')  + \left( \frac{\alpha \overline{E}}{\xi}  \right)^\frac{\alpha}{1+\nu -\alpha} \left( 1 - \alpha  \frac{\overline{E}}{x_{s'}} \right)\right]
+\end{equation*}
+
+Let $\tilde{Q}(X,s) \equiv \frac{Q(x,s)}{1 - \frac{\alpha}{1+\nu} \frac{\mathcal{L}'(X,s)}{x_s}}$,
+$\tilde{Q}(X) \equiv [\tilde{Q}(X,1), \ldots, \tilde{Q}(X,N)]' $, and $b^Q \equiv \beta \left( \frac{\alpha \overline{E}}{\xi}  \right)^\frac{\alpha}{1+\nu -\alpha} \sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'} - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E} } $.
+Then, we can write 
+\begin{equation}
+    \left[ I - \beta \mathbb{1}_N (p^*)' \right] \tilde{Q}(\overline{X}) = b^Q \mathbb{1}_N,
+\end{equation}
+
+Inverting the matrix above, we obtain
+\begin{equation}
+    Q(\overline{X},s) = \left[\frac{\beta}{1-\beta} \left( \frac{\alpha \overline{E}}{\xi}  \right)^\frac{\alpha}{1+\nu -\alpha}   \sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'} - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} \right]\left( 1 - \frac{\alpha}{1+\nu} \frac{\overline{E} }{x_s}\right). 
+\end{equation}
+
+The price-dividend ratio is given by
+\begin{equation}
+    \frac{x_s Q(\overline{X},s)}{\pi(\overline{X},s)} =  \frac{\beta}{1-\beta} \sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'} - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} \frac{x_s - \frac{\alpha}{1+\nu} \overline{E}}{x_s - \alpha\overline{E}}.
+\end{equation}
+
+Equity returns are given by
+\begin{equation}
+    R_E(X,s, s') = \frac{\pi(\overline{E}, s') + x' Q(\overline{X}, s')}{Q(\overline{X}, s)} = \frac{x_{s'}}{\beta}\left[  \frac{1-\beta}{\sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'} - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} } \frac{1 - \alpha \frac{\overline{E}}{x_{s'}}}{1 - \frac{\alpha}{1+\nu} \frac{\overline{E}}{x_{s}} } + \beta \frac{1 - \frac{\alpha}{1+\nu} \frac{\overline{E}}{x_{s'}}}{1 - \frac{\alpha}{1+\nu} \frac{\overline{E}}{x_{s}} } \right].
+\end{equation}
+
+Excess returns are given by
+\begin{equation}
+    R_E^e(X,s,s') = a_E x_{s'} + b_E,
+\end{equation}
+where
+\begin{align}
+    a_E &\equiv  \frac{1}{\left(1-\frac{\alpha}{1+\nu}\right) \overline{E} } \left( \frac{1-\beta}{\sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'}  - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} } + \beta \right)\\
+    b_E &\equiv 
+\end{align}
+
+The conditional risk premium is given by
+\begin{equation}
+    R_E(\overline{X},s) = \frac{1}{\left(1-\frac{\alpha}{1+\nu}\right) \overline{E}}\left[ \left( \frac{1-\beta}{\sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'}  - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} } + \beta \right) \mathbb{E}[x_{s'}]-\left( \frac{(1-\beta)(1+\nu)}{\sum_{s'\in \mathcal{S}} p_{s'}^* \frac{x_{s'}  - \alpha \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} } + \beta \right)  \frac{\alpha}{1+\nu} \overline{E}\right]-1.
+\end{equation}
+
+We can write the expression above as follows:
+\begin{equation}
+    R_E(\overline{X},s) = \frac{1}{\left(1-\frac{\alpha}{1+\nu}\right) \overline{E}}\left[ \left( \frac{1-\beta}{1 - \nu \sum_{s'\in \mathcal{S}} \frac{p_{s'}^* \frac{\alpha}{1+\nu} \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}} } + \beta \right) \mathbb{E}[x_{s'}]-\left( \frac{(1-\beta)(1+\nu)}{1 - \nu \sum_{s'\in \mathcal{S}} \frac{p_{s'}^* \frac{\alpha}{1+\nu} \overline{E}}{x_{s'} - \frac{\alpha}{1+\nu}\overline{E}}} + \beta \right)  \frac{\alpha}{1+\nu} \overline{E}\right]-1.
+\end{equation}
+
+
+
+\subsection{Quantitative implications}
+
+Let $z_t$ denote demeaned log productivity growth, which we assume follows an AR(1) process:
+\begin{equation}
+    z_{t+1} = \rho z_t + \sigma \sqrt{1-\rho^2}\epsilon_{t+1},
+\end{equation}
+where $\epsilon_{t+1}$ follows a standard normal distribution and it is serially uncorrelated. In levels, the (gross) productivity growth is given by $x_t = e^{\mu+z_t} $, where $\mu$ denotes average productivity growth. 
+
+We discretize the process above following the method of \citet{rouwenhurst1995asset}. Let $\hat{z}_t$ denote the discretized variable taking values in the equally-spaced grid  $\{z_{1}, \ldots, z_N \}$, where $z_i = -\overline{\psi}  + \frac{2 \overline{\psi}}{N-1} (i-1) $, so $z_1 = -\overline{\psi}$ and $z_N =  \overline{\psi}$. We set $\overline{\psi} \equiv \sigma \sqrt{N-1}$, so we match the unconditional variance. 
+
+\subsection{A more general process for productivity growth}\label{sec:discretization}
+
+% comment move paragraph entirely to appendix. It is not essential. 
+\paragraph{Discretization.}
+The evolution of $\hat{x}_t$, under subjective beliefs, can be written in a convenient matrix form:
+\begin{equation}\label{eq: MS_VAR}
+    \left[ 
+    \begin{matrix}
+        \hat{x}_{t+1}\\
+        \hat{z}_{i,t+1}
+    \end{matrix}
+    \right] = \left[ \begin{matrix}
+        w_{t+1}\\
+        0
+    \end{matrix}\right]  + \left[ \begin{matrix}
+        \theta_i & 1 \\
+        0 & 0
+    \end{matrix} \right]
+    \left[ 
+    \begin{matrix}
+        \hat{x}_{t}\\
+        \hat{z}_{i,t}
+    \end{matrix}
+    \right] + \left[ \begin{matrix}
+        \sigma_{i,u} & 0\\
+        0 & \sigma_v
+    \end{matrix} \right] \left[ 
+    \begin{matrix}
+        u_{i,t+1}\\
+        v_{t+1}
+    \end{matrix}
+    \right],
+\end{equation}
+where $\hat{z}_{i,t} \equiv \mathbb{E}_{i,t}[\hat{x}_{t+1}] - \theta_i \hat{x}_{t}$. We recover objective beliefs in the special case $\theta_i = \sigma_v = 0$.
+As $w_{t+1}$ follows a Markov chain, the process above corresponds to a Markov-switching vector autoregression (MS-VAR), with state-dependent conditional means. To discretize the system above, we adapt the methods of \citet{gospodinov2014moment}, who extended the \citet{rouwenhurst1995asset} method to VARs, and \citet{liu2017discretization}, who proposed a discretization of univariate Markov-Switching models. 
+The discretization provides a state space with dimension $S$  for $x_t$, so $x_t \in \mathcal{X}= \{x^1, x^2, \ldots, x^S\}$,  and transition probabilities $\{p_{ss'}^i\}$, for $s, s' \in \mathcal{S} = \{1,2, \ldots, S\}$, that approximate the MS-VAR \eqref{eq: MS_VAR}. Notice that our discretization implies that the grid $\mathcal{X}$ is the same for all investors, so they agree on the state $s$, but they disagree on the transition probabilities $p_{ss'}^i$.
+
+
+
+Let $\hat{x}_t \equiv \log x_t - \mu $  denote the demeaned log productivity growth. We assume that investor $i$ believes the process for $\hat{x}_t$ is given by
+\begin{align}
+    \hat{x}_{t+1} &= \mathbb{E}_{i,t}[\hat{x}_{t+1}] + \sigma_{i,u} u_{i,t+1}\\
+    \mathbb{E}_{i,t}[\hat{x}_{t+1}] &= \theta_i \hat{x}_t + \sigma_{v} v_{i,t},
+\end{align}
+$v_{i,t} = \overline{v}_t + \Tilde{v}_{i,t}$, 
+where $u_{i,t}$ and $v_t$ are mutually independent, serially uncorrelated, standard normal random variables. 
+Notice that $u_{i,t+1}$ represents the period $t+1$ innovation according to investor $i$ and $v_t$ represents an \textit{expectation shock}. We assume that this expectation shock is common across investors, so heterogeneity comes only from $\theta_i$. 
+
+The presence of this expectation shock is important to quantitatively match the volatility of expectations in the data. 
+To see the role of $v_t$, notice that the unconditional variance of $\hat{x}_{t+1}$ and $\mathbb{E}_t[\hat{x}_{t+1}]$ are given by
+\begin{equation}
+    Var[\hat{x}_{t+1}] = \frac{\sigma_{i,u}^2 + \sigma_v^2}{1-\theta_i^2}, \qquad \qquad Var[\mathbb{E}_t[\hat{x}_{t+1}]] =  \frac{\theta_i^2 \sigma_{i,u}^2 + \sigma_v^2}{1-\theta_i^2}.
+\end{equation}
+
+The fraction of total variance explained by movements in expectations is given by
+\begin{equation}
+    \frac{Var[\mathbb{E}_t[\hat{x}_{t+1}]]}{Var[\hat{x}_{t+1}]} = \theta_i^2 + (1-\theta_i^2) \frac{\sigma_v^2}{\sigma_{i,u}^2 + \sigma_v^2}.
+\end{equation}
+Hence, by adjusting $\sigma_v$, it is possible to obtain any value in the interval $[\theta_i^2, 1)$ for the fraction of variance explained by movements in expectations. In the special case $\sigma_v = 0$, we obtain an AR(1) process for $\hat{x}_{t+1}$, which achieves the lower bound of this interval. 
+
+
+
+\paragraph{Discretization.} We discretize the process above using the generalization of the method of \citet{rouwenhurst1995asset} proposed by \citet{gospodinov2014moment}. 
+The method consists of mixing the distribution for independent AR(1) processes to approximate the distribution of a VAR(1) with uncorrelated shocks. 
+Define $\hat{z}_{t} \equiv \mathbb{E}_{i,t}[\hat{x}_{i,t}] - \theta_i \hat{x}_t$, so we can write the system above in matrix form:
+\begin{equation}
+    \left[ \begin{matrix}
+        \hat{x}_{t+1}\\
+        \hat{z}_{t+1}
+    \end{matrix}\right] = \left[ \begin{matrix}
+        \theta & 1\\
+        0 & 0
+    \end{matrix}\right]
+    \left[ \begin{matrix}
+    \hat{x}_t\\
+    \hat{z}_{t}
+    \end{matrix}
+    \right]+\left[ \begin{matrix}
+        \sigma_u & 0\\
+        0 & \sigma_v
+    \end{matrix}\right]
+    \left[ \begin{matrix}
+     u_{t+1}\\
+     v_{t+1}
+    \end{matrix}
+    \right],
+\end{equation}
+where we dropped the dependence on the investor $i$ to ease notation.
+Given this representation, we can construct the discrete approximation following the three steps described below.
+
+
+\textit{Step 1: grid construction.}
+We construct the grids for $\hat{x}$ and $\hat{z}$ as in \citet{rouwenhurst1995asset}. 
+Let $\hat{x}(N_x, \sigma_x) = \{ \overline{x}^1, \overline{x}^2, \ldots, \overline{x}^{N_x} \}$ denote the grid for $\hat{x}$, where 
+\begin{equation}
+    \hat{x}^i = - \psi_x(N_x, \sigma_x) + 2 \psi_x(N_x, \sigma_x) \frac{i-1}{N_x-1}, 
+\end{equation}
+$\psi_x(N_x, \sigma_x) \equiv \sigma_x \sqrt{N_x -1}$, and $\sigma_x$ denotes the unconditional standard-deviation for $\hat{x}_t$. Notice that the grid is equally spaced, $\overline{x}^1 = - \psi_x(N_x, \sigma_x)$, and $\overline{x}^{N_x} = \psi_x(N_x, \sigma_x)$. 
+The grid for $\hat{z}$ is constructed analogously. 
+
+
+\textit{Step 2: transition matrix for independent AR(1).} 
+Let $\Pi(N, \rho, \sigma)$ denote the $N\times N$ transition matrix for the \citet{rouwenhurst1995asset} approximation of an AR(1) process with autocorrelation $\rho$ and unconditional variance $\sigma^2$. We denote the $k$-th row of this matrix by 
+\begin{equation}
+    \pi_k(N, \rho, \sigma) = \{\pi_{k,1}(N, \rho, \sigma), \pi_{k,2}(N, \rho, \sigma), \ldots, \pi_{k,N}(N, \rho, \sigma)\},
+\end{equation}
+where $\pi_{k,l}(N, \rho, \sigma)$ is the probability of transitioning from state $k$ to state $l$. In the special case where $\rho = 0$, the transition probability is independent of the current state, so we can write $\pi_{k,j}(N,0,\sigma) = \overline{\pi}_j(N,\sigma)$.
+
+
+\textit{Step 3: Markov chain  construction.} Given $N_x$ points in the grid for $\hat{x}$ and $N_{z}$ points in the grid for $\hat{z}_t$, we have a total of $S = N_x \times N_z$ states. Denote the state space by $\mathcal{S} = \{1,2, \ldots, S\}$. Let $s = i + (k-1) \times N_x$ and $s' = j + (l-1) \times N_x$, where $i, j \in \{1, \ldots, N_x\}$ and $k, l \in \{1, \ldots, N_z\}$. 
+Denote the probability of $\hat{x}_{t+1} = \overline{x}^{j}$ given state $s$ by $p_s^x(j)$ and the probability of $\hat{z}_{t+1} = \overline{z}^{l}$ given state $s$ by $p_{s}^z(l)$. 
+As $\hat{x}_{t+1}$ and $\hat{z}_{t+1}$ are conditionally independent, the probability of switching from state $s$ to state $s'$ is given by 
+\begin{equation}
+    p_{ss'} = p_s^x(j) \times p_s^{z}(l).
+\end{equation}
+
+As $z$ is serially uncorrelated, we have that $p_{s}^z(l) = \overline{\pi}_l(N_z, \sigma_z)$.
+The transition probability for $\hat{x}_t$ will be obtained by appropriately mixing the distribution of an AR(1) process with autocorrelation $\rho_{x} \equiv \sqrt{1 - \frac{\sigma_u^2}{\sigma_x^2}}$ and unconditional variance $\sigma_x^2$.
+
+Let $\mu_x(s) \equiv \theta \hat{x}^{i} + \hat{z}^{k}$ denote the conditional expectation of $\hat{x}$ at state $s$. Suppose first that $\mu_x(s) \in [ \rho_x \overline{x}^1, \rho_x \overline{x}^{N_x} ]$. Define the probability of $\hat{x}_{t+1} = \overline{x}^{j}$ given state $s$ as follows:
+\begin{equation}
+p_s^x(j)  = \lambda(\rho_x) \pi_{\iota,j}(N_x, \rho_x, \sigma_x) + (1-\lambda(\rho_x)) \pi_{\iota+1,j}(N_x, \rho_x, \sigma_x),
+\end{equation}
+where $\iota$ is such that  $\rho_{x} \overline{x}^\iota \leq \mu_x(s) \leq \rho_x \overline{x}^{\iota+1}$ and $\lambda(\rho_x) \equiv \frac{\rho_{x} \overline{x}^{\iota+1} - \mu_x(s)}{\rho_{x} \overline{x}^{\iota+1}-\rho_{x} \overline{x}^\iota}$.
+
+This choice of $\lambda(\rho_x)$ implies that we match the conditional moments:
+\begin{equation}
+     \sum_{j=1}^{N_x} p_{s}^x(j)\overline{x}^{j}  = \lambda(\rho_x) \rho_x \overline{x}^{\iota} + (1-\lambda(\rho_x)) \rho_x \overline{x}^{\iota+1} = \mu_{x}(s).
+\end{equation}
+
+The conditional second moment is given by
+\begin{equation}
+     \sum_{j=1}^{N_x} p_s^x(j) (\overline{x}^{j})^2 = \sigma_x^2 (1-\rho_x^2) + \rho_x^2 \left[\lambda(\rho_x) (\overline{y}^{\iota})^2 + (1-\lambda(\rho_x)) (\overline{y}^{\iota+1})^2\right].
+\end{equation}
+
+Denote the conditional variance of the discrete process by $\Tilde{\sigma}_u^2$, which is given by 
+\begin{align}
+    \Tilde{\sigma}_u^2 &=  \sigma_x^2 (1-\rho_x^2) + \rho_x^2 \left[\lambda(\rho_x) (\overline{y}^{\iota})^2 + (1-\lambda(\rho_x)) (\overline{y}^{\iota+1})^2\right]  - \rho_x^2 \left[\lambda(\rho_x) \overline{y}^{\iota} + (1-\lambda(\rho_x)) \overline{y}^{\iota+1}\right]^2 \nonumber\\
+    &= \sigma_x^2 (1-\rho_x^2) + \rho_x^2 \lambda(\rho_x) (1-\lambda(\rho_x)) ( \overline{x}^{\iota+1} - \overline{x}^{\iota} )^2\nonumber\\
+    &= \sigma_x^2 (1-\rho_x^2) + \sigma_x^2 \rho_x^2 \frac{4\lambda(\rho_x) (1-\lambda(\rho_x)) }{N_x-1},
+\end{align}
+using the fact that $(\overline{x}^{i+1} - \overline{x}^{i})^2 = \frac{4 \sigma_x^2}{N-1}$.
+As $N_x \rightarrow \infty$, the second term on the right converges to zero and $\Tilde{\sigma}_u = \sigma_x^2 (1-\rho_x^2) = \sigma_u^2$, given our choice of $\rho_x$. If $\mu_{x}(s)/\rho_x$ does not belongs to the grid of $\hat{x}$, then the discretization matches the conditional mean of $\hat{x}$, but it overstates the conditional variance.  
+
+Suppose now that $\mu_x(s) \notin [\rho_x \overline{x}^1, \rho_x \overline{x}^{N_x}]$. In this case, we set $p_s^x(j) = \pi_{1,j}(N_x, \rho_x, \sigma_x)$ if $\mu_{x}(s) < \rho_x \overline{x}^1$ and $p_s^x(j) = \pi_{N_x,j}(N_x, \rho_x   , \sigma_x)$ if $\mu_x(s) > \rho_x \overline{x}^{N_x}$. In both cases, the conditional variance is matched exactly and the conditional mean achieves the value closest to $\mu_{x}(s)$ given the grid points. 
+
+\paragraph{A different representation.} An equivalent representation of the system is given by
+\begin{align}
+    \hat{x}_{t+1} &= z_{t} + \sigma_u u_{t+1}\\
+    z_{t+1} &= \theta_i z_{t} + \theta_i \sigma_u u_{t+1}+ \sigma_{v} v_{t+1},
+\end{align}
+where $z_t \equiv \mathbb{E}_{i,t}[\hat{x}_{t+1}]$. Hence, expected growth follows an AR(1) process and it is exposed to both expectation shocks, $v_{t+1}$, and shocks to realized growth rates, $u_{t+1}$. Notice that we cannot independently choose the persistence of expectations and the correlation between $z_{t+1}$ and $\hat{x}_{t+1}$.
+
+The impact of $v_t$ in expected future growth is
+\begin{equation}
+    \frac{\partial \mathbb{E}_t[\hat{x}_{t+k}]}{\partial v_t} = \sigma_v \theta_i^{k-1},
+\end{equation}
+for $k \geq 1$.
+
+\subsection{A process with richer heterogeneity}
+
+Under the objective measure, log productivity follows a Markov-Switching process:
+\begin{equation}
+    \log(x_{t+1}) = \mu_{t+1} + \theta ( \log (x_{t}) - \mu_t) + u_{t+1},
+\end{equation}
+where $u_{t+1} \sim \mathcal{N}(0, \sigma_u^2)$ and 
+$\mu_{t+1}$ follows a two-state Markov chain, that is, $\mu_{t+1}\in \{\mu^1, \mu^2\}$ and $Pr(\mu_{t+1} = \mu^j|\mu_t = \mu^i) = p^\mu_{ij}$ for $i,j \in \{1,2\}$. 
+The different regimes enable us to capture the fact that productivity is subject to small fluctuations most of the time with occasional rare large shocks.
+
+Under subjective beliefs, productivity follows the process
+\begin{align}
+    \log(x_{t+1})  &= \mu_{t+1} + \theta_i (\log (x_{t}) - \mu_t) + v_{i,t}+ u_{i,t+1},
+\end{align}
+where $u_{i,t+1} \sim \mathcal{N}(0, \sigma_{i,u}^2)$, $v_{i,t} = \rho \sigma_{i,v} \overline{v}_t + \sqrt{1-\rho^2} \sigma_{i,v}\hat{v}_{i,t} $, and $(\overline{v}_t,v_{i,t})$ are iid standard normal random variables. We assume that $(u_{i,t}, \hat{v}_{i,t}, \overline{v}_{t})$ are mutually independent.
+
+Subjective beliefs differ from the objective one in two important dimensions. First, the persistent parameter $\theta_i$ may differ from the objective one $\theta$. 
+Second, subjective beliefs are exposed to expectation shocks $v_{i,t}$. 
+These expectations shocks are exposed to a common component $\overline{v}_t$ and an investor-specific component $v_{i,t}$.
+Differences in $\theta_i$ capture the fact that investors differ on how they react to news, with some investors extrapolating and some investors under-reacting. 
+The expectation shocks $v_{i,t}$ are important to capture the volatility of subjective expectations observed in the data. 
+
+Define  $\hat{x}_t \equiv \log (x_{t}) - \mu_t$ and the vector $\hat{v}_t = [\hat{v}_{1,t}, \ldots, \hat{v}_{I,t}]'$. Investor $i$ believes that $[\hat{x}_{t}, \overline{v}_t, \hat{v}_t]$ follows the process:
+\begin{equation}
+    \left[
+    \begin{matrix}
+        \hat{x}_{t+1}\\
+        \overline{v}_{t+1}\\
+        \hat{v}_{t+1}
+    \end{matrix}
+    \right] = 
+    \left[ 
+    \begin{matrix}
+    \theta_i & \rho \sigma_{i,v} & \sqrt{1-\rho^2} \sigma_{i,v}\textbf{e}_i'\\
+    0 & 0 & \textbf{0}_{1\times I}\\
+    \textbf{0}_{I\times 1} & \textbf{0}_{I\times 1} & \textbf{0}_{I\times I}
+    \end{matrix}
+    \right] \left[
+    \begin{matrix}
+        \hat{x}_{t}\\
+        \overline{v}_t\\
+        \hat{v}_{t}
+    \end{matrix}
+    \right]  +\left[ 
+    \begin{matrix}
+    u_{i,t+1}\\
+    \overline{v}_{t+1}\\
+    \hat{v}_{t+1}
+    \end{matrix}
+    \right] 
+\end{equation}
+
+Notice that the total variance and the variance of the conditional expectation are given by
+\begin{equation}
+    Var[\hat{x}_{t+1}] = \frac{\sigma_{i,u}^2 + \sigma_{i,v}^2}{1-\theta_i^2}, \qquad \qquad Var[\mathbb{E}_t[\hat{x}_{t+1}]] =  \frac{\theta_i^2 \sigma_{i,u}^2 + \sigma_{i,v}^2}{1-\theta_i^2}.
+\end{equation}
+
+The fraction of total variance explained by movements in expectations is given by
+\begin{equation}
+    \frac{Var[\mathbb{E}_t[\hat{x}_{t+1}]]}{Var[\hat{x}_{t+1}]} = \theta_i^2 + (1-\theta_i^2) \frac{\sigma_{i,v}^2}{\sigma_{i,u}^2 + \sigma_{i,v}^2}.
+\end{equation}
+
+\subsection{A more general process for productivity growth}
+
+Let $\hat{x}_t \equiv \log x_t - \mu $  denote the demeaned log productivity growth. 
+We assume that $\hat{x}_t$ follows the process:
+\begin{align}
+    \hat{x}_{t+1} &= z_{t} + \sigma_x \left[\sqrt{1 - \rho_{xz}^2} u_{t+1} + \rho_{xz} v_{t+1}\right]\\
+    z_{t+1} &= \theta_z z_{t} + \sigma_{z} v_{t+1},
+\end{align}
+where $u_{t}$ and $v_t$ are standard normal random variables, serially uncorrelated, and uncorrelated with each other. 
+Notice that $\mathbb{E}_{t}[x_{t+1}] = z_t$, so $z_t$ corresponds to expected productivity growth. 
+The disturbance $v_{t+1}$ can then be interpreted as expectations shocks. 
+These expectations shocks are potentially correlated with cash-flow shocks, with correlation coefficient $\rho_{xz}$. 
+In the long-run risk literature, $v_{t+1}$ is referred to as a long-run risk shock, while $u_{t+1}$ corresponds to a short-run risk shock.
+
+
+\paragraph{The ARMA(1,1) case.} Suppose $\rho_{xz} = 1$. This implies that the process for $\hat{x}_t$ specializes to
+\begin{equation}
+    \hat{x}_{t+1} = \theta_z \hat{x}_t + \sigma_x v_{t+1} - (\theta_z \sigma_x - \sigma_z) v_t,
+\end{equation}
+which is an ARMA(1,1) process. If we further assume that $\sigma_z = \theta_z \sigma_x$, then we obtain an AR(1) process.
+
+Notice that we can write the conditional expectation of $x_{t+1}$ as follows
+\begin{equation}
+    \mathbb{E}_t[x_{t+1}] = \theta_z \hat{x}_t - b \frac{\hat{x}_t - \mathbb{E}_{t-1}[x_{t}]}{\sigma_x} \Rightarrow
+    \mathbb{E}_t[x_{t+1}] = \frac{\theta_z - b/\sigma_x}{1- b L} \hat{x}_t.
+\end{equation}
+where $b \equiv \theta_z \sigma_x - \sigma_z$ and $L$ is the lag operator. 
+
+Define $\hat{w}_t$ as follows
+\begin{equation}
+    \hat{w}_t \equiv \frac{\hat{x}_t}{1-bL} = \sum_{j=1}^\infty b^j \hat{x}_{t-j}.
+\end{equation}
+
+\paragraph{Unconditional moments.} The unconditional variance of $z_{t+1}$ is given by 
+\begin{equation}
+    Var[z_{t+1}] = \frac{\sigma_z^2}{1-\theta_z^2},
+\end{equation}
+and the unconditional variance of $\hat{x}_{t+1}$ is given by
+\begin{equation}
+    Var[\hat{x}_{t+1}] = \mathbb{E}\left[Var_t[\hat{x}_{t+1}] \right] + Var[ \mathbb{E}_t[\hat{x}_{t+1}] ] = \sigma_x^2 + \frac{\sigma_z^2}{1-\theta_z^2}. 
+\end{equation}
+
+In this general case, we can choose $\theta_z$ and $\sigma_z$ to match the persistence and variance of expectations and choose $\sigma_x^2$ to match the unconditional variance of productivity growth. The parameter $\rho_{xz}$ controls the correlation between expected and realized productivity growth. 
+
+In the special case $\rho_{xz} = 1$ and $\sigma_z = \theta_z \sigma_x$. 
+This allows us to match the persistence of expectations and either the unconditional variance of expected productivity growth or unconditional variance of realized productivity growth. 
+
+If $\sigma_z = \theta_z \sigma_x$, then
+\begin{equation}
+    Var[z_{t+1}] = \theta_z^2\frac{\sigma_x^2}{1-\theta_z^2} = \theta_z^2 Var[x_{t+1}].
+\end{equation}
+
+\paragraph{Discretization of the productivity growth process.}  
+Using the process for $z_{t+1}$ to eliminate $v_{t+1}$ from the expression for $\hat{x}_t$, we obtain
+\begin{equation}
+    \hat{x}_{t+1} = \theta_z^{-1} z_{t+1}  + \left(\frac{\rho_{xz} \sigma_x}{\sigma_z} - \frac{1}{\theta_z}\right)\left(  z_{t+1} - \theta_z z_t \right) + \sigma_x  \sqrt{1 - \rho_{xz}^{2}} u_{t+1}.
+\end{equation}
+
+Given $z_{t}$, $z_{t+1}$, and $u_{t+1}$, this allow us to solve for $\hat{x}_{t+1}$.
+Suppose $z_t$ takes on $N_z$ discrete values and $u_t$ takes on $N_u$ values. 
+This implies that $\hat{x}_t$ can take on $N \equiv N_z^2 \times N_u$ values. 
+If we impose the constraint $\rho_{xz} = 1$, then $\hat{x}_{t+1}$ is independent of $u_{t+1}$, so $\hat{x}_t$ takes on $N_z^2$ possible values. If we further assume that $\sigma_z = \theta_z \sigma_x$, then $\hat{x}_t$ can take only $N_z$ values. 
+
+The current value of $\hat{x}$ is determined by $(z_{t-1}, z_{t}, u_t) = (z^i, z^j, u^k)$, where $i, j \in \{1, \ldots, N_z\}$ and $k\in \{1, \ldots, N_u\}$. 
+We can define the current state as a function of $(i,j,k)$: $s = i + (j-1) N_z + (k-1) N_z^2$. 
+The transition matrix is then given by
+\begin{equation}
+    Pr(s' = i' + (j'-1) N_z + (k'-1) N_z^2 | s) =   \left\{ 
+    \begin{matrix}
+    Pr(z' = z^{j'}|z = z^j) Pr(u' = u^k), \qquad    &\text{if } i'= j\\
+    0, \qquad    &\text{if } i' \neq j
+    \end{matrix}
+    \right.,
+\end{equation}
+where $s = i + (j-1) N_z + (k-1) N_z^2$.
+
+We can write the system above in matrix form:
+\begin{equation}
+    \left[ 
+    \begin{matrix}
+        \hat{x}_{t+1} \\
+        z_{t+1}
+    \end{matrix}
+    \right] = \left[ 
+        \begin{matrix}
+            0 & 1 \\
+            0 & \theta_z
+        \end{matrix}  
+    \right]\left[
+    \begin{matrix}
+        \hat{x}_{t}\\
+        z_t
+    \end{matrix}
+    \right] + \left[ 
+    \begin{matrix}
+        \sigma_x & 0\\
+        \rho_{xz} \sigma_z & \sqrt{1 - \rho_{xz}^2}\sigma_{z}\\
+    \end{matrix}
+    \right] \left[
+    \begin{matrix}
+        u_{t+1}\\
+        v_{t+1}
+    \end{matrix}
+    \right].
+\end{equation}
+
+Notice that the spectral decomposition of the matrix of coefficients is given by
+\begin{equation}
+     \left[ 
+        \begin{matrix}
+            0 & 1 \\
+            0 & \theta_z
+        \end{matrix}  
+    \right]  =
+     \left[ 
+    \begin{matrix}
+        1 & 1 \\
+        \theta_z & 0
+    \end{matrix}
+    \right]
+    \left[ 
+    \begin{matrix}
+        \theta_z & 0\\
+        0 & 0
+    \end{matrix}
+    \right]  \left[ 
+    \begin{matrix}
+        0 & \theta_z^{-1} \\
+        1 & -\theta_z^{-1}
+    \end{matrix}
+    \right].
+\end{equation}
+
+Define the following transformed variables:
+\begin{equation}
+    \left[
+    \begin{matrix}
+        w_{1,t}\\
+        w_{2,t}
+    \end{matrix}
+    \right] \equiv \left[ 
+    \begin{matrix}
+        0 & \theta_z^{-1} \\
+        1 & -\theta_z^{-1}
+    \end{matrix}
+    \right]\left[
+    \begin{matrix}
+        x_{t}-\mu\\
+        z_t
+    \end{matrix}
+    \right].
+\end{equation}
+
+The difference equation for $w_t$ is given by
+\begin{equation}
+    \left[
+    \begin{matrix}
+        w_{1,t+1}\\
+        w_{2,t+1}
+    \end{matrix}
+    \right] = \left[ 
+    \begin{matrix}
+        \theta_z & 0\\
+        0 & 0
+    \end{matrix}
+    \right] 
+    \left[
+    \begin{matrix}
+        w_{1,t}\\
+        w_{2,t}
+    \end{matrix}
+    \right] +
+     \left[ 
+    \begin{matrix}
+        \rho_{xz} \frac{\sigma_{z}}{\theta_z} & \sqrt{1 - \rho_{xz}^2}\frac{\sigma_{z}}{\theta_z}\\
+          \sigma_x - \rho_{xz} \frac{\sigma_z }{\theta_z}& -\sqrt{1 - \rho_{xz}^2}\frac{\sigma_{z}}{\theta_z}
+    \end{matrix}
+    \right]
+\left[
+    \begin{matrix}
+        u_{t+1}\\
+        v_{t+1}
+    \end{matrix}
+    \right].
+\end{equation}
+
+We can write the original variables in terms of $w_{1,t}$ and $w_{2,t}$:
+\begin{equation}
+    \log x_t = \mu + w_{1,t} + w_{2,t}, \qquad \qquad 
+    z_t = \theta_z w_{1,t}
+\end{equation}
+
+We can then discretize $w_{1,t}$ and $w_{2,t}$.
+\begin{equation}
+    w_{2,t+1} = \sqrt{1 - \rho_{xz}^2}\sigma_{x} u_{t+1} + (\rho_{xz} \sigma_x - \sigma_z \theta_z^{-1} )v_{t+1}
+\end{equation}
+\begin{equation}
+    w_{1,t+1} = \theta_z w_{1,t} + \sigma_z \theta_z^{-1} u_{t+1}
+\end{equation}
+
+\begin{equation}
+    x_{t+1} = \mu + w_{1,t+1} + \sqrt{1 - \rho_{xz}^2}\sigma_{x} (w_{1,t+1}  - \theta_z w_{1,t}  ) \frac{\theta_z}{\sigma_z} + (\rho_{xz} \sigma_x - \sigma_z \theta_z^{-1} )v_{t+1}.
+\end{equation}
+
+
+
+
+\section{Proofs}
+
+\subsection{Proof of Proposition \ref{prop: oa_Nstate}}\label{proof: oa_Nstate}
+\begin{proof}
+We provide the characterization of the economy with $N$-possible states in steps, proceeding from the households' problem to the market clearing conditions. 
+
+\paragraph{Step 1: households' problem.} 
+Household $i$ chooses consumption $C_{i}$, hours $h_{i}$, and arrow securities  $B_{i}(X,s,s')$ to maximize \eqref{eq: preferences} subject to the budget constraint:
+\begin{equation}
+    C_{i} + \mathbb{E}_s[ \Lambda(X,s,s') B_{i}(X,s,s')] = B_{i} + W h_{i},
+\end{equation}
+and an appropriate No-Ponzi condition. 
+
+As in the two-state case, it is useful to transform this budget constraint in terms of net consumption and total wealth:
+ \begin{equation}
+    \tilde{C}_{i} + \mathbb{E}_s\left[ \Lambda' \left(  B_i' + W' h_i' - \xi' \frac{(h_i')^{1+\nu}}{1+\nu} + \mathcal{H}_i'\right)\right] = B_{i} + W h_i - \xi \frac{h_i^{1+\nu}}{1+\nu} + \mathcal{H}_i \equiv N_i,
+\end{equation}
+where we used the fact that $\mathcal{H}_i = \mathbb{E}_s\left[ \Lambda' \left( W' h_i' - \xi' \frac{(h_i')^{1+\nu}}{1+\nu} + \mathcal{H}_i'\right)\right]$ and $\tilde{C}_i = C_i - \xi \frac{h_i^{1+\nu}}{1+\nu}$.
+
+We can then write the budget constraint above as follows
+\begin{equation}
+    \tilde{C}_i + \mathbb{E}_s\left[ \Lambda' N'_i \right] = N_i.
+\end{equation}
+
+The household's problem can then be equivalently expressed as choosing $(\tilde{C}_i(N, X,s),N_i'(N,X,s,s') )$ to maximize \eqref{eq: preferences} subject to the constraint above and the natural borrowing limit $N_i'(N,X,s,s') \geq 0$. The solution takes the form in Equation \eqref{eq: value_function}.  It will be useful to define the consumption-wealth ratio $c_i \equiv \frac{\tilde{C}_i}{N}$ and the normalized net worth $n'_i \equiv \frac{N'_i}{N_i}$. Define the portfolio return as $R_{i,n}(X,s,s') \equiv \frac{n'_i(X,s,s')}{1-c_i(X,s)} $, which gives the budget constraint $n' = R_{i,n}'(1-c)$. The function $v_i(X,s)$ must then satisfy the condition
+\begin{equation}
+    \frac{(v_i(X,s) N)^{1-\psi^{-1}}-1}{1-\psi^{-1}} = \max_{c_{i},n_{i}'}  (1-\beta) \frac{(c_i N)^{1-\psi^{-1}}-1}{1-\psi^{-1}} + \beta \frac{\mathbb{E}_i\left[ (v_i(X',s')n' N)^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}}-1}{1-\psi^{-1}},
+\end{equation}
+subject to $n' = R_n'(1-c_i) $, $\mathbb{E}_s[\Lambda' R_n'] = 1$, and $n'\geq 0$. 
+
+\paragraph{Step 2: optimality conditions.} The first-order conditions for the consumption-wealth ratio and the portfolio share are given by 
+\begin{align}
+    (1-\beta) c_i^{-\psi^{-1}} &= \beta \mathcal{R}_i(X,s)^{1-\psi^{-1}} (1-c_i)^{-\psi^{-1}}\\
+    p_{ss'}^i v_i(X',s')^{1-\gamma} R_{i,n}'(X,s,s')^{-\gamma} & = p_{ss'}\Lambda(X,s,s') \mu(X,s),
+\end{align}
+where $\mathcal{R}_i(X,s) = \mathbb{E}_i\left[ (v_i(X',s') R_{i,n}(X,s,s'))^{1-\gamma} |X,s\right]^{\frac{1}{1-\gamma}}$ and
+$\mu(X,s)$ is the (normalized) multiplier on the constraint on returns. From the first-order condition for consumption, we obtain Equation \eqref{eq: c_n}. The envelope condition is given by
+\begin{equation}
+     v_i(X)^{1-\frac{1}{\psi}} = (1-\beta) c_i^{-\frac{1}{\psi}} \Rightarrow v_i(X)^{1-\gamma} = (1-\beta)^\theta c_i^{-\frac{\theta}{\psi}}.
+\end{equation}
+
+Notice that the multiplier is given by
+\begin{equation}
+    \mu(X,s) = \mathbb{E}_i[ (v_i(X,s') R_{i,n}'(X,s,s'))^{1-\gamma} ] =  \mathcal{R}_{i}(X,s)^{1-\gamma} = \left( \frac{1-\beta}{\beta} \right)^\theta \left[ \frac{c_i}{1-c_i} \right]^{-\frac{\theta}{\psi}}.
+\end{equation}
+
+Combining the previous two expressions above with the first-order condition for $R_{i,n}'$, we obtain
+\begin{align}
+    p_{ss'} \Lambda(X,s,s') &= p_{ss'}^i \frac{(1-\beta)^\theta (c_i')^{-\frac{\theta}{\psi}} R_{i,n}'(X,s,s')^{-\gamma}}{\left( \frac{1-\beta}{\beta} \right)^\theta \left[ \frac{c_i}{1-c_i} \right]^{-\frac{\theta}{\psi}}} \\
+    &= p_{ss'}^i \beta^\theta \left( \frac{c_i' N'}{c_i N} \right)^{-\frac{\theta}{\psi}} (R_{i,n}')^{-(1-\theta)}, \\
+    &\equiv p_{ss'}^i \Lambda_i(X,s,s'),
+\end{align}
+using the fact that $\frac{\theta}{\psi} + 1-\theta = \gamma$.
+
+Hence, expressions \eqref{eq: c_n} and \eqref{eq: eulers} hold unchanged with multiple states. Moreover, the change-of-measure equation $\Lambda_i(X,s,s') = \frac{p_{ss'}}{p_{ss'}^i}\Lambda(X,s,s')$ also holds. 
+
+\paragraph{Step 3: firms' problem and labor market outcomes.} 
+The firm's problem is essentially the same and the first-order condition \eqref{eq: labor_demand} holds without change. 
+The equations for hours and wages \eqref{eq: hours_wages} are also unchanged.
+
+\paragraph{Step 4: law of motion of aggregate state variables.} The aggregate state variables are the same as before. The law of motion of $\mathcal{L}$ is given by
+\begin{equation}
+    \mathcal{L}'(X,s) = \sum_{s'\in \mathcal{S}} \frac{p_{ss'} \Lambda(X,s,s')}{\sum_{\tilde{s} \in \mathcal{S}} p_{s\tilde{s}} \Lambda(X,s,\tilde{s})} x_{s'},
+\end{equation}
+and the law of motion of $\eta_i$ is unchanged. 
+
+\paragraph{Step 5: market clearing conditions.}
+Notice that $\sum_{i=1}^I \mu_i B_{i}$ must coincide with the cum-dividend value of the firm. Hence, $\sum_{i=1}^I \mu_i N_{i}$ coincides with the cum-dividend value of the surplus claim, $A_{-} P(X,s)$, where $A_{-}$ denotes lagged productivity.
+
+The market clearing condition for net consumption is then given by
+\begin{equation}
+    \sum_{i=1}^I \mu_i N_i c_i(X,s) = A_{-} \left(x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}\right).
+\end{equation}
+
+Using the fact that $\sum_{i=1}^I \mu_i N_i = A_{-} P(X,s)$, we obtain the market clearing for consumption in Equation \eqref{eq: mkt_clearing_markov}. 
+The market clearing for Arrow securities is given by
+\begin{equation}
+    \sum_{i=1}^I \mu_i N_i n_i(X,s,s') = x_s A_{-} P(X',s').
+\end{equation}
+
+We can write the expression above in terms of portfolio returns:
+\begin{equation}
+    \sum_{i=1}^I \frac{\mu_i N_i(1-c_i(X,s))}{\sum_{j=1}^I \mu_j N_j(1-c_j(X,s))} R_{n,i}(X,s,s') = \frac{x_s A_{-} P(X',s')}{A_{-} \left[ P(X,s) - \left(x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}\right) \right] },
+\end{equation}
+using the fact that $\sum_{j=1}^I \mu_j N_j(1-c_j(X,s)) =A_{-} \left[ P(X,s) - \left(x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}\right) \right] $.
+
+We can write the expression above as follows
+\begin{equation}
+    \sum_{i=1}^I \tilde{\eta}_i R_{n,i}(X,s,s') = R_p(X,s,s'),
+\end{equation}
+for each $s' \in \mathcal{S}$.
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_log_utility}}\label{proof:oa_log_utility}
+
+\begin{proof}
+We provide next a characterization of the economy with log-utility and an arbitrary number of states. 
+
+\paragraph{Step 1: consumption and portfolio decisions.} Suppose $\psi = \gamma = 1$. This implies that $c_i(X,s) = 1-\beta$ and that $\Lambda_i(X,s,s') = R_{i,n}^{-1}(X,s,s')$. From the change-of-measure equation, we obtain
+\begin{equation}
+    R_{i,n}^{-1}(X,s,s') = \frac{p_{ss'} \Lambda(X,s,s')}{p_{ss'}^i} \Rightarrow R_{i,n}(X,s,s') = \frac{p_{ss'}^i}{p_{ss'} \Lambda(X,s,s')}.
+\end{equation}
+
+\paragraph{Step 2: the economy's SDF.} 
+Plugging the expression for $R_{i,n}(X,s,s')$ into the market clearing condition for Arrow securities paying off in state $s'$, we obtain
+\begin{equation}
+    \frac{\sum_{i=1}^I \eta_i p_{ss'}^i}{p_{ss'} \Lambda(X,s,s')} = R_p(X,s,s') \Rightarrow
+    \Lambda(X,s,s') = \frac{p_{ss'}(X)}{p_{ss'}} R_p^{-1}(X,s,s').
+\end{equation}
+
+Notice that the portfolio return for household $i$ is given by
+\begin{equation}
+    R_{i,n}(X,s,s') = \frac{p_{ss'}^i}{p_{ss'}(X)} R_p(X,s,s').
+\end{equation}
+Hence, optimistic investors, i.e. investors satisfying $p_{ss'}^i > p_{ss'}(X)$, hold a levered position on the surplus claim. 
+
+\paragraph{Step 3: the surplus claim.} 
+From the market clearing condition for goods, we obtain
+\begin{equation}
+    P(X,s) = \frac{x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}}{1-\beta}.
+\end{equation}
+
+This implies that the return on the surplus claim is given by
+\begin{equation}
+    R_p(X,s,s') = \frac{x_s P(X',s')}{P(X,s) - \left(x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}\right)} = \frac{x_s}{\beta} \frac{x_{s'} h(\mathcal{L}'(X,s))^\alpha - \xi \frac{h(\mathcal{L}'(X,s))^{1+\nu}}{1+\nu}}{x_s h(E)^\alpha - \xi \frac{h(E)^{1+\nu}}{1+\nu}}.
+\end{equation}
+
+Using the expression for $h(E)$, we can simplify the expression above
+\begin{equation}
+    R_p(X,s,s') = \frac{x_s}{\beta} \frac{x_{s'} \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}},
+\end{equation}
+which coincides with the expression for the two-type case. 
+
+
+\paragraph{Step 4: interest rate and risk premium.} Using the fact that $R_b(X,s)$ is the risk-neutral expectation of $R_p(X,s,s')$ and $\mathcal{L}'(X,s)$ is the risk-neutral expectation of $x_{s'}$, we obtain 
+\begin{equation}
+    R_b(X,s) = \left(1 - \frac{\alpha}{1+\nu} \right) \frac{x_s}{\beta} \frac{  \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}},
+\end{equation}
+which coincides with the expression for the two-type case.  
+
+The expected return on the surplus claim is given by
+\begin{equation}
+    \mathbb{E}_s[R_p(X,s,s')] = \frac{x_s}{\beta} \frac{\mathbb{E}_s[x_{s'}] \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}}.
+\end{equation}
+
+Taking the difference of the previous two equations, we obtain the risk premium on the surplus claim:
+\begin{equation}
+\mathbb{E}_s[R_p^e(X,s,s')] = \frac{x_s}{\beta} \frac{[\mathbb{E}_s[x_{s'}]-\mathcal{L}'(X,s)]\mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} }{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}}.
+\end{equation}
+\paragraph{Step 5: law of motion of aggregate state variables.}
+The risk-neutral probability is given by
+\begin{equation}
+    \frac{p_{ss'} \Lambda(X,s,s')}{\sum_{\tilde{s}\in \mathcal{S} } p_{s\tilde{s}} \Lambda(X,s,\tilde{s})} = 
+    \frac{p_{ss'}(X) R_p^{-1}(X,s,s')}{\sum_{\tilde{s}\in \mathcal{S}} p_{s\tilde{s}}(X) R_p^{-1}(X,s,\tilde{s})} = 
+    \frac{p_{ss'}(X) \left[x_{s'} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) \right]^{-1}}{\sum_{\tilde{s}\in \mathcal{S}} p_{s\tilde{s}}(X)\left[x_{\tilde{s}} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) \right]^{-1}}.
+\end{equation}
+
+From the law of motion of $\mathcal{L}$, we obtain
+\begin{equation}
+    \mathcal{L}'(X,s) = \sum_{s'\in \mathcal{S}} x_{s'} \frac{p_{ss'}(X) \left[x_{s'} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) \right]^{-1}}{\sum_{\tilde{s}\in \mathcal{S}} p_{s\tilde{s}}(X)\left[x_{\tilde{s}} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) \right]^{-1}}.
+\end{equation}
+
+Rearranging the expression above, we obtain
+\begin{equation}
+       \sum_{s'\in \mathcal{S}} \frac{p_{ss'}(X)  (x_{s'} - \mathcal{L}'(X,s))}{x_{s'} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s) } = 0
+\end{equation}
+
+The left-hand side is positive for $\mathcal{L}'(X,s) = x^1$, it is negative for $\mathcal{L}'(X,s) = x^N$, and it is strictly decreasing in $\mathcal{L}'(X,s)$, assuming the condition $x^N < \frac{x^1}{\alpha}$ such that the denominator is positive in the range $x^1 < \mathcal{L}'(X,s) < x^N$. Therefore, a solution exists and it is unique. 
+
+The law of motion of the wealth share is given by
+\begin{equation}
+    \eta_i'(X,s,s') = \frac{\eta_i R_{i,n}(X,s,s')}{\sum_{j=1}^I\eta_j R_{j,n}(X,s,s')} = \eta_i \frac{R_{i,n}(X,s,s')}{R_{p}(X,s,s')} = \eta_i \frac{p_{ss'}}{p_{ss'}(X)}.
+\end{equation}
+
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_iid}} \label{proof: oa_iid}
+\begin{proof}
+We will construct an equilibrium that has iid returns for any financial asset. We guess-and-verify that the consumption-wealth ratio and the net-worth multiplier are constant. 
+
+\paragraph{Step 1: consumption and portfolio decisions.} Let the consumption-wealth ratio be given by $c_i^*(X,s) = 1-\beta^*$, given a constant $\beta^*$ that we need to determine. Given that there is no heterogeneity in beliefs, we obtain from the market clearing condition for Arrow securities $R_{i,n}^*(X,s,s') = R_p^*(X,s,s')$. Plugging $c_i^*(X,s)$ and $R_{i,n}^*(X,s,s')$ into the expression for $\Lambda_i^*(X,s,s')$, we obtain
+\begin{equation}
+    \Lambda_i^*(X,s,s') = \beta^\theta (\beta^*)^{-\frac{\theta}{\psi}} [R_{p}^*(X,s,s')]^{-\gamma}.
+\end{equation}
+
+\paragraph{Step 2: net-worth multiplier.} From the envelope condition, we obtain
+\begin{equation}
+    v_i^*(X,s)^{1-\psi^{-1}} = (1-\beta) c_i^*(X,s)^{-\psi^{-1}} \Rightarrow v_i^{*}(X,s) = (1-\beta)^{\frac{1}{1-\psi^{-1}}} (1-\beta^*)^{-\frac{\psi^{-1}}{1-\psi^{-1}}}.
+\end{equation}
+
+\paragraph{Step 3: wages, hours, and profits.} Using $\alpha = \hat{\alpha} \epsilon$, $\xi = \hat{\xi} \epsilon$, and taking the limit of the expressions for wages, hours, and profits as $\epsilon \rightarrow 0$, we obtain the expressions provided in the proposition.
+
+\paragraph{Step 4: The price and return on the surplus claim.}
+For an arbitrary $\alpha$ and $\xi$, the market clearing condition for goods implies that
+\begin{equation}
+    P^*(X,s) = \left.\frac{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}}{1-\beta^*}\right|_{\epsilon  = 0} = \frac{x_s}{1-\beta^*}.
+\end{equation}
+
+The return on the surplus claim is given by
+\begin{equation}
+    R_p^*(X,s,s') = \left.\frac{x_{s}}{\beta^*} \frac{x_{s'} \mathcal{L}'(X,s)^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} \mathcal{L}'(X,s)^{\frac{1+\nu}{1+\nu-\alpha}}}{x_{s} E^\frac{\alpha}{1+\nu-\alpha} -\frac{ \alpha}{1+\nu} E^{\frac{1+\nu}{1+\nu-\alpha}}} \right|_{\epsilon =0} = \frac{x_{s'}}{\beta^*}.
+\end{equation}
+
+\paragraph{Step 4: The economy's SDF.}
+From the pricing equation, we obtain
+\begin{equation}
+    \mathbb{E}_i[\Lambda_i^*(X,s,s') R^*_p(X,s,s')] = 1 \Rightarrow \beta^\theta (\beta^*)^{-\theta} \mathbb{E}_i[(x_s')^{1-\gamma}] =1
+\end{equation}
+
+Rearranging the expression above, we obtain
+\begin{equation}
+    \beta^* = \beta \mathbb{E}_i[(x_s')^{1-\gamma}]^{\frac{1-\psi^{-1}}{1-\gamma}}.
+\end{equation}
+
+Notice that the condition $\beta^* < 1$ is required to ensure that the consumption-wealth ratio is positive.
+
+The SDF is then given by
+\begin{equation}
+    \Lambda^*(X,s,s') = \beta \mathbb{E}^*[ x_{s'}^{1-\gamma} ]^{\frac{\gamma - \psi^{-1}}{1-\gamma}} (x_{s'})^{-\gamma},
+\end{equation}
+using the fact that $\Lambda^*(X,s,s') = \Lambda_i^*(X,s,s')$.
+
+\paragraph{Step 6: Law of motion of aggregate state variables.} The risk-neutral probability is given by
+\begin{equation}
+    \frac{p_{s'}^* \Lambda^*(X,s,s')}{\sum_{\tilde{s}\in\mathcal{S}} p_{\tilde{s}}^* \Lambda^*(X,s,\tilde{s})} = \frac{p_{s'}^* x_{s'}^{-\gamma}}{\mathbb{E}^*[x_{s'}^{-\gamma}]}
+\end{equation}
+Hence, $\mathcal{L}'(X,s)$ is given by
+\begin{equation}
+    \mathcal{L}'(X,s) = \frac{\mathbb{E}^*[x_{s'}^{1-\gamma}]}{\mathbb{E}^*[x_{s'}^{-\gamma}]}.
+\end{equation}
+
+\paragraph{Step 5: The interest rate and risk premium on surplus claim.} The interest rate and risk premium are given by
+\begin{equation}
+    R_b^*(X,s) = \frac{\mathcal{L}'(X,s)}{\beta^*}, \qquad \qquad R_p^e(X,s) = \frac{\mathbb{E}^*[x_{s'}]- \mathcal{L}'(X,s)}{\beta^*}.
+\end{equation}
+
+Using the expression for $\beta^*$ and $\mathcal{L}'(X,s)$, we can write the interest rate as follows
+\begin{equation}
+    R^*_b(X,s) = \beta^{-1} \mathbb{E}^*[ (x_s')^{1-\gamma} ]^{\frac{\psi^{-1}-\gamma}{1-\gamma}} \mathbb{E}^*[(x_{s'})^{-\gamma}]^{-1},
+\end{equation}
+
+The expected return on the surplus claim is given by
+\begin{equation}
+    \mathbb{E}^*\left[R^*_p(X,s,s') \right]= \beta^{-1} \mathbb{E}^*[(x_s')^{1-\gamma}]^{\frac{\psi^{-1}-1}{1-\gamma}} \mathbb{E}^*[x_{s'}]
+\end{equation}
+and the risk premium on the surplus claim is given by
+\begin{equation}
+    \mathbb{E}^*\left[\frac{R^*_p(X,s,s')}{R_b^*(X,s)} \right] = \frac{\mathbb{E}^*[x_{s'}] \mathbb{E}^*[x_{s'}^{-\gamma}]}{\mathbb{E}^*[x_{s'}^{1-\gamma}] }
+\end{equation}
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_investor_perturbation}}\label{proof: oa_investor_perturbation}
+\begin{proof}
+We provide a characterization of the first-order correction for the value function, summarized by the net-worth multiplier $v_i(X,s;\epsilon)$, and the policy functions, namely the consumption-wealth ratio $c_i(X,s;\epsilon)$ and the portfolio return $R_{i,n}(X,s,s';\epsilon)$, given the expansion for the economy's SDF
+\begin{equation}
+    \Lambda(X,s,s';\epsilon) = \Lambda^*(X,s,s') + \hat{\Lambda}(X,s,s') \epsilon + \mathcal{O}(\epsilon),
+\end{equation}
+where $\hat{\Lambda}(X,s,s')$ is the first-order correction for the SDF. We take $\hat{\Lambda}(X,s,s')$ as given for now and we will solve for it in a later stage. 
+
+\paragraph{Step 1: value function.} The Bellman equation for household $i$ can be written as follows: 
+\begin{align}
+    \frac{v_i(X,s;\epsilon)^{1-\psi^{-1}}}{1-\psi^{-1}} &= (1-\beta) \frac{c_i^{1-\psi^{-1}}}{1-\psi^{-1}} + \beta \frac{\left[ \sum_{s'\in \mathcal{S}} p_{ss'}^i(v_i(X',s';\epsilon)R_n' (1-c_i))^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}}}{1-\psi^{-1}}\\\nonumber
+    &+\mu(X,s;\epsilon) \left[ 1 - \sum_{s'\in \mathcal{S}} p_{s'}^* \Lambda(X,s,s';\epsilon) R'_n  \right],
+\end{align}
+where $X' = \chi(X,s,s';\epsilon)$.  
+
+Taking the derivative of the expression above with respect to $\epsilon$ and evaluating at $\epsilon = 0$, we obtain a condition involving the first-order correction for $v_i$:\small
+\begin{align}
+  (v_i^*)^{-\psi^{-1}} \hat{v}_i(X,s)  &= \beta \left[ \sum_{s'\in \mathcal{S}} p_{s'}^* 
+  (v_i^* R_p^*(s') \beta^*)^{1-\gamma}\right]^{\frac{\gamma-\psi^{-1}}{1-\gamma}} \left[ \sum_{s'\in \mathcal{S}} \delta_{ss'}^i \frac{(v_i^* R_p^*(s') \beta^*)^{1-\gamma}}{1-\gamma} +\right. \nonumber\\
+  &\left.\sum_{s'\in \mathcal{S}} p_{s'}^* (v_i^*)^{-\gamma} (R_p^*(s') \beta^* )^{1-\gamma}\hat{v}_i(X^*,s') \right]\
+    -\mu^*(X,s) \sum_{s'\in \mathcal{S}} p_{s'}^* \hat{\Lambda}_1(X,s,s') R_p^*(s') ,
+\end{align}\normalsize
+where we used the fact that $R_n'(X,s,s';0) = R_p^*(X,s,s')$, $c_i(X,s;0) = 1-\beta^*$. We also used the fact that $\chi(X,s,s'; 0) = X^*$, where $X^* = (E^*, \{\eta_i\}_{i=1}^I)$ as  $E'(x,s) = E^*$ and the wealth distribution is constant in the benchmark economy. 
+
+Using the results for the benchmark economy, we can simplify the expression above:
+\begin{align}
+   \hat{v}_i(X,s)  &= \beta  \left[ \sum_{s'\in \mathcal{S}} p_{s'}^* 
+  x_{s'}^{1-\gamma}\right]^{\frac{\gamma-\psi^{-1}}{1-\gamma}} \left[ v_i^* \sum_{s'\in \mathcal{S}} \delta_{ss'}^i \frac{x_{s'}^{1-\gamma}}{1-\gamma} +   \sum_{s'\in \mathcal{S}} p_{s'}^* x_{s'}^{1-\gamma}\hat{v}_i(X^*,s')  \right]\nonumber\\
+    &-\mu^*(X,s)(v_i^*)^{\psi^{-1}} \sum_{s'\in \mathcal{S}} p_{s'}^* \hat{\Lambda}_1(X,s,s') R_p(s'),
+\end{align}
+where we used the fact that $v^*(X,s)$ is constant and $R_p^*(s') \beta^* = x_{s'}$.
+
+Let's solve for $\mu^*(X,s)$ next. The first-order condition for $R_n(X,s,s';\epsilon)$ is given by\small
+\begin{equation}
+    \beta \left[ \sum_{s'\in \mathcal{S}} p_{ss'}^i(v_i(X',s';\epsilon)R_n' (1-c_i))^{1-\gamma}\right]^{\frac{\gamma-\psi^{-1}}{1-\gamma}} p_{ss'} (v_i(X',s') (1-c_i))^{1-\gamma} R_n(X,s,s')^{-\gamma} = \mu(X,s;\epsilon) p_{s'}^* \Lambda(X,s,s';\epsilon)
+\end{equation}\normalsize
+
+Multiplying by $R_n(X,s,s')$ both sides and adding across states, we obtain
+\begin{equation}
+    \mu(X,s;\epsilon)  = \beta \left[ \sum_{s'\in \mathcal{S}} p_{ss'}^i(v_i(X',s';\epsilon)R_n' (1-c_i))^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}}.
+\end{equation}
+
+Evaluating the expression above at $\epsilon = 0$, we obtain
+\begin{equation}
+    \mu^*(X,s) = \beta v^*(X,s)^{1-\psi^{-1}} \left[ \sum_{s'\in \mathcal{S}} p_{s'}^*x_{s'}^{1-\gamma}\right]^{\frac{1-\psi^{-1}}{1-\gamma}}.
+\end{equation}
+
+Given $\mu^*(X,s)$, we obtain a system of equations for $\hat{v}_i(X,s')$:
+\begin{equation}
+    \frac{\hat{v}_i(X,s)}{v_i^*(X,s)} - \beta \mathbb{E}^*[x_{s'}^{1-\gamma}]^{\frac{1-\psi^{-1}}{1-\gamma}} \sum_{s'\in \mathcal{S}} \omega^*_{s'} \frac{\hat{v}_i(X^*,s')}{v^*(X,s)} =  \beta \mathbb{E}^*[x_{s'}^{1-\gamma}]^{\frac{1-\psi^{-1}}{1-\gamma}} \left[ \sum_{s'\in \mathcal{S}} \frac{\omega^*_{s'}}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} -\sum_{s'\in \mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}  \right]
+\end{equation}
+using the fact that $R_p(s') \Lambda^*(X,s,s') = \frac{x_{s'}^{1-\gamma}}{\mathbb{E}^*[x_{s'}^{1-\gamma}]}$ and the definition $\omega_{s}^* \equiv \frac{p_{s}^* x_s^{1-\gamma}}{\mathbb{E}^*[x_{s'}^{1-\gamma}]}$.
+
+We will solve first for the case $X = X^*$. We can write the system above in matrix form:
+\begin{equation}
+    \left[
+    \begin{matrix}
+    1 - \chi_v \omega_{1}^* &
+    - \chi_v \omega_{2}^* & \ldots &
+    - \chi_v \omega_{N}^* \\
+     - \chi_v \omega_{1}^* &
+    1- \chi_v \omega_{2}^* & \ldots & 
+    - \chi_v \omega_{N}^* \\
+    \vdots & \vdots & \ldots & \vdots \\
+    - \chi_v \omega_{1}^* &
+    - \chi_v \omega_{2}^* & \ldots &
+    1- \chi_v \omega_{N}^* 
+    \end{matrix}
+    \right]
+    \left[\begin{matrix}
+    \frac{\hat{v}_i(X^*,1)}{v^*(X,s)}\\
+    \frac{\hat{v}_i(X^*,2)}{v^*(X,s)}\\
+    \vdots\\
+    \frac{\hat{v}_i(X^*,N)}{v^*(X,s)}
+    \end{matrix}
+    \right]
+    = \left[\begin{matrix}
+    b_{i,1}^v(X^*)\\
+    b_{i,2}^v(X^*)\\
+    \vdots\\
+    b_{i,N}^v(X^*)
+    \end{matrix}
+    \right],
+\end{equation}
+where $\chi_v \equiv \beta \mathbb{E}^*[x_{s'}^{1-\gamma}]^{\frac{1-\psi^{-1}}{1-\gamma}}$ and
+\begin{equation}
+    b_{i,s}^v(X^*) \equiv \chi_v \left[ \sum_{s'\in \mathcal{S}}\frac{ \omega^*_{s'}}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} -\sum_{s'\in \mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X^*,s,s')}{\Lambda^*(X,s,s')}  \right].
+\end{equation}
+
+Let $\omega^* = \left[ \omega_1^*,\omega_2^*,\ldots, \omega_N^*\right]$ denote a row vector, $\hat{v}_i(X) = \left[ \hat{v}_i(X, 1), \ldots, \hat{v}_i(X, N)\right]'$ denote a column vector, $b_i^v(X) = \left[ b_{i,1}^v(X), \ldots, b_{i,N}^v(X) \right]' $ denote a column-vector, and $\textbf{1}_N$ denote a $N$-dimensional column vector filled with ones. We can then write the expression above as follows:
+\begin{equation}
+    \left[ I- \chi_v \mathbb{1}_N\omega^* \right] \frac{\hat{v}_i(X^*)}{v_i^*} = b_{i}^v(X^*).
+\end{equation}
+
+The matrix on the left-hand side corresponds to the sum of an invertible matrix and rank-one matrix. An application of the Sherman-Morrison formula gives the inverse of this matrix, which gives the solution
+\begin{equation}
+    \hat{v}_i(X^*) = v_i^*(X,s)\left[ I + \frac{\chi_v}{1-\chi_v } \mathbb{1}_N \omega^* \right]b_{i}^v(X^*)
+\end{equation}
+
+The net-worth multiplier at state $(X,s)$ is then given by
+\begin{equation}
+    \frac{\hat{v}_i(X^*,s)}{v_i^*(X,s)} = b_{i,s}^v + \frac{\chi_v}{1-\chi_v} \sum_{\tilde{s} \in \mathcal{S}}\omega_{\tilde{s}}^* b_{i,\tilde{s}}^v(X^*).
+\end{equation}
+
+
+Using the expression for $b_{i,s}^v$, we can write the expression above as follows
+\begin{equation}
+  \frac{\hat{v}_i(X^*,s)}{v_i^*(X,s)} =  \chi_v \sum_{\tilde{s}\in \mathcal{S}}\left(\mathbf{1}_{\tilde{s} =s} + \frac{\chi_v}{1-\chi_v} \omega^*_{\tilde{s}} \right) \left[ \sum_{s'\in \mathcal{S}} \frac{ \omega^*_{s'}}{1-\gamma} \frac{\delta_{\tilde{s}s'}^i}{p_{s'}^*} -\sum_{s'\in \mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X^*,\tilde{s},s')}{\Lambda^*(X,s,s')}  \right].
+\end{equation}
+
+Taking the average of the expression above using the weights $\omega^*_s$, we obtain
+\begin{equation}
+  \sum_{s\in\mathcal{S}} \omega_s^*\frac{\hat{v}_i(X^*,s)}{v_i^*(X,s)} =  \frac{ \chi_v }{1-\chi_v}\sum_{\tilde{s}\in \mathcal{S}}  \omega^*_{\tilde{s}} \left[ \sum_{s'\in \mathcal{S}} \frac{ \omega^*_{s'}}{1-\gamma} \frac{\delta_{\tilde{s}s'}^i}{p_{s'}^*} -\sum_{s'\in \mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X^*,\tilde{s},s')}{\Lambda^*(X,s,s')}  \right].
+\end{equation}
+
+The net-worth multiplier at $(X,s)$ is then given by
+\begin{equation}
+    \frac{\hat{v}_i(X,s)}{v_i^*(X,s)}  =  \chi_v \left[ \sum_{s'\in \mathcal{S}} \frac{\omega^*_{s'}}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} -\sum_{s'\in \mathcal{S}} \omega_{s'}^* \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} +\sum_{s'\in \mathcal{S}} \omega^*_{s'} \frac{\hat{v}_i(X^*,s')}{v^*(X,s)} \right]
+\end{equation}
+
+We can then write the expression above as follows:
+\begin{equation}
+    \frac{\hat{v}_i(X,s)}{v_i^*(X,s)}  =  \chi_v  \sum_{s'\in \mathcal{S}} \omega^*_{s'}\left[\frac{1}{1-\gamma} \frac{\delta_{ss'}^i}{p_{s'}^*} -\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} \right] +\chi_v \overline{v},
+\end{equation}
+where
+\begin{equation}
+    \overline{v} \equiv \frac{ \chi_v }{1-\chi_v}\sum_{\tilde{s}\in \mathcal{S}}  \omega^*_{\tilde{s}}  \sum_{s'\in \mathcal{S}} \omega^*_{s'}\left[\frac{ 1}{1-\gamma} \frac{\delta_{\tilde{s}s'}^i}{p_{s'}^*} -\frac{\hat{\Lambda}(X^*,\tilde{s},s')}{\Lambda^*(X^*,\tilde{s},s')}  \right].
+\end{equation}
+
+\paragraph{Step 2: consumption-wealth ratio.} From the envelope condition, the consumption-wealth ratio is given by
+\begin{equation}
+    c_i(X,s;\epsilon) = (1-\beta)^\psi v_i(X,s;\epsilon)^{1-\psi}.
+\end{equation}
+
+The first-order correction for consumption is then given by
+\begin{equation}
+    \hat{c}_1(X,s) = (1-\beta)^{\psi} (v_i^*(X,s))^{1-\psi} (1-\psi) \frac{\hat{v}_i(X,s)}{v_i^*(X,s)}.
+\end{equation}
+
+\paragraph{Step 3: portfolio return.} 
+Using the expression for the Lagrange multiplier, we can write the first-order condition for the portfolio return as follows
+\begin{equation}
+    \frac{p_{ss'}^i}{p_{s'}^*} v_i(X',s')^{1-\gamma} R_n(X,s,s';\epsilon)^{-\gamma} = \Lambda(X,s,s';\epsilon) \sum_{s'\in \mathcal{S}} p_{ss'}^i(v_i(X',s';\epsilon)R_n(X,s,s';\epsilon) )^{1-\gamma}
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{align}
+    \frac{\delta_{ss'}^i}{p_{s'}^*} &+ (1-\gamma)  \frac{\hat{v}_i(X^*,s')}{v^*(X,s)} -\gamma \frac{\hat{R}_{n,i}(X,s,s')}{R^*_p(X,s,s')} = \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}\\
+    &+ \sum_{s'\in\mathcal{S}'} \frac{p_{s'}^*(v^*(X,s)R_p^*(s'))^{1-\gamma}}{\sum_{\tilde{s} \in \mathcal{S}} p_{\tilde{s}}^*(v^*(X,s)R_p^*(\tilde{s}))^{1-\gamma}} \left[ \frac{\delta_{ss'}^i}{p_{s'}^*} + (1-\gamma) \left(\frac{\hat{v}_i(X^*,s')}{v^*(X,s)} + \frac{\hat{R}_{n,i}(X,s,s')}{R_p^*(X,s,s')}\right)\right]
+\end{align}
+
+Rearranging the expression above, we obtain
+\begin{equation}
+    \gamma \frac{\hat{R}_{n,i}(X,s,s')}{R^*_p(X,s,s')} +  (1-\gamma) \sum_{\tilde{s}\in\mathcal{S}'} \omega^*_{\tilde{s}} \frac{\hat{R}_{n,i}(X,s,\tilde{s})}{R^*_p(X,s,\tilde{s})} = b_i^R(X,s,s'),
+\end{equation}
+where
+\begin{align}
+    b_i^R(X,s,s') &\equiv \frac{\delta_{ss'}^i}{p_{s'}^*} + (1-\gamma)  \frac{\hat{v}_i(X^*,s')}{v^*(X,s)}- \sum_{\tilde{s}\in\mathcal{S}} \omega^*_{\tilde{s}} \left[ \frac{\delta_{s\tilde{s}}^i}{p_{\tilde{s}}^*} + (1-\gamma) \frac{\hat{v}_i(X^*,\tilde{s})}{v^*(X,s)}\right]-\frac{\hat{\Lambda}_1(X,s,s')}{\Lambda^*(X,s,s')} 
+\end{align}
+
+We can write the system above in matrix form:
+\begin{equation}
+    \left[
+    \begin{matrix}
+    \gamma + (1-\gamma) \omega^*_{1} & (1-\gamma) \omega^*_{2} & \ldots & (1-\gamma) \omega^*{N} \\
+    (1-\gamma) \omega^*_{1} & \gamma + (1-\gamma) \omega^*_{2} & \ldots & (1-\gamma) \omega^*_{N} \\
+    \vdots & \vdots & \ldots  & \vdots \\
+    (1-\gamma) \omega^*_{1} &  (1-\gamma) \omega^*_2 & \ldots & \gamma + (1-\omega) \omega^*_{N}
+    \end{matrix}
+    \right] \left[ 
+    \begin{matrix}
+    \frac{\hat{R}_{n,i}(X,s,1)}{R^*_p(X,s,1)} \\
+    \frac{\hat{R}_{n,i}(X,s,2)}{R^*_p(X,s,2)} \\
+    \vdots\\
+    \frac{\hat{R}_{n,i}(X,s,N)}{R^*_p(X,s,N)} 
+    \end{matrix}
+    \right] = 
+    \left[ 
+    \begin{matrix}
+    b^R_i(X,s, 1) \\
+    b^R_i(X,s, 2) \\
+    \vdots\\
+    b^R_i(X,s, N)
+    \end{matrix}
+    \right]
+\end{equation}
+
+Denote the matrix above by $A^*$ and define the row vector $\omega^* \equiv [\omega^*(s_1), \omega^*(s_2), \ldots, \omega^*(s_N)]$ and the column-vector $\mathbb{1}$ with $1$ in every entry. We can then write $A^*$ as follows:
+\begin{equation}
+    A^* = \gamma I + (1-\gamma) \mathbb{1} \omega^*. 
+\end{equation}
+
+The inverse of $A^*$ is given by
+\begin{equation}
+    (A^*)^{-1} = \frac{1}{\gamma} I - \frac{1-\gamma}{\gamma} \mathbb{1} \omega^*. 
+\end{equation}
+
+The portfolio return is then given by
+\begin{equation}
+    \frac{\hat{R}_{n,i}(X,s,s')}{R^*_p(X,s,s')} = \frac{1}{\gamma} b_i^R(X,s,s') + \frac{1-\gamma}{\gamma} \sum_{\tilde{s} \in \mathcal{S}} \omega^*_{\tilde{s}} \frac{\hat{\Lambda}_1(X,s,\tilde{s})}{\Lambda^*(X,s,\tilde{s})}.
+\end{equation}
+
+We can write the expression above as follows:\small
+\begin{equation}
+    \frac{\hat{R}_{n,i}(X,s,s')}{R^*_p(X,s,s')} = \frac{1}{\gamma}  \sum_{\tilde{s}\in\mathcal{S}} \omega^*_{\tilde{s}} \left[ \left(\frac{\delta_{ss'}^i}{p_{s'}^*}-\frac{\delta_{s\tilde{s}}^i}{p_{\tilde{s}}^*}\right) -\frac{\hat{\Lambda}_1(X,s,s')}{\Lambda^*(X,s,s')}  \right]  + \frac{1-\gamma}{\gamma} \sum_{\tilde{s} \in \mathcal{S}}\omega^*_{\tilde{s}} \left[
+    \left(\frac{\hat{v}_i(X^*,s')}{v^*(X,s)}-\frac{\hat{v}_i(X^*,\tilde{s})}{v^*(X,s)}\right)+
+     \frac{\hat{\Lambda}_1(X,s,\tilde{s})}{\Lambda^*(X,s,\tilde{s})}\right].
+\end{equation}\normalsize
+
+Notice that we can write the term involving  $\hat{v}_i(X,s)$ as follows\footnotesize
+\begin{align}
+    \frac{\hat{v}_i(X^*,s')}{v^*(X^*,s')}-\sum_{\tilde{s} \in \mathcal{S}}\omega^*_{\tilde{s}} 
+    \frac{\hat{v}_i(X^*,\tilde{s})}{v^*(X^*,\tilde{s})} &= 
+    \chi_v \sum_{\tilde{s}\in\mathcal{S}} \omega^*_{\tilde{s}} \sum_{\tilde{s}'\in \mathcal{S}} \omega^*_{\tilde{s}'}\left[\frac{1}{1-\gamma} \left(\frac{\delta_{s'\tilde{s}'}^i}{p_{\tilde{s}'}^*} -\frac{\delta_{\tilde{s}\tilde{s}'}^i}{p_{\tilde{s}'}^*} \right) -\left( 
+    \frac{\hat{\Lambda}(X^*,s',\tilde{s}')}{\Lambda^*(X^*,s',\tilde{s}')}-
+    \frac{\hat{\Lambda}(X^*,\tilde{s},\tilde{s}')}{\Lambda^*(X^*,\tilde{s},\tilde{s}')}
+    \right) \right]
+\end{align}\normalsize
+
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_labor_mkt}}\label{proof: oa_labor_mkt}
+
+\begin{proof}
+From the expression for wages, we obtain:
+\begin{equation}
+    w(E; \epsilon) = \xi \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{\nu}{1+\nu -\alpha}} = \hat{\xi}\left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{\nu}{1+\nu}} \epsilon + \mathcal{O}(\epsilon^2).
+\end{equation}
+
+Hours are given by
+\begin{equation}
+    h(E; \epsilon) = \exp \left[\frac{1}{1+\nu -\alpha} \log \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right) \right] = \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{1}{1+\nu}} + \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)^{\frac{1}{1+\nu}} \frac{\log \left( \frac{\hat{\alpha} E}{\hat{\xi}} \right)}{(1+\nu)^2} \hat{\alpha}\epsilon + \mathcal{O}(\epsilon^2).
+\end{equation}
+
+Profits are given by 
+\begin{equation}
+    \pi(X,s;\epsilon) = \left( \frac{\hat{\alpha}}{\hat{\xi}} \right)^{\frac{\alpha}{1+\nu -\alpha}} \left[  x_s E^{\frac{\alpha}{1+\nu - \alpha}} - \alpha E^{\frac{1+\nu}{1+\nu - \alpha}}\right] = x_s +  \left[ x_s \frac{\log \left( \hat{\alpha} E/   \hat{\xi} \right)}{1+\nu} -E \right] \hat{\alpha} \epsilon + \mathcal{O}(\epsilon^2),
+\end{equation}
+where we used the following Taylor expansion:
+\begin{align}
+    E^{\frac{\alpha}{1+\nu - \alpha}} &= 1 + \frac{\log E}{1+\nu}  \hat{\alpha} \epsilon + \mathcal{O}(\epsilon^2).
+\end{align}
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_asset_prices}}\label{proof: oa_asset_prices}
+
+\begin{proof} We derive next the expression for the price and return for the surplus claim and riskless asset.
+\paragraph{Step 1: price of surplus claim.} The market clearing for consumption can be written as
+\begin{equation}
+    P(X,s;\epsilon) \sum_{i=1}^I \eta_i c_i(X,s;\epsilon) = \left( \frac{\alpha }{\xi} \right)^{\frac{\alpha}{1+\nu-\alpha}} \left[x_s E^{\frac{\alpha}{1+\nu-\alpha}} - \frac{\alpha}{1+\nu}  E^{\frac{1+\nu}{1+\nu-\alpha}}\right].
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{equation}
+    \frac{\hat{P}(X,s)}{P^*(X,s)} + \sum_{i=1}^I \eta_i \frac{\hat{c}_i(X,s)}{c^*(X,s)} = \left[\frac{\log (\hat{\alpha} E / \hat{\xi})}{1+\nu} - \frac{1}{1+\nu} \frac{E}{x_s}\right] \hat{\alpha}.
+\end{equation}
+
+Rearranging the expression above, and using the expression for $\hat{c}_i(X,s)$, we obtain
+\begin{equation}
+    \frac{\hat{P}(X,s)}{P^*(X,s)}  = \left[\log (\hat{\alpha} E / \hat{\xi}) -  \frac{E}{x_s}\right] \frac{\hat{\alpha}}{1+\nu} - (1-\psi) \sum_{i=1}^I \eta_i \frac{\hat{v}_i(X,s)}{v^*(X,s)}.
+\end{equation}
+
+
+\paragraph{Step 2: return on surplus claim.} The return on the surplus claim is defined as follows
+\begin{equation}
+    R_p(X,s,s';\epsilon) = \frac{x_s P(\chi(X,s,s';\epsilon), s';\epsilon)}{P(X,s;\epsilon) - \left( x_s h(E)^\alpha - \xi \frac{h(E;\epsilon)^{1+\nu}}{1+\nu} \right)}.
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{equation}
+    \frac{\hat{R}_{p}(X,s,s')}{R_p^*(X,s,s')} = \frac{\hat{P}(X^*,s')}{P^*(X^*,s')} - \left[\frac{P^*(X,s)}{P^*(X,s) - x_s } \frac{\hat{P}(X,s)}{P^*(X,s)} -\frac{1}{P^*(X,s) - x_s } \left(  x_s\log\left( \frac{\hat{\alpha}}{\hat{\xi}} E\right)  -E \right)   \frac{\hat{\alpha}}{1+\nu} \right].
+\end{equation}
+
+We can write the expression above as follows:
+\begin{equation}
+    \frac{\hat{R}_{p}(X,s,s')}{R_p^*(X,s,s')} = \frac{\hat{P}(X^*,s')}{P^*(X^*,s')} - \left[(\beta^{*})^{-1} \frac{\hat{P}(X,s)}{P^*(X,s)} +(1-(\beta^{*})^{-1}) \left(\log\left( \frac{\hat{\alpha}}{\hat{\xi}} E\right)  -\frac{E}{x_s} \right)   \frac{\hat{\alpha}}{1+\nu} \right],
+\end{equation}
+using the fact that $P^*(X,s) = x_s/(1-\beta^*)$.
+
+Using the expression for the price of the surplus claim, we obtain
+\begin{equation}
+    \frac{\hat{R}_{p}(X,s,s')}{R_p^*(X,s,s')} = 
+    \left[ \log(E^*/E) - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu} - (1-\psi) \sum_{i=1}^I \eta_i \left[ \frac{\hat{v}_i(X^*,s')}{v^*(X^*,s')}- \frac{1}{\beta^*} \frac{\hat{v}_i(X,s)}{v^*(X,s)}\right],
+\end{equation}
+
+\paragraph{Step 3: interest rate.} The interest rate is given by
+\begin{equation}
+    R_b(X,s,s';\epsilon) = \left[ \sum_{s'\in \mathcal{S}} p_{s'}^* \Lambda(X,s,s';\epsilon) \right]^{-1} \Rightarrow
+    \frac{\hat{R}_b(X,s)}{R^*_b(X,s)} = - \sum_{s'\in\mathcal{S}} \frac{p_{s'} x_{s'}^{-\gamma}}{\mathbb{E}^*[x_{s'}^{-\gamma}]} \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}.
+\end{equation}
+
+\paragraph{Step 4: stock prices.} Stock prices, normalized by current productivity, satisfy the functional equation:
+\begin{equation}
+    Q(X,s;\epsilon) = \sum_{s'\in\mathcal{S}} p_{s'}^* \Lambda(X,s,s'; \epsilon) \left[\left( \frac{\hat{\alpha}}{\hat{\xi}} \right)^{\frac{\alpha}{1+\nu-\alpha}} \left( x_{s'} \mathcal{L}'(X,s;\epsilon)^{\frac{\alpha}{1+\nu - \alpha}} - \alpha \mathcal{L}'(X,s;\epsilon)^{\frac{1+\nu}{1+\nu - \alpha}} \right) + x_{s'} Q(\chi(X,s,s';\epsilon), s';\epsilon) \right]
+\end{equation}
+
+For $\epsilon = 0$, we obtain
+\begin{equation}
+    Q^*(X,s) = \sum_{s'\in\mathcal{S}} p_{s'}^* \Lambda^*(X,s,s') x_{s'}\left[ 1 +  Q^*(X^*, s') \right].
+\end{equation}
+
+We can write the expression above as follows:
+\begin{equation}
+    Q^*(X,s) = \beta^* \sum_{s'\in\mathcal{S}} \frac{p_{s'}^* x_{s'}^{1-\gamma}}{\mathbb{E}^*[x_{s'}^{1-\gamma}]}\left[ 1 +  Q^*(X^*, s') \right] \Rightarrow
+    Q^*(X,s) = \frac{\beta^*}{1-\beta^*}.
+\end{equation}
+
+Expanding the expression for $Q(X,s)$, we obtain
+\begin{equation}
+    \frac{\hat{Q}(X,s)}{Q^*(X,s)} = \sum_{s'\in\mathcal{S}} \omega_{s'}^* \left[\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} + (1-\beta^*) \left( \frac{\log \left( \frac{\hat{\alpha} E^*}{\hat{\xi}} \right)}{1+\nu} - \frac{E^*}{x_{s'}}\right) \hat{\alpha}  + \beta^* \frac{\hat{Q}(X^*,s')}{Q(X^*,s)} \right].
+\end{equation}
+
+Evaluating the expression above at $X = X^*$, we obtain
+\begin{equation}
+    \left[I - \beta^* \mathbb{1}_N \omega^* \right] \hat{Q}(X^*) = b^Q(X^*),
+\end{equation}
+where $\hat{Q}(X) \equiv [\hat{Q}(X,1), \ldots, \hat{Q}(X,N)]' 
+$, $b^Q(X) \equiv \left[b^Q(X,1),\ldots, b^Q(X,N) \right]'$, and $b^Q(X,s) \equiv   Q^*(X,s) \sum_{s'\in\mathcal{S}} \omega_{s'}^* \left[ \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} + (1-\beta^*) \left( \frac{\log \left( \frac{\hat{\alpha} E^*}{\hat{\xi}} \right)}{1+\nu} - \frac{E^*}{x_{s'}}\right) \hat{\alpha} \right]$. 
+
+Solving the system above, we obtain
+\begin{equation}
+     \hat{Q}(X^*) = \left[ I + \frac{\beta^*}{1-\beta^*} \mathbb{1}_N \omega^*\right]b^Q(X^*).
+\end{equation}
+
+We can then write $\hat{Q}(X,s)$ as follows:\footnotesize
+\begin{equation}
+    \frac{\hat{Q}(X,s)}{Q^*(X,s)} = \sum_{s'\in\mathcal{S}} \omega_{s'}^* \left[\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} + \beta^* \frac{\hat{\Lambda}(X^*,s,s')}{\Lambda^*(X^*,s,s')}+  \frac{(\beta^*)^2}{1-\beta^*}  \sum_{\tilde{s}\in\mathcal{S}}\omega^*_{\tilde{s}}\frac{\hat{\Lambda}(X^*,\tilde{s},s')}{\Lambda^*(X^*,s,s')} \right]+ \left( \frac{\log \left( \frac{\hat{\alpha} E^*}{\hat{\xi}} \right)}{1+\nu} - \sum_{s'\in \mathcal{S}}\omega_{s'}^*\frac{E^*}{x_{s'}}\right) \hat{\alpha}.
+\end{equation}\normalsize
+
+\paragraph{Step 5: equity returns.} Equity returns are given by 
+\begin{equation}
+    R_E(X,s,s';\epsilon) = \frac{x_{s'} Q(\chi(X,s,s';\epsilon), s') + \pi(\mathcal{L}'(X,s;\epsilon; \epsilon), s') }{Q(X,s;\epsilon)}.
+\end{equation}
+
+Evaluating the expression above at $\epsilon = 0$, we obtain
+\begin{equation}
+    R_E^*(X,s,s') = \frac{x_{s'} Q^*(X^*, s') + \pi^*(E^*, s') }{Q^*(X,s;\epsilon)} = \frac{x_{s'}}{\beta^*}.
+\end{equation}
+
+The first-order correction is given by 
+\begin{equation}
+    \frac{\hat{R}_E(X,s,s')}{R^*_E(X,s,s')} = \beta^* \frac{\hat{Q}(X^*,s')}{Q^*(X,s)} +(1-\beta^*) \frac{\hat{\pi}(E^*, s')}{x_{s'}} - \frac{\hat{Q}(X,s)}{Q^*(X,s)}.
+\end{equation}
+
+\paragraph{Step 6: conditional risk premium.} The conditional risk premium is defined as follows:
+\begin{equation}
+    \overline{R}_E(X,s;\epsilon) = \sum_{s'\in \mathcal{S}} p_{s'}^*\left[ \frac{R_E(X,s,s';\epsilon)}{R_b(X,s;\epsilon)}\right].
+\end{equation}
+
+The first-order correction is given by
+\begin{equation}
+    \frac{\widehat{\overline{R}}_E(X,s)}{\overline{R}^*(X,s)} = \sum_{s'\in \mathcal{S}} \frac{p_{s'}^* x_{s'}}{\mathbb{E}^*[x_{s'}]} \frac{\hat{R}_E(X,s,s')}{R_E^*(X,s,s')} -\frac{\hat{R}_b(X,s)}{R^*_b(X,s)}.
+\end{equation}
+
+
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_aggregate_state}}\label{proof: oa_aggregate_state}
+\begin{proof}
+We consider next the law of motion of $\eta_i$ and $\mathcal{L}$.
+\paragraph{Step 1: wealth distribution.} The law of motion of $\eta_i$ can be written as
+\begin{equation}
+    \eta_i'(X,s,s';\epsilon) \sum_{j=1}^I\eta_j R_{j,n}(X,s,s';\epsilon) (1-c_j(X,s;\epsilon))  = \eta_i R_{i,n}(X,s,s';\epsilon) (1-c_i(X,s;\epsilon)). 
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{equation}
+    \hat{\eta}_i'(X,s,s') = \eta_i \left[ \frac{\hat{R}_{i,n}(X,s,s')}{R^*_{i,n}(X,s,s')}-\sum_{j=1}^I \eta_i \frac{\hat{R}_{j,n}(X,s,s')}{R^*_{j,n}(X,s,s')} - \frac{c_i^*(X,s)}{1-c_i^*(X,s)}\left(\frac{\hat{c}_i(X,s)}{c^*_i(X,s)}  - \sum_{j=1}^I \eta_j \frac{\hat{c}_j(X,s)}{c_j^*(X,s)} \right)\right].
+\end{equation}
+Using $c_i^*(X,s) = 1-\beta^*$ gives the expression in the proposition.
+
+\paragraph{Step 2: risk-neutral probability of productivity growth.} The law of motion of $\mathcal{L}$ can be written as
+\begin{equation}
+    \mathcal{L}'(X,s;\epsilon)  = R_b(X,s;\epsilon) \sum_{s'\in\mathcal{S}}p_{s'}^* \Lambda(X,s,s';\epsilon) x_{s'}.
+\end{equation}
+
+Expanding the expression above in $\epsilon$, we obtain
+\begin{equation}
+    \frac{\hat{\mathcal{L}}'(X,s)}{E^*(X,s)} = \frac{ \hat{R}_b(X,s) }{R_b^*(X,s)} +  \sum_{s'\in\mathcal{S}}\frac{p_{s'}^* \Lambda^*(X,s,s')x_{s'}}{\mathbb{E}^*[\Lambda^*(X,s,s') x_{s'}]} \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} 
+\end{equation}
+
+We can write the expression above as follows:
+\begin{equation}
+    \frac{\hat{\mathcal{L}}'(X,s)}{E^*} = \frac{\hat{R}_b(X,s)}{R_b^*(X,s)} +  
+    \sum_{s'\in \mathcal{S}} \frac{p_{s'}^* x_{s'}^{1-\gamma}}{\mathbb{E}^*[x_{s'}^{1-\gamma}]}\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}.
+\end{equation}
+Using the definition of $E^*$ and $\omega_{s}^*$, we obtain the expression given in the proposition.
+\end{proof}
+
+\subsection{Proof of Proposition \ref{oa_SDF}}\label{proof: oa_SDF}
+\begin{proof}
+We consider the derivation of the economy's SDF $\hat{\Lambda}(X,s,s')$.
+\paragraph{Step 1: the system of equations.}
+The market clearing for the Arrow security paying off in state $s'$ is given by
+\begin{equation}
+    \sum_{i=1}^I \eta_i (1-c_i(X,s;\epsilon)) R_{n,i}(X,s,s') =R_p(X,s,s') \sum_{i=1}^I \eta_i (1-c_i(X,s;\epsilon)).
+\end{equation}
+
+Expanding the expression above, we obtain
+\begin{equation}
+    \sum_{i=1}^I \eta_i \hat{R}_{n,i}(X,s,s') = \hat{R}_{p}(X,s,s').
+\end{equation}
+
+Using the expression for $\hat{R}_{n,i}(X,s,s')$ and $\hat{R}_p(X,s,s')$, we obtain\footnotesize
+\begin{align}
+    \frac{1}{\gamma} &\left[\frac{\delta_{ss'}(X)}{p_{s'}^*} - \sum_{\tilde{s}'\in\mathcal{S}} \omega^*_{\tilde{s}'} \frac{\delta_{s\tilde{s}'}(X)}{p_{\tilde{s}'}^*} - \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')}  \right]+\frac{1-\gamma}{\gamma} \left[ \sum_{i=1}^I\eta_i\left[\frac{\hat{v}_i(X^*,s')}{v^*(X,s)}-\sum_{\tilde{s} \in \mathcal{S}}\omega^*_{\tilde{s}} 
+    \frac{\hat{v}_i(X^*,\tilde{s})}{v^*(X,s)}\right]+
+     \sum_{\tilde{s} \in \mathcal{S}}\omega^*_{\tilde{s}} \frac{\hat{\Lambda}(X,s,\tilde{s})}{\Lambda^*(X,s,\tilde{s})}\right] = \nonumber\\
+     &\left[ \log\frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu} + (\psi-1) \sum_{i=1}^I \eta_i \left[ \frac{\hat{v}_i(X^*,s')}{v^*(X^*,s')}- \frac{1}{\beta^*} \frac{\hat{v}_i(X,s)}{v^*(X,s)}\right].
+\end{align}\normalsize
+
+Using the expression for $\hat{v}_i(X,s)$, we obtain\footnotesize
+\begin{align}
+    &\frac{1}{\gamma}\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} + \frac{1-\gamma}{\gamma} \left[ \beta^* \sum_{\tilde{s}\in \mathcal{S}}\omega^*_{\tilde{s}} \sum_{\tilde{s}'\in \mathcal{S}} \omega_{\tilde{s}'}^* \left( \frac{\hat{\Lambda}(X^*,s' ,\tilde{s}')}{\Lambda^*(X^*,s' ,\tilde{s}')} -\frac{\hat{\Lambda}(X^*,\tilde{s},\tilde{s}')}{\Lambda^*(X^*,\tilde{s},\tilde{s}')}   \right)-\sum_{\tilde{s}'  \in \mathcal{S}}\omega^*_{\tilde{s}' } \frac{\hat{\Lambda}(X,s,\tilde{s}' )}{\Lambda^*(X,s,\tilde{s}')} \right]\\
+    &(\psi-1) \beta^ *\left[- \sum_{\tilde{s}'\in\mathcal{S}}\omega^*_{\tilde{s}'} \left(\frac{\hat{\Lambda}(X^*,s',\tilde{s}')}{\Lambda^*(X^*,s',\tilde{s}')} - \frac{1}{\beta^*}\frac{\hat{\Lambda}(X,s,\tilde{s}')}{\Lambda^*(X,s,\tilde{s}')}\right) + \sum_{\tilde{s}\in \mathcal{S}}\omega^*_{\tilde{s}} \sum_{\tilde{s}'\in \mathcal{S}} \omega_{\tilde{s}'}^* \frac{\hat{\Lambda}(X^*,\tilde{s},\tilde{s}') }{\Lambda^*(X^*,\tilde{s},\tilde{s}')} \right] =b^\Lambda(X,s,s'),
+\end{align}\normalsize
+where
+\begin{align}
+    b^\Lambda&(X,s,s') \equiv \frac{1}{\gamma} \left[\frac{\delta_{ss'}(X)}{p_{s'}^*} - \sum_{\tilde{s}'\in\mathcal{S}} \omega^*_{\tilde{s}'} \frac{\delta_{s\tilde{s}'}(X)}{p_{\tilde{s}'}^*}\right]+\frac{\beta^*}{\gamma} \left[ \sum_{\tilde{s}\in \mathcal{S}}\omega^*_{\tilde{s}} \sum_{\tilde{s}'\in \mathcal{S}} \omega_{\tilde{s}'}^*\left[ \frac{\delta_{s' \tilde{s}'}(X)}{p_{\tilde{s}'}^*}- \frac{\delta_{\tilde{s}\tilde{s}'}(X)}{p_{\tilde{s}'}^*}\right]\right] +\nonumber\\
+    &-\frac{\psi-1}{1-\gamma} \sum_{\tilde{s}\in \mathcal{S}}\omega^*_{\tilde{s}} \sum_{\tilde{s}'\in \mathcal{S}} \omega_{\tilde{s}'}^* \left[ \frac{\delta_{s\tilde{s}'}(X)}{p^*_{\tilde{s}'}}-\beta^*\frac{\delta_{s'\tilde{s}'}(X^*)}{p^*_{\tilde{s}'}} + \beta^* \frac{\delta_{\tilde{s}\tilde{s}'}(X)}{p^*_{\tilde{s}'}} \right]  - \left[ \log\frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu}.
+\end{align}
+
+We can simplify the expression above as follows:\footnotesize
+\begin{align}
+    &\frac{1}{\gamma}\frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} +(\psi - \gamma^{-1}) \left[\omega^* \cdot \hat{\Lambda}(X,s) -\beta^* \omega^* \cdot \hat{\Lambda}(X^*,s') + \beta^* \sum_{\tilde{s}\in \mathcal{S}} \omega_{\tilde{s}} ( \omega^* \cdot \hat{\Lambda}(X^*,\tilde{s}) ) \right] = b^\Lambda(X,s,s'),
+\end{align}\normalsize
+where $\hat{\Lambda}(X,s) = \left[\frac{\hat{\Lambda}(X^*,s,1)}{\Lambda^*(X^*,s,1)}, \frac{\hat{\Lambda}(X^*,s,2)}{\Lambda^*(X^*,s,2)}, \ldots, \frac{\hat{\Lambda}(X^*,s,N)}{\Lambda^*(X^*,s,N)} \right]'$ and $\omega^* \cdot \hat{\Lambda}(X, s) = \sum_{\tilde{s}' } \omega^*_{\tilde{s}'} \frac{\hat{\Lambda}(X,s,\tilde{s}')}{\Lambda^*(X,s,\tilde{s}')}$.
+
+\paragraph{Step 2: solving the system.} We can write the system above in matrix form as follows:
+\begin{equation}
+    \left[ \gamma^{-1} I + (\psi - \gamma^{-1}) \mathbb{1}_N \omega^*\right] \hat{\Lambda}(X,s) = \tilde{b}^{\Lambda}(X,s),
+\end{equation}
+where $\tilde{b}^{\Lambda}(X,s) = [\tilde{b}^{\Lambda}(X,s,1),\tilde{b}^{\Lambda}(X,s,2),\ldots, \tilde{b}^{\Lambda}(X,s,N) ]'$ and 
+\begin{equation}
+    \tilde{b}^\Lambda(X,s,s') = b^{\Lambda}(X,s,s') + (\psi - \gamma^{-1}) \beta^* \left[ \omega^* \cdot \hat{\Lambda}(X^*,s') - \sum_{\tilde{s}\in \mathcal{S}} \omega_{\tilde{s}} ( \omega^* \cdot \hat{\Lambda}(X^*,\tilde{s}) )\right]
+\end{equation}
+
+Applying the Sherman-Morrison formula, we can invert the system above
+\begin{equation}
+    \hat{\Lambda}(X,s) =\left[ \gamma I - (\gamma - \psi^{-1}) \mathbb{1}_N \omega^*\right]  \tilde{b}^{\Lambda}(X,s).
+\end{equation}
+
+We can then write the expression above as follows:\small
+\begin{equation}
+    \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} = 
+    \gamma b^{\Lambda}(X,s,s') + (\gamma \psi - 1) \beta^* \left[ \omega^* \cdot \hat{\Lambda}(X^*,s') - \sum_{\tilde{s}\in \mathcal{S}} \omega_{\tilde{s}} ( \omega^* \cdot \hat{\Lambda}(X^*,\tilde{s}) )
+    \right] -(\gamma - \psi^{-1}) \omega^* b^{\Lambda}(X,s).
+\end{equation}\normalsize
+
+\paragraph{Step 3: solving for the average $\hat{\Lambda}(X,s,s')$.} Assuming $X = X^*$, multiplying by $\omega_{s'}^*$, and adding across states, we obtain
+\begin{equation}
+    \omega^* \hat{\Lambda}(X^*,s) = \psi^{-1} \omega^* b^\Lambda(X^*,s).
+\end{equation}
+
+Averaging across $s$, we obtain
+\begin{equation}
+    \sum_{\tilde{s} \in \mathcal{S}} \omega^*_{\tilde{s}} [ \omega^* \hat{\Lambda}(X^*,\tilde{s}) ]= \psi^{-1} \sum_{\tilde{s} \in \mathcal{S}} \omega^*_{\tilde{s}} [\omega^* b^\Lambda(X^*,\tilde{s}) ].
+\end{equation}
+
+We can then write $\hat{\Lambda}(X,s,s')$ as follows\small
+\begin{equation}
+    \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} = \gamma b^{\Lambda}(X,s,s') -(\gamma - \psi^{-1}) \omega^* b^{\Lambda}(X,s) + (\gamma  - \psi^{-1}) \beta^* \left[ \omega^* \cdot b^\Lambda(X^*,s') - \sum_{\tilde{s}\in \mathcal{S}} \omega_{\tilde{s}} ( \omega^* \cdot b^{\Lambda}(X^*,\tilde{s}) )
+    \right].
+\end{equation}\normalsize
+
+\paragraph{Step 4: simplifying the expression for $b^\Lambda(X,s,s')$.} We can write $b^\Lambda(X,s,s')$ as follows:
+\begin{align}
+    b^\Lambda&(X,s,s')  = \frac{1}{\gamma}\left[\frac{\delta_{ss'}(X)}{p_{s'}^*} - \omega^* \cdot \delta_s(X)\right] + \frac{\beta^*}{\gamma} \left[ \omega^* \delta_{s'}(X) - \sum_{\tilde{s}} \omega^*_{\tilde{s}} \omega^* \cdot \delta_{\tilde{s}}(X) \right] \nonumber\\
+&+ \frac{\psi-1}{1-\gamma} \left[ \omega^* \cdot \delta_{s}(X) - \beta^* \omega^* \cdot \delta_{s'}(X) + \beta^* \sum_{\tilde{s}} \omega_{\tilde{s}}^* (\omega^* \cdot \delta_{\tilde{s}}(X) ) \right]
+- \left[ \log\frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu}.
+\end{align}
+
+Combining terms, we obtain\footnotesize
+\begin{align}
+    &b^\Lambda(X,s,s')  = \frac{1}{\gamma}\frac{\delta_{ss'}(X)}{p_{s'}^*}- \frac{\psi - \gamma^{-1}}{\gamma-1} \left[\omega^* \cdot \delta_s(X) - \beta^* \omega^* \cdot \delta_{s'}(X)+\beta^* \sum_{\tilde{s}} \omega_{\tilde{s}}^* (\omega^* \cdot \delta_{\tilde{s}}(X) ) \right]
+- \left[ \log\frac{E^*}{E} - \left( \frac{E^*}{x_{s'}} - \frac{E}{x_s} \right) \right]\frac{\hat{\alpha}}{1+\nu}.
+\end{align}\normalsize
+
+Notice that we can $\hat{\Lambda}(X,s,s')$ as follows:
+\begin{equation}
+    \frac{\hat{\Lambda}(X,s,s')}{\Lambda^*(X,s,s')} = \frac{\hat{\Lambda}(X^*,s,s')}{\Lambda^*(X,s,s')} + \psi^{-1} \left[ \log \frac{E}{E^*} - \frac{E- E^*}{x_s}\right] \frac{\hat{\alpha}}{1+\nu}.
+\end{equation}
+
+\end{proof}
+
+\subsection{The economy with no labor frictions and iid returns}
+
+Suppose that labor can be chosen conditional on the current productivity level. In this case, the problem of the firm can be written as
+\begin{equation}
+    \max_{h_{t}} x_t h_t^\alpha - w_t h_t,
+\end{equation}
+where $w_t \equiv \frac{W_t}{A_{t-1}}$. Labor demand takes the familiar form:
+\begin{equation}
+    \alpha x_t h_t^{\alpha-1} = w_t \Rightarrow h_t = \left( \frac{\alpha x_t}{w_t}\right)^{\frac{1}{1-\alpha}}.
+\end{equation}
+
+The labor supply from households is given by
+\begin{equation}
+    h_t = \left( \frac{w_t}{\xi} \right)^{\frac{1}{\nu}}.
+\end{equation}
+
+Combining labor supply and labor demand, we obtain the equilibrium hours and wages:
+\begin{equation}
+    h_t = \left( \frac{\alpha x_t}{\xi}\right)^{\frac{1}{1+\nu-\alpha}}, \qquad \qquad w_t = \xi^{\frac{1-\alpha}{1+\nu-\alpha}} (\alpha x_t)^{\frac{\nu}{1+ \nu-\alpha}}.
+\end{equation}
+
+Firm's profits are given by 
+\begin{equation}
+    \pi_t = A_{t-1} (1-\alpha) \left( \frac{\alpha}{\xi} \right)^{\frac{\alpha}{1+\nu-\alpha}} x_t^{\frac{1+\nu}{1+\nu-\alpha}}.
+\end{equation}
+
+Total surplus is given by
+\begin{equation}
+    \tilde{C}_t = A_{t-1} \left[ x_t h_t^\alpha - \xi \frac{h_{t}^{1+\nu}}{1+\nu} \right] = A_{t-1} \left(1 - \frac{\alpha}{1+\nu} \right) \left( \frac{\alpha}{\xi} \right)^{\frac{\alpha}{1+\nu-\alpha}} x_t^{\frac{1+\nu}{1+\nu-\alpha}}.
+\end{equation}
+
+Let $P(X,s)$ denote the price of the surplus claim normalized by lagged productivity. Market clearing condition implies that
+\begin{equation}
+    1-\beta^* = \left(1 - \frac{\alpha}{1+\nu} \right) \left( \frac{\alpha}{\xi} \right)^{\frac{\alpha}{1+\nu-\alpha}} \frac{x_s^{\frac{1+\nu}{1+\nu-\alpha}}}{P(X,s)},
+\end{equation}
+where $1-\beta^*$ is the consumption-wealth ratio, which we assume to be constant.
+
+The return on the surplus claim is given by
+\begin{equation}
+    R_p(X,s,s') = \frac{x_s}{\beta^*} \frac{x_{s'}^{\frac{1+\nu}{1+\nu-\alpha}}}{x_s^{\frac{1+\nu}{1+\nu-\alpha}}} = \frac{x_{s'}}{\beta^*} \left( \frac{x_{s'}}{x_s} \right)^{ \frac{\alpha}{1+\nu-\alpha} }.
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Perturbation}
+
+% Consider a family of economies indexed by $\epsilon$, where the EIS and coefficient of relative risk aversion are given by $\psi = 1 + \hat{\psi} \epsilon$ and $\gamma = 1 + \hat{\gamma} \epsilon$. 
+% Therefore, we obtain the log case when $\epsilon = 0$ and we allow for small deviations away from unit EIS and unit risk aversion when $\epsilon > 0$. 
+
+% All equilibrium objects are now indexed by $\epsilon$, for instance, the net worth multiplier is now given by $v(X,s; \epsilon)$. We are interested in the expansion of $v(X,s; \epsilon)$ on $\epsilon$, for $\epsilon$ small:
+% \begin{equation}
+%     v(X,s;\epsilon) = v^*(X,s) + \tilde{v}(X,s) \epsilon + \mathcal{O}(\epsilon^2),
+% \end{equation}
+% where $v^*(X,s) \equiv v(X,s; 0)$ and $\tilde{v}(X,s)$ represents the first-order correction of $v(X,s;\epsilon)$ in $\epsilon$. 
+
+% Similarly, we can write the consumption-wealth ratio  $c(X,s;\epsilon)$ as follows:
+% \begin{equation}
+%     c(X,s;\epsilon) = c^*(X,s) + \tilde{c}(X,s) \epsilon + \mathcal{O}(\epsilon^2),
+% \end{equation}
+% and analogously for the remaining equilibrium variables. 
+
+% The functions $v^*(X,s)$ and $c^*(X,s)$ are already known, as they correspond to the solution in the log case, which we characterized above. It remains to solve for $\tilde{v}(X,s)$,  $\tilde{c}(X,s)$, and the first-order correction for the other variables.
+
+% From the Bellman equation for household $i$, we can write $\hat{v}_i(X,s) \equiv \log v_i(X,s)$ as follows:
+% \begin{equation}
+%     \hat{v}_i = \frac{1}{1-\psi^{-1}} \log \left[(1-\beta) \exp[(1-\psi^{-1}) \hat{c}_i] + \beta \exp[ (1-\psi^{-1}) \mathcal{Q}(\hat{v}_i' + \hat{n}_i')]
+%      \right],
+% \end{equation}
+% where
+% \begin{equation}
+%     \mathcal{Q}(z') = \frac{1}{1-\gamma} \log \mathbb{E}_i\left[ \exp [(1-\gamma) z']\right]
+% \end{equation}
+
+% For $\epsilon = 0$, we obtain
+% \begin{equation}
+%     \hat{v}_i^*(X,s) = (1-\beta) \hat{c}_i^*(X,s) + \beta \mathbb{E}_i[\hat{v}_i^*(X',s') + \hat{n}_i^*(X,s,s')].
+% \end{equation}
+
+% We follow \citet{hansen2007intertemporal} and expand the logarithm and exponential functions in the recursion for $\hat{v}_i$ and we will keep up to second-order terms in $\hat{c}_i$ and $\mathcal{Q}(\cdot)$. We can use the approximate recursion to compute the derivative of $\hat{v}_i$ with respect to $\epsilon$ at $\epsilon = 0$. Considering higher order terms or even the exact recursion for $\hat{v}_i$ would yield the same result for the derivative at the cost of more cumbersome algebra. The expansion of the recursion is given by
+% \begin{align*}
+%     \hat{v}_i &= \frac{1}{1-\psi^{-1}} \log \left[ 1 + (1-\beta) (\exp[(1-\psi^{-1}) \hat{c}_i]-1) + \beta (\exp[ (1-\psi^{-1}) \mathcal{Q}(\hat{v}_i' + \hat{n}_i')]-1)
+%      \right],\\
+%      &\approx\frac{1}{1-\psi^{-1}} \log \left[ 1 + (1-\beta) (1-\psi^{-1})\left( \hat{c}_i + (1-\psi^{-1}) \frac{\hat{c}_i^2}{2} \right) + \beta (1-\psi^{-1}) \left( \mathcal{Q} + (1-\psi^{-1}) \frac{\mathcal{Q}^2}{2} \right)
+%      \right],\\
+%      &\approx  (1-\beta) \left( \hat{c}_i + (1-\psi^{-1}) \frac{\hat{c}_i^2}{2} \right) + \beta \left( \mathcal{Q} + (1-\psi^{-1}) \frac{\mathcal{Q}^2}{2} \right) - \frac{1-\psi^{-1}}{2} \left( (1-\beta) \hat{c}_i + \beta \mathcal{Q}\right)^2\\
+%      &= (1-\beta) \hat{c}_i + \beta \mathcal{Q} + \beta (1-\beta) (1-\psi^{-1}) \frac{\hat{c}_i^2-2 \hat{c}_i \mathcal{Q} + \mathcal{Q}^2}{2}.
+% \end{align*}
+
+% The approximate recursion is then given by
+% \begin{equation}
+%     \hat{v}_i \approx (1-\beta) \hat{c}_i + \beta \mathcal{Q} + \beta (1-\beta) (1-\psi^{-1}) \frac{(\hat{c}_i- \mathcal{Q})^2}{2}.
+% \end{equation}
+
+% Similarly, we can write $\mathcal{Q}$ as follows
+% \begin{align}
+%     \mathcal{Q}(\hat{v}_i' + \hat{n}_i') &= \frac{1}{1-\gamma} \log \mathbb{E}_i\left[1 + \exp[(1-\gamma) (\hat{v}_i' + \hat{n}_i') -1\right]\\
+%     &\approx \frac{1}{1-\gamma} \log \mathbb{E}_i\left[1 + (1-\gamma) (\hat{v}_i' + \hat{n}_i') + (1-\gamma)^2 \frac{(\hat{v}_i' + \hat{n}_i')^2}{2}\right]\\
+%     &\approx \mathbb{E}_i\left[\hat{v}_i' + \hat{n}_i' + (1-\gamma) \frac{(\hat{v}_i' + \hat{n}_i')^2}{2} - \frac{(1-\gamma)}{2} (\hat{v}_i' + \hat{n}_i')^2\right].
+% \end{align}
+

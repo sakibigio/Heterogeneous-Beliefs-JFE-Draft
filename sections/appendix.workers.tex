@@ -1,0 +1,102 @@
+\section{Hand-to-Mouth Workers}\label{sec: hand_to_mouth_workers}
+
+\q{HandToMouthWorkers}{
+This section considers a version of the model in which labor is supplied by
+hand-to-mouth workers rather than by investors.
+We show that this modification leaves our main results unchanged.
+In particular, in the special case $\nu = 0$ considered in
+Section~\ref{sec:analysis.sec4}, the equilibrium allocation and asset prices
+are identical to those in the baseline model.
+
+\paragraph{Environment.}
+The economy is populated by two types of households: investors and workers.
+
+There is a finite number of investor types, indexed by $i \in \mathcal{I} = \{1,\ldots,I\}$,
+with masses $\{\mu_i\}$ satisfying $\sum_i \mu_i = 1$.
+Investors behave exactly as in the baseline model, except that we assume
+their labor disutility is infinite, so that they supply no labor in equilibrium:
+$h_{i,t} = 0$.
+
+In addition, there is a unit mass of workers.
+Workers are hand-to-mouth and consume all their labor income:
+\[
+C_{w,t} = W_t h_{w,t}.
+\]
+Workers have GHH preferences, and their labor supply condition is
+\[
+W_t = \xi_t h_{w,t}^{\nu},
+\qquad
+\xi_t = \xi A_{t-1},
+\]
+as in the baseline model.
+
+\paragraph{Characterization.}
+Investor $i$ solves Problem~\eqref{eq:recursive_representation}.
+Hence, the characterization of investors' portfolio and consumption choices
+is unchanged relative to the baseline model.
+The firm's problem is also unchanged.
+
+Labor market clearing implies
+\[
+h_t = h_{w,t}.
+\]
+Since the worker labor supply condition coincides with the labor supply
+equation in the baseline model, the equilibrium determination of hours and wages
+is identical.
+
+Because workers do not save, financial market clearing conditions are unchanged:
+\[
+\sum_{i=1}^I \mu_i B_{i,t} = 0,
+\qquad
+\sum_{i=1}^I \mu_i S_{i,t} = 1.
+\]
+
+The only difference arises in goods market clearing:
+\[
+C_{w,t} + \sum_{i=1}^I \mu_i C_{i,t}
+=
+A_t h_t^{\alpha}.
+\]
+Using $C_{w,t} = W_t h_t = \xi_t h_t^{1+\nu}$,
+we obtain
+\[
+\sum_{i=1}^I \mu_i C_{i,t}
+=
+A_t h_t^{\alpha} - \xi_t h_t^{1+\nu}.
+\]
+
+In the baseline model, where investors supply labor,
+the goods market clearing condition can be written in terms of net consumption
+$\tilde C_{i,t} \equiv C_{i,t} - \xi_t \frac{h_t^{1+\nu}}{1+\nu}$:
+\[
+\sum_{i=1}^I \mu_i \tilde C_{i,t}
+=
+A_t h_t^{\alpha}
+-
+\xi_t \frac{h_t^{1+\nu}}{1+\nu}.
+\]
+
+\paragraph{Equivalence when $\nu = 0$.}
+
+When $\nu = 0$, labor income equals labor disutility in the baseline model.
+In this case, the two goods market clearing conditions coincide exactly.
+Hence, equilibrium allocations, asset prices, wealth dynamics,
+and the evolution of market beliefs are identical to those in the baseline economy.
+
+\paragraph{Economic intuition.}
+
+Separating workers and investors therefore does not alter the mechanism
+driving our results.
+What matters is the timing of hiring, not who supplies labor.
+
+When $\nu > 0$, investor consumption becomes more volatile in the
+hand-to-mouth specification, because labor income accrues to workers,
+whose consumption is smoother than output.
+As a result, investors absorb a larger share of aggregate risk, consistent with the evidence on the consumption of stockholders (see, e.g., \citealt{mankiw1991consumption} and \citealt{parker2001consumption}).\footnote{This mechanism is reminiscent of, e.g., \citet{danthine2002labour} where limited market participation of workers, combined with firms insuring workers against labor risk, creates a similar operating-leverage channel.}
+This \textit{strengthens} the operating-leverage channel without overturning
+any of the qualitative results.
+
+More generally, the mechanism linking beliefs, risk premia,
+and labor demand operates through asset pricing and the firm's first-order condition,
+and does not rely on investors supplying labor directly.}
+

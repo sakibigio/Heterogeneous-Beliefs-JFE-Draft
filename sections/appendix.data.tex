@@ -1,0 +1,204 @@
+\section{Data Appendix}\label{app:data}
+
+\subsection{Turnover--Disagreement Analysis (IBES + CRSP)}\label{app:data_turnover}
+
+\paragraph{Overview.}
+The turnover analysis combines (i) a quarterly stock-market turnover measure built from CRSP, (ii) an analyst-level disagreement index built from IBES micro forecasts, and (iii) NBER business-cycle dates used to define recession indicators. The final regression sample is quarterly and spans 1982Q2--2021Q3.
+
+\paragraph{Quarterly turnover from CRSP.}
+Turnover is constructed from monthly CRSP stock data as follows:
+\begin{enumerate}
+\item Keep NYSE common stocks: \texttt{EXCHCD}=1 and \texttt{SHRCD} $\in \{10,11\}$.
+\item For each stock-month, compute turnover as
+\[
+\text{turnover}_{i,t}=\frac{\text{VOL}_{i,t}}{\text{SHROUT}_{i,t}},
+\]
+with \texttt{SHROUT} converted to shares (\texttt{SHROUT}$\times 1000$).
+\item Winsorize stock-level turnover cross-sectionally at each month at the 99th percentile.
+\item Compute monthly equal-weighted and value-weighted turnover across stocks, where value weights use lagged market equity (\(|\text{PRC}_{i,t}|\times \text{SHROUT}_{i,t}\), lagged one month).
+\item Aggregate monthly turnover within each quarter by summing the three monthly values and multiplying by 100:
+\[
+qvw_t = 100\sum_{m\in t}\text{VWTurnover}_m.
+\]
+\end{enumerate}
+The regressions use \(qvw_t\) as the dependent variable.
+
+\paragraph{IBES disagreement index (DI).}
+Let \(e_{ijt}\) denote analyst \(j\)'s one-year-ahead earnings-growth forecast for firm \(i\) at quarter \(t\). We estimate:
+\[
+e_{ijt} = \alpha_{it} + \gamma_j + \beta_j g_t + \varepsilon_{ijt},
+\]
+where \(g_t\) is aggregate one-year-ahead realized log earnings growth (from DeLao's earnings-growth series), \(\alpha_{it}\) is a firm$\times$quarter fixed effect, and \((\gamma_j,\beta_j)\) are analyst-specific coefficients.
+
+The index used in turnover regressions is
+\[
+DI_t = \text{sd}_j(\omega_{jt}), \qquad \omega_{jt}=\gamma_j+\beta_j g_t,
+\]
+computed across active analysts in each quarter.
+
+\paragraph{IBES sample restrictions.}
+The IBES micro sample applies:
+\begin{enumerate}
+\item \texttt{MEASURE}=\texttt{EPS}, \texttt{FPI}=1;
+\item non-missing analyst ID, firm ID, and forecast value;
+\item quarter-level winsorization of forecasts (1st/99th percentiles);
+\item analyst-quarter coverage filter: at least 3 firms per analyst-quarter;
+\item quarter coverage filter: at least 10 analysts in the quarter.
+\end{enumerate}
+These filters, together with availability of \(g_t\), imply a DI sample from 1982Q2 to 2021Q3.
+
+\paragraph{Recession indicators and regression specifications.}
+NBER peaks and troughs are used to define:
+\begin{itemize}
+\item \(R_t\): recession dummy;
+\item \(F2_t\): dummy for the first two quarters of each recession spell.
+\end{itemize}
+The five turnover specifications are:
+\begin{align*}
+(1)\quad & qvw_t = c + \beta DI_t + u_t,\\
+(2)\quad & qvw_t = c + \beta DI_t + \delta R_t + \theta (DI_t\times R_t)+u_t,\\
+(3)\quad & qvw_t = c + \beta DI_t + \theta (DI_t\times R_t)+u_t,\\
+(4)\quad & qvw_t = c + \beta DI_t + \delta F2_t + \theta (DI_t\times F2_t)+u_t,\\
+(5)\quad & qvw_t = c + \beta DI_t + \theta (DI_t\times F2_t)+u_t.
+\end{align*}
+Reported standard errors are Newey--West HAC with lag 4.
+
+\paragraph{Robustness.} As a robustness check, we control for aggregate market volatility (VIX) and market returns in the turnover regressions. 
+The results are reported in Table~\ref{tab:turnover_di_robustness}.
+We observe that the main results are robust to these controls: the interaction term with the recession indicator is still positive and statistically significant.
+
+\input{tables/tab_turnover_di_robustness}
+
+\subsection{Productivity-Growth Coibion--Gorodnichenko Regressions (SPF)}\label{app:data_productivity_cg}
+
+\paragraph{Overview.}
+We construct one-quarter-ahead forecast errors and forecast revisions for two productivity measures from SPF level forecasts and realized macro data, then estimate CG regressions at horizon \(h=1\).
+
+\paragraph{Forecast inputs from SPF.}
+Using SPF mean-level forecasts for RGDP and EMP:
+\[
+F_t\Delta y_{t+1}=400\log\!\left(\frac{RGDP2_t}{RGDP1_t}\right),\qquad
+F_t\Delta n_{t+1}=400\log\!\left(\frac{EMP2_t}{EMP1_t}\right),
+\]
+and similarly for two-quarters-ahead forecasts:
+\[
+F_t\Delta y_{t+2}=400\log\!\left(\frac{RGDP3_t}{RGDP2_t}\right),\qquad
+F_t\Delta n_{t+2}=400\log\!\left(\frac{EMP3_t}{EMP2_t}\right).
+\]
+
+\paragraph{Productivity forecast measures.}
+Define:
+\[
+F_t\Delta prod^{LP}_{t+1}=F_t\Delta y_{t+1}-F_t\Delta n_{t+1},
+\]
+\[
+F_t\Delta prod^{TFP}_{t+1}=F_t\Delta y_{t+1}-\alpha F_t\Delta n_{t+1},\qquad \alpha=\tfrac{2}{3}.
+\]
+Forecast revisions are:
+\[
+Revision^{LP}_t = F_t\Delta prod^{LP}_{t+1} - F_{t-1}\Delta prod^{LP}_{t+1},
+\]
+\[
+Revision^{TFP}_t = F_t\Delta prod^{TFP}_{t+1} - F_{t-1}\Delta prod^{TFP}_{t+1},
+\]
+with \(F_{t-1}\Delta prod_{t+1}\) obtained by lagging the \(t\)-dated two-quarters-ahead forecast.
+
+\paragraph{Realized series.}
+Realized GDP growth is constructed from real-time GDP vintages; realized employment growth is built from quarterly averages of monthly payroll employment (PAYEMS):
+\[
+\Delta y_{t+1}=400\log\!\left(\frac{RGDP_{t+1}}{RGDP_t}\right),\qquad
+\Delta n_{t+1}=400\log\!\left(\frac{PAYEMS_{t+1}}{PAYEMS_t}\right).
+\]
+Hence:
+\[
+\Delta prod^{LP}_{t+1}=\Delta y_{t+1}-\Delta n_{t+1},\qquad
+\Delta prod^{TFP}_{t+1}=\Delta y_{t+1}-\alpha\Delta n_{t+1}.
+\]
+
+\paragraph{CG regressions.}
+For each measure \(m\in\{LP,TFP\}\), estimate:
+\[
+FE^m_t = c + \beta_{CG}^m\,Revision^m_t + u_t,
+\]
+where \(FE^m_t=\Delta prod^m_{t+1}-F_t\Delta prod^m_{t+1}\).
+Reported standard errors are Newey--West HAC with lag 4.
+
+\paragraph{Sample.}
+The productivity CG table uses 2004Q1--2025Q2 (86 quarterly observations in each column).
+
+\subsection{Construction of Table 5 Data Moments and Bootstrap Intervals}\label{app:data_table5_moments}
+
+\paragraph{Overview.}
+The data targets in Table 5 are constructed by
+\texttt{src/data/replication/unconditional\_moments/construct\_unconditional\_moments.R}.
+All moments are reported in annualized percentage points.
+
+\paragraph{Data sources (key series).}
+For the moments requested in Table 5, we use:
+\begin{itemize}
+\item \textit{Excess returns and dividend growth}: Shiller historical market dataset (CSV mirror), using real equity returns and nominal long rates.
+\item \textit{Consumption growth}: BEA/FRED annual real nondurables and services series, \texttt{DNDGRG3A086NBEA} and \texttt{DSERRG3A086NBEA}, divided by annual population \texttt{B230RC0A052NBEA}.
+\end{itemize}
+
+\paragraph{Series and definitions.}
+We construct five data objects:
+\begin{enumerate}
+\item \textit{Real interest rate}: annual ex-post real long rate from Shiller,
+\[
+r^{real}_t=r^{nominal}_t-\pi_t,
+\]
+where \(r^{nominal}_t\) is the Shiller long rate and \(\pi_t\) is realized annual inflation computed as a log change in the Shiller CPI (December-to-December, in our baseline construction).
+\item \textit{Excess equity return}: annual real equity return minus the real interest rate.
+\item \textit{Consumption growth}: annual log growth of real per-capita nondurables plus services consumption,
+\[
+\Delta c_t = 100\Delta \log\!\left(\frac{DNDGRG3A086NBEA_t+DSERRG3A086NBEA_t}{B230RC0A052NBEA_t}\right).
+\]
+\item \textit{Dividend growth}: annual log growth of annual-average real dividends from Shiller.
+\item \textit{Log-hours volatility}: standard deviation of HP-filtered (\(\lambda=100\)) annual log total hours, where annual hours are built from CPS/BLS series as
+\[
+hours_t=\frac{LNU02005053_t \times LNU02005054_t}{LNU00000000_t-LNU00000097_t}.
+\]
+\noindent We access these monthly CPS series via the BLS API, construct \(hours_t\) at the monthly frequency, and then take annual averages before applying the HP filter to the annual log series. This construction mirrors \citet{rogerson2011search}.
+\end{enumerate}
+
+\paragraph{Baseline sample windows used for Table 5.}
+The replication uses:
+\begin{itemize}
+\item financial and dividend moments: 1890--2025;
+\item consumption growth: 1945--2025 (paper-table definition above);
+\item hours volatility: 1976--2025.
+\end{itemize}
+
+\paragraph{Annualization and reported moments.}
+For each variable \(x_t\), we report
+\[
+\widehat{\mu}_x = \text{mean}(x_t), \qquad
+\widehat{\sigma}_x = \text{sd}(x_t),
+\]
+already scaled in annual percentage points by construction.
+
+\paragraph{Bootstrap standard errors and intervals.}
+To report uncertainty in the data column, we compute moving-block bootstrap standard errors for both \(\widehat{\mu}_x\) and \(\widehat{\sigma}_x\):
+\begin{itemize}
+\item number of bootstrap replications: \(B=1000\);
+\item seed: 12345;
+\item block length: \(l=\lfloor n^{1/3}\rfloor\) (unless manually overridden), where \(n\) is the sample size of the variable.
+\end{itemize}
+For each replication \(b\), we resample contiguous blocks of annual observations (years) with replacement, form a pseudo-sample \(x_t^{(b)}\), and compute \(\widehat{\mu}_x^{(b)}\) and \(\widehat{\sigma}_x^{(b)}\). Standard errors are:
+\[
+\widehat{se}(\widehat{\mu}_x)=sd_b\!\left(\widehat{\mu}_x^{(b)}\right), \qquad
+\widehat{se}(\widehat{\sigma}_x)=sd_b\!\left(\widehat{\sigma}_x^{(b)}\right).
+\]
+Table 5 reports \(\pm 2\) s.e. intervals:
+\[
+\left[\widehat{\mu}_x-2\widehat{se}(\widehat{\mu}_x),\,\widehat{\mu}_x+2\widehat{se}(\widehat{\mu}_x)\right], \qquad
+\left[\widehat{\sigma}_x-2\widehat{se}(\widehat{\sigma}_x),\,\widehat{\sigma}_x+2\widehat{se}(\widehat{\sigma}_x)\right].
+\]
+
+\subsection{Robustness: Alternative Belief-Mass Calibration for Unconditional Moments}\label{app:data_table5_moments_robust_mu1}
+
+As an additional robustness exercise, we consider a calibration with a higher population share of type-1 agents, \(\mu_1=0.907\), while keeping the remaining baseline quantitative parameters unchanged (including \(\psi=2\) and \(\alpha=0.66\)). Table~\ref{tab:uncond_moments_robust_mu1_0907} reports the implied model moments and compares them to the same data confidence intervals used in Table~\ref{tab:uncond_moments}. 
+
+This calibration illustrates that matching the full set of unconditional moments jointly is feasible in our framework. In particular, under the high-elasticity specification (column 5), all reported moments lie inside the data \(\pm 2\) s.e. intervals. Relative to the benchmark \(\mu_1=0.9\), increasing \(\mu_1\) lowers risk-free-rate volatility while preserving a quantitatively meaningful equity premium, moving the model closer to the empirical target set without requiring extreme parameter changes.
+
+\input{tables/tab_uncond_moments_robust_mu1_0907}

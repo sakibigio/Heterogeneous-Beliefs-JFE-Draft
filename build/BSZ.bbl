@@ -1,0 +1,536 @@
+\ifx\undefined\bysame
+\newcommand{\bysame}{\leavevmode\hbox to\leftmargin{\hrulefill\,\,}}
+\fi
+\begin{thebibliography}{xx}
+
+\harvarditem[Adam and Merkel]{Adam and Merkel}{2019}{AM19}
+{\bf Adam, Klaus and Sebastian Merkel}, ``Stock Price Cycles and Business
+  Cycles,'' 2019.
+\newblock Working Paper.
+
+\harvarditem[Andreasen et al.]{Andreasen, Fern{\'a}ndez-Villaverde and
+  Rubio-Ram{\'i}rez}{2018}{andreasen2018pruned}
+{\bf Andreasen, Martin~M., Jes{\'u}s Fern{\'a}ndez-Villaverde, and Juan~F.
+  Rubio-Ram{\'i}rez}, ``The Pruned State-Space System for Non-Linear {DSGE}
+  Models: Theory and Empirical Applications,'' {\it The Review of Economic
+  Studies}, 2018, {\it 85} (1), 1--49.
+
+\harvarditem[Angeletos et al.]{Angeletos, Collard and Dellas}{2018}{ACD18}
+{\bf Angeletos, George-Marios, Fabrice Collard, and Harris Dellas},
+  ``Quantifying Confidence,'' {\it Econometrica}, 2018, {\it 86} (5),
+  1689--1726.
+
+\harvarditem[Armona et al.]{Armona, Fuster and Zafar}{2019}{armona2019home}
+{\bf Armona, Luis, Andreas Fuster, and Basit Zafar}, ``Home price expectations
+  and behaviour: Evidence from a randomized information experiment,'' {\it The
+  Review of Economic Studies}, 2019, {\it 86} (4), 1371--1410.
+
+\harvarditem[Atmaz et al.]{Atmaz, Gulen, Cassella and
+  Ruan}{2023}{atmaz2023contrarians}
+{\bf Atmaz, Adem, Huseyin Gulen, Stefano Cassella, and Fangcheng Ruan},
+  ``Contrarians, extrapolators, and stock market momentum and reversal,'' {\it
+  Management Science}, 2023.
+
+\harvarditem[Bansal and Yaron]{Bansal and Yaron}{2004}{bansal2004risks}
+{\bf Bansal, Ravi and Amir Yaron}, ``Risks for the long run: A potential
+  resolution of asset pricing puzzles,'' {\it The journal of Finance}, 2004,
+  {\it 59} (4), 1481--1509.
+
+\harvarditem[Barlevy]{Barlevy}{2014}{barlevy2014leverage}
+{\bf Barlevy, Gadi}, ``A Leverage-Based Model of Speculative Bubbles,'' {\it
+  Journal of Economic Theory}, 2014, {\it 153}, 459--505.
+
+\harvarditem[Barlevy]{Barlevy}{2022}{barlevy2022speculative}
+{\bf \bysame{}}, ``On Speculative Frenzies and Stabilization Policy,'' Working
+  Paper 2022-35, Federal Reserve Bank of Chicago 2022.
+
+\harvarditem[Belo et al.]{Belo, Donangelo, Lin and Luo}{2023}{belo2023drives}
+{\bf Belo, Frederico, Andres Donangelo, Xiaoji Lin, and Ding Luo}, ``What
+  drives firms' hiring decisions? An asset pricing perspective,'' {\it The
+  Review of Financial Studies}, 2023, {\it 36} (9), 3825--3860.
+
+\harvarditem[Belo et al.]{Belo, Lin and Bazdresch}{2014}{belo2014labor}
+{\bf \bysame{}, Xiaoji Lin, and Santiago Bazdresch}, ``Labor hiring,
+  investment, and stock return predictability in the cross section,'' {\it
+  Journal of Political Economy}, 2014, {\it 122} (1), 129--177.
+
+\harvarditem[Bhandari et al.]{Bhandari, Borovi\v{c}ka and Ho}{2019}{BBH19}
+{\bf Bhandari, Anmol, Borovi\v{c}ka, and Paul Ho}, ``Survey Data and Subjective
+  Beliefs in Business Cycle Models,'' 2019.
+\newblock Working Paper.
+
+\harvarditem[Bianchi et al.]{Bianchi, Ilut and
+  Saijo}{2024}{bianchi2024diagnostic}
+{\bf Bianchi, Francesco, Cosmin Ilut, and Hikaru Saijo}, ``Diagnostic business
+  cycles,'' {\it Review of Economic Studies}, 2024, {\it 91} (1), 129--162.
+
+\harvarditem[Bolton et al.]{Bolton, Scheinkman and Xiong}{2006}{BSX06}
+{\bf Bolton, Patrick, Jos\'e Scheinkman, and Wei Xiong}, ``{Executive
+  Compensation and Short-Termist Behaviour in Speculative Markets},'' {\it
+  Review of Economic Studies}, 07 2006, {\it 73} (3), 577--610.
+
+\harvarditem[Bordalo et al.]{Bordalo, Gennaioli and Shleifer}{2018a}{BGS18}
+{\bf Bordalo, Pedro, Nicola Gennaioli, and Andrei Shleifer}, ``Diagnostic
+  Expectations and Credit Cycles,'' {\it Journal of Finance}, 2018, {\it 73}
+  (1), 199--227.
+
+\harvarditem[Bordalo et al.]{Bordalo, Gennaioli and
+  Shleifer}{2018b}{bordalo2018diagnostic}
+{\bf \bysame{}, \bysame{}, and \bysame{}}, ``Diagnostic expectations and credit
+  cycles,'' {\it The Journal of Finance}, 2018, {\it 73} (1), 199--227.
+
+\harvarditem[Bordalo et al.]{Bordalo, Gennaioli, La~Porta and
+  Shleifer}{2020a}{bordalo2020expectations}
+{\bf \bysame{}, \bysame{}, Rafael~La Porta, and Andrei Shleifer}, {\it
+  Expectations of fundamentals and stock market puzzles} 2020.
+
+\harvarditem[Bordalo et al.]{Bordalo, Gennaioli, Ma and
+  Shleifer}{2020b}{bordalo2020overreaction}
+{\bf \bysame{}, \bysame{}, Yueran Ma, and Andrei Shleifer}, ``Overreaction in
+  macroeconomic expectations,'' {\it American Economic Review}, 2020, {\it 110}
+  (9), 2748--2782.
+
+\harvarditem[Borovi\v{c}ka and Borovi\v{c}kov\'{a}]{Borovi\v{c}ka and
+  Borovi\v{c}kov\'{a}}{2019}{BB19}
+{\bf Borovi\v{c}ka, Jaroslav and Katar\'{i}na Borovi\v{c}kov\'{a}}, ``Risk
+  Premia and Unemployment Fluctuations,'' 2019.
+\newblock Working Paper.
+
+\harvarditem[Brunnermeier and Sannikov]{Brunnermeier and
+  Sannikov}{2014}{brunnermeier2014macroeconomic}
+{\bf Brunnermeier, Markus~K and Yuliy Sannikov}, ``A macroeconomic model with a
+  financial sector,'' {\it American Economic Review}, 2014, {\it 104} (2),
+  379--421.
+
+\harvarditem[Burnside et al.]{Burnside, Eichenbaum and
+  Rebelo}{1993}{burnside1993labor}
+{\bf Burnside, Craig, Martin Eichenbaum, and Sergio Rebelo}, ``Labor hoarding
+  and the business cycle,'' {\it Journal of Political Economy}, 1993, {\it 101}
+  (2), 245--273.
+
+\harvarditem[Buss et al.]{Buss, Dumas, Uppal and Vilkov}{2016}{BDUV16}
+{\bf Buss, Adrian, Bernard Dumas, Raman Uppal, and Grigory Vilkov}, ``The
+  Intended and Unintended Consequences of Financial-market Regulations: A
+  General-equilibrium Analysis,'' {\it Journal of Monetary Economics}, 2016,
+  {\it 81}, 25--43.
+
+\harvarditem[Caballero and Simsek]{Caballero and Simsek}{2020a}{CS19}
+{\bf Caballero, Ricardo~J. and Alp Simsek}, ``{A Risk-Centric Model of Demand
+  Recessions and Speculation},'' {\it Quarterly Journal of Economics}, 2020,
+  {\it 135} (3), 1493--1566.
+
+\harvarditem[Caballero and Simsek]{Caballero and Simsek}{2020b}{CS20}
+{\bf \bysame{} and \bysame{}}, ``Prudential Monetary Policy,'' 2020.
+\newblock Working Paper.
+
+\harvarditem[Campbell]{Campbell}{2003}{campbell2003consumption}
+{\bf Campbell, John~Y}, ``Consumption-based asset pricing,'' {\it Handbook of
+  the Economics of Finance}, 2003, {\it 1}, 803--887.
+
+\harvarditem[Campbell and Cochrane]{Campbell and
+  Cochrane}{1999}{campbell1999force}
+{\bf \bysame{} and John~H Cochrane}, ``By force of habit: A consumption-based
+  explanation of aggregate stock market behavior,'' {\it Journal of political
+  Economy}, 1999, {\it 107} (2), 205--251.
+
+\harvarditem[Caramp and Silva]{Caramp and Silva}{2024}{CS24}
+{\bf Caramp, Nicolas and Dejanir~H Silva}, ``Monetary policy and wealth
+  effects: The role of risk and heterogeneity,'' Technical Report, CESifo 2024.
+
+\harvarditem[Chari et al.]{Chari, Kehoe and McGrattan}{2007}{CKM07}
+{\bf Chari, V.~V., Patrick~J. Kehoe, and Ellen~R. McGrattan}, ``Business Cycle
+  Accounting,'' {\it Econometrica}, 2007, {\it 75} (3), 781--836.
+
+\harvarditem[Chen et al.]{Chen, Joslin and Tran}{2012}{chen2012rare}
+{\bf Chen, Hui, Scott Joslin, and Ngoc-Khanh Tran}, ``Rare disasters and risk
+  sharing with heterogeneous beliefs,'' {\it The Review of Financial Studies},
+  2012, {\it 25} (7), 2189--2224.
+
+\harvarditem[Cochrane]{Cochrane}{1992}{cochrane1992explaining}
+{\bf Cochrane, John~H}, ``Explaining the variance of price--dividend ratios,''
+  {\it The Review of Financial Studies}, 1992, {\it 5} (2), 243--280.
+
+\harvarditem[Cochrane]{Cochrane}{2011}{cochrane2011presidential}
+{\bf \bysame{}}, ``Presidential address: Discount rates,'' {\it The Journal of
+  finance}, 2011, {\it 66} (4), 1047--1108.
+
+\harvarditem[Cogley and Nason]{Cogley and Nason}{1995}{cogley1995output}
+{\bf Cogley, Timothy and James~M Nason}, ``Output dynamics in
+  real-business-cycle models,'' {\it The American Economic Review}, 1995,
+  pp.~492--511.
+
+\harvarditem[Coibion and Gorodnichenko]{Coibion and
+  Gorodnichenko}{2015}{coibion2015information}
+{\bf Coibion, Olivier and Yuriy Gorodnichenko}, ``Information rigidity and the
+  expectations formation process: A simple framework and new facts,'' {\it
+  American Economic Review}, 2015, {\it 105} (8), 2644--2678.
+
+\harvarditem[Cui et al.]{Cui, De~La~O and Myers}{2024}{cui_subjective_2024}
+{\bf Cui, Tingyue, Ricardo De~La O, and Sean Myers}, ``The Subjective Belief
+  Factor,'' 2024.
+\newblock Working paper, SSRN 5205569.
+
+\harvarditem[Danthine and Donaldson]{Danthine and
+  Donaldson}{2002}{danthine2002labour}
+{\bf Danthine, Jean-Pierre and John~B Donaldson}, ``Labour relations and asset
+  returns,'' {\it The Review of Economic Studies}, 2002, {\it 69} (1), 41--64.
+
+\harvarditem[Detemple and Murthy]{Detemple and Murthy}{1994}{DM94}
+{\bf Detemple, Jerome and Shashidhar Murthy}, ``Intertemporal Asset Pricing
+  with Heterogeneous Beliefs,'' {\it Journal of Economic Theory}, 1994, {\it
+  62} (2), 294 -- 320.
+
+\harvarditem[{Di Tella} and Hall]{{Di Tella} and Hall}{2019}{DH19}
+{\bf {Di Tella}, Sebastian and Robert~E. Hall}, ``Risk Premium Shocks Can
+  Create Inefficient Recessions,'' 2019.
+\newblock Working Paper.
+
+\harvarditem[Donangelo et al.]{Donangelo, Gourio, Kehrig and
+  Palacios}{2019}{donangelo2019cross}
+{\bf Donangelo, Andres, Francois Gourio, Matthias Kehrig, and Miguel Palacios},
+  ``The cross-section of labor leverage and equity returns,'' {\it Journal of
+  Financial Economics}, 2019, {\it 132} (2), 497--518.
+
+\harvarditem[Eusepi and Preston]{Eusepi and Preston}{2011}{EP11}
+{\bf Eusepi, Stefano and Bruce Preston}, ``Expectations, Learning, and Business
+  Cycle Fluctuations,'' {\it American Economic Review}, 2011, {\it 101} (6),
+  2844--72.
+
+\harvarditem[Farhi and Werning]{Farhi and Werning}{2019}{farhi2019monetary}
+{\bf Farhi, Emmanuel and Iv{\'a}n Werning}, ``Monetary policy, bounded
+  rationality, and incomplete markets,'' {\it American Economic Review}, 2019,
+  {\it 109} (11), 3887--3928.
+
+\harvarditem[Favilukis and Lin]{Favilukis and Lin}{2016}{favilukis2016does}
+{\bf Favilukis, Jack and Xiaoji Lin}, ``Does wage rigidity make firms riskier?
+  Evidence from long-horizon return predictability,'' {\it Journal of Monetary
+  Economics}, 2016, {\it 78}, 80--95.
+
+\harvarditem[Fisher]{Fisher}{1933}{fisher1933debt}
+{\bf Fisher, Irving}, {\it The Debt-Deflation Theory of Great Depressions},
+  Vol.~1 1933.
+
+\harvarditem[Fostel and Geanakoplos]{Fostel and Geanakoplos}{2008}{FG08}
+{\bf Fostel, Ana and John Geanakoplos}, ``Leverage Cycles and the Anxious
+  Economy,'' {\it American Economic Review}, 2008, {\it 98} (4), 1211--44.
+
+\harvarditem[Fuster et al.]{Fuster, Laibson and
+  Mendel}{2010}{fuster2010natural}
+{\bf Fuster, Andreas, David Laibson, and Brock Mendel}, ``Natural expectations
+  and macroeconomic fluctuations,'' {\it Journal of Economic Perspectives},
+  2010, {\it 24} (4), 67--84.
+
+\harvarditem[Gabaix]{Gabaix}{2019}{gabaix2019behavioral}
+{\bf Gabaix, Xavier}, ``Behavioral inattention,'' in ``Handbook of behavioral
+  economics: Applications and foundations 1,'' Vol.~2, Elsevier, 2019,
+  pp.~261--343.
+
+\harvarditem[G{\^a}rleanu and Panageas]{G{\^a}rleanu and
+  Panageas}{2015}{garleanu2015young}
+{\bf G{\^a}rleanu, Nicolae and Stavros Panageas}, ``Young, old, conservative,
+  and bold: The implications of heterogeneity and finite lives for asset
+  pricing,'' {\it Journal of Political Economy}, 2015, {\it 123} (3), 670--685.
+
+\harvarditem[Geanakoplos]{Geanakoplos}{2003}{G03}
+{\bf Geanakoplos, John}, ``Liquidity, Default, and Crashes: Endogenous
+  Contracts in General Equilibrium,'' in Mathias Dewatripont, Lars~Peter
+  Hansen, and Stephen~J.Editors Turnovsky, eds., {\it Advances in Economics and
+  Econometrics: Theory and Applications, Eighth World Congress}, Vol.~2 of {\em
+  Econometric Society Monographs}, Cambridge University Press, 2003,
+  pp.~170--205.
+
+\harvarditem[Geanakoplos]{Geanakoplos}{2010}{G10}
+{\bf \bysame{}}, ``The Leverage Cycle,'' in Daron Acemoglu, Kenneth Rogoff, and
+  Michael Woodford, eds., {\it NBER Macroeconomics Annual 2009, Volume 24},
+  University of Chicago Press, 2010, pp.~1--65.
+
+\harvarditem[Geanakoplos et al.]{Geanakoplos, Magill, Quinzii and
+  Dreze}{1990}{geanakoplos1990generic}
+{\bf \bysame{}, Michael Magill, Martine Quinzii, and Jacques Dreze}, ``Generic
+  inefficiency of stock market equilibrium when markets are incomplete,'' {\it
+  Journal of Mathematical Economics}, 1990, {\it 19} (1-2), 113--151.
+
+\harvarditem[Gennaioli and Shleifer]{Gennaioli and Shleifer}{2010}{GS10}
+{\bf Gennaioli, Nicola and Andrei Shleifer}, ``What Comes to Mind,'' {\it
+  Quarterly Journal of Economics}, 2010, {\it 125} (4), 1399--1433.
+
+\harvarditem[Gennaioli and Shleifer]{Gennaioli and
+  Shleifer}{2018}{gennaioli2018crisis}
+{\bf \bysame{} and \bysame{}}, ``A crisis of beliefs: Investor psychology and
+  financial fragility,'' 2018.
+
+\harvarditem[Gennaioli et al.]{Gennaioli, Ma and Shleifer}{2016}{GMS16}
+{\bf \bysame{}, Yueran Ma, and Andrei Shleifer}, ``Expectations and
+  Investment,'' in Martin Eichenbaum and Jonathan~A. Parker, eds., {\it NBER
+  Macroeconomics Annual 2015, Volume 30}, University of Chicago Press, 2016,
+  pp.~379--431.
+
+\harvarditem[Giglio et al.]{Giglio, Maggiori, Stroebel and
+  Utkus}{2021}{GMSU_AER}
+{\bf Giglio, Stefano, Matteo Maggiori, Johannes Stroebel, and Stephen Utkus},
+  ``Five facts about beliefs and portfolios,'' {\it American Economic Review},
+  2021, {\it 111} (5), 1481--1522.
+
+\harvarditem[Gilchrist et al.]{Gilchrist, Himmelberg and Huberman}{2005}{GHH05}
+{\bf Gilchrist, Simon, Charles~P. Himmelberg, and Gur Huberman}, ``Do Stock
+  Price Bubbles Influence Corporate Investment?,'' {\it Journal of Monetary
+  Economics}, 2005, {\it 52} (4), 805--827.
+
+\harvarditem[Greenwood et al.]{Greenwood, Hercowitz and Huffman}{1988}{GHH88}
+{\bf Greenwood, Jeremy, Zvi Hercowitz, and Gregory~W. Huffman}, ``Investment,
+  Capacity Utilization, and the Real Business Cycle,'' {\it American Economic
+  Review}, 1988, {\it 78} (3), 402--416.
+
+\harvarditem[Greenwood and Shleifer]{Greenwood and
+  Shleifer}{2014}{greenwood_expectations_2014}
+{\bf Greenwood, Robin and Andrei Shleifer}, ``Expectations of {Returns} and
+  {Expected} {Returns},'' {\it Review of Financial Studies}, 2014, {\it 27}
+  (3), 714--746.
+
+\harvarditem[Guerreiro]{Guerreiro}{2022}{guerreiro2022disagreement}
+{\bf Guerreiro, Joao}, ``Belief Disagreement and Business Cycles,'' 2022.
+\newblock Working Paper, UCLA.
+
+\harvarditem[Hall]{Hall}{2017}{H17}
+{\bf Hall, Robert~E.}, ``High Discounts and High Unemployment,'' {\it American
+  Economic Review}, 2017, {\it 107} (2), 305--30.
+
+\harvarditem[Hansen and Jagannathan]{Hansen and
+  Jagannathan}{1991}{hansen1991implications}
+{\bf Hansen, Lars~Peter and Ravi Jagannathan}, ``Implications of security
+  market data for models of dynamic economies,'' {\it Journal of political
+  economy}, 1991, {\it 99} (2), 225--262.
+
+\harvarditem[Harrison and Kreps]{Harrison and Kreps}{1978}{HK78}
+{\bf Harrison, J.~Michael and David~M. Kreps}, ``{Speculative Investor Behavior
+  in a Stock Market with Heterogeneous Expectations},'' {\it Quarterly Journal
+  of Economics}, 1978, {\it 92} (2), 323--336.
+
+\harvarditem[He and Krishnamurthy]{He and
+  Krishnamurthy}{2013}{he2013intermediary}
+{\bf He, Zhiguo and Arvind Krishnamurthy}, ``Intermediary asset pricing,'' {\it
+  American Economic Review}, 2013, {\it 103} (2), 732--70.
+
+\harvarditem[Iachan et al.]{Iachan, Nenov and Simsek}{2019}{INS18}
+{\bf Iachan, Felipe~S., Plamen~T. Nenov, and Alp Simsek}, ``The Choice Channel
+  of Financial Innovation,'' 2019.
+\newblock Working Paper.
+
+\harvarditem[Jaimovich and Rebelo]{Jaimovich and Rebelo}{2009}{JR09}
+{\bf Jaimovich, Nir and Sergio Rebelo}, ``Can News about the Future Drive the
+  Business Cycle?,'' {\it American Economic Review}, 2009, {\it 99} (4),
+  1097--1118.
+
+\harvarditem[Keane and Rogerson]{Keane and Rogerson}{2012}{keane2012micro}
+{\bf Keane, Michael and Richard Rogerson}, ``Micro and macro labor supply
+  elasticities: A reassessment of conventional wisdom,'' {\it Journal of
+  Economic Literature}, 2012, {\it 50} (2), 464--476.
+
+\harvarditem[Kehoe et al.]{Kehoe, Lopez, Midrigan and Pastorino}{2019}{KLMP19}
+{\bf Kehoe, Patrick~J., Pierlauro Lopez, Virgiliu Midrigan, and Elena
+  Pastorino}, ``Asset Prices and Unemployment Fluctuations,'' 2019.
+\newblock Working Paper.
+
+\harvarditem[Keynes]{Keynes}{1936}{keynes1936general}
+{\bf Keynes, John~Maynard}, {\it The General Theory of Employment, Interest,
+  and Money}, London: Macmillan, 1936.
+
+\harvarditem[Kindleberger]{Kindleberger}{1996}{kindleberger1996history}
+{\bf Kindleberger, Charles~P.}, ``Manias, Panics and Crashes: A History of
+  financial crises,'' {\it London: Macmilla}, 1996.
+
+\harvarditem[Krishnamurthy and Muir]{Krishnamurthy and
+  Muir}{2017}{krishnamurthy2017credit}
+{\bf Krishnamurthy, Arvind and Tyler Muir}, ``How credit cycles across a
+  financial crisis,'' Technical Report, National Bureau of Economic Research
+  2017.
+
+\harvarditem[Krishnamurthy and Li]{Krishnamurthy and
+  Li}{2020}{krishnamurthy2020dissecting}
+{\bf \bysame{} and Wenhao Li}, ``Dissecting mechanisms of financial crises:
+  Intermediation and sentiment,'' Technical Report, National Bureau of Economic
+  Research 2020.
+
+\harvarditem[Krishnamurthy and Li]{Krishnamurthy and
+  Li}{2025}{krishnamurthy2025dissecting}
+{\bf \bysame{} and \bysame{}}, ``Dissecting mechanisms of financial crises:
+  Intermediation and sentiment,'' {\it Journal of Political Economy}, 2025,
+  {\it 133} (3), 000--000.
+
+\harvarditem[Kubler and Schmedders]{Kubler and Schmedders}{2012}{KS12}
+{\bf Kubler, Felix and Karl Schmedders}, ``Financial Innovation and Asset Price
+  Volatility,'' {\it American Economic Review}, May 2012, {\it 102} (3),
+  147--51.
+
+\harvarditem[Kydland and Prescott]{Kydland and Prescott}{1982}{KP82}
+{\bf Kydland, Finn~E. and Edward~C. Prescott}, ``Time to Build and Aggregate
+  Fluctuations,'' {\it Econometrica}, 1982, {\it 50} (6), 1345--1370.
+
+\harvarditem[Lev]{Lev}{1974}{lev1974association}
+{\bf Lev, Baruch}, ``On the association between operating leverage and risk,''
+  {\it Journal of Financial and Quantitative Analysis}, 1974, {\it 9} (4),
+  627--641.
+
+\harvarditem[Lo and Wang]{Lo and Wang}{2000}{lo2000trading}
+{\bf Lo, Andrew~W and Jiang Wang}, ``Trading volume: Definitions, data
+  analysis, and implications of portfolio theory,'' {\it Review of Financial
+  Studies}, 2000, {\it 13} (2), 257--360.
+
+\harvarditem[L{\'o}pez-Salido et al.]{L{\'o}pez-Salido, Stein and
+  Zakraj{\v{s}}ek}{2017}{lopez2017credit}
+{\bf L{\'o}pez-Salido, David, Jeremy~C Stein, and Egon Zakraj{\v{s}}ek},
+  ``Credit-market sentiment and the business cycle,'' {\it The Quarterly
+  Journal of Economics}, 2017, {\it 132} (3), 1373--1426.
+
+\harvarditem[Mankiw and Reis]{Mankiw and Reis}{2010}{mankiw2010imperfect}
+{\bf Mankiw, N~Gregory and Ricardo Reis}, ``Imperfect information and aggregate
+  supply,'' {\it Handbook of monetary economics}, 2010, {\it 3}, 183--229.
+
+\harvarditem[Mankiw and Zeldes]{Mankiw and Zeldes}{1991}{mankiw1991consumption}
+{\bf Mankiw, N.~Gregory and Stephen~P. Zeldes}, ``The Consumption of
+  Stockholders and Nonstockholders,'' {\it Journal of Financial Economics},
+  1991, {\it 29} (1), 97--112.
+
+\harvarditem[Martin and Papadimitriou]{Martin and
+  Papadimitriou}{2022}{wr2022sentiment}
+{\bf Martin, Ian and Dimitris Papadimitriou}, ``Sentiment and speculation in a
+  market with heterogeneous beliefs,'' {\it American Economic Review}, 2022,
+  {\it 112} (8), 2465--2517.
+
+\harvarditem[Meeuwis et al.]{Meeuwis, Papanikolaou, Rothbaum and
+  Schmidt}{2024}{meeuwis2024time}
+{\bf Meeuwis, Maarten, Dimitris Papanikolaou, Jonathan Rothbaum, and
+  Lawrence~DW Schmidt}, ``Time-Varying Risk Premia and Heterogenous Labor
+  Market Dynamics,'' Technical Report, Working Paper 2024.
+
+\harvarditem[Mehra and Prescott]{Mehra and Prescott}{1985}{MP85}
+{\bf Mehra, Rajnish and Edward~C. Prescott}, ``The Equity Premium: A Puzzle,''
+  {\it Journal of Monetary Economics}, 1985, {\it 15} (2), 145--161.
+
+\harvarditem[Menzly et al.]{Menzly, Santos and
+  Veronesi}{2004}{menzly2004understanding}
+{\bf Menzly, Lior, Tano Santos, and Pietro Veronesi}, ``Understanding
+  predictability,'' {\it Journal of Political Economy}, 2004, {\it 112} (1),
+  1--47.
+
+\harvarditem[Merton]{Merton}{1969}{merton1969lifetime}
+{\bf Merton, Robert~C}, ``Lifetime portfolio selection under uncertainty: The
+  continuous-time case,'' {\it The review of Economics and Statistics}, 1969,
+  pp.~247--257.
+
+\harvarditem[Merton]{Merton}{1992}{merton1992continuous}
+{\bf \bysame{}}, {\it Continuous-time finance}, Blackwell Cambridge, MA, 1992.
+
+\harvarditem[Minsky]{Minsky}{1986}{minsky1986stabilizing}
+{\bf Minsky, Hyman~P.}, {\it Stabilizing an Unstable Economy}, New Haven, CT:
+  Yale University Press, 1986.
+
+\harvarditem[Nagel and Xu]{Nagel and Xu}{2022}{nagel2022asset}
+{\bf Nagel, Stefan and Zhengyang Xu}, ``Asset pricing with fading memory,''
+  {\it The Review of Financial Studies}, 2022, {\it 35} (5), 2190--2245.
+
+\harvarditem[Nagel and Xu]{Nagel and Xu}{2023}{nagel2023dynamics}
+{\bf \bysame{} and \bysame{}}, ``Dynamics of subjective risk premia,'' {\it
+  Journal of Financial Economics}, 2023, {\it 150} (2), 103713.
+
+\harvarditem[De~La~O and Myers]{De~La~O and
+  Myers}{2021}{de_la_o_subjective_2021}
+{\bf O, Ricardo De~La and Sean Myers}, ``Subjective {Cash} {Flow} and
+  {Discount} {Rate} {Expectations},'' {\it The Journal of Finance}, 2021, {\it
+  76} (3), 1339--1387.
+\newblock \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/jofi.13016.
+
+\harvarditem[Panageas]{Panageas}{2005}{P05}
+{\bf Panageas, Stavros}, ``The Neoclassical Theory of Investment in Speculative
+  Markets,'' 2005.
+\newblock Working Paper.
+
+\harvarditem[Panageas]{Panageas}{2020}{panageas2020implications}
+{\bf \bysame{}}, ``The implications of heterogeneity and inequality for asset
+  pricing,'' {\it Foundations and Trends in Finance}, 2020, {\it 12} (3),
+  199--275.
+
+\harvarditem[Parker]{Parker}{2001}{parker2001consumption}
+{\bf Parker, Jonathan~A.}, ``The Consumption Risk of the Stock Market,'' {\it
+  Brookings Papers on Economic Activity}, 2001, {\it 2001} (2), 279--348.
+
+\harvarditem[Prescott et al.]{Prescott, Rogerson and
+  Wallenius}{2009}{prescott2009lifetime}
+{\bf Prescott, Edward~C., Richard Rogerson, and Johanna Wallenius}, ``Lifetime
+  Aggregate Labor Supply with Endogenous Workweek Length,'' {\it Review of
+  Economic Dynamics}, 2009, {\it 12} (1), 23--36.
+
+\harvarditem[Rogerson]{Rogerson}{1988}{rogerson1988indivisible}
+{\bf Rogerson, Richard}, ``Indivisible Labor, Lotteries and Equilibrium,'' {\it
+  Journal of Monetary Economics}, 1988, {\it 21} (1), 3--16.
+
+\harvarditem[Rogerson and Shimer]{Rogerson and
+  Shimer}{2011}{rogerson2011search}
+{\bf \bysame{} and Robert Shimer}, ``Search in macroeconomic models of the
+  labor market,'' in ``Handbook of labor economics,'' Vol.~4, Elsevier, 2011,
+  pp.~619--700.
+
+\harvarditem[Santos and Veronesi]{Santos and Veronesi}{2006}{santos2006labor}
+{\bf Santos, Tano and Pietro Veronesi}, ``Labor income and predictable stock
+  returns,'' {\it The Review of Financial Studies}, 2006, {\it 19} (1), 1--44.
+
+\harvarditem[Scheinkman and Xiong]{Scheinkman and Xiong}{2003}{SX03}
+{\bf Scheinkman, Jos\'{e}~A. and Wei Xiong}, ``Overconfidence and Speculative
+  Bubbles,'' {\it Journal of Political Economy}, 2003, {\it 111} (6),
+  1183--1220.
+
+\harvarditem[Schmitt-Groh{\'e} and Uribe]{Schmitt-Groh{\'e} and
+  Uribe}{2003}{schmitt2003closing}
+{\bf Schmitt-Groh{\'e}, Stephanie and Mart{\i}n Uribe}, ``Closing small open
+  economy models,'' {\it Journal of international Economics}, 2003, {\it 61}
+  (1), 163--185.
+
+\harvarditem[Shiller]{Shiller}{2000}{Sh00}
+{\bf Shiller, Robert}, {\it Irrational Exuberance}, Princeton, NJ: Princeton
+  University Press, 2000.
+
+\harvarditem[Shiller]{Shiller}{1981}{shiller1981stock}
+{\bf Shiller, Robert~J}, ``Do stock prices move too much to be justified by
+  subsequent changes in dividends?,'' 1981.
+
+\harvarditem[Shimer]{Shimer}{2010}{shimer2010labor}
+{\bf Shimer, Robert}, {\it Labor Markets and Business Cycles} CREI Lectures in
+  Macroeconomics, Princeton, NJ: Princeton University Press, 2010.
+
+\harvarditem[Simsek]{Simsek}{2013a}{S13}
+{\bf Simsek, Alp}, ``Belief Disagreements and Collateral Constraints,'' {\it
+  Econometrica}, 2013, {\it 81} (1), 1--53.
+
+\harvarditem[Simsek]{Simsek}{2013b}{simsek2013speculation}
+{\bf \bysame{}}, ``Speculation and risk sharing with new financial assets,''
+  {\it The Quarterly journal of economics}, 2013, {\it 128} (3), 1365--1396.
+
+\harvarditem[Simsek]{Simsek}{2021}{simsek2021macroeconomics}
+{\bf \bysame{}}, ``The macroeconomics of financial speculation,'' {\it Annual
+  Review of Economics}, 2021, {\it 13} (1), 335--369.
+
+\harvarditem[Sprague]{Sprague}{1910}{sprague1910history}
+{\bf Sprague, Oliver Mitchell~Wentworth}, {\it History of Crises under the
+  National Banking System}, Washington, DC: U.S. Government Printing Office,
+  1910.
+
+\harvarditem[Swanson]{Swanson}{2018}{swanson2018risk}
+{\bf Swanson, Eric~T}, ``Risk aversion, risk premia, and the labor margin with
+  generalized recursive preferences,'' {\it Review of Economic Dynamics}, 2018,
+  {\it 28}, 290--321.
+
+\harvarditem[Tallarini]{Tallarini}{2000}{T00}
+{\bf Tallarini, Thomas~D.}, ``Risk-sensitive Real Business Cycles,'' {\it
+  Journal of Monetary Economics}, 2000, {\it 45} (3), 507--532.
+
+\harvarditem[Uzawa]{Uzawa}{2017}{uzawa2017time}
+{\bf Uzawa, Hirofumi}, ``Time preference, the consumption function, and optimum
+  asset holdings,'' in ``Value, capital and Growth,'' Routledge, 2017,
+  pp.~485--504.
+
+\harvarditem[Xiong and Yan]{Xiong and Yan}{2009}{XY09}
+{\bf Xiong, Wei and Hongjun Yan}, ``{Heterogeneous Expectations and Bond
+  Markets},'' {\it Review of Financial Studies}, 2009, {\it 23} (4),
+  1433--1466.
+
+\end{thebibliography}

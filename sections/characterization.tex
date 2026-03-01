@@ -1,0 +1,681 @@
+\section{Characterization}\label{sec:analysis.sec4}
+
+\q{StateSpace}{We now present a recursive characterization of the equilibrium.
+The economy evolves with an exogenous state $s$ and an aggregate endogenous state
+$X$. In our setting, $X$ consists of the wealth distribution (i.e., the wealth shares of
+investors) and, given the timing of labor decisions, an aggregate variable that pins down
+firms' hiring choices. As we show below, this variable corresponds to the risk-neutral
+expectation of productivity growth.}
+% The law of motion of $X$ is described by a function $\chi$, to be determined in
+% equilibrium, so that $X'=\chi(X,s,s')$.
+
+All aggregate quantities and prices depend on $(X,s)$.
+In particular, asset returns depend on the current state and the realization of next
+period's shock; for example, the return on the risky asset satisfies
+$R_{r,t+1}=R_r(X_t,s_t,s_{t+1})$.
+
+\q{CiteWorkers}{Households choose both portfolios and labor supply. In general, this joint choice makes
+closed-form characterizations difficult.
+However, under complete markets and GHH preferences, an \emph{as-if} result applies:
+the household problem can be recast as a pure portfolio problem in an endowment
+economy, abstracting from labor decisions.\footnote{In Appendix~\ref{sec: hand_to_mouth_workers}, we show our results also hold in an environment where labor is supplied by hand-to-mouth workers rather than by investors.}}
+
+To simplify exposition and notation, we focus on the case of linear labor
+disutility ($\nu=0$), which is analogous to models with an extensive margin of labor
+supply (see, e.g., \citealt{rogerson1988indivisible} and \citealt{prescott2009lifetime}).
+We return to the general case $\nu>0$ in the quantitative analysis in
+Section~\ref{sec:quantitative}.
+
+% Our characterization proceeds in three steps. First, we transform the household problem
+% into an equivalent consumption--savings problem without labor.
+% Second, we derive explicit expressions for consumption and portfolio choices in this
+% representation.
+% Finally, we recover equilibrium labor, consumption, and asset prices in the original
+% economy. All proofs are relegated to the Appendix.
+
+\paragraph{Recursive representation.}\label{subsec:investors_problem}
+
+From the labor-supply condition and the assumed labor-supply elasticity, the wage rate
+satisfies
+\begin{equation}
+W_t = \xi_t.
+\label{eq:labor_supply}
+\end{equation}
+Given $\xi_t = \xi A_{t-1}$, the wage is predetermined, introducing a form of real
+rigidity.
+
+We now recast the household problem as a consumption--savings problem without labor.
+Using~\eqref{eq:labor_supply}, the household flow budget constraint can be written in
+terms of \emph{net consumption},
+$\tilde C_{i,t} \equiv C_{i,t}-\xi_t h_t$, as
+\begin{equation}
+\tilde C_{i,t}
++ Q_t S_{i,t}
++ B_{i,t}
+=
+R_{r,t} Q_{t-1} S_{i,t-1}
++ R_{f,t} B_{i,t-1}
+\equiv N_{i,t},
+\label{eq:modified_budget}
+\end{equation}
+where $N_{i,t}$ denotes the household's \emph{net worth}.
+
+We can express the household problem as choosing net consumption $\tilde C_{i,t}$ and the share of post-consumption
+wealth invested in the risky asset, $\omega_{i,t}
+\equiv
+\frac{Q_t S_{i,t}}{N_{i,t}-\tilde C_{i,t}}.$
+
+\begin{problem}\label{eq:recursive_representation}
+The household's recursive problem is
+\begin{equation}
+V_i(N,X,s)
+=
+\max_{\tilde C_i,\omega_i}
+(1-\beta)U(\tilde C_i)
++
+\beta\,U\!\left(\mathcal V_i(N,X,s)\right),
+\label{eq: inv_recursive_problem}
+\end{equation}
+subject to
+\begin{equation}
+N'
+=
+R_{i}(X,s,s')\,(N-\tilde C_i),
+\label{eq:lom_N}
+\end{equation}
+and $N'\ge 0,$ where the portfolio return is
+\begin{equation}
+R_{i}(X,s,s')
+\equiv
+(1-\omega_i)R_f(X,s)
++
+\omega_i R_r(X,s,s'),
+\end{equation}
+and
+\[
+\mathcal V_i(N,X,s)
+=
+\Psi^{-1}\!\left(
+\mathbb E_i\!\left[
+\Psi\!\left(U^{-1}(V_i(N',X',s'))\right)
+\mid X,s
+\right]
+\right).
+\]
+\end{problem}
+
+Although the original problem features endogenous labor supply, under complete markets
+and GHH preferences it admits an \emph{as-if} representation as a standard portfolio
+problem. The case $\nu=0$ simplifies the exposition by eliminating human wealth, but the
+same representation holds for $\nu>0$ as long as markets are complete.
+
+
+% In this problem, the household only chooses net consumption $\tilde{C}_{i}$
+% and his holdings (risk exposure) of the surplus claim $\omega_{i}$. We recover $\{C_{i,t},h_{i,t},S_{i,t},B_{i,t}\}$
+% in the original problem through:{\small{}
+% \[
+% W_{t}=\xi_{t}h_{t}^{\nu},\quad C_{i,t}=\tilde{C}_{i,t}+\frac{\xi_{t}h_{t}^{1+\nu}}{1+\nu},
+% \]
+% \[
+% Q_{t}S_{i,t}=\frac{\omega_{i,t}}{\omega_{e,t}}(N_{i,t}-\tilde{C}_{i,t})-\frac{\omega_{h,t}}{\omega_{e,t}}\mathcal{H}_{t},\quad B_{i,t}=N_{i,t}-\mathcal{H}_{t}-Q_{t}S_{i,t}-\tilde{C}_{i,t},
+% \]
+% }
+% where $\omega_{k,t}$ satisfies $R_{k,t}=\omega_{k,t}R_{r,t}+(1-\omega_{k,t})R_{b,t}$,
+% for $k\in\{h_{i},e\}$.
+
+% \q{CompleteMarketsGHH}{Complete markets and GHH preferences are key to this as-if result.  
+% With complete markets, a combination of bonds and the surplus claim yields the same payoffs as human wealth. 
+% Thus, the investor's problem is akin to a problem where human wealth is traded and could be sold at time zero, as any other financial asset.}
+
+% \paragraph{An equivalent household problem} \label{subsec: investors_problem}
+
+% Toward obtaining our as-if result, we observe that under GHH preferences, there are no wealth effects. As a result, all households have the
+% labor supply (derived from the first-order condition for their problems):
+% \begin{equation}
+% h_{i,t}=h_{t}\equiv\left(W_{t}/\xi_{t}\right)^{\frac{1}{\nu}}.\label{eq: labor_supply}
+% \end{equation}
+
+% We define human wealth, $\mathcal{H}_{t}$, as an asset whose dividend is labor income minus
+% the consumption value of labor disutility, $W_{t+1}h_{t+1}-\xi_{t+1}h_{t+1}^{1+\nu}\left(1+\nu\right)^{-1}$. 
+% Since labor is common across agents, so is human wealth, so there is no need for an agent-specific index. 
+
+% The return to human wealth is: 
+% \[
+% R_{h,t+1}\equiv\frac{W_{t+1}h_{t+1}-\xi_{t+1}\frac{h_{t+1}^{1+\nu}}{1+\nu}+\mathcal{H}_{t+1}}{\mathcal{H}_{t}}.
+% \]
+
+% With these objects, we recast the households' flow budget constraint: 
+% \begin{equation}
+% \tilde{C}_{i,t}+Q_{t}S_{i,t}+B_{i,t}+\mathcal{H}_{t}=R_{e,t}Q_{t-1}S_{i,t-1}+R_{b,t}B_{i,t-1}+R_{h,t}\mathcal{H}_{t-1}\equiv N_{i,t}\label{eq:modified.buget}
+% \end{equation}
+% where $\tilde{C}_{i,t}\equiv C_{i,t}-\xi_{t}\frac{h_{t}^{1+\nu}}{1+\nu}$
+% defines \textit{net consumption} and $N_{i,t}$ defines the individual's \textit{total
+% wealth}. The investor's total wealth, $N_{i,t}$, is the sum of financial
+% and human wealth. Total wealth funds the terms on the left-hand side:
+% current net consumption and the future holdings of stocks, bonds,
+% and human wealth.
+
+% The household's objective is to maximize net consumption. 
+% From the modified budget constraint, (\ref{eq:modified.buget}), it is as if households hold portfolios of bonds and two risky assets: stocks and human wealth. 
+% However, because the returns to stocks and human wealth are correlated, only the exposure to risk in total wealth matters, regardless of the portfolio composition. 
+% We can then work with the sum of stocks and human wealth as a single risky asset, which we call
+% the \textit{surplus claim}. The price of the surplus claim, is $A_{t-1}P_{t}$,
+% where $P_{t}$ is given by 
+% \[
+% P_{t}=\mathbb{E}_{t}\left[\sum_{k=0}^{\infty}\frac{\Lambda_{t,t+k}}{A_{t-1}}\left(A_{t+k}h_{t+k}^{\alpha}-\xi_{t+k}\frac{h_{t+k}^{1+\nu}}{1+\nu}\right)\right].
+% \]
+% The dividend of the surplus claim is the social surplus: the sum of
+% output minus labor disutility---both measured in terms of goods.
+% We denote the return on the surplus claim by $R_{r}(X,s,s')$. The household's problem can be written in terms of net consumption and the surplus claim:
+% \begin{problem}[]The modified household's problem is:
+% \begin{equation}
+% V_{i}(N,X,s)=\max_{\tilde{C}_{i},\omega_{i}}(1-\beta)U\left(\tilde{C}_{i}\right)+\beta U\left(\mathcal{V}_{i}(N,X,s)\right),\label{eq: inv_recursive_problem}
+% \end{equation}
+%  subject to: 
+% \begin{equation}
+% N'=R_{i,n}(X,s,s')(N-\tilde{C}_{i}),\qquad R_{i,n}(X,s,s')=(1-\omega_{i})R_{b}(X,s)+\omega_{i}R_{r}(X,s,s')\label{eq: lom_N}
+% \end{equation}
+% where $\mathcal{V}_{i}(N,X,s)=\Psi^{-1}\left(\mathbb{E}_{i}\left[\Psi\left(U^{-1}(V_{i}(N',X',s')\right)|N,X,s\right]\right)$,
+% $N'\geq0$.
+% \end{problem}
+
+% In this problem, the household only chooses net consumption $\tilde{C}_{i}$
+% and his holdings (risk exposure) of the surplus claim $\omega_{i}$. We recover $\{C_{i,t},h_{i,t},S_{i,t},B_{i,t}\}$
+% in the original problem through:{\small{}
+% \[
+% W_{t}=\xi_{t}h_{t}^{\nu},\quad C_{i,t}=\tilde{C}_{i,t}+\frac{\xi_{t}h_{t}^{1+\nu}}{1+\nu},
+% \]
+% \[
+% Q_{t}S_{i,t}=\frac{\omega_{i,t}}{\omega_{e,t}}(N_{i,t}-\tilde{C}_{i,t})-\frac{\omega_{h,t}}{\omega_{e,t}}\mathcal{H}_{t},\quad B_{i,t}=N_{i,t}-\mathcal{H}_{t}-Q_{t}S_{i,t}-\tilde{C}_{i,t},
+% \]
+% }
+% where $\omega_{k,t}$ satisfies $R_{k,t}=\omega_{k,t}R_{r,t}+(1-\omega_{k,t})R_{b,t}$,
+% for $k\in\{h_{i},e\}$.
+
+% \q{CompleteMarketsGHH}{Complete markets and GHH preferences are key to this as-if result.  
+% With complete markets, a combination of bonds and the surplus claim yields the same payoffs as human wealth. 
+% Thus, the investor's problem is akin to a problem where human wealth is traded and could be sold at time zero, as any other financial asset.}
+
+\paragraph{Value function and consumption--wealth ratio.}
+
+Given the homothetic structure of preferences, the value function admits the representation
+\begin{equation}\label{eq: value_function}
+V_i(N,X,s)
+=
+\frac{\left(v_i(X,s)\,N\right)^{1-1/\psi}}{1-1/\psi},
+\end{equation}
+where $v_i(X,s)$ denotes the \emph{wealth multiplier}.
+
+Define the consumption--wealth ratio as
+$
+c_{i,t}
+\equiv
+\frac{\tilde C_{i,t}}{N_{i,t}}.
+$
+The optimal consumption--wealth ratio is then given by
+\begin{equation}\label{eq: consumption_wealth_ratio}
+c_i(X,s)
+=
+(1-\beta)^{\psi}\,v_i(X,s)^{\,1-\psi}.
+\end{equation}
+
+When the EIS is unity ($\psi=1$), the
+consumption--wealth ratio is constant. In the general case, it varies with aggregate
+conditions through the wealth multiplier $v_i(X,s)$.
+
+\paragraph{Euler equations and portfolio choice.}
+
+The characterization of the modified household problem is standard and is provided in
+Appendix~\ref{app: proof_policy_functions}. The Euler equations are given by:
+\begin{equation}
+1
+=
+\mathbb E_i\!\left[
+\Lambda_i(X,s,s')\,R_j(X,s,s')
+\right], \qquad \text{for } j\in\{r,f\},
+\label{eq:eulers}
+\end{equation}
+where $\Lambda_i(X,s,s') =\beta^{\theta}\left(\frac{c_{i}(X',s')N'}{c_{i}(X,s)N}\right)^{-\frac{\theta}{\psi}}R_{i}(X,s,s')^{-(1-\theta)}$, given $\theta \equiv \frac{1-\gamma}{1-\psi^{-1}}$, denotes investor $i$'s stochastic discount
+factor.
+In the case of separable preferences $(\theta = 1)$, the SDF simplifies to the usual expression for CRRA preferences.
+
+% Since
+% \eqref{eq:eulers} holds state by state for each investor, there are as many equations as
+% states. As a result, all investors agree on the value of one unit of consumption in each
+% state, despite disagreeing about the likelihood of those states.
+
+The Euler equations are the counterpart, under subjective beliefs, of the no-arbitrage
+conditions in Equation~\eqref{eq: no_arbitrage}. In particular, individual SDFs satisfy the condition:
+\[
+\Lambda_i(X,s,s')
+=
+\frac{p_{ss'}}{p^i_{ss'}}\,\Lambda(X,s,s'),
+\]
+that is, each investor's SDF equals the common SDF scaled by the ratio of objective to subjective probabilities.
+This condition implies that all investors agree on the value of a unit of consumption in each
+state, despite disagreeing about the likelihood of those states.
+
+\q{SDF}{Given objective probabilities, the economy-wide stochastic discount factor can be
+recovered from asset prices by inverting the no-arbitrage conditions:
+\begin{align}
+\Lambda(X,s,L)
+&=
+\frac{1}{p_{sL}}
+\frac{R_r^e(X,s,H)}{\Delta R_r(X,s)},
+\qquad
+\Lambda(X,s,H)
+=
+-\frac{1}{p_{sH}}
+\frac{R_r^e(X,s,L)}{\Delta R_r(X,s)},
+\label{eq:SDF_returns}
+\end{align}\normalsize
+where $R_r^e(X,s,s')\equiv R_r(X,s,s')/R_f(X,s)-1$ denotes the excess return on the risky
+asset and $\Delta R_r(X,s)\equiv R_r(X,s,H)-R_r(X,s,L)$ is the difference in realized
+returns across states.}
+
+Although investors agree on state prices, disagreement about probabilities implies that
+they choose different portfolios. For instance, we show in Appendix~\ref{app: proof_portfolio_share} that, under log utility, the portfolio share is given by:
+\begin{equation}
+\omega_i(X,s)
+=
+\frac{\mathbb E_i\!\left[R_r^e(X,s,s')\right]}
+{\mathrm{Var}_{RN,s}\!\left(R_r(X,s,s')\right)} = \frac{p_{sH}^i}{|R_r^e(X,s,L)|}- \frac{p_{sL}^i}{R_r^e(X,s,H)}.
+\label{eq:portfolio_share}
+\end{equation}\normalsize
+where $\mathrm{Var}_{RN,s}\!\left(R_r(X,s,s')\right)$ is the excess returns variance under risk-neutral probabilities.
+The first equality shows that the portfolio share follows a version of the standard \citet{merton1969lifetime} formula.
+The second equality shows that more optimistic investors hold larger positions in the risky asset. Heterogeneity in beliefs therefore translates
+into heterogeneity in portfolio exposures and, in turn, into fluctuations in the wealth
+distribution. These fluctuations feedback into the economy-wide stochastic discount
+factor. We next link this stochastic discount factor to firms' hiring decisions.
+
+\paragraph{Firm's problem.}
+
+The firm's first-order condition for labor is
+\begin{equation}
+\mathbb E_t\!\left[
+\Lambda_{t,t+1}
+\left(
+\alpha A_{t+1} h_{t+1}^{\alpha-1}
+-
+W_{t+1}
+\right)
+\right]
+=
+0.
+\end{equation}
+Given the timing of hiring, the marginal product of labor generally differs ex post from
+the realized wage, so that the labor wedge is non-zero state by state.
+
+The firm's labor demand can be written as
+\begin{equation}
+\alpha \mathcal L_t\, h_{t+1}^{\alpha-1}
+=
+w_{t+1},
+\label{eq:labor_demand}
+\end{equation}
+where $w_{t+1}\equiv W_{t+1}/A_t$ denotes the detrended wage, and
+$\mathcal L_t$ is a shifter of labor demand.
+
+\q{RNG}{The term $\mathcal L_t$ corresponds to the \emph{risk-neutral expectation of productivity
+growth}:
+\[
+\mathcal L_t
+=
+\mathbb E_t\!\left[
+\frac{\Lambda_{t,t+1}}{\mathbb E_t[\Lambda_{t,t+1}]}
+\,x_{t+1}
+\right].
+\]
+Productivity growth is evaluated under probabilities proportional to
+$p_{ss'}\Lambda(X,s,s')$, that is, under risk-neutral probabilities.
+Hence, the firm's optimality condition implies a zero expected labor wedge under these
+risk-adjusted expectations.}
+
+This measure of risk-neutral productivity growth plays a central role in the model.
+Because firms choose employment one period in advance, current labor depends on the
+lagged value $\mathcal L_{t-1}$, making it an endogenous aggregate state variable.
+
+Its law of motion is given by
+\begin{equation}\label{eq: E_prime}
+\mathcal L'(X,s)
+=
+\frac{p_{sL}\Lambda(X,s,L)}{p_{sL}\Lambda(X,s,L)+p_{sH}\Lambda(X,s,H)}\,x_L
++
+\frac{p_{sH}\Lambda(X,s,H)}{p_{sL}\Lambda(X,s,L)+p_{sH}\Lambda(X,s,H)}\,x_H,
+\end{equation}
+where $\mathcal{L}_t = \mathcal L'(X_t,s_t)$ is the risk-neutral expectation of productivity growth at time $t$.
+
+
+% \paragraph{Firm's problem}
+
+% We now turn to firm hiring. The firm's first-order condition yields the labor demand $h_{t+1}$: 
+% \begin{equation}
+% \mathbb{E}_{t}\left[\Lambda_{t,t+1}\left(\alpha A_{t+1}h_{t+1}^{\alpha-1}-W_{t+1}\right)\right]=0\Rightarrow\alpha\mathcal{L}_{t}h_{t+1}^{\alpha-1}=w_{t+1},\label{eq: labor_demand}
+% \end{equation}
+% where $w_{t+1}\equiv W_{t+1}/A_{t}$ denotes a TFP-detrended wage.
+% We dub the risk-neutral expectation of productivity growth, $\mathcal{L}_{t}$, as \textit{the labor demand factor} (LDF): 
+% \[
+% \mathcal{L}_{t}=\mathbb{E}_{t}\left[\frac{\Lambda_{t,t+1}}{\mathbb{E}_{t}[\Lambda_{t,t+1}]}x_{t+1}\right].
+% \]
+% Note that $\frac{p_{ss'}\Lambda_{t,t+1}}{\mathbb{E}_{t}[\Lambda_{t,t+1}]}$
+% is the risk-neutral probability at time $t$. Hence, the LDF is consistent with an expected labor wedge of zero under the risk-adjusted
+% expectations. 
+% SB: Interestingly, risk premia may provoke an average positive labor wedge if the profit function is concave in TFP, which should be.
+
+% \footnote{The risk-neutral probability of switching from state $s$ to state $s'$ is defined by $\frac{p_{ss'}\Lambda(X,s,s')}{p_{sL}\Lambda(X,s,L)+p_{sH}\Lambda(X,s,H)}$, that is, the ratio of the state-price of a unit of consumption in state $s'$ and the sum of all state-prices. See e.g. \cite{duffie2010dynamic} for a discussion.} 
+
+
+\paragraph{Labor market equilibrium.}
+
+Combining labor supply and labor demand yields equilibrium hours and detrended wages:
+\begin{equation}
+h(X,s)
+=
+\left(
+\frac{\alpha \mathcal L}{\xi}
+\right)^{\frac{1}{1-\alpha}},
+\qquad
+w(X,s)
+=
+\xi,
+\label{eq: hours_wages}
+\end{equation}
+where $\mathcal L$ denotes the lagged value of risk-neutral productivity growth in
+recursive notation, and is included as a component of the aggregate state vector $X$.
+
+Given hours, realized profits depend on both risk-neutral productivity growth
+and realized productivity growth. Firm profits, detrended by lagged TFP, are given by
+\[
+\pi(X,s)
+=
+x_s
+\left(
+\frac{\alpha \mathcal L}{\xi}
+\right)^{\frac{\alpha}{1-\alpha}}
+\left[
+1
+-
+\alpha
+\frac{\mathcal L}{x_s}
+\right],
+\]
+where $x_s$ denotes the realization of productivity growth in state $s$.
+
+Because labor is chosen in advance, profits may in principle be negative for some
+realizations of productivity. We assume $x_L>\alpha x_H$ to ensure that profits are
+positive.\footnote{Since the largest possible value of risk-neutral
+productivity growth is $x_H$, profits are positive whenever $x_s>\alpha\mathcal L$.
+The sufficient condition $x_L>\alpha x_H$ guarantees this in both states.}
+
+\paragraph{Labor decisions and the SDF.}
+
+Let $\mathbb E_s[z_{s'}]$ and $\sigma_s[z_{s'}]$ denote the mean and standard deviation of
+a random variable $z_{s'}$ conditional on the state $s$, computed under the
+objective probabilities $p_{ss'}$. The next proposition provides a convenient
+representation of the risk-neutral expectation of productivity growth. All proofs are
+provided in Appendix~\ref{app: proofs}.
+
+\begin{proposition}\label{prop:E_sharpe}
+The risk-neutral expectation of next period productivity growth satisfies
+\begin{equation}
+\mathcal L'(X,s)
+=
+\mathbb E_s[x_{s'}]
+-
+\underbrace{
+\frac{\mathbb E_s\!\left[R_r^e(X,s,s')\right]}
+{\sigma_s\!\left[R_r^e(X,s,s')\right]}
+}_{\text{price of risk}}
+\;
+\underbrace{
+\sigma_s[x_{s'}]
+}_{\text{quantity of risk}}.
+\label{eq:E_prime}
+\end{equation}
+Moreover, the Sharpe ratio of the risky asset admits the representation
+\[
+\frac{\mathbb E_s\!\left[R_r^e(X,s,s')\right]}
+{\sigma_s\!\left[R_r^e(X,s,s')\right]}
+=
+\frac{\sigma_s\!\left[\Lambda(X,s,s')\right]}
+{\mathbb E_s\!\left[\Lambda(X,s,s')\right]}.
+\]
+\end{proposition}
+
+Proposition~\ref{prop:E_sharpe} shows that deviations of the risk-neutral expectation
+of productivity growth from the objective expectation are governed by two components. The first is a \emph{quantity of
+risk}, given by the volatility of productivity growth, $\sigma_s[x_{s'}]$. The second is
+a \emph{price of risk}, which measures the compensation required by financial markets per
+unit of aggregate risk and is proportional to the volatility of the stochastic discount
+factor.
+
+Intuitively, when investors are more willing to bear risk, the price of risk and expected
+excess returns are low. Risk-neutral probabilities then place greater weight on high
+productivity-growth states, increasing the risk-neutral expectation of productivity
+growth. As a result, firms optimally take on more risk by hiring more workers.
+
+The labor market equilibrium links fluctuations in employment directly to
+movements in the risk-neutral expectation of productivity growth. 
+Moreover,
+Proposition~\ref{prop:E_sharpe} implies that if productivity growth is iid under the
+objective measure, so that both $\mathbb E_s[x_{s'}]$ and $\sigma_s[x_{s'}]$ are constant,
+all fluctuations in $\mathcal L'$ are driven by fluctuations in the price of risk.
+
+This observation connects the labor volatility puzzle to asset pricing.
+\citet{shimer2010labor}, for example, studies a search model in which the risk-neutral
+expectation of productivity growth is constant, implying no fluctuations in employment
+and giving rise to the labor (or unemployment) volatility puzzle.\footnote{One can show
+that our setting with labor chosen one period in advance corresponds to the limit of a
+search model in which vacancy posting costs vanish and bargaining power is concentrated
+with workers.} In contrast, asset-pricing evidence shows that the price of risk is 
+highly volatile 
+\citep[e.g.,][]{hansen1991implications,cochrane2011presidential}. In our
+setting, generating large fluctuations in employment therefore requires generating a
+large and volatile equity premium: the labor volatility and equity volatility puzzles are
+two manifestations of the same underlying phenomenon in our setting.
+
+%Therefore, variations in the price of risk provide a relevant new source of fluctuations in labor outcomes, as it is well-known that, not only the volatility of the SDF is relatively large (see e.g. \citealt{hansen1991implications} and \citealt{cochrane1992asset}), but there are substantial movements in expected returns (see e.g. \citealt{cochrane2011presidential}).
+%In our setting, heterogeneity of beliefs is crucial to generate fluctuations in the price of risk. 
+
+\paragraph{The operating leverage channel.}
+
+If labor could be adjusted after productivity is realized, the labor share would be
+constant. Firms would then scale labor input
+one-for-one with productivity, so that revenues, wages, and profits would move
+proportionally. In contrast, the timing of hiring plays a central role in shaping the
+dividend process and the connection between asset prices and labor volatility in our
+setting.
+
+With labor chosen in advance, dividend (or profit) growth satisfies
+\begin{equation}\label{eq: dividend_growth}
+\frac{x_s\,\pi(X',s')}{\pi(X,s)}
+=
+x_s
+\frac{x_{s'}-\alpha\mathcal L'(X,s)}{x_s-\alpha\mathcal L}
+\left(
+\frac{\mathcal L'(X,s)}{\mathcal L}
+\right)^{\frac{\alpha}{1-\alpha}}.
+\end{equation}
+In the endowment limit, obtained by setting $\alpha=0$, dividend growth coincides with
+productivity growth, and dividend volatility equals aggregate consumption volatility. By
+contrast, when labor is a quasi-fixed factor, dividends are endogenously riskier than
+aggregate consumption.
+
+The amplification of volatility due to quasi-fixed factors is known as the
+\emph{operating leverage channel}.\footnote{The relationship between risk and operating
+leverage was first emphasized by \citet{lev1974association}.} Formally, the conditional
+volatility of dividend growth can be written as
+\begin{equation}\label{eq:operating_leverage}
+\underbrace{
+\sigma_s\!\left[
+\frac{x_s\,\pi(X',s')}{\pi(X,s)}
+\right]
+}_{\substack{\text{dividend growth}\\\text{volatility}}}
+=
+\underbrace{
+\frac{x_s}{x_s-\alpha\mathcal L}
+}_{\substack{\text{operating}\\\text{leverage}}}
+\times
+\underbrace{
+\sigma_s\!\left[
+\frac{x_{s'}\,h(X',s')^\alpha}{h(X,s)^\alpha}
+\right]
+}_{\substack{\text{consumption growth}\\\text{volatility}}}.
+\end{equation}
+The literature defines operating leverage as revenues minus current variable costs,
+divided by profits. In our setting, this corresponds to
+\[
+\frac{x_s h(X,s)^\alpha}{x_s h(X,s)^\alpha - w(X,s)h(X,s)}
+=
+\frac{x_s}{x_s-\alpha\mathcal L}
+>
+1.
+\]
+Equation~\eqref{eq:operating_leverage} shows that operating leverage endogenously makes
+dividends more volatile than consumption, a feature that is absent in the endowment limit
+but consistent with the data \citep[e.g.,][]{campbell2003consumption}.
+
+Operating leverage also induces mean reversion in dividends. Even if productivity growth
+is iid and the risk-neutral expectation of productivity growth is constant, expected
+dividend growth varies with the current state:
+\begin{equation}\label{eq:meanreversion}
+\mathbb E_s\!\left[
+\frac{x_s\,\pi(X',s')}{\pi(X,s)}
+\right]
+=
+x_s
+\frac{\mathbb E[x_{s'}]-\alpha\mathcal L}{x_s-\alpha\mathcal L}.
+\end{equation}
+Following a negative productivity shock, dividends are therefore expected to
+recover.
+
+Because operating leverage increases with the risk-neutral expectation of productivity
+growth, this channel links dividend volatility to movements in $\mathcal L$, which in turn
+respond to fluctuations in beliefs. As a result, waves of optimism can generate an
+endogenous buildup of risk.
+
+The timing of hiring provides a parsimonious way of capturing the operating leverage
+channel. It delivers labor costs that are smoother than productivity and a
+countercyclical labor share, two features that are central to operating leverage.\footnote{
+Quasi-fixed labor is not necessary for operating leverage to arise. Similar mechanisms
+operate in models with implicit contracts \citep{danthine2002labour}, labor adjustment
+costs \citep{belo2014labor}, and wage rigidities \citep{favilukis2016does}.}
+\citet{donangelo2019cross} provide direct evidence that these conditions hold in the data
+and show that the sensitivity of profits to productivity shocks increases with the labor
+share, consistent with the mechanism in
+Equation~\eqref{eq:operating_leverage}.
+
+\paragraph{Discussion: the firm's objective.}
+
+When labor is chosen in advance, hiring is inherently risky. As a result, evaluating the
+firm's hiring decision requires specifying the stochastic discount factor used to value
+future payoffs. This raises the question of which stochastic discount factor is relevant
+for firms.
+
+Under complete markets, this question has a simple answer. Any pair of beliefs and
+stochastic discount factor that correctly prices traded assets delivers the same firm
+value. Consequently, the firm's value-maximizing hiring decision can be characterized
+using the economy-wide stochastic discount factor derived from asset prices. Importantly,
+this decision is independent of shareholders' beliefs: all investors agree on the hiring
+choice that maximizes firm value.
+
+For expositional convenience, we assume firms compute expectations
+using objective probabilities. However, any alternative managerial belief would lead to
+the same choice, provided the firm's objective is to maximize shareholder value
+under complete markets.\footnote{How firms' objectives should be specified away from
+complete markets remains an open question; see, for example,
+\citet{geanakoplos1990generic}.}
+
+\paragraph{Markov equilibrium.}
+
+In addition to $\mathcal L$, the
+distribution of wealth across investors is an endogenous state variable. 
+Denote the share of wealth held by investor $i\in\mathcal I$ as
+\[
+\eta_{i,t}
+\equiv
+\frac{\mu_i N_{i,t}}{\sum_{j=1}^I \mu_j N_{j,t}}
+\]
+The wealth shares evolve according to
+\begin{equation}
+\eta_i'(X,s,s')
+=
+\frac{\tilde\eta_i(X,s)\,R_{i}(X,s,s')}
+{\sum_{j=1}^I \tilde\eta_j(X,s)\,R_{j}(X,s,s')},
+\label{eq:eta_prime}
+\end{equation}
+where $
+\tilde\eta_i(X,s)
+\equiv
+\frac{\eta_i\bigl(1-c_i(X,s)\bigr)}
+{\sum_{j=1}^I \eta_j\bigl(1-c_j(X,s)\bigr)}.
+$
+
+Given $\mathcal L$, the wealth shares $\{\eta_i\}_{i=1}^{I-1}$, and the
+realization of productivity growth $s$, all aggregate variables are determined. We stack
+the endogenous state variables into
+\[
+X
+\equiv
+\bigl(\mathcal L,\{\eta_i\}_{i=1}^{I-1}\bigr)
+\]
+and study equilibria that are Markov in $(X,s)$.
+
+\begin{definition}[Markov equilibrium]
+A Markov equilibrium in $(X,s)$ consists of functions for the price--dividend ratio $q(X,s)$, the risk-free rate $R_f(X,s)$, hours $h(X,s)$, wages $w(X,s)$,
+wealth multipliers $\{v_i(X,s)\}_{i=1}^I$, and policy functions
+$\{c_i(X,s),\omega_i(X,s)\}_{i=1}^I$, such that:
+
+\begin{enumerate}
+\item[(i)]
+Given prices, the value functions and policy functions solve the household problem
+(\ref{eq: inv_recursive_problem}). The consumption--wealth ratio and portfolio shares are
+given in
+Appendix~\ref{app: proof_policy_functions} and
+\ref{app: proof_portfolio_share}.
+
+\item[(ii)]
+Labor hours and wages satisfy the labor market equilibrium conditions
+(\ref{eq: hours_wages}).
+
+\item[(iii)]
+Goods and asset markets clear:
+\begin{align}
+\sum_{i=1}^I \eta_i\,c_i(X,s)
+&=
+\frac{1}{q(X,s)+1},
+\qquad
+\sum_{i=1}^I \tilde\eta_i(X,s)\,\omega_i(X,s)
+=
+1.
+\label{eq: mkt_clearing_markov}
+\end{align}
+\end{enumerate}
+
+The law of motion for the state vector $X$ is given by
+(\ref{eq:E_prime}) and (\ref{eq:eta_prime}).
+\end{definition}
+
+For the remainder of the paper, we work directly with this Markovian representation.
+%The clearing condition for consumption implies that the wealth-weighted consumption-wealth ratio equals the dividend-price ratio for the surplus claim. 
+%In turn, the  market clearing for the risky asset implies that the average portfolio share is equal to one.
+% SB: lines above don't add much.
+
+%This implies that households are fully invested in stocks and human wealth in the aggregate. 
+
+% In turn, the  market clearing for the risky asset equates the total demand for risk from investors to the total supply of risk, corresponding to the volatility of the surplus claim.
+% SB: Latter term appear below. needs a bit more...
+
+% We have already imposed the market clearing condition for labor when computing $h(E)$. 
+% The market clearing condition for consumption and the risky asset can be written as
+% \footnote{The volatility of the return on the surplus claim is given by $\sigma_s[R_{p}(X,s,s')] = \left(\frac{Q(X,s)}{Q(X,s)+\mathcal{H}(X,s)} + \omega^h(X,s) \frac{\mathcal{H}(X,s)}{Q(X,s)+\mathcal{H}(X,s)}\right) \sigma_{s}[R_{r}(X,s,s')]$.} 
+
+% \todo{This discussion seems out of place (and way too long). Maybe after the firm's problem?}
+% It is useful to reflect on what we've learned so far. Despite the heterogeneous beliefs, investors agree about the value of payoff across different states and, more generally, on any payoff stream. One particular payoff stream are the dividends of the firm. Therefore, since the value of the firm is the stream of dividends, all shareholders will agree on the value of the firm, and more generally, on which firm choices maximize firm value. Hence, the firm's optimal labor choice, \ref{xxx}, unanimously makes all household's better off. Thus,... 
+% % relate to Friedman's classic article on nature of the firm...
+
+% % SB: Dejanir, not sue if the pargraph is correct...
+% Now think of an incomplete market economy where one agent is constrained in his holding of firm shares (e.g., xxxx, Sheinkman-Xiong? Geneakopolos? Alvarez-Jermann?). Despite that the constrained agent holds firm shares, an SDF that we could obtain from observing asset prices would not coincide with the constrained investor's valuation across states. Without risk in production decisions, these discrepancies are immaterial. However, with risk, the firm's decision that maximizes the valuation for one agent will not necessarily maximizes the valuation of constrained agents. What is the right benchmark to define the firm's objective away from the unanimity brought about by complete markets remains an open question---see Benhabib, Bisin, and xxx for an example.
+
+% Another important observation is that with a large degree of heterogeneity, it would seem that we are demanding too awareness by the firm regarding shareholder preferences. This turns out not to be the case. As Equation (xxx) shows, we can recover the SDF from asset prices. Thus, a firm manager that simply pays attention to how his firm's valuation changes with his decisions can recover the optimal labor choice by observing how his decisions move asset prices.

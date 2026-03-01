@@ -1,0 +1,30 @@
+\begin{table}[t!]
+    	\centering
+    	\caption{Regression of turnover on disagreement index}
+ 	\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{$turnover$}\\
+   Model:         & (1)            & (2)            & (3) & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   (Intercept)    & 0.258$^{***}$ & 0.262$^{***}$ & 0.242$^{***}$ & 0.255$^{***}$\\   
+                  & (0.034)      & (0.042)       & (0.044)       & (0.037)\\   
+   $DI$             & 1.239$^{***}$  & 1.066$^{**}$  & 1.798$^{**}$  & 1.260$^{***}$\\   
+                  & (0.228)       & (0.628)       & (0.628)       & (0.290)\\   
+   $DI \times $ recession   &      & 0.742$^{**}$  &          & \\   
+                  &                & (0.253)        &         & \\       
+   $DI^2$            &             &          & -2.068         & -0.688$^{**}$\\   
+                  &                &         & (1.692)        & (0.209)\\   
+   
+   \midrule
+   \emph{Fit statistics}\\
+   Observations   & 165            & 165            & 165            & 175\\  
+   R$^2$          & 0.24084        & 0.26430        & 0.24786        & 0.30386\\  
+   Adjusted R$^2$ & 0.23618        & 0.25522        & 0.23857        & 0.29576\\  
+   \midrule \midrule
+   \multicolumn{4}{l}{\emph{Newey-West standard-errors in parentheses (4 lags)}}\\
+   \multicolumn{4}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\caption*{  \scriptsize Note: Columns (1) and (2) .\par} 
+    \label{tab:reg_turnover_DI}
+\end{table}

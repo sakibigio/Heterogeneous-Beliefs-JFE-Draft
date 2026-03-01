@@ -1,0 +1,264 @@
+\documentclass[12pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[active]{srcltx}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{esint}
+\usepackage[color=white,colorinlistoftodos]{todonotes}
+% \usepackage[disable]{todonotes}
+% \usepackage[draft]{todonotes}
+\usepackage[round,longnamesfirst]{natbib}
+\usepackage{lineno}
+\usepackage{comment}
+
+% Reference in letters
+\usepackage{soul}
+\usepackage{../utils/styles/qting}
+\usepackage{xr}
+
+% --- Preamble (once) ---
+% \usepackage{booktabs}
+% \usepackage{graphicx} % resizebox
+% \usepackage{array}    % optional
+\renewcommand{\arraystretch}{1.25} % taller rows (global)
+% Preamble
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{siunitx}
+\usepackage{adjustbox}
+
+\sisetup{
+  table-number-alignment = center,
+  table-text-alignment   = center,
+  detect-weight          = true,
+  detect-family          = true
+}
+
+
+% \usepackage{booktabs}
+% \usepackage{array}
+% \usepackage{threeparttable}
+% \usepackage{adjustbox}   % for max width
+% \usepackage{makecell}    % for manual line breaks in headers
+% \renewcommand\theadfont{\bfseries}
+% \renewcommand\arraystretch{1.15} % taller rows globally (or set locally below)
+
+% \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\onehalfspacing
+
+\definecolor{lightgray}{rgb}{1.0,0.0,0.0}
+
+\bibliographystyle{aer}
+\usepackage[titletoc,title]{appendix}
+
+% \usepackage{subfigure}
+\usepackage{subfiles}
+\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{amsfonts}
+\usepackage{caption}
+\usepackage{placeins}
+ 		
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+  \theoremstyle{definition}
+  \newtheorem{defn}{\protect\definitionname}
+  \theoremstyle{plain}
+  \newtheorem{prop}{\protect\propositionname}
+  \theoremstyle{plain}
+  \newtheorem{cor}{\protect\corollaryname}
+  \theoremstyle{plain}
+  \newtheorem{lem}{\protect\lemmaname}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage[margin=1in]{geometry}
+\usepackage{relsize}
+%\usepackage{setspace}
+%\synctex = 1
+
+ \usepackage[en-US]{datetime2}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage[thinlines]{easytable}
+% \usepackage[table]{xcolor}
+
+\newcommand{\comments}[1]
+{\par {\bfseries \color{blue} #1 \par}}
+
+\usepackage{todonotes}
+
+ 
+% Environments  
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{assumption}{Assumption}
+%\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{problem}{Problem}
+%\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\  \rule{0.5em}{0.5em}}
+ 
+\usepackage{amsmath}
+\usepackage[bottom]{footmisc}
+ 
+%\date{\normalsize \textcolor{webgreen}\\ Preliminary and Incomplete\\ Please do not circulate}
+\usepackage{mathpazo}
+%\usepackage{palatino}
+ 
+%\usepackage{amsmath}
+%\usepackage{amsfonts,amssymb}
+%\usepackage[scale=.90]{lucimatx}
+%\linespread{1.05}
+ 
+%\usepackage[T1]{fontenc}
+%\usepackage{textcomp}
+%\renewcommand{\rmdefault}{ptm}
+%\usepackage[scaled=0.92]{helvet}
+%\usepackage[subscriptcorrection,nofontinfo,mtpcal,mtphrb,zswash]{mtpro2}
+ 
+ 
+\renewcommand{\theenumi}{\roman{enumi}}
+\usepackage{color}
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+\definecolor{webpurple}{rgb}{0.7,0,0.7}
+ 
+%%%%%%%% hyperref stuff %%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\hypersetup{breaklinks = true,  
+colorlinks=true, anchorcolor= webbrown, citecolor= webbrown,
+filecolor= webbrown, linkcolor= webbrown, menucolor= webbrown,
+urlcolor= webbrown, citebordercolor= 1 0 0, menubordercolor=1 0
+0, urlbordercolor=1 0 0, runbordercolor=1 0 0 }
+\usepackage{hypcap}
+\hypersetup{pdfauthor=Nicolas Caramp}
+%\hypersetup{pdfpagescrop={55 30 555 740}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+%\DeclareMathOperator*{\plim}{plim}
+ 
+%\tikzifexternalizing{%
+        % do nothing in case 'true'
+%}{%
+        % ok, the main document is being generated:
+%        \hypersetup{pdfpagescrop={55 30 555 740}}
+%}
+ 
+\newcommand{\tint}{\textstyle\int}
+\newcommand{\tsum}{\textstyle\sum}
+\usepackage{boxedminipage}
+%\usepackage{appendix}
+\usepackage[labelfont=bf]{caption}
+ 
+ \newcommand{\paratitle}[1]{\vspace{1em}\noindent\textbf{#1}\hspace{1ex}}
+ 
+ 
+%\usepackage{floatrow}
+%\floatsetup[figure]{capposition=bottom,footposition=caption}
+%\floatsetup[table]{objectset=justified}
+%\captionsetup[figure]{footfont=small}
+ 
+\makeatother
+ 
+%\usepackage{babel}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\lemmaname}{Lemma}
+  \providecommand{\propositionname}{Proposition}
+\providecommand{\corollaryname}{Corollary}
+% \input{setup.tex} % 
+
+% \newpage
+
+% \input{Letters.tex}
+
+\newpage
+
+\title{\textbf{Heterogeneous Beliefs, Asset Prices, \\and Business Cycles}\thanks{We are grateful for  helpful conversations with Andrew Atkeson, Sebastian Di Tella, Hamilton Gallardo, Fatih Guvenen, Fernando Mendo, Stavros Panageos, and Alp Simsek. We also thank three anonymous referees, the Central Bank of Chile, SED, and PUC-Rio participants, and the Santiago Macro Workshop 2019 for helpful comments. Bigio thanks the hospitality of the Federal Reserve Bank of San Francisco. We are indebted to Renata Avila for outstanding research assistance. All errors are ours.}
+}
+\author{ 
+Saki Bigio\thanks{Department of Economics, UCLA, and NBER. E-mail: \href{sbigio@econ.ucla.edu}{sbigio@econ.ucla.edu}.} \and
+Dejanir Silva\thanks{Mitch Daniels School of Business, Purdue University. E-mail: \href{dejanir@purdue.edu}{dejanir@purdue.edu}.}\and
+Eduardo Zilberman\thanks{SPX Capital and Department of Economics, PUC-Rio. E-mail: \href{zilberman@econ.puc-rio.br}{zilberman@econ.puc-rio.br}.}}
+\date{February 26, 2026}
+% \date{\\
+% 	\begin{small}
+% 		First draft: May 5, 2018
+% \end{small}}
+\begin{document}
+	\sloppy
+	\maketitle
+	\thispagestyle{empty}
+	
+\begin{abstract} 
+	\noindent 
+This paper develops a complete-market production economy with heterogeneous beliefs about TFP growth. 
+Hiring occurs before TFP is known and is, therefore, risky (operating leverage). 
+The firm's discount factor depends on a wealth-weighted average of investors' beliefs. 
+Waves of optimism influence asset markets and percolate to labor hiring, tying together the equity premium, equity volatility, and labor volatility puzzles. 
+A taxonomy of belief systems shows that only extrapolative beliefs amplify the volatility of asset prices and hours and lead to risk build up. 
+Disciplined by survey data, the model matches asset-pricing and business-cycle moments, highlighting how heterogeneous beliefs can be a direct driver of aggregate fluctuations.
+	\vspace{10mm}	
+	\bigskip
+	
+	\noindent	
+	\textsc{Keywords}: Heterogeneous Beliefs; Business Cycles; Asset Prices; Speculation.
+	
+	\medskip
+	\noindent
+	\textsc{JEL Classification}: D84, E32, E44, E71, G41.		
+\end{abstract}
+
+\newpage
+
+\setcounter{page}{1}
+
+\onehalfspacing
+
+\newpage
+
+\input{sections/intro}
+
+\input{sections/facts}
+
+\input{sections/model}
+
+\input{sections/characterization}
+
+\input{sections/analytic}
+
+\input{sections/quantitative}
+
+\input{sections/conclusion}
+
+\singlespace
+\bibliography{../utils/references/references,../utils/references/references_empirical}
+
+
+\newpage
+\appendix
+\part*{Online Appendix}\label{appendix}
+\numberwithin{equation}{section}
+\setcounter{page}{1}
+\onehalfspace
+\input{sections/appendix.proofs}
+\input{sections/appendix.workers}
+
+
+\newpage
+
+\input{sections/supplementary_appendix_numerical}
+
+\end{document}
