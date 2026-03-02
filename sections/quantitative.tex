@@ -44,26 +44,29 @@ We note that the belief system in this section is a hybrid of the one in our tax
 \paragraph{Endogenous discounting.} 
 To ensure the wealth distribution is stationary, we assume that households' subjective discount rate responds to their consumption share:
 \begin{equation}
-    \beta_{i,t} = \beta e^{\kappa \left(1 - \frac{C_{i,t}}{Y_t}\right)}. 
+    \beta_{i,t} = \beta e^{\kappa \left(1 - \frac{\mu_i \tilde{C}_{i,t}}{\tilde{Y}_t}\right)}. 
 \end{equation}
 This assumption, a form of \citet{uzawa2017time} preferences, implies that households' marginal propensity to consume increases with their share of consumption, ensuring that no investor type concentrates all the wealth asymptotically.  Following \citet{schmitt2003closing}, we assume that $\beta_{i,t}$ depends on the average consumption share of type-$i$ households, so households take the process for $\beta_{i,t}$ as given.\footnote{This mechanism is often used in small open-economy models to ensure a stationary distribution of external debt.}
 
-\paragraph{Model solution.} We describe the model characterization with a continuum of states and Uzawa preferences in Appendix~\ref{app:numerical_solution}. 
-Previous results are essentially unchanged. 
-As in the binary case, an exact closed-form solution is unavailable away from log preferences.
-We compute the solution using a third-order perturbation around the non-stochastic steady state. 
-A third-order perturbation (or higher) is indispensable to capture time variation in expected returns. 
-% The approximations used e.g. by \citet{bansal2004risks} and \citet{hansen2008consumption}, who considered economies with Epstein-Zin investors and time-varying expected growth rates, are not suitable for an economy with heterogeneity and non-Gaussian shocks. 
-% Therefore, we develop an alternative perturbation method that allows us to derive asymptotic closed-form expressions, described in detail in Appendix \ref{app:Nstates}. 
-% An advantage of this method is that it is possible to compute the model solution even with a relatively large number of agents, which will be important to capture the heterogeneity of beliefs in the data.
+% \paragraph{Model solution.} We describe the model characterization with a continuum of states and Uzawa preferences in Appendix~\ref{app:numerical_solution}. 
+% Previous results are essentially unchanged. 
+% As in the binary case, an exact closed-form solution is unavailable away from log preferences.
+% We compute the solution using a third-order perturbation around the non-stochastic steady state, following, e.g., \citet{van2012term}. 
+% A third-order perturbation is indispensable to capture time variation in expected returns.\footnote{For a discussion of the accuracy of the perturbation method, see \citealt{caldara2012computing}.} 
+% Simulations are performed using a pruned state-space representation of the higher-order solution to avoid spurious explosive dynamics induced by truncation of the perturbation expansion (see \citealt{andreasen2018pruned}).
+\paragraph{Model solution.}
+Appendix~\ref{app:numerical_solution} describes the characterization of the model with a continuum of states and Uzawa preferences. The qualitative mechanisms discussed in the binary-state case carry over to this richer environment.
+Away from log preferences, no closed-form solution is available. We therefore solve the model using a third-order perturbation around the non-stochastic steady state, following, for example, \citet{van2012term}. A third-order approximation is necessary to generate time variation in risk premia and expected returns.\footnote{For evidence on the accuracy of higher-order perturbation methods, see \citealt{caldara2012computing}.}
+Simulations are based on the pruned state-space representation of the higher-order solution (see \citealt{andreasen2018pruned}).
+
 
 \paragraph{Calibration.} \q{CaliStandardBlock}{We use the following calibration, where parameters are expressed in quarterly terms. Preferences and technology parameters are standard.  \textit{Preferences}: We set $\beta = 0.978$ to match an unconditional annualized risk-free rate of $1\%$. 
 The risk aversion is set to $\gamma = 10.0$ and the EIS to $\psi = 2.0$, typical values in the macro-finance literature. 
 We choose the labor disutility parameter $\xi$ to normalize the average hours to 1 and set the Frish elasticity to one, $\nu = 1$, a standard value in the literature.
-\textit{Technology:} We set $\alpha = 0.66$ and choose $\mu_x$ and $\sigma_x$ to match the average and standard deviation of annual consumption growth of $2.1\%$ and $2.7\%$, respectively, consistent with \citet{campbell1999force}.} 
+\textit{Technology:} We set $\alpha = 0.66$ and choose $\mu_x$ and $\sigma_x$ to match the average and standard deviation of annual consumption growth of $2.1\%$ and $2.7\%$, respectively.} 
 
 \q{CaliBeliefs}{The calibration of the belief processes is novel. 
-\textit{Beliefs:} We focus on the case $J = 2$, and assume that households of type $i = 2$ have rational beliefs, which allows for some rational agents in the environment. We set $\mu_{x,1} = \mu_x$ and $\sigma_{x,1} = \sigma_x$, so households agree on the mean and conditional volatility of productivity growth. 
+\textit{Beliefs:} We focus on the case $I = 2$, and assume that households of type $i = 2$ have rational beliefs, which allows for some rational agents in the environment. We set $\mu_{x,1} = \mu_x$ and $\sigma_{x,1} = \sigma_x$, so households agree on the mean and conditional volatility of productivity growth. 
 We set $\mu_2 = 0.1$, so the fraction of rational agents in the population is $10\%$, consistent with the fact that average beliefs in surveys of households and analysts show substantial deviations from rational expectations. 
 We set $\rho_{v,1}$ and $\sigma_{v,1}$ to match the persistence of subjective dividend growth and the share of variance explained by movements in expectations, based on estimations of \citet{de_la_o_subjective_2021}.
 In turn, we set $\rho_{x,1}$ to match the correlation between subjective expectations and current productivity growth observed in the data. This calibration is agnostic about the relevant belief system: the subjective belief moments pin down these parameters, determining whether non-rational beliefs are extrapolation or rank-preserving. Finally, we set $\kappa = 0.5\%$, consistent with the mean-reversion in consumption shares in \citet{garleanu2015young}.} 
@@ -151,7 +154,10 @@ and lies within one standard error of the estimate for the TFP proxy.
 
 \subsection{Unconditional moments}\label{sec:unconditional_moments.sec}
 
-Next, we study the model's ability to match unconditional moments. To isolate the role of each ingredient, we start from a stripped-down version of the model and progressively add features until we reach the complete model. This progression allows us to discuss the role of each ingredient in the model. Table \ref{tab:uncond_moments} presents the results under each formulation.
+Next, we study the model's ability to match unconditional moments. 
+To isolate the role of each ingredient, we start from a stripped-down version of the model and progressively add features until we reach the complete model. 
+This progression allows us to discuss the role of each ingredient in the model. Table \ref{tab:uncond_moments} presents the results under each formulation.
+The table also reports $\pm 2$ standard-error intervals for the data moments.
 
 \q{QuantTable}{
 % In preamble:
@@ -258,7 +264,7 @@ Given that rational beliefs are iid, the price-dividend ratio is constant, so re
 % Near i.i.d. TFP growth plays a critical role in preventing fluctuations in risk premia, hours, and the price-dividend ratio in this classic setting. This is not true away from iid growth, unlike a setting with log preference where the price-dividend ratio is constant regardless of the dividend growth process. Indeed, under log preferences, the price-dividend ratio is constant even though households supply labor: because the labor share is constant, the price and dividends of stocks are proportional to those of human capital. This indicates that, because we are in a setting with a EIS different from 1, i.i.d. dividend growth places limitations to match asset pricing moments and movements in labor. 
 
 \q{QuantCol2}{Column 2 introduces the timing of hires assumption and the elastic labor supply. 
-The operating leverage channel endogenously generates differences in volatility between consumption and dividends in line with the data, even though this is not a target moment. 
+The operating leverage channel endogenously generates differences in volatility between consumption and dividends in line with the data, even though this is not a targeted moment. 
 With iid beliefs, there is no time variation in the price of risk, so the model fails to generate fluctuations in hours.
 Moreover, the hiring friction implies that dividend growth follows a mean-reverting process.\footnote{
     For models with mean-reverting dividend process, see e.g. \citet{menzly2004understanding} and \citet{santos2006labor}.} 
@@ -296,7 +302,7 @@ Movements in subjective beliefs only attenuate the negative correlation between 
 
 \q{QuantCol4}{Column 4 introduces heterogeneity in beliefs. 
 It brings along rational investors and investors with distorted beliefs. 
-The model now generates the level and volatility of asset prices consistent with the evidence, with significant volatility in hours (more than half of that of the data). 
+The model now generates the level and volatility of asset prices consistent with the evidence, with significant volatility in hours.
 To obtain a high equity premium, it is crucial to generate excess volatility of returns. 
 This requires the price-dividend ratio to have the right comovement with returns. 
 Figure~\ref{fig: returns_pd_scatter} shows that this is the case for the model with heterogeneous beliefs, but not for the model with homogeneous beliefs. 
@@ -305,6 +311,13 @@ This success is explained by the time-varying movements in the relative wealth o
 \q{LaborSupplyElasticity}{Column 5 considers an alternative calibration with a higher labor supply elasticity, increasing it from 1.0 to 2.0, the upper limit of the estimates of the macro labor supply elasticity in \citet{keane2012micro}. 
 Increasing the labor supply elasticity is motivated by the presence of unmodeled frictions: it is akin to increasing the real wage rigidities. 
 While asset-price figures do not change substantially, the volatility of hours almost doubles, aligning the volatility of hours with that of the data.} 
+
+Overall, aside from a modest overprediction of risk-free-rate volatility, the model with heterogeneous beliefs matches key asset-pricing and business-cycle moments.
+
+\q{SV_Extension}{
+    \paragraph{Extension with stochastic volatility.}
+Appendix~\ref{app:sv_extension} extends the model to allow for stochastic volatility, following \citet{bansal2004risks}. Introducing volatility shocks modestly increases the equity premium and return volatility, while leaving macroeconomic moments largely unchanged. The qualitative conclusions of Table~\ref{tab:uncond_moments} remain intact.
+}
 
 \subsection{Excess volatility and return predictability}\label{sec:excess_volatility.sec}
 
@@ -325,8 +338,8 @@ discount rates explain most of the price-dividend ratio variance.
     Given that $\beta_r$ corresponds to the slope of a regression of cumulative returns on the price-dividend ratio, the importance of discount rates to explain return volatility is tightly connected to the ability of the price-dividend ratio in predicting future long-run returns. 
     Figure~\ref{fig:pd_scatter} shows that the model with heterogeneous beliefs can capture the predictability patterns observed in the data. 
     The figure shows a strong negative association between the price-dividend ratio and cumulative returns in model-simulated data. 
-    Moreover, the coefficient $\beta_r$ in models (4) and (5), as defined in Table~\ref{tab:uncond_moments}, is given by $\beta_r = 0.93$ and $\beta_r = 0.96$, respectively.
-    In contrast, we have $\beta_r = -0.15$ for model (2), so the price-dividend ratio predicts returns with the wrong sign, and $\beta_r = 0.32$ for model (3), which has the correct sign but movements in cash flows drive the majority of the fluctuations in the price-dividend ratio. 
+    Moreover, the coefficient $\beta_r$ in models (4) and (5), as defined in Table~\ref{tab:uncond_moments}, is given by $\beta_r = 0.86$ and $\beta_r = 0.89$, respectively.
+    In contrast, we have $\beta_r = -0.15$ for model (2), so the price-dividend ratio predicts returns with the wrong sign, and $\beta_r = 0.26$ for model (3), which has the correct sign but movements in cash flows drive the majority of the fluctuations in the price-dividend ratio. 
     Hence, only versions of the model with belief heterogeneity generate a degree of return predictability that aligns with the data.
 
     \paragraph{Labor income and return predictability.} 
@@ -336,7 +349,7 @@ discount rates explain most of the price-dividend ratio variance.
     Table~\ref{table:pred_regression} reports the results of a regression of cumulative excess returns on the price-dividend ratio and labor income in our simulated data.
     Column 1 shows that periods of high labor income are associated with lower future returns.
     This finding is consistent with the evidence from \citet{santos2006labor}, who show that a high labor income share predicts lower aggregate stock returns.
-    Similarly, \citet{belo2023drives} documents that the aggregate hiring rate of publicly traded firms negatively predicts stock market excess returns.\footnote{
+    Similarly, \citet{belo2023drives} document that the aggregate hiring rate of publicly traded firms negatively predicts stock market excess returns.\footnote{
         \citet{belo2014labor} and \citet{favilukis2016does} show similar patterns for the cross-section of stock returns and U.S. states.
         For recent evidence using administrative data, see \citet{meeuwis2024time}.
     }    

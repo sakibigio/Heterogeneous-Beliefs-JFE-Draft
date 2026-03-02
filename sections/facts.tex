@@ -4,16 +4,19 @@
 This section discusses three facts about subjective expectations that motivate our model. 
 
 \paragraph{Fact 1. Expectations are volatile.}
-As \citet{shiller1981stock} famously observed, stock dividends and earnings are too stable to explain the large swings in asset prices. In contrast, recent survey evidence shows that \textit{subjective expectations} of future cash flows are highly volatile, offering a potential explanation for the stock market's excess volatility \citep{bordalo2020expectations, de_la_o_subjective_2021}.
+As \citet{shiller1981stock} famously observed, stock dividends are too stable for rational movements in expectations to explain the large swings in asset prices. In contrast, recent survey evidence shows that \textit{subjective expectations} of future cash flows are highly volatile, offering a potential explanation for the stock market's excess volatility \citep{bordalo2020expectations, de_la_o_subjective_2021}.
 
-We illustrate the magnitude of the difference in the volatility of subjective and objective expectations by constructing an "objective" forecast---based on the statistical properties of dividends---against a survey-based "subjective" forecast. Specifically, we estimate an AR(1) process for quarterly aggregate dividend and earnings growth. The predicted one-year-ahead dividend growth from this AR(1) serves as our measure of objective expectations, $\mathbb{E}^{obj}[\Delta d_{t,t+4}]$. We then compute the fraction of the total variance in realized dividend growth expectations relative to the variance of realized dividend growth. We construct an analogous measure for subjective expectations, $\mathbb{E}^{sub}[\Delta d_{t,t+4}]$, by using the survey of analyst expectations from I/B/E/S. The differences in volatility are significant:
+We illustrate the magnitude of the difference in the volatility of subjective and objective expectations by constructing an "objective" forecast---based on the statistical properties of dividends---against a survey-based "subjective" forecast. Specifically, we estimate an AR(1) process for quarterly aggregate dividend and earnings growth. The predicted one-year-ahead dividend growth from this AR(1) serves as our measure of objective expectations, $\mathbb{E}^{obj}[\Delta d_{t,t+4}]$. We then compute the fraction of the total variance in realized dividend growth expectations relative to the variance of realized dividend growth.\footnote{
+    See Appendix~\ref{app:data_fact1_expectations_volatility} for robustness to alternative objective-forecast specifications (including a VAR; Table~\ref{tab:fact1_pd_vs_var}).
+}
+ We construct an analogous measure for subjective expectations, $\mathbb{E}^{sub}[\Delta d_{t,t+4}]$, by using the survey of analyst expectations from I/B/E/S. The differences in volatility are significant:
 \begin{equation}
     \frac{\mathrm{Var}\!\bigl[\mathbb{E}^{obj}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]} = 0.05,
     \qquad\quad
-    \frac{\mathrm{Var}\!\bigl[\mathbb{E}^{sub}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]} = 0.70.
+    \frac{\mathrm{Var}\!\bigl[\mathbb{E}^{sub}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]} = 0.83.
     \nonumber
 \end{equation}
-Whereas objective expectations represent a negligible fraction of the total variation in dividend growth, subjective expectations are an order of magnitude more volatile.\footnote{The small fraction of variation explained by objective expectations is consistent with the estimated autocorrelation of cash flows in, for example, \citet{bansal2004risks}.}
+Whereas objective expectations represent a negligible fraction of the total variation in dividend growth, subjective expectations are an order of magnitude more volatile.\footnote{The small fraction of variation explained by objective expectations is consistent with the estimated autocorrelation of cash flows in, for example, \citet{bansal2004risks}, and the findings in \citet{CochraneDog}.}
 
 % Next, we provide a sense of the importance of belief heterogeneity, we investigate the link between investor heterogeneity and  turnover volume. Turnover is informative about the importance of our mechanism: if investors forecast errors are random across agents and time, stock turnover should be zero and thus, a model with homogeneous beliefs should be a good representation of reality. In turn, if a set of investors is rational turnover should also be zero. If turnover and market returns are correlated, this is evidence of belief heterogeneity.
 
@@ -35,9 +38,7 @@ These results underscore the importance of heterogeneity in expectations among d
 
 \input{tables/tab_nx_regression}
 
-For our paper, a key question is whether expectations correlate with actual trading behavior. 
-Existing evidence suggests that yes: \citet{greenwood_expectations_2014} shows that subjective expectations correlate with mutual fund flows, and \citet{GMSU_AER} documents a relationship between beliefs and portfolio choices.\footnote{
-    In Section~\ref{sec:belief_taxonomy.sec}, we construct a measure of heterogeneity among professional forecasters and show that this measure of disagreement correlates with stock market turnover, particularly during recessions.}
+Belief heterogeneity is also reflected in trading behavior. \citet{greenwood_expectations_2014} shows that subjective expectations correlate with mutual fund flows, and \citet{GMSU_AER} documents a relationship between beliefs and portfolio choices. In Section~\ref{sec:belief_taxonomy.sec}, we construct an analyst-disagreement measure and show that it correlates with stock-market turnover, especially during recessions.
 
 \paragraph{Fact 3. Expectations correlate with hiring decisions.}
 
@@ -51,6 +52,7 @@ We follow the approach of \citet{GMS16}: we regress realized employment growth o
 Table \ref{tab:payroll} shows that earnings growth expectations predict realized employment growth in both total payroll and the number of workers. In light of Facts 1 and 2---namely, that earnings growth expectations exhibit greater volatility than actual outcomes and that CFOs behave differently from individual investors---these results provide reassuring evidence that firm employment decisions correlate with investor expectations.
 }
 
-\q{GennaioliCaveat}{
-Naturally, this correlation alone does not establish causality: it may simply reflect that the surveyed analysts' information overlaps with managers' private signals, even if investors do not directly influence managers. However, \citet{GMS16} finds that investor expectations continue to affect capital investment even after controlling for managers' survey responses, suggesting a meaningful role for such external perceptions. Unlike \citet{GMS16}, we cannot control for CFO expectations, as we lack sufficient data matches for the employment variables. Motivated by the three facts, we proceed to the model.
-}
+% \q{GennaioliCaveat}{
+% Naturally, this correlation alone does not establish causality: it may simply reflect that the surveyed analysts' information overlaps with managers' private signals, even if investors do not directly influence managers. However, \citet{GMS16} finds that investor expectations continue to affect capital investment even after controlling for managers' survey responses, suggesting a meaningful role for such external perceptions. Unlike \citet{GMS16}, we cannot control for CFO expectations, as we lack sufficient data matches for the employment variables. 
+% }
+Motivated by the three facts, we proceed to the model.

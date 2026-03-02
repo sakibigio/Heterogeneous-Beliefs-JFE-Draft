@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.6)  27 FEB 2026 13:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.6)  2 MAR 2026 12:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -29,9 +29,7 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/latin9.def
-File: latin9.def 2021/02/14 v1.3d Input encoding file
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/srcltx/srcltx.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/srcltx/srcltx.sty
 Package: srcltx 2006/11/12 v1.6 Source specials for inverse search in DVI files
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
@@ -1171,17 +1169,18 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 9
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [6]
-Package srcltx Info: Expanded filename `tables/tab_nx_regression' to `tables/tab_nx_regression.tex' on input line 36.
+Package srcltx Info: Expanded filename `tables/tab_nx_regression' to `tables/tab_nx_regression.tex' on input line 39.
 
 :<+ tables/tab_nx_regression.tex
 (./tables/tab_nx_regression.tex)
 :<-
-Package srcltx Info: Expanded filename `tables/tab_payroll' to `tables/tab_payroll.tex' on input line 44.
+Package srcltx Info: Expanded filename `tables/tab_payroll' to `tables/tab_payroll.tex' on input line 45.
 :<+ tables/tab_payroll.tex
 (./tables/tab_payroll.tex
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 38.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 38.
 )
 :<-
 [7])
@@ -1189,55 +1188,55 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package srcltx Info: Expanded filename `sections/model' to `sections/model.tex' on input line 236.
 :<+ sections/model.tex
 (./sections/model.tex [8] [9] [10]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \begin{equation}
+                     \label{eq: no_arbitrage}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \begin{equation}
+                     \label{eq: no_arbitrage}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \begin{equation}
+                     \label{eq: no_arbitrage}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \begin{equation}
+                     \label{eq: no_arbitrage}
 Underfull \hbox (badness 8189) in paragraph at lines 94--95
 [][]\T1/ppl/b/n/12 Definition 1 \T1/ppl/m/n/12 (Com-pet-i-tive equi-lib-rium)\T1/ppl/b/n/12 . [][]\T1/ppl/m/it/12 Given ini-tial bond hold-ings and shares
  []
 
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.98     \item M
-                arkets for goods, labor, bonds, and shares clear])
+)
 :<-
 Package srcltx Info: Expanded filename `sections/characterization' to `sections/characterization.tex' on input line 238.
 :<+ sections/characterization.tex
-(./sections/characterization.tex [12] [13] [14] [15] [16] [17] [18] [19])
+(./sections/characterization.tex [11] [12] [13] [14] [15] [16] [17] [18])
 :<-
 Package srcltx Info: Expanded filename `sections/analytic' to `sections/analytic.tex' on input line 240.
 :<+ sections/analytic.tex
-(./sections/analytic.tex [20
+(./sections/analytic.tex [19] [20
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.71 T
-      he risk-free rate satisfies]
+l.80 \end{equation}
+                   ] [21
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.72 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.72 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.72 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.28}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.72 \begin{equation}
-                      [21]
-<figures/risk_equilibrium_inv.pdf, id=673, 492.03925pt x 275.06966pt>
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.133 ...oposition}[The demand and supply of risk]
+                                                   \label{prop: risk} Suppos...]
+<figures/risk_equilibrium_inv.pdf, id=663, 492.03925pt x 275.06966pt>
 File: figures/risk_equilibrium_inv.pdf Graphic file (type pdf)
 <use figures/risk_equilibrium_inv.pdf>
 Package pdftex.def Info: figures/risk_equilibrium_inv.pdf  used on input line 152.
 (pdftex.def)             Requested size: 232.53001pt x 129.99208pt.
-<figures/obj_subj_risk_premia.pdf, id=674, 487.81848pt x 272.18488pt>
+<figures/obj_subj_risk_premia.pdf, id=664, 487.81848pt x 272.18488pt>
 File: figures/obj_subj_risk_premia.pdf Graphic file (type pdf)
 <use figures/obj_subj_risk_premia.pdf>
 Package pdftex.def Info: figures/obj_subj_risk_premia.pdf  used on input line 158.
@@ -1247,24 +1246,19 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 150--161
 [][][]  [] 
  []
 
-[22 <./figures/risk_equilibrium_inv.pdf> <./figures/obj_subj_risk_premia.pdf>]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 205.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 205.
- [23
+[22 <./figures/risk_equilibrium_inv.pdf> <./figures/obj_subj_risk_premia.pdf>] [23
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.32}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.237 
       ] [24] [25]
-<figures/simul_hom_beliefs.pdf, id=820, 854.25748pt x 567.6156pt>
+<figures/simul_hom_beliefs.pdf, id=810, 854.25748pt x 567.6156pt>
 File: figures/simul_hom_beliefs.pdf Graphic file (type pdf)
 <use figures/simul_hom_beliefs.pdf>
 Package pdftex.def Info: figures/simul_hom_beliefs.pdf  used on input line 372.
 (pdftex.def)             Requested size: 422.77664pt x 280.91429pt.
  [26 <./figures/simul_hom_beliefs.pdf>]
-<figures/simul_het_beliefs1.pdf, id=852, 694.4324pt x 659.42662pt>
+<figures/simul_het_beliefs1.pdf, id=842, 694.4324pt x 659.42662pt>
 File: figures/simul_het_beliefs1.pdf Graphic file (type pdf)
 <use figures/simul_het_beliefs1.pdf>
 Package pdftex.def Info: figures/simul_het_beliefs1.pdf  used on input line 420.
@@ -1273,95 +1267,160 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 423.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 423.
-<figures/simul_het_beliefs2.pdf, id=855, 694.4324pt x 659.4156pt>
+<figures/simul_het_beliefs2.pdf, id=845, 694.4324pt x 659.4156pt>
 File: figures/simul_het_beliefs2.pdf Graphic file (type pdf)
 <use figures/simul_het_beliefs2.pdf>
 Package pdftex.def Info: figures/simul_het_beliefs2.pdf  used on input line 451.
 (pdftex.def)             Requested size: 352.31625pt x 334.55681pt.
  [27] [28 <./figures/simul_het_beliefs1.pdf>] [29 <./figures/simul_het_beliefs2.pdf>]
-Underfull \hbox (badness 1178) in paragraph at lines 539--543
+Underfull \hbox (badness 1178) in paragraph at lines 544--557
  []\T1/ppl/b/n/12 Discussion: be-lief het-ero-gene-ity vs. risk aver-sion.[] []\T1/ppl/m/n/12 As dis-cussed above, rank-
  []
 
 [30]
-Overfull \hbox (0.74109pt too wide) detected at line 610
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.570 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.570 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.570 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.570 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.582 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.582 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.582 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.582 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.591 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.591 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.591 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.591 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.607 \begin{equation}
+                      \label{eq:trading}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.607 \begin{equation}
+                      \label{eq:trading}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.607 \begin{equation}
+                      \label{eq:trading}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.36}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.607 \begin{equation}
+                      \label{eq:trading} [31]
+Overfull \hbox (0.74109pt too wide) detected at line 624
 []
  []
 
-[31
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.37}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.610 \end{align}
-                 \normalsize
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.37}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.610 \end{align}
-                 \normalsize
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.37}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.610 \end{align}
-                 \normalsize] [32
+l.666 C
+       onsider next the case of rank-alternating beliefs, $\Delta_i = \Delta...]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.661 
-      ]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.674 \begin{equation}
+l.688 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.674 \begin{equation}
+l.688 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.674 \begin{equation}
+l.688 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.674 \begin{equation}
+l.688 \begin{equation}
                       
-<figures/turnover_vs_disagreement_index.pdf, id=992, 824.19969pt x 416.93811pt>
+<figures/turnover_vs_disagreement_index.pdf, id=981, 824.19969pt x 416.93811pt>
 File: figures/turnover_vs_disagreement_index.pdf Graphic file (type pdf)
 <use figures/turnover_vs_disagreement_index.pdf>
-Package pdftex.def Info: figures/turnover_vs_disagreement_index.pdf  used on input line 711.
+Package pdftex.def Info: figures/turnover_vs_disagreement_index.pdf  used on input line 725.
 (pdftex.def)             Requested size: 422.77664pt x 213.86984pt.
  [33]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.729 \begin{equation}
+l.743 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.729 \begin{equation}
+l.743 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.729 \begin{equation}
+l.743 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.39}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.38}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.729 \begin{equation}
+l.743 \begin{equation}
                        [34 <./figures/turnover_vs_disagreement_index.pdf>]
-Package srcltx Info: Expanded filename `tables/tab_turnover_di_5specs_standardized' to `tables/tab_turnover_di_5specs_standardized.tex' on input line 782.
+Package srcltx Info: Expanded filename `tables/tab_turnover_di_5specs_standardized' to `tables/tab_turnover_di_5specs_standardized.tex' on input line 796.
 
 :<+ tables/tab_turnover_di_5specs_standardized.tex
 (./tables/tab_turnover_di_5specs_standardized.tex)
 :<-
 
-Underfull \hbox (badness 1406) in paragraph at lines 791--801
+Underfull \hbox (badness 1406) in paragraph at lines 805--816
 [][]\T1/ppl/m/n/12 Column (1) shows a pos-i-tive but sta-tis-ti-cally in-signif-i-cant as-so-ci-a-tion be-tween
  []
 
@@ -1369,28 +1428,35 @@ Underfull \hbox (badness 1406) in paragraph at lines 791--801
 :<-
 Package srcltx Info: Expanded filename `sections/quantitative' to `sections/quantitative.tex' on input line 242.
 :<+ sections/quantitative.tex
-(./sections/quantitative.tex [36] [37] [38] [39]
-Package srcltx Info: Expanded filename `tables/tab_cg_productivity_h1' to `tables/tab_cg_productivity_h1.tex' on input line 141.
+(./sections/quantitative.tex [36] [37]
+Underfull \hbox (badness 1189) in paragraph at lines 59--59
+[][][]\T1/ppl/m/n/10 For ev-i-dence on the ac-cu-racy of higher-order per-tur-ba-tion meth-ods, see [][]Cal-dara, Fernandez-
+ []
+
+[38] [39]
+Package srcltx Info: Expanded filename `tables/tab_cg_productivity_h1' to `tables/tab_cg_productivity_h1.tex' on input line 144.
 
 :<+ tables/tab_cg_productivity_h1.tex
 (./tables/tab_cg_productivity_h1.tex)
 :<-
-Package srcltx Info: Expanded filename `tables/tab_uncond_moments' to `tables/tab_uncond_moments.tex' on input line 161.
+[40]
+Package srcltx Info: Expanded filename `tables/tab_uncond_moments' to `tables/tab_uncond_moments.tex' on input line 167.
+
 :<+ tables/tab_uncond_moments.tex
 (./tables/tab_uncond_moments.tex)
 :<-
-[40]
-<figures/scatter_belief_comparison.pdf, id=1104, 1204.5pt x 451.6875pt>
+[41]
+<figures/scatter_belief_comparison.pdf, id=1108, 1204.5pt x 451.6875pt>
 File: figures/scatter_belief_comparison.pdf Graphic file (type pdf)
 <use figures/scatter_belief_comparison.pdf>
-Package pdftex.def Info: figures/scatter_belief_comparison.pdf  used on input line 287.
+Package pdftex.def Info: figures/scatter_belief_comparison.pdf  used on input line 293.
 (pdftex.def)             Requested size: 465.06004pt x 174.3999pt.
- [41] [42 <./figures/scatter_belief_comparison.pdf>]
-Package srcltx Info: Expanded filename `tables/table_pred_regression' to `tables/table_pred_regression.tex' on input line 323.
+ [42 <./figures/scatter_belief_comparison.pdf>]
+Package srcltx Info: Expanded filename `tables/table_pred_regression' to `tables/table_pred_regression.tex' on input line 336.
 
 :<+ tables/table_pred_regression.tex
 (./tables/table_pred_regression.tex
-<figures/pd_forecast_binscatter.pdf, id=1128, 501.875pt x 276.03125pt>
+<figures/pd_forecast_binscatter.pdf, id=1130, 501.875pt x 276.03125pt>
 File: figures/pd_forecast_binscatter.pdf Graphic file (type pdf)
 <use figures/pd_forecast_binscatter.pdf>
 Package pdftex.def Info: figures/pd_forecast_binscatter.pdf  used on input line 5.
@@ -1402,31 +1468,26 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 3--33
 
 )
 :<-
-[43 <./figures/pd_forecast_binscatter.pdf>] Excluding 'comment' comment.)
+[43] [44 <./figures/pd_forecast_binscatter.pdf>] Excluding 'comment' comment.)
 :<-
 Package srcltx Info: Expanded filename `sections/conclusion' to `sections/conclusion.tex' on input line 244.
 :<+ sections/conclusion.tex
-(./sections/conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--2
-[][][]\T1/ppl/m/n/10 Interview with Thomas Sar-gent, \T1/ppl/m/it/10 The Re-gion\T1/ppl/m/n/10 , Au-gust 26, 2010. Avail-able at
- []
-
-[44])
+(./sections/conclusion.tex [45])
 :<-
 :<+ BSZ.bbl
-(build/BSZ.bbl [45] [46] [47] [48] [49] [50]
-Underfull \hbox (badness 7451) in paragraph at lines 438--442
+(build/BSZ.bbl [46] [47] [48] [49] [50]
+Underfull \hbox (badness 7451) in paragraph at lines 451--455
 [][]\T1/ppl/b/n/12 O, Ri-cardo De La and Sean My-ers\T1/ppl/m/n/12 , ``Sub-jec-tive Cash Flow and Dis-count
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 438--442
+Underfull \hbox (badness 2368) in paragraph at lines 451--455
 \T1/ppl/m/n/12 Rate Ex-pec-ta-tions,'' \T1/ppl/m/it/12 The Jour-nal of Fi-nance\T1/ppl/m/n/12 , 2021, \T1/ppl/m/it/12 76 \T1/ppl/m/n/12 (3), 1339--1387.  _eprint:
  []
 
-[51])
+[51] [52])
 :<-
-[52]
+[53]
 Package srcltx Info: Expanded filename `sections/appendix.proofs' to `sections/appendix.proofs.tex' on input line 256.
 
 :<+ sections/appendix.proofs.tex
@@ -1606,7 +1667,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has 
 l.859 \end{equation}
                      [20])
 :<-
-Package srcltx Info: Expanded filename `sections/appendix.workers' to `sections/appendix.workers.tex' on input line 257.
+Package srcltx Info: Expanded filename `sections/appendix.workers' to `sections/appendix.workers.tex' on input line 263.
 :<+ sections/appendix.workers.tex
 (./sections/appendix.workers.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has been already used, duplicate ignored
@@ -1624,9 +1685,9 @@ l.91
 pdfTeX warning (ext4): destination with the same identifier (name{page.23}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.260 \newpage
+l.266 \newpage
                [23]
-Package srcltx Info: Expanded filename `sections/supplementary_appendix_numerical' to `sections/supplementary_appendix_numerical.tex' on input line 262.
+Package srcltx Info: Expanded filename `sections/supplementary_appendix_numerical' to `sections/supplementary_appendix_numerical.tex' on input line 268.
 
 :<+ sections/supplementary_appendix_numerical.tex
 (./sections/supplementary_appendix_numerical.tex
@@ -1642,101 +1703,147 @@ l.1 \section{Data Appendix}
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 ...nover--Disagreement Analysis (IBES + CRSP)}
-                                                  \label{app:data_turnover}
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 11.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
+l.3 ...latility of Expectations (Dividend Growth)}
+                                                  \label{app:data_fact1_expe...
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \]
-        [1
+l.32 \paragraph
+               {Variance ratios.} [1
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66 \paragraph
-               {Robustness.} As a robustness check, we control for aggregate... [2]
-Package srcltx Info: Expanded filename `tables/tab_turnover_di_robustness' to `tables/tab_turnover_di_robustness.tex' on input line 70.
+]
+Package srcltx Info: Expanded filename `tables/tab_fact1_ar1_windows' to `tables/tab_fact1_ar1_windows.tex' on input line 47.
 
-:<+ tables/tab_turnover_di_robustness.tex
-(./tables/tab_turnover_di_robustness.tex
+:<+ tables/tab_fact1_ar1_windows.tex
+(./tables/tab_fact1_ar1_windows.tex
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2 ...ith Standardized Disagreement (Robustness)}
+l.3 ...tions from AR(1): Sample Window Robustness}
                                                   )
 :<-
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 ... Coibion--Gorodnichenko Regressions (SPF)}
-                                                  \label{app:data_productivi...
+l.49 ...tness: Long-Sample Objective Expectations}
+                                                  \label{app:data_fact1_long...
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \paragraph
+               {Data and quarterly construction.} [2]
+Package srcltx Info: Expanded filename `tables/tab_fact1_pd_vs_var' to `tables/tab_fact1_pd_vs_var.tex' on input line 82.
+
+:<+ tables/tab_fact1_pd_vs_var.tex
+(./tables/tab_fact1_pd_vs_var.tex
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 ...wth Expectations: \textit{p/d}-Only vs VAR}
+                                                  
+Underfull \hbox (badness 10000) in paragraph at lines 7--17
+[][]
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 18--19
+\OML/zplm/m/it/10 "[]$\T1/ppl/m/n/10 . The VAR spec-i-fi-ca-tion is a quar-terly VAR(1) in $\OT1/zplm/m/n/10 (^^A\OML/zplm/m/it/10 d[]\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 p\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 d[]\OT1/zplm/m/n/10 )$\T1/ppl/m/n/10 , and $\OML/zplm/m/it/10 E[]\OT1/zplm/m/n/10 [^^A\OML/zplm/m/it/10 d[]\OT1/zplm/m/n/10 ]$ \T1/ppl/m/n/10 is ob-
+ []
+
+)
+:<-
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 
+l.87 
       [3]
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.122 \]
-         [4]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 ...e 5 Data Moments and Bootstrap Intervals}
+l.88 ...B/E/S Expectations and Labor (Firm-Level)}
+                                                  \label{app:data_fact3_expe...
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 96.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \]
+         [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.160 
+       [5]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161 ...ver--Disagreement Analysis (IBES + CRSP)}
+                                                  \label{app:data_turnover}
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.188 \]
+         [6]
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 \paragraph
+                {Robustness.} As a robustness check, we control for aggregat... [7]
+Package srcltx Info: Expanded filename `tables/tab_turnover_di_robustness' to `tables/tab_turnover_di_robustness.tex' on input line 228.
+
+:<+ tables/tab_turnover_di_robustness.tex
+(./tables/tab_turnover_di_robustness.tex
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2 ...ith Standardized Disagreement (Robustness)}
+                                                  )
+:<-
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.230 ...Coibion--Gorodnichenko Regressions (SPF)}
+                                                  \label{app:data_productivi...
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.234 
+       [8]
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.280 \]
+         [9]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.287 ...e 5 Data Moments and Bootstrap Intervals}
                                                   \label{app:data_table5_mom...
-Underfull \hbox (badness 10000) in paragraph at lines 132--135
- []\T1/ppl/b/n/12 Overview.[] []\T1/ppl/m/n/12 The data tar-gets in Ta-ble 5 are con-structed by
- []
-
-
-Overfull \hbox (2.4304pt too wide) in paragraph at lines 132--135
-\T1/cmtt/m/n/12 src/data/replication/unconditional_moments/construct_unconditional_moments.R\T1/ppl/m/n/12 .
- []
-
-
-Underfull \hbox (badness 2799) in paragraph at lines 140--141
+Underfull \hbox (badness 2799) in paragraph at lines 297--298
 [][]\T1/ppl/m/it/12 Consumption growth\T1/ppl/m/n/12 : BEA/FRED an-nual real non-durables and ser-vices se-
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 140--141
+Underfull \hbox (badness 2591) in paragraph at lines 297--298
 \T1/ppl/m/n/12 ries, \T1/cmtt/m/n/12 DNDGRG3A086NBEA \T1/ppl/m/n/12 and \T1/cmtt/m/n/12 DSERRG3A086NBEA\T1/ppl/m/n/12 , di-vided by an-nual pop-u-la-tion
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \]
-         [5]
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+l.312 \]
+         [10]
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \]
-         [6]
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.A.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.198 ...ss Calibration for Unconditional Moments}
-                                                  \label{app:data_table5_mom...
-Package srcltx Info: Expanded filename `tables/tab_uncond_moments_robust_mu1_0907' to `tables/tab_uncond_moments_robust_mu1_0907.tex' on input line 204.
-
-:<+ tables/tab_uncond_moments_robust_mu1_0907.tex
-(./tables/tab_uncond_moments_robust_mu1_0907.tex
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 ...stness with higher mass of rational agents}
-                                                  )
-:<-
-)
+l.348 \]
+         [11])
 :<-
 Package srcltx Info: Expanded filename `sections/numerical_solution' to `sections/numerical_solution.tex' on input line 20.
 :<+ sections/numerical_solution.tex
@@ -1746,75 +1853,61 @@ pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) h
                    \relax 
 l.1 ...merical solution of the quantitative model}
                                                   \label{app:numerical_solut...
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 
-     [7]
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25 \end{equation}
-                    [8]
-pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.58 \paragraph
-               {Preferences: EZ+ Uzawa.} To ensure that a non-degenerate sta... [9]
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.95 \end{equation}
-                    [10]
-pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.129 \end{equation}
-                     [11]
 pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175     \item \textbf
-                       {State dynamics:} the exogenous laws of motion for \(... [12]
+l.19 
+      [12]
 pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203 \end{align}
-                 \normalsize [13]
+l.51 \end{equation}
+                    [13]
 pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.218 
-       [14]
-Underfull \hbox (badness 1406) in paragraph at lines 221--222
-[]\T1/ppl/m/n/12 The equi-lib-rium con-di-tions above char-ac-ter-ize the quan-ti-ta-tive model for gen-eral
- []
-
-
+l.81 \end{equation}
+                    [14]
 pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.236 T
-       he SDF under the objective measure is given by [15]
+l.120 \begin{equation}
+                       [15]
 pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.279 \end{equation}
+l.159 \end{equation}
                      [16]
 pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.309 \end{align}
-                  [17])
+l.204 \end{align}
+                 \normalsize [17]
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 
+       [18]
+Package srcltx Info: Expanded filename `tables/tab_uncond_moments_sv_rhoqv0_rhoxq_grid' to `tables/tab_uncond_moments_sv_rhoqv0_rhoxq_grid.tex' on input line 225.
+
+:<+ tables/tab_uncond_moments_sv_rhoqv0_rhoxq_grid.tex
+(./tables/tab_uncond_moments_sv_rhoqv0_rhoxq_grid.tex
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 ...ents: Extension with stochastic volatility}
+                                                  )
+:<-
+)
 :<-
 )
 :<-
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.264 \end{document}
-                     [18] (build/BSZ.aux)
+l.270 \end{document}
+                     [19] (build/BSZ.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1824,25 +1917,21 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `BSZ.out' has not changed.
-(rerunfilecheck)             Checksum: 879760FB4098A4233984500DA2390BE1;8458.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 255 (\begingroup)
-### bottom level 
+(rerunfilecheck)             Checksum: 907FD2F77A76AE948BDEBC31D83EAF39;8288.
+ ) 
 Here is how much of TeX's memory you used:
- 34768 strings out of 474116
- 701491 string characters out of 5743683
- 1949187 words of memory out of 5000000
- 55787 multiletter control sequences out of 15000+600000
- 653618 words of font info for 281 fonts, out of 8000000 for 9000
+ 34788 strings out of 474116
+ 702084 string characters out of 5743683
+ 1947187 words of memory out of 5000000
+ 55803 multiletter control sequences out of 15000+600000
+ 654244 words of font info for 283 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,14n,131p,1306b,1257s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,14n,131p,1306b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on build/BSZ.pdf (94 pages, 747286 bytes).
+Output written on build/BSZ.pdf (96 pages, 754859 bytes).
 PDF statistics:
- 1871 PDF objects out of 2073 (max. 8388607)
- 1694 compressed objects within 17 object streams
- 622 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1886 PDF objects out of 2073 (max. 8388607)
+ 1706 compressed objects within 18 object streams
+ 621 named destinations out of 1000 (max. 500000)
+ 365 words of extra memory for PDF output out of 10000 (max. 10000000)
 

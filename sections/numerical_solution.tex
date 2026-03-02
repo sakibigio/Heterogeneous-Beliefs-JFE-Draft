@@ -31,18 +31,19 @@ where the belief shock $v_{i,t}$ follows the process:
 \begin{equation}
     v_{i,t} = \rho_{v,i} v_{i,t-1} + \sigma_{v,i} \epsilon_{v,i,t}.
 \end{equation}
-\noindent We allow for stochastic volatility in the conditional standard deviations by specifying
+\noindent Following \citet{bansal2004risks}, we allow for stochastic volatility:
 \begin{equation}
-    \sigma_{x,t} = \overline{\sigma}_{x} e^{z_t/2},
+    \sigma_{x,t}^2 = q_t,
     \qquad
-    \sigma_{x,i,t} = \overline{\sigma}_{x,i} e^{z_t/2},
+    \sigma_{x,i,t}^2 = q_t\frac{\overline{\sigma}_{x,i}^2}{\overline{\sigma}_x^2},
     \qquad i=1,\ldots,I,
 \end{equation}
-where \(z_t\) is a common log-variance state following an AR(1) process under the objective measure,
+where \(q_t\) follows an AR(1) process in levels:
 \begin{equation}
-    z_t = \rho_z z_{t-1} + \sigma_z \epsilon_{z,t}, \qquad \epsilon_{z,t}\sim\mathcal{N}(0,1),
+    q_t = \bar{q} + \rho_q(q_{t-1}-\bar{q}) + \sigma_q \epsilon_{q,t}, \qquad \epsilon_{q,t}\sim\mathcal{N}(0,1).
 \end{equation}
-independent of the other Gaussian shocks. The constant-volatility benchmark is obtained as the special case \(z_t\equiv 0\), in which \(\sigma_{x,t}=\overline{\sigma}_x\equiv\sigma_x\) and \(\sigma_{x,i,t}=\overline{\sigma}_{x,i}\equiv\sigma_{x,i}\).
+In the baseline specification, we consider the special case with constant volatility: \(q_t\equiv \bar q\), in which \(\sigma_{x,t}=\overline{\sigma}_x\) and \(\sigma_{x,i,t}=\overline{\sigma}_{x,i}\).
+In a robustness exercise, we allow for stochastic volatility, where the volatility shocks \(\epsilon_{q,t}\) may be correlated with productivity and belief shocks, with \(\text{Corr}(\epsilon_{x,t},\epsilon_{q,t})=\rho_{xq}\) and \(\text{Corr}(\epsilon_{v,t},\epsilon_{q,t})=\rho_{qv}\). 
 
 \paragraph{Likelihood ratios.} We assume that subjective beliefs are absolutely continuous with respect to the true distribution, so for any random variable $g_{t+1}$ we can write:
 \begin{equation}
@@ -90,8 +91,8 @@ We can write the expression above as follows:
 
 We can write this condition as follows:
 \begin{equation}
-    \ell_{i,t}\beta_{i,t}^\theta \left( \frac{\tilde{C}_{i,t+1}}{\tilde{C}_{i,t}} \right)^{-\gamma} \left( \frac{n_{i,t+1} + 1}{n_{i,t}} \right)^{\theta-1}=
-    \ell_{i,t}\beta_{1,t}^\theta \left( \frac{\tilde{C}_{1,t+1}}{\tilde{C}_{1,t}} \right)^{-\gamma} \left( \frac{n_{i,t+1} + 1}{n_{1,t}} \right)^{\theta-1},
+    \ell_{i,t+1}\beta_{i,t}^\theta \left( \frac{\tilde{C}_{i,t+1}}{\tilde{C}_{i,t}} \right)^{-\gamma} \left( \frac{n_{i,t+1} + 1}{n_{i,t}} \right)^{\theta-1}=
+    \ell_{1,t+1}\beta_{1,t}^\theta \left( \frac{\tilde{C}_{1,t+1}}{\tilde{C}_{1,t}} \right)^{-\gamma} \left( \frac{n_{1,t+1} + 1}{n_{1,t}} \right)^{\theta-1},
 \end{equation}
 
 It is useful to work with a recursive formulation of the problem. 
@@ -172,7 +173,7 @@ Output is given by
 
 \paragraph{Roadmap.} The equilibrium system can be organized as:
 \begin{itemize}
-    \item \textbf{State dynamics:} the exogenous laws of motion for \(\hat{x}_t\), \(z_t\), and \(v_{i,t}\), plus endogenous evolution of \(\mathcal{L}_t\) and Pareto weights \(\lambda_{i,t}\).
+    \item \textbf{State dynamics:} the exogenous laws of motion for \(\hat{x}_t\), \(q_t\), and \(v_{i,t}\), plus endogenous evolution of \(\mathcal{L}_t\) and Pareto weights \(\lambda_{i,t}\).
     \item \textbf{Risk sharing and pricing:} the consumption-claim Euler equations for each type and the surplus-claim pricing equation.
     \item \textbf{Production block:} hours, wages, and detrended net output \(Y_t\).
 \end{itemize}
@@ -180,12 +181,12 @@ Output is given by
 \paragraph{State dynamics:}\small
 \begin{align}
     \hat{x}_t &= \mu_x + \rho_x (\hat{x}_{t-1}-\mu_x) + \sigma_{x,t-1}\epsilon_{x,t}\\
-    z_t &= \rho_z z_{t-1} + \sigma_z \epsilon_{z,t}\\
+    q_t &= \bar{q} + \rho_q(q_{t-1}-\bar{q}) + \sigma_q \epsilon_{q,t}\\
     v_{i,t} &= \rho_{v,i} v_{i,t-1} + \sigma_{v,i} \epsilon_{v,i,t}, \qquad i = 1,\ldots, I\\
         \mathcal{L}_t &= R_{b,t} \mathbb{E}_t\left[ \ell_{1,t+1} \Lambda_{1,t+1} e^{\hat{x}_{t+1}} \right]\\
             \lambda_{i,t} &= \lambda_{i,t-1} + \frac{1}{\gamma}\left[- \theta \kappa (s_{i,t}-s_{1,t}) + \log \frac{\ell_{i,t}}{\ell_{1,t}} + (\theta-1) \log \frac{1+n_{i,t}^{-1}}{1+n_{1,t}^{-1}} \right], \qquad i = 2,\ldots, I
 \end{align}\normalsize
-where $\lambda_{1,t} = 0$. State vector: $X_t = (\hat{x}_t, z_t, \mathcal{L}_t,\{v_{i,t}\}_{i=1}^I, \{\lambda_{i,t}\}_{i=2}^I) $.  
+where $\lambda_{1,t} = 0$. State vector: $X_t = (\hat{x}_t, q_t, \mathcal{L}_t,\{v_{i,t}\}_{i=1}^I, \{\lambda_{i,t}\}_{i=2}^I) $.  
 
 \paragraph{Equilibrium conditions:}\small
 \begin{align}
@@ -208,111 +209,17 @@ where\small
 \end{equation}\normalsize
 $\overline{x}_t = \mu_x + \rho_x (\hat{x}_{t}-\mu_x)$, and $\overline{x}_{i,t} = \mu_{x,i} + \rho_{x,i} (\hat{x}_{t}-\mu_{x,i}) + v_{i,t}$.
 
-\subsection{Extension: stochastic volatility}\label{app:sv_extension}
+\subsection{Extension: Stochastic Volatility}\label{app:sv_extension}
 
-This subsection summarizes the changes to the quantitative solution under stochastic volatility, following the specification in \citet{bansal2004risks}. Because \(\sigma_{x,t}\) and \(\sigma_{x,i,t}\) are time-varying, conditional expectations in the Euler equations depend on the additional state \(z_t\), and the state vector is augmented accordingly (see the summary in the previous subsection).
-
-\paragraph{Likelihood ratios.} With a common factor \(e^{z_t/2}\), the leading scale term in the likelihood ratio simplifies to \(\sigma_{x,t}/\sigma_{x,i,t}=\overline{\sigma}_{x}/\overline{\sigma}_{x,i}\), while \(z_t\) continues to enter through the conditional variances in the exponential term.
-
-\paragraph{Solution method.} The perturbation-based solution described above carries over directly. Relative to the constant-volatility benchmark \(z_t\equiv 0\), the only changes are that (i) the state vector is augmented by the additional exogenous state \(z_t\), and (ii) likelihood ratios and all conditional expectations in the Euler equations are evaluated under time-varying conditional variances. We compute a third-order perturbation around the deterministic steady state with \(z=0\) and simulate the resulting pruned state-space system as in \citet{andreasen2018pruned}.
-
-\subsection{Special cases}
-
-The equilibrium conditions above characterize the quantitative model for general Epstein--Zin preferences and heterogeneous beliefs, but they do not admit a closed-form solution in general. In this subsection we impose constant conditional volatility (equivalently, \(z_t\equiv 0\) so that \(\sigma_{x,t}=\overline{\sigma}_x\equiv\sigma_x\) and \(\sigma_{x,i,t}=\overline{\sigma}_{x,i}\equiv\sigma_{x,i}\)) and consider two special cases that are useful for intuition and for checking the numerical implementation. First, under \textit{CRRA preferences} (\(\theta=1\)), the risk-sharing conditions simplify and consumption shares (and Pareto weights) can be characterized more directly in terms of relative likelihood ratios and the Uzawa term. Second, under \textit{log utility} (together with homogeneous beliefs), pricing simplifies further and \(\mathcal{L}_t\) admits a tractable characterization. These limiting cases help clarify the role of beliefs and risk premia in our setup and provide convenient benchmarks for the perturbation solution.
-
-\subsubsection{CRRA preferences}
-
-Consider the case of CRRA preferences, $\theta = 1$. In this case, the dynamics of the Pareto weights and relative consumption are given by
-\begin{align}
-    \lambda_{i,t} &= \lambda_{i,t-1} - \frac{\kappa}{\gamma} (s_{i,t}-s_{1,t})  +\frac{1}{\gamma} \left[ - \frac{(\hat{x}_t - \overline{x}_{i,t-1})^2}{2 \sigma_{x,i}^2} + \frac{(\hat{x}_t - \overline{x}_{1,t-1})^2}{2 \sigma_{x,1}^2} \right] \\
-    s_{i,t} &= s_{1,t} + \lambda_{i,t-1} + \frac{1}{\gamma} \left[ - \frac{(\hat{x}_t - \overline{x}_{i,t-1})^2}{2 \sigma_{x,i}^2} + \frac{(\hat{x}_t - \overline{x}_{1,t-1})^2}{2 \sigma_{x,1}^2} \right].
-\end{align}
-Combining the expressions above, we obtain the law of motion of relative consumption:
-\begin{equation}
-    \Delta s_{i,t} - \Delta s_{1,t} = -\frac{ \kappa}{\gamma} (s_{i,t-1} - s_{1,t-1})+ \frac{1}{\gamma} \left[\frac{(\hat{x}_t - \overline{x}_{1,t-1})^2}{2 \sigma_{x,1}^2}  - \frac{(\hat{x}_t - \overline{x}_{i,t-1})^2}{2 \sigma_{x,i}^2} \right]. 
-\end{equation}
-As $\overline{x}_{1,t}$ and $\overline{x}_{i,t}$ depend only on exogenous processes, we can solve for relative consumption $s_{i,t}-s_{1,t}$ independent of the remaining variables. 
-
-The SDF under the objective measure is given by
-\begin{equation}
-    \Lambda_{t+1} = \ell_{1,t+1} \Lambda_{1,t+1} = \ell_{1,t+1} e^{-\gamma \left( \frac{\kappa}{\gamma} s_{1,t} + \Delta s_{1,t+1} + \Delta y_{t+1} +\hat{x}_{t+1}  \right)}.
-\end{equation}
-
-The law of motion of \(\mathcal{L}_t\) can be written as follows:
-\begin{equation}
-    \mathcal{L}_t = \mathbb{E}_t \left[ \frac{\ell_{1,t+1} e^{-\gamma (s_{1,t+1} +y_{t+1} + \hat{x}_{t+1})}}{\mathbb{E}_t\left[ \ell_{1,t+1} e^{-\gamma (s_{1,t+1} +y_{t+1} + \hat{x}_{t+1})}\right]} e^{\hat{x}_{t+1}} \right],
-\end{equation}
-where
-\begin{equation}
-    e^{y_{t+1}+\hat{x}_{t+1}} = e^{\hat{x}_{t+1}}  h_{t+1}^{\alpha} - \xi \frac{h_{t+1}^{1+\nu}}{1+\nu} = \left( \frac{\alpha}{\xi} \mathcal{L}_{t}\right)^{\frac{\alpha}{1+\nu-\alpha} } \left[ e^{\hat{x}_{t+1}}  - \frac{\alpha}{1+\nu} \mathcal{L}_t\right]. 
-\end{equation}
-
-Combining the expressions above, we obtain a non-linear equation for \(\mathcal{L}_t\):
-\begin{equation}
-\mathbb{E}_t\left[ \ell_{1,t+1}e^{-\gamma s_{1,t+1}} \left(  e^{\hat{x}_{t+1}}  - \frac{\alpha}{1+\nu} \mathcal{L}_t \right)^{-\gamma} \left(  e^{\hat{x}_{t+1}} - \mathcal{L}_t \right)\right] = 0.
-\end{equation}
-
-The SDF for agent i is given by
-\begin{equation}
-    \Lambda_{i,t+1} = \beta e^{-\gamma \left( \frac{\kappa}{\gamma} s_{i,t} + \Delta s_{i,t+1} + \Delta y_{t+1} + \hat{x}_{t+1} \right)}
-\end{equation}
-
-The interest rate is given by 
-\begin{equation}
-    R_{b,t} = \mathbb{E}_t\left[ \ell_{i,t+1} \Lambda_{i,t+1} \right]^{-1}.
-\end{equation}
-
-The price-dividend ratio in the surplus claim is given by
-\begin{equation}
-    n_t = \mathbb{E}_t\left[ M_{t,t+1}^n (n_{t+1}+1)\right],
-\end{equation}
-where $M_{t,t+1}^n \equiv \ell_{i,t+1} \Lambda_{i,t+1} e^{\Delta y_{t+1} + \hat{x}_{t+1}}$. Solving this equation forward, we obtain
-\begin{equation}
-    n_t = \mathbb{E}_t\left[ \sum_{k=1}^T M_{t,t+k}^n + M_{t,t+T}^n n_{t+T}\right]
-\end{equation}
-
-\subsubsection{Log utility}
-
-With log utility and homogeneous beliefs, \(\mathcal{L}_t\) is given by
-\begin{equation}
-    \mathbb{E}_t\left[ \ell_{1,t+1} \frac{1 - \mathcal{L}_t e^{-\hat{x}_{t+1}}}{1 - \frac{\alpha}{1+\nu} \mathcal{L}_t e^{-\hat{x}_{t+1}}} \right] = 0. 
-\end{equation}
-
-Rewrite the expression above as follows:
-\begin{equation}
-    \frac{1}{1-\hat{\alpha}} = \mathbb{E}_{1,t}\left[ \frac{\mathcal{L}_t e^{-\hat{x}_{t+1}}}{1  - \hat{\alpha}\mathcal{L}_t e^{-\hat{x}_{t+1}}} \right] 
-\end{equation}
-where $\hat{\alpha} \equiv \frac{\alpha}{1+\nu}$. Expanding the right-hand side in $\hat{\alpha}$, we obtain
-\begin{equation}
-    \frac{1}{1-\hat{\alpha}} = \sum_{j=0}^\infty \mathbb{E}_{1,t}\left[ \hat{\alpha}^j \mathcal{L}_t^{j+1} e^{-(j+1)\hat{x}_{t+1}} \right] = 
-    \sum_{j=0}^\infty  \hat{\alpha}^j \mathcal{L}_t^{j+1} e^{-(j+1)\overline{x}_{1,t} + \frac{1}{2} (j+1)^2\sigma_{x,1}^2}. 
-\end{equation}
-
-Let $\hat{\mathcal{L}}_t = e^{-\overline{x}_{1,t}}  \mathcal{L}_t$, then 
-\begin{equation}
-    \frac{1}{1-\hat{\alpha}} = 
-    \sum_{j=0}^\infty  \hat{\alpha}^j \hat{\mathcal{L}}_t^{j+1} e^{\frac{1}{2} (j+1)^2\sigma_{x,1}^2}. 
-\end{equation}
-As $\sigma_{x,1}$ is constant, then $\hat{\mathcal{L}}_t = \hat{\mathcal{L}}$ is also constant. 
-
-\subsubsection{Endowment limit (fixed labor, no hiring-in-advance)}
-
-This special case corresponds to an endowment economy in which labor is \emph{not} a state variable. In particular, (i) labor is chosen after productivity is realized (so there is no one-period-ahead hiring decision), and (ii) labor supply is fixed at one. In this limit, the production block drops out:
-\begin{equation}
-    h_t \equiv 1, \qquad w_t \ \text{irrelevant}, \qquad Y_t \equiv 1 \ \Rightarrow\  y_t \equiv 0,\ \Delta y_{t+1}\equiv 0.
-\end{equation}
-Hence, all equilibrium conditions remain as in the general system, except that every occurrence of \(\Delta y_{t+1}\) is set to zero and the three production equations for \((h_t,w_t,y_t)\) are removed. The key pricing relations become:
-\begin{align}
-    R_{b,t}^{-1} &= \mathbb{E}_{t}\!\left[ \ell_{1,t+1}\Lambda_{1,t+1} \right],\\
-    R_{r,t+1} &= \frac{n_{t+1}+1}{n_t}\, e^{\hat{x}_{t+1}},\\
-    1 &= \mathbb{E}_t\!\left[\ell_{1,t+1}\Lambda_{1,t+1} R_{r,t+1}\right],
-\end{align}
-where the SDF simplifies to
-\begin{equation}
-    \Lambda_{i,t+1} = \beta^\theta  e^{-\theta \kappa s_{i,t}-\gamma \left(\Delta s_{i,t+1} + \hat{x}_{t+1}\right)}  \left( \frac{n_{i,t+1}+1}{n_{i,t}} \right)^{\theta-1}.
-\end{equation}
-Finally, \(\mathcal{L}_t\) can still be defined as the risk-neutral expectation of productivity growth,
-\begin{equation}
-    \mathcal{L}_t = R_{b,t}\mathbb{E}_t\!\left[\ell_{1,t+1}\Lambda_{1,t+1}e^{\hat{x}_{t+1}}\right],
-\end{equation}
-but it no longer feeds back into quantities such as hours or net output; consequently, it can be omitted from the state vector in this endowment-limit economy.
+\q{SV}{
+    In this subsection, we extend the quantitative model to allow for stochastic volatility, following \citet{bansal2004risks}. We consider two cases. In the first case, investors share common beliefs about the volatility process and volatility follows a standard variance-level stochastic volatility (SV) process. In the second case, investors have heterogeneous beliefs about volatility. In this specification, productivity growth remains iid under the objective measure, so there is no objective stochastic volatility, but investors perceive time-varying volatility.
+    
+    We also consider two correlation structures: (i) volatility shocks that are orthogonal to productivity and belief shocks, and (ii) volatility shocks that are negatively correlated with belief shocks. The latter captures episodes in which a negative sentiment shock is associated with both lower expected productivity growth and higher (perceived or objective) volatility.
+    
+    Table~\ref{tab:uncond_moments_sv_rhoqv0_rhoxq_grid} reports the results. The first column reproduces the high labor-elasticity baseline from Table~\ref{tab:uncond_moments}. The next two columns introduce stochastic volatility under common beliefs. Stochastic volatility increases the equity premium and return volatility relative to the baseline, while leaving consumption growth, dividend growth, and hours close to their benchmark values. Introducing a negative correlation between volatility and belief shocks reduces interest-rate volatility, in line with the upper bound of the empirical interval.
+    
+    The final two columns allow for heterogeneous beliefs about volatility. Relative to the baseline, equity premia and return volatility again increase modestly. Interest-rate volatility is somewhat higher under heterogeneous volatility beliefs, but this effect is attenuated when volatility shocks are negatively correlated with belief shocks.
+    
+    Overall, stochastic volatility acts primarily as an amplification mechanism for the equity premium and return volatility. Importantly, the main qualitative features of the baseline model remain intact. This extension shows that the core results are not driven by the absence of stochastic volatility and that introducing volatility shocks does not overturn the model's implications for macroeconomic quantities.
+}
+\input{tables/tab_uncond_moments_sv_rhoqv0_rhoxq_grid}

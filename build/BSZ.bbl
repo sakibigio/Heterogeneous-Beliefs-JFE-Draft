@@ -64,6 +64,13 @@
 {\bf Bianchi, Francesco, Cosmin Ilut, and Hikaru Saijo}, ``Diagnostic business
   cycles,'' {\it Review of Economic Studies}, 2024, {\it 91} (1), 129--162.
 
+\harvarditem[Van~Binsbergen et al.]{Van~Binsbergen, Fern{\'a}ndez-Villaverde,
+  Koijen and Rubio-Ram{\'\i}rez}{2012}{van2012term}
+{\bf Binsbergen, Jules~H~Van, Jes{\'u}s Fern{\'a}ndez-Villaverde, Ralph~SJ
+  Koijen, and Juan Rubio-Ram{\'\i}rez}, ``The term structure of interest rates
+  in a DSGE model with recursive preferences,'' {\it Journal of Monetary
+  Economics}, 2012, {\it 59} (7), 634--648.
+
 \harvarditem[Bolton et al.]{Bolton, Scheinkman and Xiong}{2006}{BSX06}
 {\bf Bolton, Patrick, Jos\'e Scheinkman, and Wei Xiong}, ``{Executive
   Compensation and Short-Termist Behaviour in Speculative Markets},'' {\it
@@ -123,15 +130,16 @@
 {\bf \bysame{} and \bysame{}}, ``Prudential Monetary Policy,'' 2020.
 \newblock Working Paper.
 
+\harvarditem[Caldara et al.]{Caldara, Fernandez-Villaverde, Rubio-Ramirez and
+  Yao}{2012}{caldara2012computing}
+{\bf Caldara, Dario, Jesus Fernandez-Villaverde, Juan~F Rubio-Ramirez, and Wen
+  Yao}, ``Computing DSGE models with recursive preferences and stochastic
+  volatility,'' {\it Review of Economic Dynamics}, 2012, {\it 15} (2),
+  188--206.
+
 \harvarditem[Campbell]{Campbell}{2003}{campbell2003consumption}
 {\bf Campbell, John~Y}, ``Consumption-based asset pricing,'' {\it Handbook of
   the Economics of Finance}, 2003, {\it 1}, 803--887.
-
-\harvarditem[Campbell and Cochrane]{Campbell and
-  Cochrane}{1999}{campbell1999force}
-{\bf \bysame{} and John~H Cochrane}, ``By force of habit: A consumption-based
-  explanation of aggregate stock market behavior,'' {\it Journal of political
-  Economy}, 1999, {\it 107} (2), 205--251.
 
 \harvarditem[Caramp and Silva]{Caramp and Silva}{2024}{CS24}
 {\bf Caramp, Nicolas and Dejanir~H Silva}, ``Monetary policy and wealth
@@ -150,9 +158,14 @@
 {\bf Cochrane, John~H}, ``Explaining the variance of price--dividend ratios,''
   {\it The Review of Financial Studies}, 1992, {\it 5} (2), 243--280.
 
+\harvarditem[Cochrane]{Cochrane}{2008}{CochraneDog}
+{\bf Cochrane, John~H.}, ``The Dog That Did Not Bark: A Defense of Return
+  Predictability,'' {\it The Review of Financial Studies}, 2008, {\it 21} (4),
+  1533--1575.
+
 \harvarditem[Cochrane]{Cochrane}{2011}{cochrane2011presidential}
-{\bf \bysame{}}, ``Presidential address: Discount rates,'' {\it The Journal of
-  finance}, 2011, {\it 66} (4), 1047--1108.
+{\bf Cochrane, John~H}, ``Presidential address: Discount rates,'' {\it The
+  Journal of finance}, 2011, {\it 66} (4), 1047--1108.
 
 \harvarditem[Cogley and Nason]{Cogley and Nason}{1995}{cogley1995output}
 {\bf Cogley, Timothy and James~M Nason}, ``Output dynamics in

@@ -1,0 +1,21 @@
+\begin{table}[t!]
+    \centering
+    \caption{Objective Dividend-Growth Expectations: \textit{p/d}-Only vs VAR}
+    \label{tab:fact1_pd_vs_var}
+    \begin{threeparttable}
+    \footnotesize
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}{lcccc}
+    \toprule
+    Sample window & $N$ (\textit{p/d} only) & Var. ratio (\textit{p/d} only) & $N$ (VAR) & Var. ratio (VAR) \\
+    \midrule
+    Full (1871Q1--2022Q2) & 606 & 0.0695 & 605 & 0.1356 \\
+    Post-1947 (1947Q1--2022Q2) & 302 & 0.0020 & 302 & 0.0936 \\
+    \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \begin{tablenotes}[flushleft]
+    \item Notes: The \textit{p/d}-only specification is the direct horizon-$4$ regression, $\Delta d_{t,t+4}=a+b\,(p/d)_t+\varepsilon_{t+4}$. The VAR specification is a quarterly VAR(1) in $(\Delta d_t,p/d_t)$, and $E_t[\Delta d_{t,t+4}]$ is obtained from the model-implied four-step forecasts. In both columns, the reported statistic is $\mathrm{Var}\!\left(E_t[\Delta d_{t,t+4}]\right)\big/\mathrm{Var}\!\left(\Delta d_{t,t+4}\right)$.
+    \end{tablenotes}
+    \end{threeparttable}
+\end{table}

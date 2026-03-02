@@ -40,7 +40,7 @@ Beliefs about productivity translate into beliefs about earnings and asset price
 
 Household $i$ chooses consumption $C_{i,t}$, hours $h_{i,t}$, firm shares $S_{i,t}$, and risk-free bonds $B_{i,t}$ to maximize \eqref{eq: preferences} subject to a flow budget constraint
 \begin{equation}\label{eq: flow_bc}
-    C_{i,t} + Q_t S_{i,t} + B_{i,t} = R_{r,t} Q_{t-1} S_{i,t-1} + R_{f,t} B_{i,t-1} + W_t h_{i,t}.
+    C_{i,t} + Q_t S_{i,t} + B_{i,t} = R_{r,t} Q_{t-1} S_{i,t-1} + R_{f,t-1} B_{i,t-1} + W_t h_{i,t}.
 \end{equation}
 We denote human wealth by:
 \begin{equation}\label{eq: human_wealth}
@@ -50,7 +50,7 @@ Human wealth is the present discounted value of future \textit{net labor income}
 Net labor income equals the labor earnings minus labor disutility. The present value is discounted using the SDF $\Lambda_{t,t+k} = \prod_{j=1}^k \Lambda_{t+j-1,t+j}$. 
 The SDF is the same as the one used to value firms. 
 
-Households face a natural borrowing limit: $R_{r,t}Q_{t-1} S_{i,t-1} + R_{f,t} B_{i,t-1} + W_t h_{i,t}- \xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu} \geq -\mathcal{H}_{i,t}$, given $S_{i,-1}$ and $B_{i,-1}$, where $R_{f,t}$ denotes the return on the risk-free bond and $R_{r,t} = \frac{Q_t + \pi_t}{Q_{t-1}}$ the return on stocks, the risky asset in this economy.\footnote{This borrowing limit corresponds to the maximum households can borrow without violating the non-negativity of net consumption and is therefore never binding in equilibrium.}
+Households face a natural borrowing limit: $R_{r,t}Q_{t-1} S_{i,t-1} + R_{f,t-1} B_{i,t-1} + W_t h_{i,t}- \xi_t \frac{h_{i,t}^{1+\nu}}{1+\nu} \geq -\mathcal{H}_{i,t}$, given $S_{i,-1}$ and $B_{i,-1}$, where $R_{f,t}$ denotes the return on the risk-free bond and $R_{r,t} = \frac{Q_t + \pi_t}{Q_{t-1}}$ the return on stocks, the risky asset in this economy.\footnote{This borrowing limit corresponds to the maximum households can borrow without violating the non-negativity of net consumption and is therefore never binding in equilibrium.}
 
 \paragraph{Example I: Diagnostic expectations.} 
 We do not impose restrictions on beliefs. 
@@ -85,7 +85,7 @@ Our formulation allows for an arbitrary persistence under subjective beliefs, ev
 The SDF can be inferred from the process of asset returns through no-arbitrage conditions:
 \begin{equation}\label{eq: no_arbitrage}
     1 = \mathbb{E}_t\left[ \Lambda_{t,t+1} \frac{\pi_{t+1}+Q_{t+1}}{Q_t}  \right], \qquad \qquad 
-    1 = \mathbb{E}_t\left[ \Lambda_{t,t+1} R_{b,t+1}  \right].
+    1 = \mathbb{E}_t\left[ \Lambda_{t,t+1} R_{f,t}  \right].
 \end{equation}}
 A competitive equilibrium is defined next.
 

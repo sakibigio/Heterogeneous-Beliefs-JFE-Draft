@@ -467,9 +467,14 @@ any investor is increasing in her current wealth share:
 \frac{\partial \eta_i'(X,s,s')}{\partial \eta_i}
 =
 \frac{p^i_{ss'}}{\overline p^m_{ss'}(X,s)}
->
-0.
+-\eta_i\,\frac{p^i_{ss'}\bigl(p^i_{ss'}-p^I_{ss'}\bigr)}{\left(\overline p^m_{ss'}(X,s)\right)^2}
+=
+\frac{p^i_{ss'}}{\left(\overline p^m_{ss'}(X,s)\right)^2}
+\left(\sum_{j\neq i}\eta_j p^j_{ss'}+\eta_i p^I_{ss'}\right)
+\ge
+0,\nonumber
 \end{equation}
+and it is strictly positive if, e.g., $p^j_{ss'}>0$ for all $j$.
 
 This property contrasts with models featuring risk-neutral investors, in which optimistic
 agents are driven to concentrate their wealth in the good state and are wiped
@@ -537,9 +542,18 @@ characterized by compressed spreads and increased fragility.}
 
 \q{RiskAversionDiscussion}{\paragraph{Discussion: belief heterogeneity vs. risk aversion.}
 As discussed above, rank-alternating beliefs amplify inherent economic fluctuations.
-Therefore, not only do differences in investors' risk appetite matter for business cycles, but also differences in their propensity to take risks. 
-For instance, models of heterogeneous risk aversion can generate portfolio dispersion and time variation in expected returns. However, the ranking of agents in terms of risk-taking is always the same. This property is analogous to the case of rank-preserving beliefs shown in Figure \ref{fig: het_beliefs1}.
-In contrast, there is no counterpart to the rank-alternating beliefs with heterogeneous risk aversion, as the agent taking less risk in booms is also taking more risk in the bust.}
+The key distinction is that heterogeneity in beliefs can induce changes in the 
+\emph{ranking} of investors' effective risk-taking across states.
+In models with heterogeneous risk aversion, differences in risk tolerance can generate
+portfolio dispersion and time variation in expected returns. However, the ranking of
+agents in terms of risk-taking is fixed: the more risk-tolerant agent always holds
+more risky assets in every state of the world. This property is analogous to the
+case of rank-preserving beliefs shown in Figure~\ref{fig: het_beliefs1}.
+In contrast, under rank-alternating beliefs, the identity of the relatively
+risk-taking investor depends on the state. An agent who takes more risk in booms
+may take less risk in busts. There is no counterpart to this mechanism in models
+with heterogeneous risk aversion alone.
+}
 
 \subsection{Belief taxonomy and trading volume}\label{sec: trading_volume}
 \q{TradingVolumeTheory}{
@@ -759,9 +773,9 @@ dispersion of these implied aggregate expectations:
 \begin{equation}
     DI_t
     =
-    \sigma_t\!\left[\beta_{0,j} + \beta_{1,j} \Delta e_t \right],
+    \overline{\sigma}_t\!\left[\beta_{0,j} + \beta_{1,j} \Delta e_t \right],
 \end{equation}
-where $\sigma_t[\cdot]$ denotes the cross-sectional standard deviation at time $t$.
+where $\overline{\sigma}_t[\cdot]$ denotes the cross-sectional standard deviation at time $t$.
 
 Even if analyst-specific coefficients are constant over time,
 disagreement varies with $\Delta e_t$.
@@ -797,7 +811,10 @@ The implied marginal effect of disagreement during recessions
 is economically meaningful: a one-standard-deviation increase in $DI_t$
 is associated with an increase in turnover of approximately
 $0.23$ (the sum of the main and interaction coefficients),
-a sizeable fraction of its sample mean.
+a sizeable fraction of its sample mean $(0.31)$.
+This is consistent with Proposition~\ref{prop:turnover}, which implies that the turnover--disagreement relationship strengthens in recessions.
+
+
 
 Column (3) shows that the interaction effect remains substantial when the recession dummy
 is excluded, indicating that the result is driven by differences in slopes

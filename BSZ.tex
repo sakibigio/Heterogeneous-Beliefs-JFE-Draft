@@ -1,6 +1,6 @@
 \documentclass[12pt,english]{article}
 \usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[active]{srcltx}
 \usepackage{enumerate}
 \usepackage{amsthm}
@@ -243,7 +243,7 @@ Disciplined by survey data, the model matches asset-pricing and business-cycle m
 
 \input{sections/conclusion}
 
-\singlespace
+\singlespacing
 \bibliography{../utils/references/references,../utils/references/references_empirical}
 
 
@@ -252,8 +252,14 @@ Disciplined by survey data, the model matches asset-pricing and business-cycle m
 \part*{Online Appendix}\label{appendix}
 \numberwithin{equation}{section}
 \setcounter{page}{1}
-\onehalfspace
+\onehalfspacing
 \input{sections/appendix.proofs}
+\iffalse
+% For `utils/styles/qting.sty`: expose HandToMouthWorkers as a quote label even if
+% the content lives in a separate file included via `\input`.
+% This has no effect on the paper output, but lets referee letters use \quoting{HandToMouthWorkers}.
+\q{HandToMouthWorkers}{\begingroup\def\section##1{}\def\label##1{}\IfFileExists{sections/appendix.workers.tex}{\input{sections/appendix.workers.tex}}{\input{../../../paper/sections/appendix.workers.tex}}\endgroup}
+\fi
 \input{sections/appendix.workers}
 
 

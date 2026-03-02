@@ -54,7 +54,7 @@ $\tilde C_{i,t} \equiv C_{i,t}-\xi_t h_t$, as
 + B_{i,t}
 =
 R_{r,t} Q_{t-1} S_{i,t-1}
-+ R_{f,t} B_{i,t-1}
++ R_{f,t-1} B_{i,t-1}
 \equiv N_{i,t},
 \label{eq:modified_budget}
 \end{equation}
@@ -406,7 +406,7 @@ Because labor is chosen in advance, profits may in principle be negative for som
 realizations of productivity. We assume $x_L>\alpha x_H$ to ensure that profits are
 positive.\footnote{Since the largest possible value of risk-neutral
 productivity growth is $x_H$, profits are positive whenever $x_s>\alpha\mathcal L$.
-The sufficient condition $x_L>\alpha x_H$ guarantees this in both states.}
+The sufficient condition $x_L>\alpha x_H$ guarantees this holds in both states.}
 
 \paragraph{Labor decisions and the SDF.}
 
@@ -648,9 +648,10 @@ Goods and asset markets clear:
 \qquad
 \sum_{i=1}^I \tilde\eta_i(X,s)\,\omega_i(X,s)
 =
-1.
+1,
 \label{eq: mkt_clearing_markov}
 \end{align}
+where $q(X,s)$ is the price-dividend ratio.
 \end{enumerate}
 
 The law of motion for the state vector $X$ is given by

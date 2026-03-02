@@ -1,5 +1,163 @@
 \section{Data Appendix}\label{app:data}
 
+\subsection{Fact 1: Volatility of Expectations (Dividend Growth)}\label{app:data_fact1_expectations_volatility}
+
+\paragraph{Overview.}
+This subsection describes the replication of Fact~1 in Section~\ref{sec:facts.sec} of the paper: the variance share of (i) an ``objective'' dividend-growth forecast constructed from dividend dynamics and (ii) a survey-based ``subjective'' dividend-growth forecast.
+
+\paragraph{Inputs.}
+The replication uses two quarterly time series from the dividend-growth expectations dataset:
+\begin{itemize}
+\item \textit{Realized next-year dividend growth} \(\Delta d_{t,t+4}\) (realized next-year log dividend growth at quarterly dates);
+\item \textit{Subjective expectations} \(\mathbb{E}^{sub}[\Delta d_{t,t+4}]\) (I/B/E/S survey expectations of next-year log dividend growth).
+\end{itemize}
+To construct the objective forecast, we use the Shiller historical dataset and its real dividend series to build quarterly dividend growth.
+
+\paragraph{Sample.}
+The baseline replication uses a quarterly sample spanning 2003Q1--2021Q3 (75 observations), dictated by the overlap between the realized next-year dividend-growth series and the survey expectations series. The variance ratios are computed on the common non-missing sample for each expectations measure.
+
+\paragraph{Objective expectations construction.}
+Let \(g^d_t\) denote quarterly log dividend growth constructed from Shiller real dividends by taking the end-of-quarter (last monthly) observation in each quarter and forming log differences. We estimate an AR(1) on \(g^d_t\):
+\[
+g^d_t = a + \rho g^d_{t-1} + \varepsilon_t.
+\]
+Given the estimated \((a,\rho)\), it maps quarterly growth into an implied one-year-ahead expectation by iterating the AR(1) forward and summing the implied quarterly growth rates:
+\[
+\mathbb{E}^{obj}[\Delta d_{t,t+4}] \equiv \sum_{h=1}^{4}\mathbb{E}_t[g^d_{t+h}],
+\qquad
+\mathbb{E}_t[g^d_{t+h}] = \mu + \rho^h\,(g^d_t-\mu),\ \mu=\frac{a}{1-\rho}.
+\]
+The resulting objective series is then aligned to the quarterly dates in the dividend-growth expectations dataset by matching year/quarter identifiers.
+
+\paragraph{Variance ratios.}
+For each expectations measure \(m\in\{obj,sub\}\), the replication computes:
+\[
+\frac{\mathrm{Var}\!\bigl[\mathbb{E}^{m}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]},
+\]
+using the common sample for which both the realized series \(\Delta d_{t,t+4}\) and the corresponding expectation series are non-missing (objective and subjective samples coincide in the default run).
+
+\paragraph{Outputs and replicated numbers.}
+We report the variance ratios implied by the baseline inputs used for the paper. The dividend-growth variance ratios are:
+\[
+\frac{\mathrm{Var}\!\bigl[\mathbb{E}^{obj}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]} \;=\; 0.0486 \;(\approx 0.05),
+\qquad
+\frac{\mathrm{Var}\!\bigl[\mathbb{E}^{sub}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]} \;=\; 0.8268 \;(\approx 0.83).
+\]
+
+\input{tables/tab_fact1_ar1_windows}
+
+\subsection{Fact 1 Robustness: Long-Sample Objective Expectations}\label{app:data_fact1_long_sample_robustness}
+
+\paragraph{Overview.}
+This subsection reports long-sample robustness checks for the objective dividend-growth expectation in Fact~1. We keep the target object fixed,
+\[
+\frac{\mathrm{Var}\!\bigl[\mathbb{E}^{obj}[\Delta d_{t,t+4}]\bigr]}{\mathrm{Var}[\Delta d_{t,t+4}]},
+\]
+and vary only the forecasting specification and sample window.
+
+\paragraph{Data and quarterly construction.}
+All robustness exercises use the Shiller historical market series. We convert monthly data to quarterly frequency by taking end-of-quarter (last monthly) observations of real prices and real dividends, then define:
+\[
+\Delta d_t = \log D_t - \log D_{t-1},\qquad
+\Delta d_{t,t+4} = \log D_{t+4} - \log D_t,\qquad
+pd_t = \log P_t - \log D_t.
+\]
+
+\paragraph{AR(1)-implied objective expectation.}
+The first robustness follows the same approach as the baseline Fact~1 construction. We estimate
+\[
+\Delta d_{t+1}=a+\rho \Delta d_t+\varepsilon_{t+1},
+\]
+form the implied four-quarter expectation \(E_t[\Delta d_{t,t+4}]\), and compute the variance ratio across alternative sample windows. Results are reported in Table~\ref{tab:fact1_ar1_windows}.
+
+\paragraph{\textit{p/d}-only versus VAR benchmark.}
+The second robustness compares two objective forecasting approaches in long samples.  
+(i) A direct horizon-$4$ regression:
+\[
+\Delta d_{t,t+4}=a+b\,pd_t+\varepsilon_{t+4}.
+\]
+(ii) A quarterly VAR(1) in \((\Delta d_t,pd_t)\), from which we construct \(E_t[\Delta d_{t,t+4}]\) using model-implied four-step forecasts.  
+Table~\ref{tab:fact1_pd_vs_var} reports both variance ratios for the full and post-1947 samples.
+
+\input{tables/tab_fact1_pd_vs_var}
+
+\paragraph{Interpretation.}
+The AR(1)-implied objective expectation remains low-variance in long samples (around 0.05--0.07), close to the baseline Fact~1 estimate. The direct \textit{p/d}-only approach contributes little in the post-1947 sample, while the VAR allows richer short-run dynamics and yields slightly larger objective-expectation variance ratios.
+In all specifications, movements in expectations, as inferred by an econometrician, explain only a small fraction of the total variation in realized dividend growth.
+
+\subsection{Fact 3: I/B/E/S Expectations and Labor (Firm-Level)}\label{app:data_fact3_expectations_labor}
+
+\paragraph{Overview.}
+This subsection describes the firm-level empirical exercise behind Fact~3 in Section~\ref{sec:facts.sec}: regressions of realized labor outcomes on lagged earnings-growth expectations from I/B/E/S with firm-clustered standard errors.
+
+\paragraph{Data sources.}
+The replication combines WRDS extracts from:
+\begin{itemize}
+\item Compustat Annual (\texttt{comp.funda}): \texttt{gvkey}, \texttt{datadate}, \texttt{fyear}, \texttt{emp}, \texttt{xlr};
+\item CRSP monthly stock file (\texttt{crsp.msf}): \texttt{permno}, \texttt{date}, \texttt{ret};
+\item CRSP--Compustat link table (\texttt{crsp.ccmxpf\_linktable});
+\item I/B/E/S Summary Statistics (\texttt{ibes.statsum\_epsus});
+\item WRDS I/B/E/S--CRSP historical link (\texttt{wrdsapps.ibcrsphist});
+\item S\&P~500 historical membership list (local \texttt{DSP500LIST\_v4.csv}).
+\end{itemize}
+
+\paragraph{Sample selection.}
+The baseline replication applies the following filters:
+\begin{enumerate}
+\item Compustat observations with non-missing \texttt{gvkey} and \texttt{datadate};
+\item CRSP observations with valid monthly returns (\texttt{ret} $>-1$);
+\item I/B/E/S observations restricted to \texttt{measure=EPS}, horizons \(\texttt{FPI}\in\{6,7,8,9\}\), and non-missing \texttt{statpers} and forecast value;
+\item I/B/E/S--CRSP links with \texttt{score}\(\le 2\);
+\item CRSP--Compustat linking by valid link-date intervals;
+\item S\&P~500 membership filter by \texttt{permno}-date using historical entry/exit dates from \texttt{DSP500LIST\_v4.csv}.
+\end{enumerate}
+
+\paragraph{Variable construction.}
+For firm \(i\) and year \(t\):
+\begin{itemize}
+\item Payroll outcome:
+\[
+Y^{pay}_{it}=\frac{\Delta xlr_{it}}{\sigma_i(\Delta xlr)},
+\qquad
+\Delta xlr_{it}=xlr_{it}-xlr_{i,t-1}.
+\]
+\item Workers outcome:
+\[
+Y^{emp}_{it}=\frac{\Delta emp_{it}}{\sigma_i(\Delta emp)},
+\qquad
+\Delta emp_{it}=emp_{it}-emp_{i,t-1}.
+\]
+\item Expectations regressor: from I/B/E/S, quarter-level expected one-year earnings is constructed as the sum of available EPS forecasts for \(\{6,7,8,9\}\), then transformed to firm-level annual changes and standardized:
+\[
+X_{it}=\frac{\Delta \widehat{earn}_{it}}{\sigma_i(\Delta \widehat{earn})},
+\qquad
+\Delta \widehat{earn}_{it}=\widehat{earn}_{it}-\widehat{earn}_{i,t-1}.
+\]
+The regression uses \(X_{i,t-1}\) (lagged one year).
+\item Return controls from CRSP:
+\[
+ret12m_{it}=\prod_{m=1}^{12}(1+r_{i,t-m+1})-1,
+\qquad
+ret12m\_lag_{it}=ret12m_{i,t-1}.
+\]
+\end{itemize}
+To avoid mechanically extreme standardized values, we require at least three non-missing first differences per firm and drop observations with absolute standardized values above 50.
+
+\paragraph{Regression specifications.}
+The six reported specifications are:
+\begin{align*}
+(1)\quad & Y^{pay}_{it}=a+\beta X_{i,t-1}+\varepsilon_{it},\\
+(2)\quad & Y^{pay}_{it}=a+\beta X_{i,t-1}+\gamma\,ret12m\_lag_{it}+\varepsilon_{it},\\
+(3)\quad & Y^{pay}_{it}=a+\beta X_{i,t-1}+\delta\,ret12m_{it}+\varepsilon_{it},\\
+(4)\quad & Y^{emp}_{it}=a+\beta X_{i,t-1}+\varepsilon_{it},\\
+(5)\quad & Y^{emp}_{it}=a+\beta X_{i,t-1}+\gamma\,ret12m\_lag_{it}+\varepsilon_{it},\\
+(6)\quad & Y^{emp}_{it}=a+\beta X_{i,t-1}+\delta\,ret12m_{it}+\varepsilon_{it}.
+\end{align*}
+Standard errors are clustered at the firm (\texttt{gvkey}) level.
+
+\paragraph{Common-sample implementation.}
+The replication code optionally enforces a common sample across all six columns (same observations in payroll/workers regressions and both return controls) and optionally restricts fiscal-year ranges to align with legacy implementations.
+
 \subsection{Turnover--Disagreement Analysis (IBES + CRSP)}\label{app:data_turnover}
 
 \paragraph{Overview.}
@@ -129,8 +287,7 @@ The productivity CG table uses 2004Q1--2025Q2 (86 quarterly observations in each
 \subsection{Construction of Table 5 Data Moments and Bootstrap Intervals}\label{app:data_table5_moments}
 
 \paragraph{Overview.}
-The data targets in Table 5 are constructed by
-\texttt{src/data/replication/unconditional\_moments/construct\_unconditional\_moments.R}.
+The data targets in Table 5 are constructed by ingesting the raw series described below and computing the moments and bootstrap uncertainty intervals reported in the table.
 All moments are reported in annualized percentage points.
 
 \paragraph{Data sources (key series).}
@@ -194,11 +351,3 @@ Table 5 reports \(\pm 2\) s.e. intervals:
 \left[\widehat{\mu}_x-2\widehat{se}(\widehat{\mu}_x),\,\widehat{\mu}_x+2\widehat{se}(\widehat{\mu}_x)\right], \qquad
 \left[\widehat{\sigma}_x-2\widehat{se}(\widehat{\sigma}_x),\,\widehat{\sigma}_x+2\widehat{se}(\widehat{\sigma}_x)\right].
 \]
-
-\subsection{Robustness: Alternative Belief-Mass Calibration for Unconditional Moments}\label{app:data_table5_moments_robust_mu1}
-
-As an additional robustness exercise, we consider a calibration with a higher population share of type-1 agents, \(\mu_1=0.907\), while keeping the remaining baseline quantitative parameters unchanged (including \(\psi=2\) and \(\alpha=0.66\)). Table~\ref{tab:uncond_moments_robust_mu1_0907} reports the implied model moments and compares them to the same data confidence intervals used in Table~\ref{tab:uncond_moments}. 
-
-This calibration illustrates that matching the full set of unconditional moments jointly is feasible in our framework. In particular, under the high-elasticity specification (column 5), all reported moments lie inside the data \(\pm 2\) s.e. intervals. Relative to the benchmark \(\mu_1=0.9\), increasing \(\mu_1\) lowers risk-free-rate volatility while preserving a quantitatively meaningful equity premium, moving the model closer to the empirical target set without requiring extreme parameter changes.
-
-\input{tables/tab_uncond_moments_robust_mu1_0907}
