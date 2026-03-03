@@ -1,7 +1,6 @@
 \section{Quantitative analysis}\label{sec:quantitative}
 
-We now consider the quantitative implications. We extend the baseline formulation in Section \ref{sec:environment.sec}: First, productivity growth $x_t$ now follows a more general process. This is necessary to capture the empirical patterns of dividend growth. Second, we introduce a force that induces a non-degenerate stationary wealth distribution. A force like this is needed so that belief heterogeneity survives in the ergodic distribution of the model.
-We do so through Uzawa endogenous discounting for convenience. This specific approach is not indispensable; we can obtain non-degeneracy through birth-death processes for example.  
+We now consider the quantitative implications. We extend the baseline formulation in Section \ref{sec:environment.sec}: First, productivity growth $x_t$ now follows a more general process than the two-state process used to obtain analytical results. This extension is necessary to capture the empirical patterns of dividend growth. Second, we introduce a force that induces a non-degenerate stationary wealth distribution. A force like this is needed so that belief heterogeneity survives in the model's ergodic distribution.For convenience, we do so through Uzawa endogenous discounting.\footnote{Alternatively, we can obtain non-degeneracy through birth-death processes, for example.}  
 
 \paragraph{Belief process with a continuum of states.}
 
@@ -75,8 +74,7 @@ In turn, we set $\rho_{x,1}$ to match the correlation between subjective expecta
 \label{sec:biases_expectations.sec}
 \q{ProdExpectationI}{
 In the model, investors hold distorted beliefs about productivity growth.
-These distortions propagate to other variables --- such as dividends and returns ---
-through the likelihood-ratio representation:
+These distortions propagate to other variables---such as dividends and returns---through the likelihood-ratio representation:
 \begin{equation}
     \mathbb{E}_{i,t}[Z_{t+1}]
     =
@@ -108,7 +106,6 @@ forecast errors on forecast revisions:
     \right)
     + u_{t+h}.
 \end{equation}
-
 Under full-information rational expectations, $\beta_{CG}=0$.
 A negative estimate indicates over-extrapolation: agents revise forecasts too strongly
 in the direction of recent news.
@@ -362,7 +359,7 @@ discount rates explain most of the price-dividend ratio variance.
     Recent work by \citet{nagel2023dynamics} shows that return predictability looks very different under subjective beliefs: the standard predictors of returns are only weakly associated with survey-based measures of subjective risk premia. 
     While expected excess returns are countercyclical under the objective measure, they appear acyclical under subjective beliefs.
     
-    Table~\ref{table:pred_regression} shows that the model replicates these empirical patterns.
+    Table~\ref{table:pred_regression} shows that the model replicates these empirical patterns:
     Columns 1 and 2 report predictability regressions using labor income and the price-dividend ratio as predictors under the objective measure. 
     In contrast, Columns 3 and 4 present the same regressions when the model is simulated under subjective beliefs.
     Consistent with \citet{nagel2023dynamics}, standard predictors are only weakly associated with future returns under subjective beliefs. The coefficient on labor income has the wrong sign and is statistically insignificant, while the coefficient on the price-dividend ratio is near zero.

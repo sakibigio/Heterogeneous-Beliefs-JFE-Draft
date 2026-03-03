@@ -626,7 +626,7 @@ where\small
 
 Lemma~\ref{lem:trading} shows that individual trading behavior is governed by two distinct forces.
 The \emph{rebalancing effect} captures trades required to maintain a constant portfolio share
-following changes in relative wealth. For example, when an optimistic investor gains wealth
+following changes in relative wealth. This effect occurs because when an optimistic investor gains wealth
 after a favorable shock, she must purchase additional shares to keep her portfolio composition unchanged.
 The \emph{change-in-beliefs effect} reflects active portfolio reallocation driven by revisions in
 relative beliefs across states: if an investor becomes more optimistic in state $s'$ than in state $s$,
@@ -637,7 +637,7 @@ This interaction is the key mechanism behind the state-dependent relationship be
 and trading volume.
 
 
-\paratitle{Turnover and belief taxonomy.} As discussed in Section~\ref{sec:environment.sec}, we can express beliefs in terms of a persistence parameter, $\rho_i$, and a bias term, $\Delta_i$:
+\paratitle{Turnover and belief taxonomy.} As in Section~\ref{sec:environment.sec}, we can express beliefs in terms of a persistence parameter, $\rho_i$, and a bias term, $\Delta_i$:
 \begin{equation}\label{eq: beliefs_persistence_bias}
     p_{HH}^i = \frac{1+\rho_i}{2} + \Delta_i, \qquad \qquad p_{LH}^i = \frac{1-\rho_i}{2} + \Delta_i,\nonumber
 \end{equation}
@@ -646,7 +646,6 @@ which implies that the conditional expectation of productivity growth is given b
     \mathbb{E}_{i,t}[x_{t+1}] = \overline{x}_i + \rho_i (x_t - \overline{x}_i),
 \end{equation}
 where $\overline{x}_i$ is the subjective unconditional mean of $x_t$.
-
 
 Consider first the case of rank-preserving beliefs, $\rho_i = \rho$, where investors differ on the level of optimism, $\Delta_i$. 
 % In this case, beliefs are constant, $p_{HH'}^i = p_{LL'}^i = \frac{1+\rho}{2}$, and turnover is given by:
@@ -706,14 +705,8 @@ where $\rho(X) \equiv \sum_{i=1}^I \eta_i \rho_i$, and
 \end{proposition}
 
 The key message from Proposition~\ref{prop:turnover} is that turnover increases with belief dispersion and,
-furthermore, that this sensitivity is stronger in downturns. 
-% Both predictions are consistent with the evidence discussed in Section~\ref{app_disagreement_evidence}. 
-The assumption of rank-alternating beliefs
-is essential for generating this asymmetry. With rank-preserving beliefs---investors are relatively
-optimistic or pessimistic by the same amount in both states---the change-in-beliefs effect is absent and
-turnover is driven primarily by rebalancing, so disagreement does not generate a disproportionately
-strong response of trading volume in bad times. Therefore, rank-alternating beliefs are key to capturing
-the state-dependent dynamics of stock market turnover.
+furthermore, that this sensitivity is stronger in downturns. The assumption of rank-alternating beliefs is essential for generating this asymmetry. With rank-preserving beliefs---investors are relatively
+optimistic or pessimistic by the same amount in both states---the change-in-beliefs effect is absent, and turnover is driven primarily by rebalancing. Hence, disagreement does not generate a disproportionately strong response of trading volume in bad times. Thus, rank-alternating beliefs are key to inducing state-dependent dynamics of stock market turnover.
 }
 
 
@@ -775,16 +768,14 @@ dispersion of these implied aggregate expectations:
     =
     \overline{\sigma}_t\!\left[\beta_{0,j} + \beta_{1,j} \Delta e_t \right],
 \end{equation}
-where $\overline{\sigma}_t[\cdot]$ denotes the cross-sectional standard deviation at time $t$.
+where $\overline{\sigma}_t[\cdot]$ denotes the cross-sectional standard deviation at time $t$. 
 
-Even if analyst-specific coefficients are constant over time,
-disagreement varies with $\Delta e_t$.
-This reflects the model's mechanism that dispersion in persistence beliefs interacts
+While analyst-specific coefficients are constant over time, time changes in disagreement occur through $\Delta e_t$. This reflects the model's mechanism that dispersion in persistence beliefs interacts
 with the current state of the economy.
 
 To measure trading activity, we follow \citet{lo2000trading} and compute
-value-weighted stock market turnover from CRSP.
-Details on construction are provided in Appendix~\ref{app:data_turnover}.
+value-weighted stock market turnover from CRSP.\footnote{
+Details on construction are provided in Appendix~\ref{app:data_turnover}.}
 
 Figure~\ref{fig: DI_turnover_time_series}
 plots the time series of the disagreement index and turnover.
@@ -800,9 +791,7 @@ periods in which turnover is also elevated.}
 We formally assess the relationship using time-series regressions of turnover on
 the standardized disagreement index $DI_t$.
 Table~\ref{tab:turnover_di_5specs_standardized}
-reports Newey--West standard errors with four lags.
-
-Column (1) shows a positive but statistically insignificant association between
+reports Newey--West standard errors with four lags: Column (1) shows a positive but statistically insignificant association between
 turnover and disagreement.
 Column (2) adds an NBER recession indicator and its interaction with disagreement.
 The interaction term is positive and highly significant,
@@ -812,13 +801,10 @@ is economically meaningful: a one-standard-deviation increase in $DI_t$
 is associated with an increase in turnover of approximately
 $0.23$ (the sum of the main and interaction coefficients),
 a sizeable fraction of its sample mean $(0.31)$.
-This is consistent with Proposition~\ref{prop:turnover}, which implies that the turnover--disagreement relationship strengthens in recessions.
-
-
+This is exactly what  Proposition~\ref{prop:turnover} predicts: the turnover--disagreement relationship strengthens in recessions.
 
 Column (3) shows that the interaction effect remains substantial when the recession dummy
-is excluded, indicating that the result is driven by differences in slopes
-rather than by shifts in the intercept.
+is excluded, indicating that the result is driven by differences in slopes rather than by shifts in the intercept.
 
 The model emphasizes the role of state transitions in generating this asymmetry.
 To proxy for transition periods,
@@ -830,9 +816,7 @@ This evidence is consistent with the model's prediction that
 turnover responds most strongly to disagreement at the onset of downturns.
 
 The results are robust to controlling for aggregate market volatility (VIX)
-and market returns; these specifications are reported in Appendix~\ref{app:data_turnover}.
-
-Overall, the evidence supports the model's central implication:
+and market returns; these specifications are reported in Appendix~\ref{app:data_turnover}. Overall, the evidence supports the model's central implication:
 while trading volume increases with belief dispersion,
 this sensitivity is substantially stronger in recessions,
 particularly around state transitions.
